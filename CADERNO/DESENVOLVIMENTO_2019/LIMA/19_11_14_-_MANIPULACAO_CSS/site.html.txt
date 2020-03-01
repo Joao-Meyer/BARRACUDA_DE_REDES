@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> G-OST </title>
+        
+        <meta charset="utf-8">
+        
+        <!-- É importante a ordem de importação para que não dê errado, primeiro o reset e depois o style -->
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+            <!-- Seção para o menu -->
+        <div id="containerMenu">
+                <!-- Container para o alinhamento dos itens do site -->
+            <div class="container">
+                    <!-- Logo -->
+                <div id="logo">
+                    imagem
+                </div>
+                    <!-- Nav - representa a area do menu do site -->
+                <nav id="menu">
+                    <ul class="menu">
+                        <li class="menuItem"> Item 01 </li>
+                        <li class="menuItem"> Item 02 </li>
+                        <li class="menuItem"> Item 03 </li>
+                        <li class="menuItem"> Item 04 </li>
+                        <li class="menuItem"> Item 05 </li>
+                        <li class="menuItem"> Item 06 </li>
+                    </ul>
+                </nav>
+                    <!-- Redes sociais -->
+                <div id="redesSociais">
+                    <div class="iconeRS"> 01 </div>
+                    <div class="iconeRS"> 02 </div>
+                    <div class="iconeRS"> 03 </div>
+                </div>
+            </div>
+        </div>
+        
+            <!-- Seção do cabeçalho -->
+        <header>
+            <div id="slogan">
+                Não confie em meninas com filtro de raposa e óculos
+            </div>
+        </header>
+        
+            <!-- Seção da empresa -->
+        <div id="containerEmpresa">
+            <section class="container">
+                <h1> Sobre a empresa </h1>
+                
+                <div class="empresaConteudo">
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                
+                <div class="empresaConteudo"></div>
+                
+                <div class="empresaConteudo">
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                    
+                <div class="empresaConteudo"></div>
+            </section>
+        </div>
+    </body>
+</html>

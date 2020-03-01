@@ -1,0 +1,351 @@
+<!-- Exercicio de HTML - Tabelas -->
+<!-- Vou precisar de 13 imagens -->
+<html>
+	<head>
+		<title>
+			G-OST
+			"Nunca confie em meninas de óculos"
+		</title>
+	</head>
+	
+	<style>
+		
+		body{
+		
+			background-image:url(imagens/capa.jpg);
+			background-attachment:fixed;
+			background-size:100%;
+			background-repeat:no-repeat;
+			background-color:#000000;
+		}
+
+	</style>
+	
+	<body text = "white">
+		<table align="center" width="1800" height="1460" border="1">
+		
+			<!-- Linha 1 -->
+			<tr height="160">
+				<td width="360"> <!-- Coluna 1 -->
+					<font align="center" valign="middle">
+						<h2>
+							MENU
+						</h2>
+						
+						<ul type="disc">
+							<li>
+								Pagina 1
+							</li>
+							
+							<li>
+								Pagina 2
+							</li>
+							
+							<li>
+								Pagina 3
+							</li>
+							
+							<li>
+								Pagina 4
+							</li>
+						</ul>
+					</font>
+				</td>
+				
+				<td width="1080" colspan="3"> <!-- Colunas 2, 3 e 4 -->
+					<font size="30" align="center" type="algerian" color="#dae0e3">
+						<p>
+							BACO EXU DO BLUES
+						</p>
+					</font>
+				</td>
+								
+				<td width="360" align="center" valign="middle"> <!-- Coluna 5 -->
+					<image src="imagens/baco de lado.png" width="240" height="160" title="Esu" alt="Capa do album esu">
+				</td>
+			</tr>
+			
+			<!-- Linha 2 -->
+			<tr height="240">
+				<td width="360" align="center" valign="middle"> <!-- Coluna 1 -->
+					<image src="imagens/album esu.png" width="240" height="240" title="Esu" alt="Capa do album esu">
+				</td>
+				
+				<td width="360"> <!-- Coluna 2 -->
+					<font align="center" valign="middle">
+						<h3>
+							Pavimentando o sucesso
+						</h3>
+						
+						<p>
+							Esú traz a história de um personagem em transição, que passa por diversas provações, da depressão ao gozo. Autoestima, individualidade, onipotência, luxúria, sincretismo e empoderamento negro, são temas recorrentes no álbum.
+						</p>
+					</font>
+				</td>
+				
+				<td width="360"> <!-- Coluna 3 -->
+					<image src="imagens/blvesman.jpg" width="360" height="240" title="Blvesman" alt="Capa do album Blvesman">
+				</td>
+				
+				<td width="360"> <!-- Coluna 4 -->
+					<font align="center" valign="middle">
+						<p>
+							Bluesman é o segundo álbum de estúdio do rapper baiano Baco Exu do Blues, o álbum teve um trabalho visual muito bem produzido e acompanha um filme também intitulado Bluesman.
+							<br></br>
+							Diversos teasers foram postados no Instagram do artista, nos dias 5 e 8 de novembro. Sucessor do álbum Esú.
+						</p>
+					</font>
+				</td>
+				
+				<td width="360"> <!-- Coluna 5 -->
+					<image src="imagens/bluesman-baco-exu-do-blues.jpg" width="360" height="240" title="Blvesman" alt="Capa do curta Blvesman">
+				</td>
+			</tr>
+			
+			<!-- Linha 3 -->
+			<tr height="240">
+				<td width="1080" colspan="3"> <!-- Colunas 1, 2 e 3 -->
+					<font align="center" valign="middle">
+						<h3>
+							Aquela love song
+						</h3>
+						
+						<p>
+							Ironicamente, “Te Amo Disgraça” mostra um romantismo e realismo dentro de um relacionamento, com seus conflitos e problemas encarados, ao mesmo tempo que exalta e compreende o espaço da companheira.
+							<br></br>
+							A grafia de “desgraça” com “i” se dá pela pronúncia típica do sotaque soteropolitano, além de ser um “palavrão” comum na linguagem local, a qual Baco se vale para significar a ideia de descontração e escárnio.
+						</p>
+					</font>
+				</td>
+				
+				<td width="360"> <!-- Coluna 4 -->
+					<image src="imagens/te amo desgraca.jpg" width="360" height="240" title="Esu" alt="Capa do album esu">
+				</td>
+				
+				<td width="360"> <!-- Coluna 5 -->
+					<font align="center" valign="middle">
+						<p>
+							"Baco, vinho, sexo, amor, desgraça. Desconstrução do senso comum lírico, onde retrata desilusões e inferiorização da mulher. Igualdade nos relacionamentos."
+							<br></br>
+							Disse Baco a uma entrevista ao site Genius
+						</p>
+					</font>
+				</td>
+			</tr>
+			
+			<!-- Linha 4 -->
+			<tr height="240">
+				<td width="360"> <!-- Coluna 1 -->
+					<image src="imagens/me desculpa jay-z.jpg" width="360" height="240" title="Esu" alt="Capa do album esu">
+				</td>
+				
+				<td width="1080" colspan="3"> <!-- ColunaS 2, 3 e 4 -->
+					<font align="center" valign="middle">
+						<h3>
+							Diga ao povo que sim, mais love songs
+						</h3>
+						
+						<p>
+							A terceira faixa, que inicialmente possuía o título “Blues da Bipolaridade” o que condiz bastante com a letra, retrata a confusão de sentimentos que Baco está sentindo por uma provável mulher. Uma situação recorrente das nossas relações, nas quais ao mesmo tempo queremos muito continuar com uma pessoa e também queremos a deixar pelo mal que ela e essa relação nos fazem.
+							<br></br>
+							Baco faz uma inteligente relação entre um provável romantismo e a sua relação com o seu ídolo JAY-Z, que está no título da faixa. Ele afirma querer literalmente viver na pele do mesmo, seja tanto pelo desatentamento com a sua vida social comparada à do rapper magnata que é muito bem de vida e é casado com uma das maiores artistas de R&B e Pop da nossa geração e com quem Baco também afirma ter sonhos eróticos, Beyoncé.
+						</p>
+					</font>
+				</td>
+				
+				<td width="360"> <!-- Coluna 5 -->
+					<image src="imagens/baco globo.png" width="360" height="240" title="Esu" alt="Capa do album esu">
+				</td>
+			</tr>
+			
+			<!-- Linha 5 -->
+			<tr height="240">
+				<td width="360" rowspan="2"> <!-- Coluna 1 -->
+					<image src="imagens/baco love.jpg" width="360" height="480" title="Esu" alt="Capa do album esu">
+				</td>
+				
+				<td width="360"> <!-- Coluna 2 -->
+					<font align="center" valign="middle">
+						<h3>
+							E mais love songs
+						</h3>
+						
+						<p>
+							Com a popularidade de love songs Baco lança 3 singles com a temática de love song e que possuem uma certa sequência.
+						</p>
+					</font>
+				</td>
+				
+				<td width="360"> <!-- Coluna 3 -->
+					<image src="imagens/banho de sol.jpg" width="360" height="240" title="Esu" alt="Capa do album esu">
+				</td>
+				
+				<td width="720" colspan="2"> <!-- Colunas 4 e 5-->
+					<font align="center" valign="middle">
+						<p>
+							“Banho de Sol” é o terceiro single do baiano Baco Exu do Blues em 2018—“Facção Carinhosa” foi lançada em Janeiro e “Sinfonia do Adeus” em Fevereiro. A música é homônima à canção de A Bronkka—a qual Baco já referenciou em “9 9 9”:
+							Ouvindo A Bronkka, banho de sol, Skol gelada 
+							A composição fala sobre o afloramento de um romance—mais bem romantizado e platônico que na assemelhável “Te Amo Disgraça”—, com enfoque na forte conotação sexual.
+							<br></br>
+							Alguns fãs achavam que a música iria incorporar o próximo trabalho de Baco, o EP Bluesman, prometido desde Maio. Porém, segundo o próprio Baco, “Banho de Sol,” juntamente com “Tardes Que Nunca Acabam” e “Última Noite,” não fazem parte do EP, as faixas não seriam lançadas e são a transição para o EP. O mesmo deve acontecer com “Facção Carinhosa” e “Sinfonia do Adeus.”
+						</p>
+					</font>
+				</td>
+			</tr>
+			
+			<!-- Linha 6 -->
+			<tr height="240">
+				<td width="360"> <!-- Coluna 2 -->
+					<image src="imagens/tardes que nunca acabam.jpg" width="360" height="240" title="Esu" alt="Capa do album esu">
+				</td>
+				
+				<td width="360"> <!-- Coluna 3 -->
+					<font align="center" valign="middle">
+						<p>
+							“Tardes Que Nunca Acabam” narra momentos de sexo, apresentando uma forte paixão e atração por parte do narrador.
+							<br></br>
+							O single foi lançado simultaneamente ao outro single “Última Noite.” O sample utilizado é uma das canções mais conhecidas da cantora mexicana Consuelo Velázquez, “Bésame Mucho” lançada em 1940.
+						</p>
+					</font>
+				</td>
+				
+				<td width="360" align="center"> <!-- Coluna 4 -->
+					<image src="imagens/ultima noite.jpg" width="240" height="240" title="Esu" alt="Capa do album esu">
+				</td>
+				
+				<td width="360"> <!-- Coluna 5 -->
+					<font align="center" valign="middle">
+						<p>
+							“Última Noite” fala sobre o fulgor de um romance em tom erótico e apaixonado. A tônica segue a série de singles—assim como “Banho de Sol” & “Tardes Que Nunca Acabam”.
+						</p>
+					</font>
+				</td>
+			</tr>
+			
+			<!-- Linha 7 -->
+			<tr height="100">
+				<td width="600" colspan="2"> <!-- Colunas 1 e 2 -->
+				</td>
+				
+				<td width="360"> <!-- Coluna 3 -->
+				</td>
+				
+				<td width="720" colspan="2"> <!-- Colunas 4 e 5 -->
+				</td>
+			</tr>
+		</table>
+	</body>
+</html><!-- Exercicio de HTML - Tabelas -->
+<!-- Vou precisar de 13 imagens -->
+<html>
+	<head>
+		<title>
+			G-OST
+			"Nunca confie em meninas de óculos"
+		</title>
+	</head>
+	
+	<body background="imagens/baco2.jpg"  bgcolor="#facada" text = "white">
+		<table align="center" width="500" height="700" border="1">
+		
+			<!-- Linha 1 -->
+			<tr height="100">
+				<td width="100"> <!-- Coluna 1 -->
+				</td>
+				
+				<td width="300" colspan="3"> <!-- Colunas 2, 3 e 4 -->
+				</td>
+								
+				<td width="100"> <!-- Coluna 5 -->
+				</td>
+			</tr>
+			
+			<!-- Linha 2 -->
+			<tr height="100">
+				<td width="100"> <!-- Coluna 1 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 2 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 3 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 4 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 5 -->
+				</td>
+			</tr>
+			
+			<!-- Linha 3 -->
+			<tr height="100">
+				<td width="300" colspan="3"> <!-- Colunas 1, 2 e 3 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 4 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 5 -->
+				</td>
+			</tr>
+			
+			<!-- Linha 4 -->
+			<tr height="100">
+				<td width="100"> <!-- Coluna 1 -->
+				</td>
+				
+				<td width="300" colspan="3"> <!-- ColunaS 2, 3 e 4 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 5 -->
+				</td>
+			</tr>
+			
+			<!-- Linha 5 -->
+			<tr height="100">
+				<td width="100"> <!-- Coluna 1 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 2 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 3 -->
+				</td>
+				
+				<td width="200" colspan="2"> <!-- Colunas 4 e 5-->
+				</td>
+			</tr>
+			
+			<!-- Linha 6 -->
+			<tr height="100">
+				<td width="100"> <!-- Coluna 1 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 2 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 3 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 4 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 5 -->
+				</td>
+			</tr>
+			
+			<!-- Linha 7 -->
+			<tr height="100">
+				<td width="200" colspan="2"> <!-- Colunas 1 e 2 -->
+				</td>
+				
+				<td width="100"> <!-- Coluna 3 -->
+				</td>
+				
+				<td width="200" colspan="2"> <!-- Colunas 4 e 5 -->
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

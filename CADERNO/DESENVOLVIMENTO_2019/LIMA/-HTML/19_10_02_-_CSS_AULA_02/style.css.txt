@@ -1,0 +1,92 @@
+/* Arquivo de CSS (style) */
+
+/*
+	font - permite escolher somente um tipo de fonte
+
+	font-family - permite escolher uma galeria de fontes
+
+	font-size - troca o tamanho das letras
+
+	color - troca a cor da fonte
+			hexadecimal Ex: #f51707
+			inglês Ex: red
+			rgb() Ex: rgb(270,200,255)
+
+	text-align - alinhamento de texto
+				(left, center, right, justify)
+
+	text-decoration:	undeline - coloca uma linha abaixo da palavra
+						overline - coloca uma linha acima da palavra
+						line-through - risca a palavra
+						none - retira o sublinhado da palavra (ex: link)
+
+	text-transform:	uppercase - deica o texto em MAIÚSCULO
+					lowercase - COLOCA EM minúsculo
+					capitalize - coloca apenas a primeira em Maiúsculo
+
+	letter-spacing - permite colocar espaço entre as letras da palavra (Ex: letter-spacing: 10px;)
+
+	word-spacing - permite colocar espaço entre as palavras (Ex: word-spacing: 10px;)
+
+	line-height - permite alterar o espaçamento entre as linhas (pode-se utilizar um valor em px ou em linhas.
+					Ex: line-height: 30px; ou line-height: 1.5;)
+
+	font-style: italic - permite colocar em italico
+				normal - permite retirar a formatação
+				oblique - permite colocar em italico
+
+	text-shadow - permite criar uma sombra na palavra
+					1° valor - Distância da esquerda para a direita
+					2° valor - Distância de cima para baixo
+					3° valor - Intensidade da sombra
+					4° valor - Cor da sombra
+					Ex: text-shadow: 03px 03px 5px blue;
+*/
+
+.titulo {		
+/*	font: arial; */
+	font-family: arial, verdana, cursive, "times new roman";
+	font-size: 100px;
+	color: rgb(270,200,255);
+	text-align: center;
+	text-decoration: line-through;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	word-spacing: 50px;
+}
+
+.texto {	
+	color: purple;
+	line-height: 1.5;
+	font-style: italic;
+	font-weight: bold;
+}
+
+strong {
+	color: #d4a80b;
+	text-decoration: none;
+	letter-spacing: 5px;
+}
+
+.destaque {
+	color: red;
+	font-size: 22px;
+	text-shadow: 03px 03px 5px blue;
+}
+
+.destaque_ingles {
+	display: block;
+	border: solid 1px blue;
+	width: 60px;
+	height: 20px;
+	background-color: darkorange;
+	color: green;
+	text-align: center;
+}
+
+.destaque_ingles:hover {
+	background-color: blue;
+	color: yellow;
+	cursor: pointer;
+	transition: 1s;
+}

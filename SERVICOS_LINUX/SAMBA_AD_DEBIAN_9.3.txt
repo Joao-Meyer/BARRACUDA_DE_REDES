@@ -1,0 +1,62 @@
+apt-get install samba krb5-config winbind smbclient
+
+Responda as perguntas do kerberos da seguinte maneira:
+	 empresa.teste
+	 dcNomeDoAluno.empresa.teste
+	 dcNomeDoAluno.empresa.teste
+
+Criar um backup do arquivo de configuração padrão do samba.
+	 mv /etc/samba/smb.conf    /etc/samba/smb.conf.bkp
+
+Promover o servidor a um controlador de domínio.
+	# samba-tool domain provision
+	Responda as perguntas:
+	empresa.teste
+	empresa
+	dc (enter para escolher o padrão)
+	SAMBA_INTERNAL (enter para escolher o padrão)
+	10.107.132.4 (enter para escolher o padrão)	P@ss0rd
+
+Copiar o arquivo criado pelo kerberos:
+	cp /var/lib/samba/private/krb5.conf /etc/
+
+Desativar os serviços que não utilizaremos:
+	systemctl stop smbd.service nmbd.service winbind.service
+	systemctl disable smbd.service nmbd.service winbind.service
+
+Inicializando o AD.
+	systemctl unmask samba-ad-dc.service
+	systemctl start samba-ad-dc.service
+
+Configurando para iniciar o AD automaticamente durante o boot.
+	systemctl enable samba-ad-dc.service
+
+Testando o SAMBA:
+
+Teste de resolução de nome:
+	host -t SRV _ldap._tcp.empresa.teste
+	host -t SRV _kerberos._tcp.empresa.teste
+	host nomeDoaluno.empresa.teste
+
+Teste do diretório (AD)
+	smbclient  -L  dcNomeDoAluno  -U  Administrator
+	samba-tool  domain  level  show
+
+Criar um usuário para teste
+	samba-tool   user   create  senai
+
+Gerenciamento de AD Samba via Windows
+
+Ingressar o cliente no domínio utilizando o usuário Administrator.
+Depois de reiniciar a máquina logar com o usuário criado.
+
+No Windows deverá ser instalado o programa de Ferramentas de acesso remoto
+https://www.microsoft.com/pt-br/download/details.aspx?id=7887 
+
+Vá em Painel Controle – Programas – Programas e Recursos – Ativar ou desativar recursos do Windows e ative o recurso de 
+Ferramentas de Administração de Servidores Remotos (ative todas as suas funcionalidades) 
+Logar no cliente como Administrator para gerenciar o AD.
+Abrir o executar e digitar mmc (console de gerenciamento da Microsoft)
+Clicar em arquivo e adicionar e remover snap-ins 
+Na lista de snap-ins escolher usuários de computadores do AD
+No mesmo mmc aberto adicionar o snap-ins Editor de Gerenciamento de Diretiva de Grupo.

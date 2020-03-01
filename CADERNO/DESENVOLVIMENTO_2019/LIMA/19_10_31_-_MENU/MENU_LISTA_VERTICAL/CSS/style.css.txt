@@ -1,0 +1,76 @@
+/*RESET CSS*/
+
+div, ul, li, h1, h2, h3, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu {
+    width: 150px;
+    height: 300px;
+    background-color: #c2c2c2;
+}
+
+.formatItens {
+    color: purple;
+    font-family: verdana;
+    font-size: 16px;
+    text-align: center;
+    list-style: none;
+}
+
+.menuItem {
+    width: inherit;
+    height: 35px;
+    background-color: coral;
+    
+    /* padding - permite colocar espaçamentos internos nos elementos */
+    padding-top: 15px;
+    
+    /* margin - permite alinhar um elemento na tela ou criar um espaçamento para empurrar o próximo elemento */
+    margin-bottom: 5px;
+}
+
+.menuItem:hover {
+    background-color: skyblue;
+    color: white;
+    
+    /* Permite trocar o cursor do mouse */
+    cursor: pointer;
+}
+
+.submenu {
+    width: 150px;
+    
+    /* Altura minima de 50px, que corresponde a uma li */
+    min-height: 50px;
+    
+    /* Altura será automática, conforme a quantidade de li */
+    height: auto;
+    color: white;
+    background-color: deepskyblue;
+    margin-left: 150px;
+    margin-top: -35px;
+    
+    /* display - permite ocultar um elemento do html */
+    display: none;
+}
+
+.submenuItem {
+    width: inherit;
+    height: 35px;
+    padding-top: 15px;
+    background-color: yellow;
+}
+
+.submenuItem:hover {
+    background-color: orange;
+    cursor: pointer;
+    color: white; 
+}
+
+/* Ao passar o mouse na li do menu, iremos modificar o css da classe submenu */
+.menuItem:hover > .submenu{
+    /* Fez aparecer novamente a classe submenu que estava display: none */
+    display: block;
+}

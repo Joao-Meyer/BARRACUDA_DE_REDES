@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class TrocaArmazenamentoDeVariaveis {
+  public static void main (String args[]){
+    Scanner recebe = new Scanner (System.in);
+
+    double num1;
+    double num2;
+    double auxiliar;
+
+    System.out.println ("\nInsira o primeiro valor:");
+    num1 = recebe.nextDouble();
+    System.out.println ("\nInsira o segundo valor:");
+    num2 = recebe.nextDouble();
+
+    System.out.printf ("\n%.2f esta alocado na variavel num1 e %.2f esta alocado na variavel num2\n", num1, num2);
+
+    auxiliar = num1;
+    num1 = num2;
+    num2 = auxiliar;
+
+    System.out.printf ("\nApos a troca %.2f esta alocado na variavel num1 e %.2f esta alocado na variavel num2\n", num1, num2);
+  }
+}

@@ -1,0 +1,42 @@
+apt install apache2 
+
+cd /etc/apache2 
+cd sites-availabe
+vi nome-do-site.conf 
+
+<VirtualHost *:80>
+ServerName www.nome-do-site.com.br
+DocumentRoot /var/www/nome-do-site
+</VirtualHost>  
+
+
+*Link Simbólico*
+
+a2ensite nome-do-site.conf
+
+reload apache2
+
+systemctl reload apache2
+
+Criar o diretório do dominido em /var/www/nome-do-site
+
+Criar um arquivo index.html no diretório
+
+Ex. de Arquivo HTML:
+
+<meta charset="utf-8"/> 
+
+<html> 
+	<head>
+	<title> janela 1 </title>
+	</head>
+	<body> 
+		<center>
+		<h1> <font color="#0000FF">
+				Site da Empresa 
+		</h1>
+		</center>
+	</body>
+</html>
+
+systemctl reload apache2

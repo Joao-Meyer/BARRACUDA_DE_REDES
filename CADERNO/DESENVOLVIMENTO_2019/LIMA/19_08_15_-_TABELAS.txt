@@ -1,0 +1,35 @@
+Tabelas
+	|-> <table> - indica a criação de uma tabela
+		
+	|-> <table	width - altura da tabela
+				height - tamanho da da tabela
+				border - coloca uma borda na tabela
+				bgcolor - coloca uma cor de fundo
+				background - imagem dentro da tabela
+				align =	"left" - alinha a tabela à esquerda
+						"right" - alinha a tabela à direita
+						"center" - alinha a tabela no centro
+				bordercolor - cor na borda da tabela
+				cellspacing - espaçamento entre celulas da tabela
+				cellpadding - espaçamento interno nas celulas (margem interna na celula)
+		
+	|-> <tr> - indica a criação de linhas
+		
+	|-> <tr	height - altura apenas da linhas
+			bgcolor - cor de fundo na linhas
+			background - imagem dentro da linha da tabela
+			align =	"left" - alinhar o conteúdo de todas as células à esquerda
+					"center" - alinhar o conteúdo de todas as células no centro
+					"right" - alinhar o conteúdo de todas as células daquela linha à direita
+					"justify" - alinha o conteúdo de todas as células daquela linha de maneita justificada
+		
+	|-> <td> - indica a criação de colunas
+		
+	|-> <td	width - largura da célula
+			bgcolor - cor de fundo apenas na célula
+			background - imagem dentro de cada célula
+			align - alinhamento dentro da célula
+			valign - alinhamento vertical do conteúdo da célula (top, middle, bottom)
+			colspan - mesclagem de celulas entre colunas
+			rowspan - mesclagem de celulas entre linhas
+

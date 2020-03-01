@@ -1,0 +1,10 @@
+Polimorfismo - Aula 9
+
+//quando se tem números,deve-se validar
+
+//polimorfismo acontece quando se tem uma classe pai (superclasse) e uma filho que herda características da pai e altera algum(s) método(s) sobrecarregando-o(s) para se adaptar à necessidade da subclasse
+
+//"Chupar é bom, ajuda a trazer açúcar para o sangue" - Lobianco
+
+//quando é necessário implementar um polimorfismo entre classes sem uma superclasse em comum se é implementada uma interface
+

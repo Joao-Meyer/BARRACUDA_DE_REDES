@@ -1,0 +1,6 @@
+	.length()				// Diz o tamanho de uma string
+	.toUpperCase()		// Converte a string para caixa alta
+	.toLowerCase()		// Converte a string para caixa baixa
+	.equals(" ")			// Compara strings
+	.trim()				// Remove "<<espaços>>" do começo e do fim da string
+	.charAt()			// Retorna o caractere, em uma posição desejada, de uma string

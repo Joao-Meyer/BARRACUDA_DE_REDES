@@ -1,0 +1,23 @@
+SSH Server
+
+apt install openssh-server 
+ssh -C usuario@ip -p 22
+
+Client
+
+apt install openssh-client 
+ssh -C usuario@ip -p 22
+
+SCP
+
+scp usuario@ip + onde está o arquivo + para onde ele vai 
+
+Troca de chaves para conexão segura sem senha
+
+ssh-keygen -t rsa
+enter 
+enter
+enter
+ssh -copy -id aluno@ip do server -p 22
+
+

@@ -1,0 +1,327 @@
+<!-- WIREFRAME DESTA PAGINA (H O M E): https://wireframe.cc/cpuVho -->
+
+<html>
+	<head>
+		<title> H O M E </title>
+	</head>
+
+	<body bgcolor="black" text="white" link="white" vlink="#9af097">
+			<!-- Tabela que compõe a pagina como um todo -->
+		<table border="0" width="1000" height="1600" align="center" cellpadding="0" cellspacing="0">
+				<!-- Linha do cabeçalho -->
+			<tr height="20%">				
+				<td width="100%">
+						<!-- Tabela do cabeçalho -->
+					<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="80%">	<!-- Coluna do nome da pagina -->
+								<table border="0" width="75%" height="100%" align="right" cellpadding="0" cellspacing="0"> <!-- Tabela do nome da pagina -->
+									<tr height="50%" align="center" valign="bottom">	<!-- Linha do nome da pagina -->
+										<td>
+											<h1>
+												PLAYLISTS POR MEYRIHEN
+											</h1>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem da pagina -->
+										<td width="100%" height="100%">
+											<img src="imagens/onda quadrada verde.jpeg" width="50%" height="100%">
+										</td>
+									</tr>
+								</table>
+							</td>
+
+							<td width="20%">	<!-- Coluna das redes sociais -->
+								<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">	<!-- Tabela das redes sociais -->
+									<tr height="50%" align="center">	<!-- Linha da imagem de cima -->
+										<td>
+											<a href="https://www.facebook.com/" title="Link para o facebook" target="_blank">
+												<img src="imagens/facebook-logo.png" width="60%" height="60%">
+											</a>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem de baixo -->
+										<td>
+											<a href="https://www.instagram.com/?hl=pt-br" title="Link para o facebook" target="_blank">
+												<img src="imagens/instagram-logo.png" width="60%" height="60%">
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr height="70%">	<!-- Linha do conteúdo -->
+				<td width="100%">
+						<!-- Tabela do conteúdo -->	
+					<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+						<tr height="45%" align="center">	<!-- Linha do conteúdo superior -->
+							<td>
+									<!-- Tabela do conteúdo superior -->
+								<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="20%">	<!-- Coluna do menu -->
+											<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">	<!-- Tabela do menu -->
+												<tr height="10%" align="center">	<!-- Linha do "título" -->
+													<td>
+														Playlists
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 1 -->
+													<td>
+														<a href="Pagina_1.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															P I S A D I N H A
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 2 -->
+													<td>
+														<a href="Pagina_2.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															!Querolisten
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 3 -->
+													<td>
+														<a href="Pagina_3.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															X R Y
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 4 -->
+													<td>
+														<a href="Pagina_4.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															F A T H E R
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 5 -->
+													<td>
+														<a href="Pagina_5.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															Outras
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+
+										<td width="80%">	<!-- Coluna do conteúdo superior -->
+											<table border="0" width="100%" height="100%" align="right" cellpadding="3" cellspacing="0">	<!-- Tabela do conteúdo superior -->
+												<tr height="50%">	<!-- Linha das imagens -->
+													<td width="33%" align="center">
+														<a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/3LLzAayc12woy0IST2n1QO?si=fMFZQxuqSWa9wJegbCvY-A" tile="Link para a playlist !Querolisten" target="_blank">
+															<img src="imagens/!querolisten.jpeg" title="Imagem da playlist" width="80%" height="80%">
+														</a>
+													</td>
+
+													<td width="34%" align="center">
+														<a href="https://open.spotify.com/playlist/09To96LkxL67xNRQ8p8lXi?si=MFCity2FRJutuG-0h8D7fQ" tile="Link para a playlist Pisadinha 2019" target="_blank">
+															<img src="imagens/pisadinha_2019.jpeg" title="Imagem da playlist" width="80%" height="80%">
+														</a>
+													</td>
+
+													<td width="33%" align="center">
+														<a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/0qSBuvT7CfqdFpWokllA9V?si=96p3DNdjRL-NzAIOpbxDnQ" tile="Link para a playlist FATHER" target="_blank">
+															<img src="imagens/father.jpeg" title="Imagem da playlist" width="80%" height="80%">
+														</a>
+													</td>
+												</tr>
+
+												<tr height="50%">	<!-- Linha dos textos -->
+													<td width="33%" align="center">
+														<p>
+															De longe a playlist a qual eu mais escuto, se há algo novo ou que me foi recomendado logo adiciono à ela para que eu ouça, mais cedo ou mais tarde, por vezes álbuns inteiros vêm parar aqui e algumas músicas não saem dela para que eu ouça novamente outras trilhões de vezes.
+														</p>
+													</td>
+
+													<td width="34%" align="center">
+														<p>
+															Uma aquisição atipica porém de muito valor, uma playlist composta por inúmeras pisadinhas para que a riscação de faca e a ralação de buxo não cesse até o raiar do dia, com um repertório de diversas pisadinhas como esse é dificil ficar triste.
+														</p>
+													</td>
+
+													<td width="33%" align="center">
+														<p>
+															Uma playlist inteiramente dedicada a um ente querido, com diversas músicas que se alternam entre atuais e pré-históricas que trazem trazem emoções e frequentemente têm o poder de fazer cantar junto, ao ser escutada no carro (com alta frequência) faz com que todos aprendam e acabem fatidicamente cantando junto.
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+						<tr height="55%" align="center">	<!-- Linha do conteúdo inferior -->
+							<td>
+									<!-- Tabela do conteúdo inferior -->
+								<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+									<tr height="55%" align="center">	<!-- Linha do conteúdo inferior - cima -->
+										<td>
+												<!-- Tabela do conteúdo inferior - cima -->
+											<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+												<tr>
+														<!-- Coluna do conteúdo inferior - cima - esquerda -->
+													<td width="32%" align="center" valign="center">
+														<img src="imagens/eu.jpeg" title="EU" width="70%" height="90%">
+													</td>
+
+														<!-- Coluna do conteúdo inferior - cima - centro -->
+													<td width="43%">
+															<!-- Tabela do conteúdo inferior - cima - centro -->
+														<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+																<!-- Linha do título -->
+															<tr height="25%" align="center" valign="bottom">
+																<td>
+																	<h3>
+																		Um pouco sobre mim
+																	</h3>
+																</td>
+															</tr>
+
+																<!-- Linha do texto -->
+															<tr height="75%" align="left">
+																<td>
+																	<p>
+																		Um jovem que anseia pelo novo e adora experimentar, já percorreu bastante da internet e mergulhou em diversos gêneros, conheceu algumas coisas para apenas reforçar a conclusão de que quanto mais busco, mais vejo que pouco conheço. Com meros 18 anos, a habilidade de cantar em momentos inoportunos e constrangedores, que escuta e canta bastante 
+																		<a href="https://genius.com/artists/Yung-buda" tile="Link para a pagina de Yung Buda" target="_blank">
+																		Yung Buda</a>
+																		,
+																		<a href="https://genius.com/artists/Renato-russo" tile="Link para a pagina de Renato Russo" target="_blank">
+																		Renato Russo</a>
+																		e
+																		<a href="https://genius.com/artists/Tyler-the-creator" tile="Link para a pagina de Tyler The Creator" target="_blank">
+																		Tyler, The Creator</a>
+																		, este sou eu.
+																	</p>
+																</td>
+															</tr>
+														</table>
+													</td>
+
+														<!-- Coluna do conteúdo inferior - cima - direita -->
+													<td width="25%" rowspan="2">
+															<!-- Tabela do conteúdo inferior - cima - direita -->
+														<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+															<tr height="33%" valign="left" align="left">
+																<td>
+																	<a href="https://genius.com/artists/Yung-buda" tile="Link para a pagina de Yung Buda" target="_blank">
+																		<img src="imagens/yung buda 3.jpeg" title="Yung Buda" width="80%" height="100%">
+																	</a>
+																</td>
+															</tr>
+
+															<tr height="34%" valign="right" align="right">
+																<td>
+																	<a href="https://genius.com/artists/Renato-russo" tile="Link para a pagina de Renato Russo" target="_blank">
+																		<img src="imagens/renato russo2.jpg" title="Renato Russo" width="65%" height="100%">
+																	</a>
+																</td>
+															</tr>
+
+															<tr height="33%" valign="left" align="left">
+																<td>
+																	<a href="https://genius.com/artists/Tyler-the-creator" tile="Link para a pagina de Tyler, The Creator" target="_blank">
+																		<img src="imagens/tyler 3.jpg" title="Tyler, The Creator" width="80%" height="100%">
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+
+												<tr height="20%"> <!-- 11% do espaço do conteudo inferior - Titulo + pedaço de imagem -->
+													<td width="32%" align="center" valign="bottom">	<!-- Coluna do título -->
+														<h2>
+															O que eu escuto
+														</h2>
+													</td>
+
+													<td width="43%">	<!-- Coluna vazia -->
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+
+									<tr height="45%" align="center">	<!-- Linha do conteúdo inferior - baixo -->
+										<td>
+												<!-- Tabela do conteúdo inferior - baixo -->
+											<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+												<tr>
+													<td width="30%" align="center">
+														<p>
+															Bom, de tudo, literalmente. Não que eu conheça tudo, porém há muitas coisas as quais eu gosto de ouvir, desde Trap como 
+															<a href="https://genius.com/artists/Recayd-mob" tile="Link para a pagina de Recayd Mob" target="_blank">
+																			Recayd Mob</a>
+															a MPB como 
+															<a href="https://genius.com/artists/Chico-buarque" tile="Link para a pagina de Chico Buarque" target="_blank">
+																			Chico Buarque</a>
+															e rock como 
+															<a href="https://genius.com/artists/Black-sabbath" tile="Link para a pagina de Black Sabbath" target="_blank">
+																			Black Sabbath</a>
+														</p>
+													</td>
+
+													<td width="30%" align="center">
+														<a href="https://genius.com/artists/Recayd-mob" tile="Link para a pagina de Recayd Mob" target="_blank">
+															<img src="imagens/recayd mob.jpg" title="Recayd Mob" width="60%" height="80%">
+														</a>
+													</td>
+
+													<td width="20%">
+															<!-- Tabela do conteúdo inferior - bauxo - imagens -->
+														<table border="0" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+															<tr heigth="50%">
+																<td align="center">
+																	<a href="https://genius.com/artists/Chico-buarque" tile="Link para a pagina de Chico Buarque" target="_blank">
+																		<img src="imagens/chico buarque.jpg" title="Chico Buarque" width="65%" height="90%">
+																	</a>
+																</td>
+															</tr>
+
+															<tr heigth="50%">
+																<td align="center">
+																	<a href="https://genius.com/artists/Black-sabbath" tile="Link para a pagina de Black Sabbath" target="_blank">
+																		<img src="imagens/black sabbath 2.jpg" title="Black Sabbath" width="65%" height="90%">
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+
+													<td width="20%" align="center">
+														<p>
+															E sigo fazendo esse tipo de mistura como se fosse em culinária, experimentando coisas diferentes, com uma realçando a outra, com uma completando a outra, para que no fim seja uma experiência diferente e prazerosa toda vez que eu decidir escutar algo.
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>					
+				</td>
+			</tr>
+
+			<tr height="10%">	<!-- Linha do rodapé -->
+				<td align="center">
+					Feito por Meyrihen
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

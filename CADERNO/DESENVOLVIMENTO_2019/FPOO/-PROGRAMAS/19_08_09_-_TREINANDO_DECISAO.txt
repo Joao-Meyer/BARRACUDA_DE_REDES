@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+class Teste {
+
+	public static void main (String args []) {
+
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.println ("\nInforme o valor a ser pago\n");
+		double preco = recebe.nextDouble();
+
+		if (preco <= 75) {
+
+			System.out.println("\nEscolha uma opcao de pagamento, 1 - para dinheiro, 2 - para cartao e 3 - para glub glub\n");
+			int escolha = recebe.nextInt();
+
+			while (escolha != 1 && escolha != 2 && escolha != 3) {
+
+					System.out.println ("\nOpcao invalida, escolha uma opcao entre 1, 2 ou 3\n");
+					escolha = recebe.nextInt();
+
+			}
+
+			if (escolha == 1) {
+
+				double total = preco - (preco * 0.05);
+
+				System.out.printf("\nO total a ser pago e de %.2f reais\n", total);
+
+			}
+
+			else if (escolha == 2) {
+
+				double total = preco + (preco * 0.15);
+
+				System.out.printf("\nO total a ser pago e de %.2f reais\n", total);
+
+			}
+
+			else if (escolha == 3) {
+
+				System.out.println ("\nBoa noite!\n");
+
+			}
+
+		}
+
+		else {
+
+			System.out.println("\nEscolha uma opcao de pagamento, 1 - para dinheiro e 2 - para cartao\n");
+			int escolha = recebe.nextInt();
+
+			while (escolha != 1 && escolha != 2) {
+
+					System.out.println ("\nOpcao invalida, escolha uma opcao entre 1 ou 2\n");
+					escolha = recebe.nextInt();
+
+			}
+
+			if (escolha == 1) {
+
+				double total = preco - (preco * 0.05);
+
+				System.out.printf("\nO total a ser pago e de %.2f reais\n", total);
+
+			}
+
+			else if (escolha == 2) {
+
+				double total = preco + (preco * 0.15);
+
+				System.out.printf("\nO total a ser pago e de %.2f reais\n", total);
+
+			}
+
+		}
+
+	}
+
+}

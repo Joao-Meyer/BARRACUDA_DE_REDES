@@ -1,0 +1,49 @@
+// Programa para teste de metodos
+
+import java.util.Scanner;
+
+public class Moldura2 {
+	public static void main (String args[]) {
+		Scanner recebe = new Scanner(System.in);
+		
+		System.out.println("\nEscreva uma frase: ");
+		String texto = recebe.nextLine();
+		
+		System.out.println("\nEscolha uma moldura: ");
+		String moldura = recebe.nextLine();
+		
+		char op = moldura.charAt(0);
+		
+		char caracter = op;
+				
+		moldura(texto, caracter);
+	}
+	
+	// Metodo que cria a moldura
+	
+	public static void moldura (String frase, char caracter){		
+		String linha = barra(frase.length(), caracter);
+
+		System.out.println();
+		
+		System.out.println(linha);
+		
+		System.out.println(caracter + " " + frase + " " + caracter);
+		
+		System.out.println(linha);
+		
+		System.out.println();
+	}
+	
+	// Metodo que cria uma barra para moldura de uma frase
+	
+	public static String barra (int tamanho, char caracter) {
+		String barra = "";
+		
+		for (int i = 0; i < (tamanho + 4); i++) {
+			// System.out.println(caracter);
+			barra += caracter;
+		}
+		return barra;
+	}	
+}

@@ -1,0 +1,27 @@
+<!-- Arquivo de HTML que vai utilizar o CSS -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Aula 2 - CSS
+		</title>
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+
+	<body>
+
+		<h1 class="titulo">
+			Titulo 01
+		</h1>
+
+
+		<p class="texto">
+			Lorem ipsum <span class="destaque">dolor</span> sit amet, consectetur adipiscing <strong>elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum posuere urna. Quam vulputate dignissim suspendisse in. Faucibus turpis in eu mi bibendum neque egestas. Volutpat est velit egestas dui id ornare arcu <span class="destaque">odio</span>. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Eu turpis egestas pretium aenean pharetra. Aliquet enim <span class="destaque_ingles">tortor</span> at auctor urna nunc id cursus metus. Ante metus dictum at tempor commodo. Purus sit amet volutpat consequat mauris nunc. Vestibulum sed arcu non odio euismod lacinia. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Sit amet mauris commodo quis.
+		</p>
+	</body>
+</html>

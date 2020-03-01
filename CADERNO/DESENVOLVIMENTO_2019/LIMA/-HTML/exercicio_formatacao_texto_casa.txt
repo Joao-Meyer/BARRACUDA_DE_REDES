@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			G-OST
+		</title>
+	</head>
+	
+	<body>
+		<h1>
+			<font color="red">
+				<p align="center">
+					Exercício de formatação de textos em HTML
+				</p>
+			</font>
+		</h1>
+		<p align="justify">
+			Lorem ipsum accumsan hac ac et orci fermentum feugiat odio, habitasse rhoncus suspendisse lectus taciti tellus vulputate nibh nostra, aenean sollicitudin eget netus ipsum volutpat risus vivamus. aliquam libero phasellus vitae sollicitudin vulputate augue volutpat luctus 
+		</p>
+		<p align="center">
+			class litora sapien pellentesque hendrerit fermentum vitae curabitur eros ornare, elit per ipsum cubilia class scelerisque luctus netus dictum, habitasse volutpat senectus elementum tempus pharetra per rutrum. 
+		</p>
+		<h2>
+			<p align="center">
+				<b>
+					SUBTITULO EM NEGRITO
+				</b>
+			</p>
+		</h2>
+		<p align="justify">
+			Imperdiet potenti 
+				<u>
+					<b>semper</b>
+				</u>
+				aliquam malesuada suscipit nunc consequat, et pellentesque suspendisse feugiat mollis pulvinar donec, 
+				<u>
+					<i>
+						enim
+					</i>
+				</u>
+				varius purus curabitur quisque tristique. himenaeos magna suscipit hendrerit augue cubilia ornare condimentum mauris
+		</p>
+		<h2>
+			<font face="Algerian">
+				<p align="center">
+					SUBTITULO EM OUTRA FONTE
+				</p>
+			</font>
+		</h2>
+		<p align="left">
+			Fórmula matemática x=(2+3)
+				<sup>
+					5
+				</sup>
+				<br>
+			Fórmula 3 cm
+				<sup>
+					3
+				</sup>
+			contendo CO
+				<sub>
+					2
+				</sub>
+		</p>
+	</body>
+</html>

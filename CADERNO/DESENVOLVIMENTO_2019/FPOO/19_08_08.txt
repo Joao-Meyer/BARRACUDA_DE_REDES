@@ -1,0 +1,32 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Programando em Java:
+
+//todo programa em Java começa com uma classe
+//obrigatoriamente todas as classes começam com letra maiúscula (no caso o T de Teste)
+//Java é case sensitive ( A != a )
+
+
+class Teste{
+
+//"String" é escrito com "S" maiúsculo e é necessário colocar o "[]" (colchetes/brackets) após a palavra "String" //ou "args"
+
+	public static void main (String[] args){
+
+				
+
+	}
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Vamos começar a programar e os arquivos de programas serão armazenados na "pasta" "PROGS", na raiz do computador do SENAI, na pasta "PROGRAMAS" na pasta pessoal dentro da matéria de FPOO e na subpasta "PROGRAMAS" detroi da matéria de FPOO no caderno do DONTPAD
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SALVANDO O ARQUIVO
+
+Para que o programa seja salvo corretamente é necessário que o nome do arquivo seja o mesmo da classe, no caso, como utilizamos o bloco de notas são necessários alguns cuidados a mais.
+
+A classe do programa é "Teste", então salvei como "Teste.java", além disso, foi necessário mudar a extensão do arquivo para todos e colocar o nome do arquivo ente aspas para que o bloco de notas preservasse a extensão ".java" do arquivo.

@@ -1,0 +1,72 @@
+ <html>
+	<head>
+		<title>
+			G-OST
+		</title>
+	</head>
+	<body>
+		<!--
+			<meta charset="utf-8"> - Corrige o padrão de acentuação (PT-BR) para o navegador
+			
+			<h1> ... <h6> - servem para colocar títulos no site (h1 sendo o título principal, h2 subtítulo e etc...)
+			
+			<font	face=" " - Altera o tipo da letra
+					
+					size=" " - Altera o tamanho da letra
+					
+					color=" " - Altera a cor da letra
+			
+			Color piker: site para achar as cores
+		
+			<center> - centraliza o conteúdo
+			
+		-->
+		<h1>
+			Exercício de HTML
+		</h1>
+		<h2>
+			Batata
+		</h2>
+		<h3>
+			Espeto
+		</h3>
+		<h4>
+			Fica cada vez menor
+		</h4>
+		<!--
+			<p> - serve para colocar um parágrafo com texto
+			
+			<p align =	"left"
+						"center"
+						"right"
+						"justify"
+			<b> - Negrito para qualquer palavra não relevante
+			
+			<strong> - Negrito para palavras relevantes para o buscador
+			
+			<i> - Italico
+			
+			<u> - Sublinhado
+			
+			<small> - Realça a letra em tamanho pequeno
+			
+			<big> - Realça a letra em tamanho maior
+			
+			<del> - Risca uma palavra
+			
+			<sup> - Coloca o texto elevado ao lado do outro
+			Ex: 2 elevado a 3
+			
+			<sub> - Coloca o texto abaixo ao lado do outro
+			Ex: Formula do H2O
+			
+			<br> - Quebra de linha (como um enter) (não precisa ser fechado)
+		-->
+		<h5>
+			Concordo
+		</h5>
+		<h6>
+			Tens razão
+		</h6>
+	</body>
+ </html>

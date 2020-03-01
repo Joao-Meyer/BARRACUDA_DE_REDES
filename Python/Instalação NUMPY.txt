@@ -1,0 +1,41 @@
+### Instalando no Debian Linux
+
+Python 2x:
+apt-get install python-numpy
+
+Python 3x:
+# apt-get install python3-numpy
+
+
+
+### Usando Matrizes
+
+https://panda.ime.usp.br/algoritmos/static/algoritmos/09-arrays.html
+
+
+
+### Calculando determinate de uma matriz
+
+You can use numpy.linalg.det to compute the determinant of an array:
+
+>>> import numpy
+>>> M = [[1, 2], [3, 4]]
+
+>>> print numpy.linalg.det(M)
+
+>>> -2
+
+
+
+### Links a ver
+
+https://panda.ime.usp.br/algoritmos/static/algoritmos/09-arrays.html
+
+http://pythonize.org/tutorial-basico-numpy.html
+
+http://www.estruturas.ufpr.br/disciplinas/pos-graduacao/introducao-a-computacao-cientifica-com-python/introducao-python/2-1-o-objeto-array-do-numpy/
+
+
+### TRABALHANDO COM ARQUIVOS
+
+https://panda.ime.usp.br/pensepy/static/pensepy/10-Arquivos/files.html

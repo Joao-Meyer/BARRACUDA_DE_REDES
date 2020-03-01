@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Aula de PHP </title>
+        
+        <style>
+            .destaque {
+                font-weight: bold;
+                color: #facada;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <form name="frm_Exercicio1" method="get" action="exercicio1.php">
+            Digite seu nome: 
+            <input type="text" name="txt_Nome">
+            
+            <input type="submit" name="btn_Enviar" value="Enviar">
+        </form>
+        
+        <?php
+            //$_GET permite retirar no GET o conteúdo de uma variável
+            $nome = $_GET['txt_Nome'];
+        
+            // Comentários do HTML não funcionam dentro do PHP
+            # As alternativas são o "//" e o "#"
+            /* Comentários em blocos são feitos com "/*" */
+        
+            // O "echo" é utilizado para exibir mensagens na tela.
+            echo("O 'echo' é utilizado para exibir mensagens na tela.<br>");
+        
+            # Também pode ser utilizado, para exibir mensagens na tela, o "print".
+            print('Também pode ser utilizado, para exibir mensagens na tela, o "print".<br>');
+            
+            /* Ou então utilizar o "print_r". */
+            print_r('Ou então utilizar o "print_r".<br>');
+        
+            echo("Bem vindo <span class='destaque'>" . $nome . "</span>!<br>"); 
+        ?>
+    </body>
+</html>

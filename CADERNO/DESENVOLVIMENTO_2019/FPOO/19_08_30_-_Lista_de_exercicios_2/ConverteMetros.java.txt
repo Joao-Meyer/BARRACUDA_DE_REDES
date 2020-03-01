@@ -1,0 +1,21 @@
+// Programa que converte uma distância em metros para km, hm, dam, dm, cm e mm
+
+import java.util.Scanner;
+
+class ConverteMetros{
+	public static void main(String args[]){
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.print("\nInsira uma distancia em metros: ");
+		double metros = recebe.nextDouble();
+
+		double km=metros / 1000;
+		double hm=metros / 100;
+		double dam=metros / 10;
+		double dm=metros * 10;
+		double cm=metros * 100;
+		double mm=metros * 1000;
+
+		System.out.printf("\n%.2f metros correspondem a %.2f Km, %.2f Hm, %.2f Dam, %.2f dm, %.2f cm e %.2f mm\n\n", metros, km, hm, dam, dm, cm, mm);
+	}
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Menu lista vertical </title>
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        <ul id="menu">
+            <li class="menuItem formatItens">
+                Menu 1
+                
+                <ul class="submenu">
+                    <li class="submenuItem formatItens"> Submenu 1 </li>
+                    
+                    <li class="submenuItem formatItens"> Submenu 2 </li>
+                    
+                    <li class="submenuItem formatItens"> Submenu 3 </li>
+                    
+                    <li class="submenuItem formatItens"> Submenu 4 </li>
+                </ul>
+            </li>
+            
+            <li class="menuItem formatItens">
+                Menu 2
+                
+                <ul class="submenu">
+                    <li class="submenuItem formatItens"> Submenu 1 </li>
+                    
+                    <li class="submenuItem formatItens"> Submenu 2 </li>
+                </ul>
+            </li>
+            
+            <li class="menuItem formatItens"> Menu 3 </li>
+            
+            <li class="menuItem formatItens"> Menu 4 </li>
+        </ul>
+    </body>
+</html>

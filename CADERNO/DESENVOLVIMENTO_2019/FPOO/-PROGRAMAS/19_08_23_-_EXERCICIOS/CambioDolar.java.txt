@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class CambioDolar {
+  public static void main(String args[]) {
+    Scanner recebe = new Scanner (System.in);
+
+    double valorEmReal;
+    double valorEmDolar;
+    double cotacaoDolar;
+
+    System.out.print("\nInsira o valor em Dolares: ");
+    valorEmDolar = recebe.nextDouble();
+    System.out.print("\n\nInsira o valor da cotacao do Dolar: ");
+    cotacaoDolar = recebe.nextDouble();
+
+    valorEmReal = valorEmDolar * cotacaoDolar;
+
+    System.out.printf("\n\nU$%.2f, com a cotacao do dolar em R$%.2f, equivale a R$%.2f\n", valorEmDolar, cotacaoDolar, valorEmReal);
+  }
+}

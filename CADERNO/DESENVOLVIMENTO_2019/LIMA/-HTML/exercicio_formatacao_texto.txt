@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			G-OST
+		</title>
+	</head>
+	
+	<body>
+		<h1>
+			<font color="red">
+				<p align="center">
+					Exercício de formatação de textos em HTML
+				</p>
+			</font>
+		</h1>
+		<h2>
+			
+		</h2>
+	</body>
+</html>

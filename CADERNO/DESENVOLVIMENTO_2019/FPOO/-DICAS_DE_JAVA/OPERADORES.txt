@@ -1,0 +1,12 @@
++ soma			/ divisão
+- subtração		% módulo
+* multiplicação		= atribuição
+
+concatenação  juntar palavras com numeros
+
+printf ("%3d", 7); // vai imprimir _ _ 7
+
+printf ("%03d", 7); // vai imprimir 0 0 7
+
+int a = 12
+printf ("%o", a); // vai imprimir 14 pois o "o" faz com que seja imprimido em "octal"

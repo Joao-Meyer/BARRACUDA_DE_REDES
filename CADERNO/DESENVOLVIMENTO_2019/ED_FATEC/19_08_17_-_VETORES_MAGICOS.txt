@@ -1,0 +1,72 @@
+Procurar aprender classes e métodos em Java
+
+import java.util.Scanner
+
+class VetorMagico {
+	public void static main (String args[]){
+		int tamanhoAtual;
+		int ocupacaoAtual;
+		int * vetor;
+	}
+}
+
+Tentar reproduzir:
+
+# include <stdio.h>
+# include <stdlib.h>
+
+typedef struct {
+	int tamanho_atual;
+	int posicao_atual;
+	int * vetor;
+} vetor_magico;
+
+-------------------------- Versão do Renan que muito provavelmente está errada -----------------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int tamanho_atual;
+    int ocupacao_atual;
+    int *v;
+} vetor_magico;
+
+/*void cria_vm(vetor_magico * vm, int t){
+    vm->v = (int *) malloc (t * sizeof(int));
+    vm->tamanho_atual = t;
+    vm->ocupacao_atual = 0;
+}
+*/
+vetor_magico * cria_vm(int t){
+    vetor_magico *vm;
+    vm = (vetor_magico *) malloc(sizeof(vetor_magico));
+    if(vm != NULL){
+        vm->v = (int*) malloc (t * sizeof(int));
+        if(vm->v == NULL)
+            return NULL;
+        vm->ocupacao_atual = 0;
+        vm->tamanho_atual = t;
+    }
+    return vm;
+}
+
+int main (){
+    int t;
+    vetor_magico vm;
+    printf("informe o tamanho inicial do vetor: ");
+    scanf("%d", &t);
+
+    vm = cria_vm(t);
+    if (vm != NULL){
+        printf("estrutura alocada com sucesso!!!);
+    }
+    else{
+        printf("falha na alocacao de memoria");
+    }
+
+}
+
+--------------------------------------------------- FIM -------------------------------------------------------------
+
+int esta_cheio (vetor_magico) {

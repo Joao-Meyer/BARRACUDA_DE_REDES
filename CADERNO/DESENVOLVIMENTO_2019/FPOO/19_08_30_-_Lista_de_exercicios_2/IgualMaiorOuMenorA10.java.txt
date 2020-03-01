@@ -1,0 +1,22 @@
+//Programa que verifica se um numero é maior, menor ou igual a 10
+
+import java.util.Scanner;
+
+class IgualMaiorOuMenorA10 {
+	public static void main (String args[]){
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.print("Insira um numero: ");
+		double numero = recebe.nextDouble();
+
+		if (numero ==10){
+			System.out.print("\nE igual a 10\n\n");
+		}
+		else if (numero > 10){
+			System.out.printf("\n%.2f e maior que 10\n\n", numero);
+		}
+		else {
+			System.out.printf("\n%.2f e menor que 10\n\n", numero);
+		}
+	}
+}

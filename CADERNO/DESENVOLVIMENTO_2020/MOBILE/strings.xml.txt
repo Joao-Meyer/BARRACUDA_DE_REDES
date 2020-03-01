@@ -1,0 +1,3 @@
+<resources>
+    <string name="app_name">My IMC Calc. By João</string>
+</resources>

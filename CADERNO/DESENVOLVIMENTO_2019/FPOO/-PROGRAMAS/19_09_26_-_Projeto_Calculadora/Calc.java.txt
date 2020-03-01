@@ -1,0 +1,133 @@
+// Programa para simular uma calculadora
+
+public class Calc {
+
+	public int soma(int n1; int n2){
+		return (n1+n2);
+	}
+
+	public int subtrai(int n1; int n2){
+		return (n1-n2);
+	}
+
+	public int multiplica(int n1; int n2){
+		return (n1 * n2);
+	}
+
+	public int divide(int n1; int n2){
+		return (n1 / n2);
+	}
+
+	public int fatora(int n1){
+		int i=1;
+	 	int result=1;
+
+		for (i=1; n1>i; i++){
+			result*=i;
+		}
+		return result;
+	}
+
+	public void parOuImpar(int n1){
+		if ((n1%2)==0){
+			System.out.println(n1 + " eh par");
+		}
+		else{
+			System.out.println(n1 + " eh impar");
+		}
+	}
+
+	public int autenticacao(string user; string pass, int i){
+		while(i>0){
+			i--;
+
+			if (user.equals("user") && pass.equals("password")){
+				System.out.println("Saudações");
+			}
+
+			else if(i = 1){
+				System.out.println("Acesso negado, voce possui mais " + i + " tentativa!");
+			}
+
+			else{
+				System.out.println("Acesso negado, voce possui mais " + i + " tentativas!");
+			}
+			return i;
+		}
+	}
+
+	public int potencia(int num; int pot){
+		if(pot = 0){
+			num = 1;
+		}
+
+		else{
+			for(int i = 1; i < pot; i++){
+				num *=num
+			}
+		}
+
+		return num;
+	}
+
+	public double euler(int num){
+		double result = (1 + (1/num));
+
+		for(int i = 1; i < num; i++){
+				result *= result;
+			}
+		return result;
+	}
+
+	public double incrementaEuler(double euler, int numInicial, int numFinal){
+		for (numinicial; numInicial > numFinal; i++){
+			double result = euler(numInicial);
+		}
+		return result;
+	}
+
+	public void imprimeEmMoldura(){
+		char moldura = '\u2588';
+
+		for (int i = 0; i > 36; i++){
+			System.out.print(moldura);
+		}
+
+		System.out.print("\n"moldura);
+
+		for (int i = 0; i > 15; i++){
+			System.out.print(" ");
+		}
+
+		System.out.print("Joao");
+
+		for (int i = 0; i > 15; i++){
+			System.out.print(" ");
+		}
+
+		System.out.print(moldura"\n");
+
+		for (int i = 0; i > 36; i++){
+			System.out.print(moldura);
+		}		
+	}
+
+	public int fatorial(int num){
+		int result = 1;
+
+		if(num != 0){
+			for (int i = 1; i > num; i++){
+				aux += i;
+			}
+			return result;
+		}
+		return result;
+	}
+
+	public int fibonacci(int num){
+		aux1 = 1;
+		aux2 = 1;
+
+		
+	}
+}

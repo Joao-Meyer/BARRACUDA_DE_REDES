@@ -1,0 +1,45 @@
+--------------------------------------------------------
+
+metodo maximumValue
+
+metodo MaximumFinder
+
+--------------------------------------------------------
+
+int a=5, b=7;
+
+System.out.printl ("a+b=" +a +b);	// isto vai exibir: a+b=57
+
+-------------------------------------------------------
+
+metodo Random // randomiza assim como o rand em c
+
+-------------------------------------------------------
+
+Trabalhar com CONSTANTES como opções são melhores que numeros
+
+------------------------------------------------------
+
+	----- SOBRECARGAS------
+
+----POR TIPO
+int soma (int, int)
+float soma (float, float)
+
+----POR NUMERO DE PARAMETROS
+int soma (int, int)
+int soma (int, int, int)
+
+----ORDEM
+float soma (int, float)
+float soma (float, int)
+
+-------------------------------------------------------
+
+"Ninguém produz com horário"
+"Se você aceita ser tratado como um lixo, você é um lixo"
+
+------------------------------------------------------
+
+	------- VETOR EM JAVA -------
+int array[] = {32, 27, .., 37}

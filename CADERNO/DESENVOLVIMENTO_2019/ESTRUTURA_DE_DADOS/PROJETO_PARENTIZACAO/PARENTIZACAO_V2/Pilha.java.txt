@@ -1,0 +1,23 @@
+// Segunda versao de um programa para criar e manipular uma pilha
+
+import java.util.Scanner;
+
+public class Pilha{
+  public char pilha[];
+  public int tamanhoAtual;
+  public int capacidade;
+
+  public void criaPilha(String expressao){
+    capacidade = expressao.length();
+    pilha = new char[capacidade];
+    tamanhoAtual = 0;
+  }
+
+  public int getCapacidade(){
+    return capacidade;
+  }
+
+  public int getTamanhoAtual(){
+    return tamanhoAtual;
+  }
+}

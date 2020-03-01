@@ -1,0 +1,19 @@
+// Programa que verifica se uj numero é par ou impar
+
+import java.util.Scanner;
+
+class ParOuImpar {
+	public static void main(String args[]){
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.print("\nInsira o numero: ");
+		int numero = recebe.nextInt();
+
+		if ((numero % 2)==1){
+			System.out.printf("\n%d eh impar\n\n", numero);
+		}
+		else{
+			System.out.printf("\n%d eh par\n\n", numero);
+		}
+	}
+}

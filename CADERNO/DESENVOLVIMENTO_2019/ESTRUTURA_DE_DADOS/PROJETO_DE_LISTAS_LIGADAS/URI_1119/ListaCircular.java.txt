@@ -1,0 +1,73 @@
+class ListaCircular {
+
+    int tamanho = 0;
+    No primeiro;
+    No ultimo;
+
+    public boolean isEmpty() {
+        return tamanho == 0;
+    }
+
+    public No getPrimeiroNo() {
+        return primeiro;
+    }
+
+    public No getUltimoNo() {
+        return ultimo;
+    }
+
+    public void add(int valor) {
+        if (ultimo == null) {
+            ultimo = new No(valor);
+            primeiro = ultimo;
+            ultimo.proximo = primeiro;
+            ultimo.anterior = primeiro;
+        } else {
+            No novo = new No(valor);
+            novo.anterior = ultimo;
+            novo.proximo = primeiro;
+
+            ultimo.proximo = novo;
+            primeiro.anterior = novo;
+            ultimo = novo;
+        }
+        tamanho++;
+    }
+
+    public void remove(int index) {
+        if (index < 0) {
+            throw new IllegalArgumentException("Index inválido!");
+        }
+        if (tamanho == 0) {
+            return;
+        }
+        No no = primeiro;
+        No anterior = no;
+        for (int i = 1; i <= index; i++) {
+            anterior = no;
+            no = no.proximo;
+        }
+        anterior.proximo = no.proximo;
+        tamanho--;
+    }
+
+    public int get(int index) {
+        if (index < 0) {
+            throw new IllegalArgumentException("Index inválido!");
+        }
+        if (tamanho == 0) {
+            throw new IllegalStateException("Lista vazia!");
+        }
+        No no = primeiro;
+        for (int i = 1; i <= index; i++) {
+            no = no.proximo;
+        }
+        return no.valor;
+    }
+
+    public void clear() {
+        primeiro = null;
+        ultimo = null;
+        tamanho = 0;
+    }
+}

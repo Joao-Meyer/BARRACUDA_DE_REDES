@@ -1,0 +1,21 @@
+//Programa para calcular o perimetro da circunferencia
+
+import java.util.Scanner;
+
+class PerimetroDaCircunferencia {
+
+  public static void main (String args []) {
+
+    Scanner recebe = new Scanner (System.in);
+
+    double raio;
+    double perimetroDaCircunferencia;
+
+    System.out.println ("\nDigite o raio da circunferencia");
+    raio = recebe.nextDouble();
+
+    perimetroDaCircunferencia = raio * 3.14 * 2;
+
+    System.out.printf ("O perimetro de uma circunferencia de raio %.2f e %.2f", raio, perimetroDaCircunferencia);
+  }
+}

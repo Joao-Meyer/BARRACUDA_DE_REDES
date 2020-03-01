@@ -1,0 +1,68 @@
+package br.senai.sp.jandira.imc
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Instanciando as classes referentes aos componentes(View) da activity.
+        val editTextNome = findViewById<EditText>(R.id.edit_text_nome)
+        val editTextPeso = findViewById<EditText>(R.id.edit_text_peso)
+        val editTextAltura = findViewById<EditText>(R.id.edit_text_altura)
+        val buttonCalcular = findViewById<Button>(R.id.button_calcular)
+        val textViewResultado = findViewById<TextView>(R.id.text_view_resultado)
+
+        // Declarar variáveis que receberão os valores dos editTexts
+        var peso: Double
+        var altura: Double
+        var imc: Double
+        var mensagem: String
+        var nome: String
+
+        buttonCalcular.setOnClickListener {
+            // Recupera os valores digitados e atribui às variáveis.
+            peso = editTextPeso.text.toString().toDouble()
+            altura = editTextAltura.text.toString().toDouble()
+            nome = editTextNome.text.toString()
+
+            // Calcular o valor do IMC
+            imc = peso / (altura * altura)
+
+            // Determinar a situação do usuário.
+            if(imc < 18.6){
+                mensagem = nome + " seu IMC é " + imc + ". Você está abaixo do peso, cuidado."
+            }
+
+            else if(imc < 25){
+                mensagem = nome + " seu IMC é " + imc + ". Você está no peso ideal, parabéns."
+            }
+
+            else if(imc < 30){
+                mensagem = nome + " seu IMC é " + imc + ". Você está acima do peso, atenção."
+            }
+
+            else if(imc < 35){
+                mensagem = nome + " seu IMC é " + imc + ". Você está com obesidade I, cuidado."
+            }
+
+            else if(imc < 40){
+                mensagem = nome + " seu IMC é " + imc + ". Você está com obesidade II, cuidado."
+            }
+
+            else{
+                mensagem = nome + " seu IMC é " + imc + ". Você está com obesidade III, risco de morte."
+            }
+
+            // Exibir o resultado para o usuário.
+            textViewResultado.text = mensagem
+        }
+    }
+}

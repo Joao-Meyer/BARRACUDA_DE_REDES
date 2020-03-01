@@ -1,0 +1,204 @@
+<?php
+// Declaração de variáveis.
+    /*Declaração de variáveis com o tipo de dados.
+        Tipos de dados no PHP.
+            int ou integer - Números inteiros.
+            float - Números reais.
+            double - Números reais, com uma maior capacidade de armazenamento de dados.
+            string - Caracteres, texto de modo geral.
+            boolean/bool - Verdadeiro ou falso.
+            array - Matriz de dados.
+            object - Objeto.
+            
+            gettype() - Retorna o tipo de dado atribuido a uma variável.
+                echo(gettype($valor1));
+            settype() - Muda o tipo de dado de uma variável.
+                settype($valor1, "float");
+                
+            var_dump() - Retorna toda a estrutura de dados de um elemento.
+    */
+
+    
+    $valor1 = (float) 0;
+    $valor2 = (float) 0;
+    $resultado = (double) 0;
+    $operacao = (string) null;
+
+
+    // Verifica se o formulário foi submetido pelo botão.
+    if(isset($_POST['btnCalcular'])){
+
+        // Recebendo os dados enviados pelo formulário.
+        $valor1 = $_POST['txtValor1'];
+        $valor2 = $_POST['txtValor2'];
+        $operacao = strtolower($_POST['btnOperacao']);
+
+        // Convertendo as variáveis que viraram string para float.
+        settype($valor1, "float");
+        settype($valor2, "float");
+
+        // Processamento dos cálculos.
+        switch($operacao){
+            case "somar":
+                $resultado = $valor1 + $valor2;
+                break;
+
+            case "subtrair":
+                $resultado = $valor1 - $valor2;
+                break;
+
+            case "multiplicar":
+                $resultado = $valor1 * $valor2;
+                break;
+
+            case "dividir":
+                $resultado = $valor1 / $valor2;
+                break;
+        }
+    }
+?>
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Calculadora</title>
+        
+        <meta charset="utf-8">
+        
+        <style>
+            h1, p {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            #containerCalculadora {
+                width: 700px;
+                height: 500px;
+                border: solid 1px black;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            #containerTitulo {
+                width: 700px;
+                height: 100px;
+                background-color: #facada;
+                text-align: center;
+                padding-top: 35px;
+                box-sizing: border-box;
+            }
+            
+            #containerCorpoDaCalculadora {
+                width: 100%;
+                height: 400px;
+            }
+            
+            #containerValores {
+                width: 100%;
+                height: 150px;
+                padding-top: 25px;
+                box-sizing: border-box;
+            }
+            
+            .containerValor {
+                width: 300px;
+                height: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                padding-top: 15px;
+                box-sizing: border-box;
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            
+            #containerCalculoResultado {
+                width: 100%;
+                height: 250px;
+            }
+            
+            #containerCalculo {
+                width: 350px;
+                height: 250px;
+                float: left;
+            }
+            
+            .containerOperacao, .containerBotao {
+                width: 350px;
+                height: 50px;
+                padding-top: 10px;
+                padding-left: 10px;
+                box-sizing: border-box;
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            
+            #containerResultado {
+                width: 350px;
+                height: 250px;
+                float: left;
+                text-align: center;
+                font-size: 40px;
+                padding-top: 100px;
+                box-sizing: border-box;
+                background-color: skyblue;
+            }
+            
+            .entradaDeTexto {
+                height: 26px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="containerCalculadora" >
+            <div id="containerTitulo">
+                <h1>Calculadora Simples</h1>
+            </div>
+            
+            <div id="containerCorpoDaCalculadora">
+                <form name="frmCalculadora" action="index.php" method="post">
+                    <div id="containerValores">
+                        <div class="containerValor">
+                            Valor 1: <input class="entradaDeTexto" type="text" name="txtValor1" value="<?=$valor1?>">
+                        </div>
+                        
+                        <div class="containerValor">
+                            Valor 2: <input type="text" name="txtValor2" value="<?=$valor1?>">
+                        </div>
+                    </div>
+                    
+                    <div id="containerCalculoResultado">
+                        <div id="containerCalculo">
+                            <div class="containerOperacao">
+                                <input type="radio" name="btnOperacao" value="somar"> Somar
+                            </div>
+                            
+                            <div class="containerOperacao">
+                                <input type="radio" name="btnOperacao" value="subtrair"> Subtrair
+                            </div>
+                            
+                            <div class="containerOperacao">
+                                <input type="radio" name="btnOperacao" value="multiplicar"> Multiplicar
+                            </div>
+                            
+                            <div class="containerOperacao">
+                                <input type="radio" name="btnOperacao" value="dividir"> Dividir
+                            </div>
+                            
+                            <div class="containerBotao">
+                                <input type="submit" name="btnCalcular" value="Calcular">
+                            </div>
+                        </div>
+                        
+                        <div id="containerResultado">
+                            <?=$resultado?>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+//Programa que converte a idade
+
+import java.util.Scanner;
+
+class ConverteIdade {
+
+  public static void main (String args []) {
+
+    Scanner recebe = new Scanner (System.in);
+
+    int idadeAnos;
+    int idadeMeses;
+    int idadeDias;
+    int idadeHoras;
+    int idadeMinutos;
+    int idadeSegundos;
+
+    int opcao;
+
+    System.out.println ("\nDigite o valor da idade em anos\n");
+    idadeAnos = recebe.nextInt();
+
+    idadeMeses = idadeAnos * 12;
+    idadeDias = ((idadeMeses / 2) * 30) + ((idadeMeses / 2) * 31);
+    idadeHoras = idadeDias * 24;
+    idadeMinutos = idadeHoras * 60;
+    idadeSegundos = idadeMinutos * 60;
+
+    System.out.println ("\nEscolha uma opcao para receber a idade:\n1-Em meses\n2-Em dias\n3-Em horas\n4-Em minutos\n5-Em segundos\n6-Todas as opcoes\n");
+    opcao = recebe.nextInt();
+
+    if (opcao == 1){
+      System.out.printf ("\n%d anos sao %d meses\n", idadeAnos, idadeMeses);
+    }
+    else if (opcao == 2){
+      System.out.printf ("\n%d anos sao %d dias\n", idadeAnos, idadeDias);
+    }
+    else if (opcao == 3){
+      System.out.printf ("\n%d anos sao %d horas\n", idadeAnos, idadeHoras);
+    }
+    else if (opcao == 4){
+      System.out.printf ("\n%d anos sao %d minutos\n", idadeAnos, idadeMinutos);
+    }
+    else if (opcao == 5){
+      System.out.printf ("\n%d anos sao %d segundos\n", idadeAnos, idadeSegundos);
+    }
+    else if (opcao == 6){
+      System.out.printf ("\n%d anos equivalem a %d em meses, %d em dias, %d em horas, %d em minutos e %d em segundos\n", idadeAnos, idadeMeses, idadeDias, idadeHoras, idadeMinutos, idadeSegundos);
+    }
+  }
+
+}

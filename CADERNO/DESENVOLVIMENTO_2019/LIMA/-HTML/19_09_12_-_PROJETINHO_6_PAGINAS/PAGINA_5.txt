@@ -1,0 +1,428 @@
+<!-- WIREFRAME DESTA PAGINA (E T C): https://wireframe.cc/JfqkvR -->
+
+<html>
+	<head>
+		<title> E T C </title>
+	</head>
+
+	<body bgcolor="black" text="white" link="white" vlink="#9af097">
+			<!-- Tabela que compõe a pagina como um todo -->
+		<table border="0" width="1000" height="1600" align="center" cellpadding="0" cellspacing="0">
+				<!-- Linha do cabeçalho -->
+			<tr height="20%">				
+				<td width="100%">
+						<!-- Tabela do cabeçalho -->
+					<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="80%">	<!-- Coluna do nome da pagina -->
+								<table border="0" width="75%" height="100%" align="right" cellpadding="0" cellspacing="0"> <!-- Tabela do nome da pagina -->
+									<tr height="50%" align="center" valign="bottom">	<!-- Linha do nome da pagina -->
+										<td>
+											<h1>
+												PLAYLISTS POR MEYRIHEN
+											</h1>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem da pagina -->
+										<td width="100%" height="100%">
+											<img src="imagens/onda quadrada verde.jpeg" width="50%" height="100%">
+										</td>
+									</tr>
+								</table>
+							</td>
+
+							<td width="20%">	<!-- Coluna das redes sociais -->
+								<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">	<!-- Tabela das redes sociais -->
+									<tr height="50%" align="center">	<!-- Linha da imagem de cima -->
+										<td>
+											<a href="https://www.facebook.com/" title="Link para o facebook" target="_blank">
+												<img src="imagens/facebook-logo.png" width="60%" height="60%">
+											</a>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem de baixo -->
+										<td>
+											<a href="https://www.instagram.com/?hl=pt-br" title="Link para o facebook" target="_blank">
+												<img src="imagens/instagram-logo.png" width="60%" height="60%">
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr height="70%">	<!-- Linha do conteúdo -->
+				<td width="100%">
+						<!-- Tabela do conteúdo -->	
+					<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+						<tr height="45%" align="center">	<!-- Linha do conteúdo superior -->
+							<td>
+									<!-- Tabela do conteúdo superior -->
+								<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="20%">	<!-- Coluna do menu -->
+											<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">	<!-- Tabela do menu -->
+												<tr height="10%" align="center">	<!-- Linha do "título" -->
+													<td>
+														Playlists
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina home -->
+													<td>
+														<a href="Pagina_Home.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															H O M E
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 1 -->
+													<td>
+														<a href="Pagina_1.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															P I S A D I N H A
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 2 -->
+													<td>
+														<a href="Pagina_2.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															!Querolisten
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 3 -->
+													<td>
+														<a href="Pagina_3.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															X R Y
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 4 -->
+													<td>
+														<a href="Pagina_4.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															F A T H E R
+														</a>
+													</td>
+												</tr>											
+											</table>
+										</td>
+											<!-- Coluna do conteúdo superior -->
+										<td width="80%">
+												<!-- Tabela do conteúdo superior -->
+											<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+													<!-- Linha do titulo -->
+												<tr height="20%" align="center">
+													<td width="100%" colspan="4">
+														<h3>
+															Outras Playlists
+														</h3>
+													</td>
+												</tr>
+
+													<!-- Linha das imagens -->
+												<tr height="40%" align="center">
+													<td width="25%">
+														<a href="https://open.spotify.com/user/h58dlllsxl4vpk4ril3iqlflk/playlist/5SZE5GbiIeHk08kilyaYj7?si=XcJ_8nNtQ76_8lJU975h_Q" tile="Link para a Playlist Brasileirinhas" target="_blank">
+															<img src="imagens/brasileirinhas.jpeg" title="Imagem da Playlist Brasileirinhas" width="90%" height="100%">
+														</a>
+													</td>
+
+													<td width="25%">
+														<a href="https://open.spotify.com/user/thebootlegboy/playlist/5QjgJ20xSbkyfDY2iPERtz?si=LRJrC0abTXSG2kM42o1X1A" tile="Link para a Playlist Japanese Lofi Hip-Hop" target="_blank">
+															<img src="imagens/lofi.jpeg" title="Imagem da Playlist Japanese Lofi Hip-Hop" width="90%" height="100%">
+														</a>
+													</td>
+
+													<td width="25%">
+														<a href="https://open.spotify.com/playlist/2vivknVOeJD7BUYnnuztrE?si=Zzdr57jHSBqQC5P9mIUuJg" tile="Link para a Playlist Death Metal" target="_blank">
+															<img src="imagens/death metal.jpeg" title="Imagem da Playlist Death Metal" width="90%" height="100%">
+														</a>
+													</td>
+
+													<td width="25%">
+														<a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/2t48FPwmGAHHmor43ulPST?si=hnT8akXlTsGIlHGnDVr83A" tile="Link para a Playlist T R A S H" target="_blank">
+															<img src="imagens/trash.jpeg" title="Imagem da Playlist T R A S H" width="90%" height="100%">
+														</a>
+													</td>
+												</tr>
+
+													<!-- Linha dos textos -->
+												<tr height="40%" align="center">
+													<td width="25%">
+														<p>
+															Playlist 
+															<a href="https://open.spotify.com/user/h58dlllsxl4vpk4ril3iqlflk/playlist/5SZE5GbiIeHk08kilyaYj7?si=XcJ_8nNtQ76_8lJU975h_Q" tile="Link para a Playlist Brasileirinhas" target="_blank">
+																Brasileirinhas</a>
+															, criada por Matheus de Castro Ferreira, recheada de músicas nacionais dos mais diversos gêneros, daquelas que tocam nas rádios frequêntes da casa de seus avós.
+														</p>
+													</td>
+
+													<td width="25%">
+														<p>
+															Playlist 
+															<a href="https://open.spotify.com/user/thebootlegboy/playlist/5QjgJ20xSbkyfDY2iPERtz?si=LRJrC0abTXSG2kM42o1X1A" tile="Link para a Playlist Japanese Lofi Hip-Hop" target="_blank">
+																Japanese Lofi Hip-Hop</a>
+															, criada por thebootlegboy, contém músicas do estilo Lofi com a temática japonesa e possui diversos artistas que eu até então desconhecia.
+														</p/>
+													</td>
+
+													<td width="25%">
+														<p>
+															Playlist 
+															<a href="https://open.spotify.com/playlist/2vivknVOeJD7BUYnnuztrE?si=Zzdr57jHSBqQC5P9mIUuJg" tile="Link para a Playlist Death Metal" target="_blank">
+																Death Metal</a>
+															, criada por 1264038079, contém músicas um pouco diferentes assim como o nome de seu criador e faz juz ao seu nome onde boa parte das letras eu não compreendo por serem gritos, porém são boas.
+														</p>
+													</td>
+
+													<td width="25%">
+														<p>
+															Playlist 
+															<a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/2t48FPwmGAHHmor43ulPST?si=hnT8akXlTsGIlHGnDVr83A" tile="Link para a Playlist T R A S H" target="_blank">
+																T R A S H</a>
+															, criada por Meyrihen (sim, eu de novo), se trata de uma playlist com albúns inteiros de certos artistas, além de ser, como sempre, um ótimo mix de sabores onde pode-se encontrar um pouco de tudo.
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+						<tr height="55%" align="center">	<!-- Linha do conteúdo inferior -->
+							<td>
+									<!-- Tabela do conteúdo inferior -->
+								<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+										<!-- Linha dos subtitulos -->
+									<tr height="10%" align="center">
+										<td width="25%">
+											Brasileirinhas
+										</td>
+
+										<td width="25%">
+											Japanese Lofi Hip-Hop
+										</td>
+
+										<td width="25%">
+											Death Metal
+										</td>
+
+										<td width="25%">
+											T R A S H
+										</td>
+									</tr>
+
+										<!-- Linha das imagens -->
+									<tr height="40%" align="center">
+											<!-- Coluna 1 das imagens -->
+										<td width="25%">
+												<!-- Tabela 1 das imagens -->
+											<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">										
+												<tr height="50%" align="center">
+														<!-- Coluna da imagem superior - esquerda -->
+													<td width="50%" valign="top">
+														<a href="https://genius.com/artists/Alceu-valenca" tile="Link para a pagina de Alceu Valença" target="_blank">
+															<img src="imagens/alceu valenca.jpg" title="Alceu Valença" width="90%" height="90%">
+														</a>
+													</td>
+
+														<!-- Coluna da imagem direita -->
+													<td width="50%" valign="middle" rowspan="2">
+														<a href="https://genius.com/artists/Alcione" tile="Link para a pagina de Alcione" target="_blank">
+															<img src="imagens/alcione.jpg" title="Alcione" width="90%" height="50%">
+														</a>
+													</td>
+												</tr>
+
+												<tr height="50%" align="center">
+														<!-- Coluna da imagem inferior - esquerda -->
+													<td width="50%" valign="bottom">
+														<a href="https://genius.com/artists/Belchior" tile="Link para a pagina de Belchior" target="_blank">
+															<img src="imagens/belchior.jpg" title="Belchior" width="70%" height="90%">
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+
+											<!-- Coluna 2 das imagens -->
+										<td width="25%">
+												<!-- Tabela 2 das imagens -->
+											<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">										
+												<tr height="50%" align="center">
+														<!-- Coluna da imagem superior - esquerda -->
+													<td width="50%" valign="top">
+														<a href="https://genius.com/albums/Redrose" tile="Link para a pagina de RedRose" target="_blank">							
+															<img src="imagens/tragic hero.jpg" title="Single Tragic Hero" width="90%" height="90%">							
+														</a>
+													</td>
+
+														<!-- Coluna da imagem direita -->
+													<td width="50%" valign="middle" rowspan="2">
+														<a href="https://genius.com/albums/Rude" tile="Link para a pagina de Rude" target="_blank">
+															<img src="imagens/eternal youth.jpg" title="Álbum Eternal Youth" width="90%" height="50%">
+														</a>
+													</td>
+												</tr>
+
+												<tr height="50%" align="center">
+														<!-- Coluna da imagem inferior - esquerda -->
+													<td width="50%" valign="bottom">
+														<a href="https://genius.com/albums/Elijah-nang" tile="Link para a pagina de Elijah Nang" target="_blank">
+															<img src="imagens/lost in japan ii.jpg" title="Álbum Lost In Japan II" width="90%" height="90%">
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+
+											<!-- Coluna 3 das imagens -->
+										<td width="25%">
+												<!-- Tabela 3 das imagens -->
+											<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">										
+												<tr height="50%" align="center">
+														<!-- Coluna da imagem superior - esquerda -->
+													<td width="50%" valign="top">
+														<a href="https://genius.com/albums/The-black-dahlia-murder/Ritual" tile="Link para a pagina de Ritual" target="_blank">
+															<img src="imagens/the black dahlia murder ritual.jpg" title="Álbum Ritual" width="90%" height="90%">
+														</a>
+													</td>
+
+														<!-- Coluna da imagem direita -->
+													<td width="50%" valign="middle" rowspan="2">
+														<a href="https://genius.com/albums/Lamb-of-god/Sacrament" tile="Link para a pagina de Sacrament" target="_blank">
+															<img src="imagens/lamb of god sacrament.jpg" title="Álbum Sacrament" width="90%" height="50%">
+														</a>
+													</td>
+												</tr>
+
+												<tr height="50%" align="center">
+														<!-- Coluna da imagem inferior - esquerda -->
+													<td width="50%" valign="bottom">
+														<a href="https://genius.com/albums/The-black-dahlia-murder/Nocturnal" tile="Link para a pagina de Nocturnal" target="_blank">
+															<img src="imagens/the black dahlia murder nocturnal.jpg" title="Álbum Nocturnal" width="90%" height="90%">
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+
+											<!-- Coluna 4 das imagens -->
+										<td width="25%">
+												<!-- Tabela 4 das imagens -->
+											<table border="0" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">										
+												<tr height="50%" align="center">
+														<!-- Coluna da imagem superior - esquerda -->
+													<td width="50%" valign="top">
+														<a href="https://genius.com/artists/Arctic-monkeys" tile="Link para a pagina de Arctic Monkeys" target="_blank">
+															<img src="imagens/arctic monkeys.png" title="Arctic Monkeys" width="90%" height="90%">
+														</a>
+													</td>
+
+														<!-- Coluna da imagem direita -->
+													<td width="50%" valign="middle" rowspan="2">
+														<a href="https://genius.com/artists/Alt-j" tile="Link para a pagina de Alt-j" target="_blank">
+															<img src="imagens/alt-j.jpg" title="Alt-j" width="90%" height="50%">
+														</a>
+													</td>
+												</tr>
+
+												<tr height="50%" align="center">
+														<!-- Coluna da imagem inferior - esquerda -->
+													<td width="50%" valign="bottom">
+														<a href="https://genius.com/artists/Bastille" tile="Link para a pagina de Bastille" target="_blank">
+															<img src="imagens/bastille.jpg" title="Bastille" width="90%" height="90%">
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+
+										<!-- Linha dos textos -->
+									<tr height="50%" align="center">
+										<td width="25%">
+											<p>
+												Alguns dos artistas que aparecem por aqui são 
+												<a href="https://genius.com/artists/Alceu-valenca" tile="Link para a pagina de Alceu Valença" target="_blank">
+													Alceu Valença</a>
+												,
+												<a href="https://genius.com/artists/Alcione" tile="Link para a pagina de Alcione" target="_blank">
+													Alcione</a>
+												e
+												<a href="https://genius.com/artists/Belchior" tile="Link para a pagina de Belchior" target="_blank">
+													Belchior</a>
+												, essas e outras estrelas compõem boa parte da MPB que é vista em peso nesta playlist. Todos fazem musica boa (pode perguntar para sua avó, ela vai concordar comigo) com diversos gêneros como o samba, forró, xote, xaxado, e MPB propriamente dita.
+											</p>
+										</td>
+
+										<td width="25%">
+											<p>
+												Alguns dos albuns que aparecem por aqui são 
+												<a href="https://genius.com/albums/Redrose" tile="Link para a pagina de RedRose" target="_blank">
+													Tragic Hero, do artista RedRose</a>
+												,
+												<a href="https://genius.com/albums/Rude" tile="Link para a pagina de Rude" target="_blank">
+													Eternal Youth, do artista Rude</a>
+												e
+												<a href="https://genius.com/albums/Elijah-nang" tile="Link para a pagina de Elijah Nang" target="_blank">
+													Lost In Japan II, do artista Elijah Nang</a>
+												, todas as músicas têm um ritmo calmo e arremetem ao Japão assim como é prometido com o nome da playlist, numa tentativa frustrada de achar algo que me ajudasse a dormir encontrei músicas muito boas e tranquilas, ideais para som de background.
+											</p>
+										</td>
+
+										<td width="25%">
+											<p>
+												Alguns dos albuns que aparecem por aqui são 
+												<a href="https://genius.com/albums/The-black-dahlia-murder/Ritual" tile="Link para a pagina de Ritual" target="_blank">
+													Ritual, da banda The Black Dahlia Murder</a>
+												,
+												<a href="https://genius.com/albums/Lamb-of-god/Sacrament" tile="Link para a pagina de Sacrament" target="_blank">
+													Sacrament, da banda Lamb of God</a>
+												e
+												<a href="https://genius.com/albums/The-black-dahlia-murder/Nocturnal" tile="Link para a pagina de Nocturnal" target="_blank">
+													Nocturnal, também da banda The Black Dahlia Murder</a>
+												, entre outros albuns e singles que são gritaria pura, ainda não sequer ousei procurar a letra das músicas mas algo me diz que seria algo como sangue, tripas e amor a entidades diversas, realmente cativante!
+											</p>
+										</td>
+
+										<td width="25%">
+											<p>
+												Algumas das bandas que aparecem por aqui são 
+												<a href="https://genius.com/artists/Arctic-monkeys" tile="Link para a pagina de Arctic Monkeys" target="_blank">
+													Arctic Monkeys</a>
+												,
+												<a href="https://genius.com/artists/Alt-j" tile="Link para a pagina de Alt-j" target="_blank">
+													Alt-j</a>
+												e
+												<a href="https://genius.com/artists/Bastille" tile="Link para a pagina de Bastille" target="_blank">
+													Bastille</a>
+												,  eu diria que boa parte são indie porém têm alguma boa fama além de é claro, serem boas, afinal sou eu quem julgo aqui. Nesta playlist albuns e as vezes até mesmo todas as músicas de certos artistas se fazem presente e são dos mais variados gêneros pois esta playlist compreende quase todo o meu acervo.
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>					
+				</td>
+			</tr>
+
+			<tr height="10%">	<!-- Linha do rodapé -->
+				<td align="center">
+					Feito por Meyrihen
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

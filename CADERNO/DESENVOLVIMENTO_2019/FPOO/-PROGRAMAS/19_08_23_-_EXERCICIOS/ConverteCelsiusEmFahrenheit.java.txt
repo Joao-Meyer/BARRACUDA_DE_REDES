@@ -1,0 +1,20 @@
+//Programa que recebe uma temperatura em graus celsius em
+//graus fahrenheits
+
+import java.util.Scanner;
+
+class ConverteCelsiusEmFahrenheit{
+  public static void main (String args[]){
+    Scanner recebe = new Scanner(System.in);
+
+    double temperaturaCelsius;
+    double temperaturaFahrenheits;
+
+    System.out.print("\nInsira a temperatura em graus celsius: ");
+    temperaturaCelsius = recebe.nextDouble();
+
+    temperaturaFahrenheits = ((temperaturaCelsius * 9) + 160) / 5;
+
+    System.out.printf("\n\n%.2f graus celsius equivalem a %.2f graus fahrenheits", temperaturaCelsius, temperaturaFahrenheits);
+  }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title> Joao Henrique Parizoti Meyer </title>
+        
+        <style>
+            body, h1, h2, h3 {
+                margin:0px;
+                padding:0px;
+            }
+            
+            #nome {
+                font-size: 20px;
+            }
+            
+            body {
+                background-color: #c2c2c2;
+            }
+            
+            li {
+                margin-bottom: 6px;
+            }
+            
+            .negrito {
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            p,li {
+                font-size: 16px;
+                text-align: left;
+                line-height: 1.5;
+            }
+            
+            .caixa_curriculo {
+                width: 800px;
+                height: 1180px;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .caixa_informacoes_pessoais {
+                width: 600px;
+                height: 180px;
+                /*background-color: aqua;*/
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .caixa_informacoes_profissionais {
+                width: 700px;
+                height: 1000px;
+                /*background-color: yellow;*/
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .alinha_centro {
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="caixa_curriculo">
+            <div class="caixa_informacoes_pessoais">
+                <p class="alinha_centro">
+                    <span class="negrito" id="nome">João Henrique Parizoti Meyer</span> <br>
+                    Brasileiro, solteiro, 18 anos <br>                Endereço: Rua Iara, 476 - Parque dos Camargos <br>
+                    CEP: 06436 - 160 - Barueri - SP <br>
+                    Cel.: (11) 98991 - 8149 / Tel.: (11) 4552 - 1268 (Neide / Iracema)<br>
+                    E-mail: joaoparizotimeyer@gmail.com
+                </p>
+            </div>
+
+            <div class="caixa_informacoes_profissionais">
+                <p>
+                    <span class="negrito">Objetivo:</span>
+                    Estágio em desenvolvimento de sistemas.
+                </p>
+
+                <p class="alinha_esquerda">
+                    <span class="negrito">Resumo das qualificações:</span>
+                </p>
+
+                <ul>
+                    <li>
+                        Boa comunicação oral e escrita, dinamismo e proativismo.
+                    </li>
+
+                    <li>
+                        Conhecimento na área de informática, com foco em infraestrutura de redes e
+                        contato com a configuração de servidores WEB, autenticação, VOIP,
+                        monitoramento de ativos, de vigilância (câmeras), impressão, DHCP, DNS,
+                        firewall, PROXY e automação.
+                    </li>
+
+                    <li>
+                        Lógica de programação, linguagens C, VisualBasic, Java e HTML básicos.
+                    </li>
+
+                    <li>
+                        Inglês técnico.
+                    </li>
+                </ul>
+
+                <p class="alinha_esquerda">
+                    <span class="negrito">Formação acadêmica:</span>
+                </p>
+
+                <ul>
+                    <li>
+                        <span class="negrito">Graduação: Análise e Desenvolvimento de Sistemas</span> <br>
+                        Faculdade de Tecnologia de Carapicuíba – FATEC (2018 - 2020).
+                    </li>
+
+                    <li>
+                        <span class="negrito">Curso Técnico: Técnico em Redes de Computadores</span> <br>
+                        Escola SENAI Jandira “Professor Vicente Amato” (JUL./2017 – JUN./2019).
+                    </li>
+
+                    <li>
+                        <span class="negrito">Curso Técnico: Técnico de Desenvolvimento de Sistemas</span> <br>
+                        Escola SENAI Jandira “Professor Vicente Amato” (JUL./2019 – DEZ./2020)
+                        MATUTINO.
+                    </li>
+                </ul>
+
+                <p class="alinha_esquerda">
+                    <span class="negrito">Cursos extracurriculares:</span>
+                </p>
+
+                <ul>
+                    <li>
+                        Curso de IPV6 básico, NIC.BR 2018.
+                    </li>
+
+                    <li>
+                        Design Gráfico (Maia, Photoshop, Animation e After Effects) - Saga Lapa.
+                    </li>
+                </ul>
+
+                <p class="alinha_esquerda">
+                    <span class="negrito">Direcionando estudos para:</span>
+                </p>
+    
+                <ul>
+                    <li>
+                        Java e frameworks (Spring boot).
+                    </li>
+
+                    <li>
+                        Java, NodeJs e frameworks (React, Vue e Angular).
+                    </li>
+
+                    <li>
+                        HTML, HTML5 e CSS3.
+                    </li>
+
+                    <li>
+                        Kotlin.
+                    </li>
+                </ul>
+    
+                <p class="alinha_esquerda">
+                    <span class="negrito">Experiência profissional:</span>
+                </p>
+
+                <ul>
+                    <li>
+                        <span class="negrito">JAN./19 – JUN./19 _ MDFTECNOLOGY</span> <br>
+                        Cargo: Estagiário <br>
+                        Experiência em montagem e manutenção de micros, administração de rede,
+                        acesso remoto, rotina de backup, implementação e monitoramento de Active
+                        Directory.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

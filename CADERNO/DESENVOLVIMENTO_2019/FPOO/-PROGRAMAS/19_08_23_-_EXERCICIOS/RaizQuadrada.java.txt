@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class RaizQuadrada {
+  public static void main (String args[]){
+    Scanner recebe = new Scanner (System.in);
+
+    double num1;
+    double num2;
+    double quadrado1;
+    double quadrado2;
+
+    System.out.println ("\nInsira o primeiro valor:");
+    num1 = recebe.nextDouble();
+
+    System.out.println ("\nInsira o segundo valor:");
+    num2 = recebe.nextDouble();
+
+    quadrado1 = Math.sqrt (num1);
+    quadrado2 = Math.sqrt (num2);
+
+    System.out.printf ("\nA raiz quadrada de %.2f equivale a %.2f e raiz quadrada de %.2f equivale a %.2f\n", num1, quadrado1, num2, quadrado2);
+  }
+}

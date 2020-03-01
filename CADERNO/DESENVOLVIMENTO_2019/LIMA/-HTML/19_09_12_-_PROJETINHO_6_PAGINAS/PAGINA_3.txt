@@ -1,0 +1,360 @@
+<!-- WIREFRAME DESTA PAGINA (X R Y): https://wireframe.cc/uV4EfI -->
+
+<html>
+	<head>
+		<title> X R Y </title>
+	</head>
+
+	<body bgcolor="black" text="white" link="white" vlink="#9af097">
+			<!-- Tabela que compõe a pagina como um todo -->
+		<table border="1" width="1000" height="1600" align="center" cellpadding="0" cellspacing="0">
+				<!-- Linha do cabeçalho -->
+			<tr height="20%">
+				<td width="100%">
+						<!-- Tabela do cabeçalho -->
+					<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="80%">	<!-- Coluna do nome da pagina -->
+								<table border="1" width="75%" height="100%" align="right" cellpadding="0" cellspacing="0"> <!-- Tabela do nome da pagina -->
+									<tr height="50%" align="center" valign="bottom">	<!-- Linha do nome da pagina -->
+										<td>
+											<h1>
+												PLAYLISTS POR MEYRIHEN
+											</h1>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem da pagina -->
+										<td width="100%" height="100%">
+											<img src="imagens/onda quadrada verde.jpeg" width="50%" height="100%">
+										</td>
+									</tr>
+								</table>
+							</td>
+
+							<td width="20%">	<!-- Coluna das redes sociais -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">	<!-- Tabela das redes sociais -->
+									<tr height="50%" align="center">	<!-- Linha da imagem de cima -->
+										<td>
+											<a href="https://www.facebook.com/" title="Link para o facebook" target="_blank">
+												<img src="imagens/facebook-logo.png" width="60%" height="60%">
+											</a>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem de baixo -->
+										<td>
+											<a href="https://www.instagram.com/?hl=pt-br" title="Link para o facebook" target="_blank">
+												<img src="imagens/instagram-logo.png" width="60%" height="60%">
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr height="70%">	<!-- Linha do conteúdo -->
+				<td width="100%">
+						<!-- Tabela do conteúdo -->	
+					<table border="1" width=	"100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+							<!-- Linha do conteúdo superior -->
+						<tr height="50%" align="center">
+								<!-- Coluna do menu -->
+							<td width="20%" align="center">
+									<!-- Tabela do menu -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+									<tr height="10%" align="center">	<!-- Linha do "título" -->
+										<td>
+											Playlists
+										</td>
+									</tr>
+
+									<tr height="15%" align="center">	<!-- Linha da pagina home -->
+													<td>
+														<a href="Pagina_Home.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															H O M E
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 1 -->
+													<td>
+														<a href="Pagina_1.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															P I S A D I N H A
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 2 -->
+													<td>
+														<a href="Pagina_2.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															!Querolisten
+														</a>
+													</td>
+												</tr>
+												
+												<tr height="15%" align="center">	<!-- Linha da pagina 4 -->
+													<td>
+														<a href="Pagina_4.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															F A T H E R
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 5 -->
+													<td>
+														<a href="Pagina_5.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															Outras
+														</a>
+													</td>
+												</tr>
+								</table>
+							</td>
+
+								<!-- Coluna do conteudo - centro -->
+							<td width="60%" align="center">
+									<!-- Tabela do conteúdo - centro -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+										<!-- Linha do texto -->
+									<tr height="30%" align="center">
+										<td>
+											Texto
+										</td>
+									</tr>
+
+										<!-- Linha do titulo -->
+									<tr height="10%" align="center">
+										<td>
+											Titulo
+										</td>
+									</tr>
+
+										<!-- Linha da imagem -->
+									<tr height="60%" align="center">
+										<td>
+											<img src="imagens/xry.jpeg" title="Imagem da playlist" width="55%" height="100%">
+										</td>
+									</tr>											
+								</table>
+							</td>
+
+								<!-- Coluna do conteudo - direita -->
+							<td width="20%" align="center" valign="bottom" rowspan="2">
+									<!-- Tabela do conteúdo - direita -->
+								<table border="1" width="100%" height="90%" align="center" cellpadding="0" cellspacing="0">
+
+										<!-- Linha do conteúdo - direita - cima -->
+									<tr height="70%">
+										<td>
+												<!-- Tabela do conteúdo - direita - cima -->
+											<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+													<!-- Linha da imagem -->
+												<tr height="70%" align="left" valign="center">
+													<td>
+														<img src="imagens/G-0ST.jpeg" title="G-OST" width="50%" height="20%">
+													</td>
+												</tr>
+
+													<!-- Linha do texto -->
+												<tr height="30%" align="right" valign="bottom">
+													<td>
+														Texto
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+
+										<!-- Linha do conteúdo - direita - baixo -->
+									<tr height="30%">
+										<td>											
+												<!-- Tabela do conteúdo - direita - baixo -->
+											<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+												<tr height="67%" aling="center">
+													<td>
+															<!-- Tabela do conteúdo - direita - baixo -->
+														<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+																<!-- Linha da imagem e texto superiores -->
+															<tr height="50%">
+																	<!-- Coluna do texto -->
+																<td width="50%" align="left">
+																	Texto
+																</td>
+
+																	<!-- Coluna da imagem -->
+																<td width="50%" align="right">
+																	<img src="imagens/cb 13.jpg" title="CB 13" width="80%" height="100%">
+																</td>
+															</tr>
+
+																<!-- Linha da imagem e texto inferiores -->
+															<tr height="50%" align="center">								
+																	<!-- Coluna da imagem -->
+																<td width="50%" align="left">
+																	<img src="imagens/pink floyd.jpg" title="Pink Floyd" width="85%" height="100%">
+																</td>
+
+																	<!-- Coluna do texto -->
+																<td width="50%"  align="right">
+																	Texto
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+
+												<tr height="33%" align="right">
+													<td>
+														<img src="imagens/chain e cold.jpg" title="The Chainsmokers & Cold Play" width="40%" height="100%">
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+							<!-- Linha do conteúdo central -->
+						<tr height="30%" align="center">
+								<!-- Coluna do conteudo - esquerda -->
+							<td width="20%" align="center">
+									<!-- Tabela do conteudo - esquerda -->
+								<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+										<!-- Linha do subtitulo -->
+									<tr height="40%" align="center" valign="top">
+										<td>
+											Subtitulo
+										</td>
+									</tr>
+
+										<!-- Linha do texto -->
+									<tr height="60%" align="center" valign="bottom">
+										<td>
+											Texto
+										</td>
+									</tr>
+								</table>
+							</td>
+
+								<!-- Coluna do conteudo - centro -->
+							<td width="60%" align="center">
+									<!-- Tabela do conteudo - centro -->
+								<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+									<tr height="100%" align="center">
+											<!-- Coluna do conteudo - centro - esquerda -->
+										<td width="33%" valign="bottom">
+												Texto
+										</td>
+
+											<!-- Coluna do conteudo - centro - centro -->
+										<td width="33%">
+												<!-- Tabela do conteudo - centro -->
+											<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+												<tr height="60%" valign="bottom" align="center">
+													<td>
+														Texto
+													</td>
+												</tr>
+
+												<tr height="40%" valign="middle" align="center">
+													<td>
+														<img src="imagens/los hermanos.jpg" title="Los Hermanos" width="80%" height="100%">
+													</td>
+												</tr>		
+											</table>
+										</td>
+
+											<!-- Coluna do conteudo - centro - direita -->
+										<td width="34%">
+												<!-- Tabela do conteudo - direita -->
+											<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+												<tr height="50%" valign="bottom" align="center">
+													<td>
+														Texto
+													</td>
+												</tr>
+
+												<tr height="30%" valign="middle" align="center">
+													<td>
+														<img src="imagens/soulstripper.png" title="Soulstripper" width="90%" height="100%">
+													</td>
+												</tr>
+
+												<tr height="20%" valign="middle" align="center">
+													<td>
+														Textinho
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+
+								<!-- Coluna do conteudo - direita -->
+							<!-- <td width="20%" align="center">
+								
+							</td> -->
+						</tr>
+
+							<!-- Linha do conteúdo inferior -->
+						<tr height="20%" align="center">
+								<!-- Coluna do conteudo - esquerda -->
+							<td width="20%" align="center">
+								<img src="imagens/nill4.jpg" title="niLL" width="80%" height="100%">
+							</td>
+
+								<!-- Coluna do conteudo - centro + direita -->
+							<td width="80%" align="center" colspan="2">
+									<!-- Tabela do conteudo - centro + direita -->
+								<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+									<tr align="center">
+											<!-- Linha do conteudo - centro + direita - esquerda -->
+										<td width="25%">
+												<!-- Tabela do conteudo - centro + direita - esquerda -->
+											<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+													<!-- Linha da imagem de cima -->
+												<tr align="center" valign="top" height="60%">
+													<td>
+														<img src="imagens/konai.png" title="Konai" width="90%" height="100%">
+													</td>
+												</tr>
+
+													<!-- Linha da imagem de baixo -->
+												<tr align="center" valign="middle" height="40%">
+													<td>
+														<img src="imagens/konai e luiz lins.jpg" title="Konai e Luiz Lins" width="70%" height="100%">
+													</td>
+												</tr>
+											</table>
+										</td>
+
+											<!-- Linha do conteudo - centro + direita - centro -->
+										<td width="30%" valign="middle">
+											<img src="imagens/o terno.png" title="O Terno" width="90%" height="100%">
+										</td>
+
+											<!-- Linha do conteudo - centro + direita - direita -->
+										<td width="45%" align="left">
+											Texto
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>					
+				</td>
+			</tr>
+
+			<tr height="10%">	<!-- Linha do rodapé -->
+				<td align="center">
+					Feito por Meyrihen
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

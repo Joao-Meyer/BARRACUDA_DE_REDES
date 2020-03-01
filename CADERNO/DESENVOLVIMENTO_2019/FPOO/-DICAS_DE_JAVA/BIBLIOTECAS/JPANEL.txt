@@ -1,0 +1,23 @@
+Para usar o JPanel, importamos essa classe da package swing:
+import javax.swing.JPanel;
+
+Vamos criar uma classe que será nosso painel, vamos chamar de "Painel".
+Para isso, basta fazer com que ela extends a JPanel, como aprendemos em Herança, para que herdemos todas as propriedades do JPanel.
+
+import javax.swing.JPanel;
+
+public class Painel extends JPanel{
+
+}
+
+
+Na nossa classe principal, vamos criar um objeto do tipo "Painel" e chamar de "meuPainel".
+Para adicionar esse JPanel em nosso JFrame, usamos o método add que recebe como argumento um JPanel:
+
+Painel meuPainel = new Painel();
+janela.add(meuPainel);
+
+
+Embora tenha adicionado um Panel ao seu Frame, você não vai ver nada quando rodar, pois não adicionou nenhum elemento ao seu Panel.
+
+Fonte: http://www.javaprogressivo.net/2012/11/JFrame-e-JPanelDesenhando-em-Java.html

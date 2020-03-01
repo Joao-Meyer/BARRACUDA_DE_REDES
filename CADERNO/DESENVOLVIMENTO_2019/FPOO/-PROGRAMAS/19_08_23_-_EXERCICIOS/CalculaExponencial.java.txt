@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class CalculaExponencial {
+  public static void main (String args[]){
+    Scanner recebe = new Scanner (System.in);
+
+    double base1;
+    double base2;
+    double expoente1;
+    double expoente2;
+    double resultado1;
+    double resultado2;
+
+    System.out.println ("\nInsira a primeira base:");
+    base1 = recebe.nextDouble();
+    System.out.println ("\nInsira o primeiro expoente:");
+    expoente1 = recebe.nextDouble();
+    System.out.println ("\nInsira a segunda base:");
+    base2 = recebe.nextDouble();
+    System.out.println ("\nInsira o segundo expoente:");
+    expoente2 = recebe.nextDouble();
+
+    resultado1 = Math.pow (base1, expoente1);
+    resultado2 = Math.pow (base2, expoente2);
+
+    System.out.printf ("\n%.2f elevado a %.2f equivale a %.2f\n", base1, expoente1, resultado1);
+    System.out.printf ("\n%.2f elevado a %.2f equivale a %.2f\n", base2, expoente2, resultado2);
+  }
+}

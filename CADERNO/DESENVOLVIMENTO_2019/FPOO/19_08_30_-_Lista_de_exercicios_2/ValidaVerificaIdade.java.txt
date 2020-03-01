@@ -1,0 +1,27 @@
+// Programa que verifica se alguém é maior ou menor de idade e verfica se a idade digitada está entre 0 até 150
+
+import java.util.Scanner;
+
+class ValidaVerificaIdade{
+	public static void main(String args[]){
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.print("\nInsira uma idade, em anos: ");
+		int idade = recebe.nextInt();
+
+		if (idade>0){
+			if(idade>150){
+				System.out.print("\n\nIdade invalida\n\n");
+			}
+			else if (idade<18){
+				System.out.print("\n\nMenor de idade\n\n");
+			}
+			else {
+				System.out.print("\n\nMaior de idade\n\n");
+			}
+		}
+		else {
+			System.out.print("\n\nIdade invalida\n\n");
+		}
+	}
+}

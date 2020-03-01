@@ -1,0 +1,63 @@
+Versão de Software Usada: Debian 9.3
+
+Instale o Pacote Bind9: 
+	
+	apt install bind9
+
+Edite o arquivo /etc/bind/named.conf.local (Pode adicionar a zona em qualquer um dos arquivos named.conf já que todos são lidos)
+
+Não esqueça do ; no final das linhas
+
+zone "exemplo.com.br" {
+	type master;
+	file "/etc/bind/db.exemplo";
+}; 
+
+Link para o print: https://imagizer.imageshack.com/img923/9683/5PRIIm.png
+
+Na Pasta /etc/bind existe um arquivo chamado db.empty
+
+Use uma cópia dele para todos as zonas que criar
+
+cp /etc/bind/db.empty  /etc/bind/db.exemplo
+
+Edite o arquivo /etc/bind/db.exemplo
+
+COLOQUE SEMPRE O .(ponto) NO FIM DO DOMÍNIO
+
+Na frente de SOA coloque o Domínio que esta sendo configurado
+
+exemplo.com.br.
+
+Depois nas Ultimas linhas do arquivo adicione alguns parâmetros
+
+@ 	    IN 	NS 		ns1.pipoca.com.br
+@ 	    IN 	MX 10 	mail.pipoca.com.br (Parâmetro de Email Opcional)
+ns1 	    IN 	A 		192.168.0.13 
+www    IN 	CNAME 	ns1 
+ftp 	    IN 	A 		192.168.0.13 (Parâmetro de Ftp Opcional)
+mail     IN 	A 		192.168.0.13 (Parâmetro de Email Opcional)
+
+Link para o print: https://imagizer.imageshack.com/img923/9426/EsAjPG.png
+
+Depois disso Reinicie o Bind9
+
+/etc/init.d/bind9 restart
+
+Apague o arquivo resolv.conf que é o responsável pela resolução de nomes no Linux
+
+Esse arquivo é gerado novamente toda vez que ligamos a máquina
+
+rm /etc/resolv.conf
+
+Após isso só Testar a Resolução de Nomes com o comando Ping
+
+ping ns1.exemplo.com.br
+
+Link para o print: https://imagizer.imageshack.com/img923/8913/eARadv.png
+
+Para utilizar esse Servidor DNS em outros Pcs é só adicionar o IP do server na resolv.conf em Sistemas Linux ou Alterar o Servidor DNS nas Propriedades de Rede do Windows
+
+Link para o print: https://imagizer.imageshack.com/img921/8717/s6WzPY.png
+
+

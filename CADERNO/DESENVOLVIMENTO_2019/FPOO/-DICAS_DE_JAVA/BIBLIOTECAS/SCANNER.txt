@@ -1,0 +1,58 @@
+Para utilizar a classe Scanner em uma aplicação Java deve-se proceder da seguinte maneira:
+[ 1 ]	importar o pacote java.util:
+import java.util.Scanner;
+
+[ 2 ]	Instanciar e criar um objeto Scanner:
+Scanner ler = new Scanner(System.in);
+
+[ 3 ]	Lendo valores através do teclado:
+
+[ 3.1 ]	Lendo um valor inteiro:
+int n;
+
+System.out.printf("Informe um número para a tabuada: ");
+n = ler.nextInt();
+
+[ 3.2 ]	Lendo um valor real:
+float preco;
+
+System.out.printf("Informe o preço da mercadoria = R$ ");
+preco = ler.nextFloat();
+
+[ 3.3 ]	Lendo um valor real:
+double salario;
+
+System.out.printf("Informe o salário do Funcionário = R$ ");
+salario = ler.nextDouble();
+
+[ 3.4 ]	Lendo uma String, usado na leitura de palavras simples que não usam o caractere de espaço (ou barra de espaço):
+String s;
+
+System.out.printf("Informe uma palavra simples:\n");
+s = ler.next();
+
+[ 3.5 ]	Lendo uma String, usado na leitura de palavras compostas, por exemplo, Pato Branco:
+String s;
+
+System.out.printf("Informe uma cadeia de caracteres:\n");
+s = ler.nextLine();
+
+[ 3.6 ]	Na leitura consecutiva de valores numéricos e String deve-se esvaziar o buffer do teclado antes da leitura do valor String, por exemplo:
+int n;
+String s;
+
+System.out.printf("Informe um Número Inteiro: ");
+n = ler.nextInt();
+
+ler.nextLine(); // esvazia o buffer do teclado
+
+System.out.printf("Informe uma cadeia de caracteres:\n");
+s = ler.nextLine();
+
+[ 3.7 ]	Lendo um caractere usando o método read() do pacote de classes System.in:
+public static void main(String args[]) throws Exception {
+char c;
+
+System.out.printf("Informe um Caractere: ");
+c = (char)System.in.read();
+}

@@ -1,0 +1,82 @@
+Para usarmos as cores, adicionamos:
+import java.awt.Color;
+
+public Color(int r, int g, int b): inteiros variando de 0 a 255
+public Color(float r, float g, float b): float de 0.0 a 1.0
+
+- Mais métodos
+public int getRed() ;
+public int getGreen();
+public int getBlue();
+
+public Color getColor();
+public void setColor( Color c);
+
+
+Vamos mostrar uma aplicação que mostra o JColorChooser, uma componente GUI que exibe todo o padrão de cores no JColorChosser dialog.
+Quando escolhemos uma cor, a JPanel muda de cor.
+
+
+br /> ----------------ColorsFrame.java
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JColorChooser;
+import javax.swing.JPanel;
+
+public class ShowColors2JFrame extends JFrame
+{
+    private JButton changeColorJButton;
+    private Color color = Color.LIGHT_GRAY;
+    private JPanel colorJPanel;
+   
+    public ShowColors2JFrame()
+    {
+        super( "Usando o JColorChooser" );
+       
+        colorJPanel = new JPanel();
+        colorJPanel.setBackground( color );
+       
+        changeColorJButton = new JButton( "Escolher a cor" );
+        changeColorJButton.addActionListener(
+                new ActionListener()
+                {
+                    public void actionPerformed( ActionEvent event )
+                    {
+                        color = JColorChooser.showDialog(
+                                ShowColors2JFrame.this, "Escolher a color", color );
+                       
+                        if( color == null )
+                            color = Color.LIGHT_GRAY;
+                        colorJPanel.setBackground( color );
+                    }
+                }
+                );
+       
+        add( colorJPanel, BorderLayout.CENTER );
+        add( changeColorJButton, BorderLayout.SOUTH );
+       
+        setSize( 400, 130 );
+        setVisible( true );
+    }
+}
+
+
+
+----------------Colors.java
+
+
+import javax.swing.JFrame;
+
+public class Colors
+{
+    public static void main(String[] args)
+    {
+        ColorsFrame application = new ColorsFrame();
+        application.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+    }
+}

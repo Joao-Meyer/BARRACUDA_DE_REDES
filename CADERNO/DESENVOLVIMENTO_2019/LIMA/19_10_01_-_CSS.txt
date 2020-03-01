@@ -1,0 +1,180 @@
+C S S
+| | |->Sheets
+| |->Style
+|->Cascading
+
+--> O CSS é usado para alinhamento, formatação e animação de sites
+
+--> Pode ser desenvolvido
+	|-> Inline
+
+	|-> Incorporado
+
+	|-> Externo
+
+----------------------------------------------------------------------------------------------------------- Arquivo inicial -----------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Aula 01 -CSS </title>
+
+		<!-- Exemplo de CSS incorporado -->
+	<style>
+		
+		/*
+			Comentário em blocos
+		*/
+
+		h2 {
+			color: green;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		p {
+			color: #9578be;
+		}
+
+		/* Exemplo de referência por ID */
+
+		#subtitulo {
+			color: #fa9afa;
+		}
+
+		#letraSozinha {
+			color: #babaca;
+		}
+
+		/* Exemplo de referência por Class */
+
+		.subtitulo {
+			color: #907be3;
+			text-align: right;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<!--
+		CSS (Inline) é feito diretamente na tag HTML, ulizando o comando style. Dentro desta propriedade colocamos todos os comando de CSS para fazer a estilização.
+		ex:
+			<h1 style="color:purple; text-align:center;">
+
+		CSS (Incorporado) 
+	-->
+
+	<h1 style="color: purple; text-align: center;">
+		Aula CSS
+	</h1>
+
+	<p style="font-family: verdana; font-style: bold; font-style: italic; color: 	green;">
+		I'm <span id="letraSozinha">a</span> scatman
+	</p>
+
+	<h1 style="color:purple; text-align:center;">
+		Titulo 2
+	</h1>
+
+	<h2>
+		Exemplo de CSS incorporado
+	</h2>
+
+	<p>
+		Outro texto
+	</p>
+
+	<h2>
+		Subtitulo em css
+	</h2>
+
+	<h2 class="subtitulo">
+		Subtítulo de CSS com Identificação
+	</h2>
+</body>
+</html>
+
+
+-------------------------------------------------------------------------------------------------------------- Arquivo HTML onde vai o CSS -------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Aula 01 -CSS </title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!--
+		CSS (Inline) é feito diretamente na tag HTML, ulizando o comando style. Dentro desta propriedade colocamos todos os comando de CSS para fazer a estilização.
+		ex:
+			<h1 style="color:purple; text-align:center;">
+
+		CSS (Incorporado) 
+	-->
+
+	<h1 style="color: purple; text-align: center;">
+		Aula CSS
+	</h1>
+
+	<p style="font-family: verdana; font-style: bold; font-style: italic; color: 	green;">
+		I'm <span id="letraSozinha">a</span> scatman
+	</p>
+
+	<h1 style="color:purple; text-align:center;">
+		Titulo 2
+	</h1>
+
+	<h2>
+		Exemplo de CSS incorporado
+	</h2>
+
+	<p>
+		Outro texto
+	</p>
+
+	<h2>
+		Subtitulo em css
+	</h2>
+
+	<h2 class="subtitulo">
+		Subtítulo de CSS com Identificação
+	</h2>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------- Arquivo CSS que o HTML vai buscar -------------------------------------------------------------------------------------------------------
+
+	/* Exemplo de CSS Externo */
+		
+		/*
+			Comentário em blocos
+		*/
+
+		h2 {
+			color: green;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		p {
+			color: #9578be;
+		}
+
+		/* Exemplo de referência por ID */
+
+		#subtitulo {
+			color: #fa9afa;
+		}
+
+		#letraSozinha {
+			color: #babaca;
+		}
+
+		/* Exemplo de referência por Class */
+
+		.subtitulo {
+			color: #907be3;
+			text-align: right;
+			text-decoration: underline;
+		}

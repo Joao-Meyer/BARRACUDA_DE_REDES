@@ -1,0 +1,51 @@
+public class Welcome1 { //public diz respeito à uma espécie de segurança (quem tem acesso), class identifica uma classe e Welcome1 é o nome da classe que está sendo criada e está em CamelCase
+
+	// o método principal inicia a execução do aplicativo Java
+	public static void main (String args [] ) { //String e args são algo relacionado com linhas de comando
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+printf ("%3d", 7); // vai imprimir _ _ 7
+
+printf ("%03d", 7); // vai imprimir 0 0 7
+
+int a = 12
+printf ("%o", a); // vai imprimir 14 pois o "o" faz com que seja imprimido em "octal"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner; // programa utiliza a classe Scanner
+
+public class Addition {
+
+	public static void main (String args [] ){
+
+		//cria um objeto Scanner para ler o teclado
+		Scanner input = new Scanner (System.in);
+//		     |		  |
+//		    V		  V
+//		classe	objeto
+
+		int number1;		// primeiro número a somar
+		int number2;		// segundo número a somar
+		int sum;			// soma de number1 e number2
+
+		System.out.print ("Digite o primeiro numero: ");
+		number1 = input.nextInt();		// Recebe um INTEIRO que será digitado (input) e armazena em "number1"
+
+		System.out.print ("Digite o segundo numero: ");
+		number2 = input.nextInt();		// Recebe um INTEIRO que será digitado (input) e armazena em "number2"
+
+		sum = number1 + number2;
+
+		System.out.printf ("A soma e %s\n", sum);		// A variável será convertida em "string" (%s) e será exibida na tela, em Java é convertido automaticamente variáveis em
+ // "string"
+
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Paradigmas de segurança
+
+dar uma olhada nos códigos do classroom

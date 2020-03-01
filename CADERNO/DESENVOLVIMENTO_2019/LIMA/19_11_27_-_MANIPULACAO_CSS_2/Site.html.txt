@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> G-OST </title>
+        
+        <meta charset="utf-8">
+        
+        <!-- É importante a ordem de importação para que não dê errado, primeiro o reset e depois o style -->
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+            <!-- Seção para o menu -->
+        <div id="containerMenu">
+                <!-- Container para o alinhamento dos itens do site -->
+            <div class="container">
+                    <!-- Logo -->
+                <div id="logo">
+                    <figure id="logoPagina">
+                        <img src="imagens/jackson.jfif" alt="Jackson" title="Jackson">
+                    </figure>
+                </div>
+                    <!-- Nav - representa a area do menu do site -->
+                <nav id="menu">
+                    <ul class="menu">
+                        <li class="menuItem"> Item 01 </li>
+                        <li class="menuItem"> Item 02 </li>
+                        <li class="menuItem"> Item 03 </li>
+                        <li class="menuItem"> Item 04 </li>
+                        <li class="menuItem"> Item 05 </li>
+                        <li class="menuItem"> Item 06 </li>
+                    </ul>
+                </nav>
+                    <!-- Redes sociais -->
+                <div id="redesSociais">
+                    <div class="iconeRS"> 01 </div>
+                    <div class="iconeRS"> 02 </div>
+                    <div class="iconeRS"> 03 </div>
+                </div>
+            </div>
+        </div>
+        
+            <!-- Seção do cabeçalho -->
+        <header>
+            <div id="slogan">
+                Não confie em meninas com filtro de raposa e óculos
+            </div>
+        </header>
+        
+            <!-- Seção da empresa -->
+        <div id="containerEmpresa">
+            <section class="container">
+                <h1> Sobre a empresa </h1>
+                
+                <div class="empresaConteudo">
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                
+                <div class="empresaConteudo">
+                    <figure class="empresaIcones">
+                        <img src="imagens/porchat.jfif" alt="Porchat" title="Porchat">
+                    </figure>
+                    
+                    <!-- figcaption cria uma legenda -->
+                    
+                    <figcaption>
+                        Porchat
+                    </figcaption>
+                </div>
+                
+                <div class="empresaConteudo">
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                    
+                <div class="empresaConteudo">
+                    <figure class="empresaIcones">
+                        <img src="imagens/uninho.jfif" alt="Uninho" title="Uninho">
+                    </figure>
+                    
+                    <!-- figcaption cria uma legenda -->
+                    
+                    <figcaption>
+                        Uninho
+                    </figcaption>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Seção de serviços -->
+        <div id="containerServicos">
+            <section class="container">
+                <h1> Serviços </h1>
+                
+                <div class="servicoConteudo">
+                    <h2> Serviço 1 </h2>
+                    
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                
+                <div class="servicoConteudo">
+                    <h2> Serviço 2 </h2>
+                    
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                
+                <div class="servicoConteudo">
+                    <h2> Serviço 3 </h2>
+                    
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Seção da Instituição -->
+        <div id="containerInstituicao">
+            <section class="container">
+                <h1> A instituição </h1>
+                
+                <div class="instituicaoConteudo">
+                    <h2> Missão </h2>
+                    
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                
+                <div class="instituicaoConteudo">
+                    <figure class="missaoImagem">
+                        <img src="imagens/cavalo.jfif" alt="Cavalos" title="Cavalos">
+                    </figure>
+                </div>
+                
+                <div class="instituicaoConteudoVisao">
+                    <h2> Visão </h2>
+                    
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                
+                <div class="instituicaoConteudo">
+                    <h2> Valores </h2>
+                    
+                    <figure class="valoresImagem">
+                        <img src="imagens/batata.jpeg" alt="Batata de Bikini" title="Batata de Bikini">
+                    </figure>
+                    
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo.
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Seção Contatos -->
+        <div id="containerContatos">
+            <section class="container">
+                <div id="contatos">
+                    <h1> Contatos </h1>
+                    
+                    <p>
+                        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
+                    </p>
+                </div>
+                
+                <div id="mapa">
+                    <figure class="mapaImagem">
+                        <img src="imagens/triangulo.jfif" alt="Triângulo das Bermudas" title="Triângulo das Bermudas">
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+import java.util.Random;
+
+public class DancaDasCadeiras {
+	public static void main (String args []){
+		ListaDupla lista = new ListaDupla();
+		Random r = new Random();
+		
+		//Preenche uma lista com numeros de 1 a 12
+		for (int i=1; i<13; i++){
+			lista.insereFim(i);
+		}
+
+		imprimeLista(lista);
+
+		int aux = r.nextInt(20)+1;
+
+		for (int i = 1; i<12; i++){
+			lista.removeDaPosicao(aux);
+		}
+		
+		System.out.println("\n\nVencedor: " + lista.getPrim());
+	}
+	
+	public static void imprimeLista(ListaDupla lista){
+		NoDuplo aux = lista.getPrim();
+		
+		for (int i=1; i<13; i++){
+			System.out.print(" " + aux.getInfo());
+			
+			aux = aux.getProx();
+		}
+	}
+}

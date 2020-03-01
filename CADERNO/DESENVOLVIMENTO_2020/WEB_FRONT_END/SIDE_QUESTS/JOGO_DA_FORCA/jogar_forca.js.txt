@@ -1,0 +1,14 @@
+const palavras = [ 'coisa', 'casa', 'tempo', 'ano', 'dia', 'vez',
+'homem', 'senhor', 'senhora', 'moço','moça']
+
+const palavra = palavras[Math.floor(Math.random() * 12)]
+
+var sombra = ""
+
+for (i = 0; i < palavra.length; i++){
+    console.log(palavra.length)
+    sombra += "_ "
+}
+
+console.log(palavra)
+console.log(sombra)

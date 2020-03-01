@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Jogo da Forca</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        Insira uma letra: <input type="text" id="caixa_de_letras">
+
+
+        <script src="./jogar_forca.js"></script>
+    </body>
+</html>

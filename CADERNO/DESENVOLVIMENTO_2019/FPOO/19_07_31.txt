@@ -1,0 +1,175 @@
+Algoritmo (Usaremos os mencionados com  *)
+	|-> Descrição narrativa *
+	|-> Diagrama de blocos (fluxograma) *
+	|-> Portugol (Português estruturado)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Descrição narrativa
+
+Exercícios de algoritmo: (Fazer de maneira clara e objetiva para que não haja ambiguidade)
+
+Elaborar um algoritmo na forma de "Descrição narrativa" para cada um dos casos:
+
+a) Calcular a área de um retângulo; [base * altura]
+b) Calcular a área de um triângulo; [base * altura / 2]
+c) Calcular o perímetro de uma circunferência; [2 * (pi) * r]
+d) Transforme a idade em segundos. [idade * 360 * 24 * 60 * 60]
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+a) * Algoritmo para calcular a área de um retângulo *
+
+Saída> Área do retângulo
+
+Entrada> Medida da base e medida da altura
+
+Algoritmo:
+
+1º - Obter os valores da base e da altura do retângulo em questão
+
+2º - Multiplicar o valor da base pelo valor da altura do retângulo em qusetão
+
+3º - Mostrar o valor obtido na multiplicação (correspondente ao 2º passo) para o usuário
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+b) * Algoritmo para calcular a área de um triângulo *
+
+Saída> Área do triângulo
+
+Entrada> Medida da base e medida da altura
+
+Algoritmo:
+
+1º - Obter os valores da base e altura do triângulo em questão
+
+2º - Multiplicar o valor da base pelo valor da altura do triângulo em questão
+
+3º - Dividir o resultado obtido na multiplicação (correspondente ao 2º passo) por "2"
+
+4º - Mostrar o valor obtido na divisão (correspondente ao 3º passo) para o usuário
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+c) * Algoritmo para calcular o perímetro de uma circunferência *
+
+Saída> Perímetro da circunferência
+
+Entrada> Medida do raio
+
+Algoritmo:
+
+1º - Obter o valor do raio (r) da circunferência em questão
+
+2º - Multiplicar o valor de "r" por "3,14" (o valor da constante de pi)
+
+3º - Multiplicar o resultado da multiplicação anterior (correspondente ao 2º passo) por "2"
+
+4º - Retornar para o usuário o resultado desta ultima multiplicação (correspondente ao 3º passo)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+d) * Algoritmo para transformar a idade em segundos *
+
+Saída> Idade do indivíduo em segundos
+
+Entrada> Idade do indivíduo em anos
+
+Algoritmo:
+
+(Outro)
+
+1º - Obter o valor da idade, em anos, do individuo em questão
+
+2º - Multiplicar a "idade" por "365" para obter a idade em dias
+
+3º - Multiplicar o resultado da multiplicação anterior (idade em dias, correspondente ao 2º passo) por "24" para obter a idade em horas
+
+4º - Multiplicar o resultado da multiplicação anterior (idade em horas, correspondente ao 3º passo) por "60" para obter a idade em minutos
+
+5º - Multiplicar o resultado da multiplicação anterior (idade em minutos, correspondente ao 4º passo) por "60" para obter a idade em segundos
+
+6º - Retornar o resultado desta última multiplicação (idade em segundos, correspondente ao 5º passo) para o usuário
+
+ou
+
+(Este)
+
+1º - Obter o valor da idade, em anos, do individuo em questão
+
+2º - Multiplicar a idade por 31536000
+
+3º - Retornar o resultado desta última multiplicação (correspondente ao 2º passo) para o usuário
+
+Porém este código não é tão flexível quanto o outro
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Programação deve ser...
+
+ K. I. S. S.
+ e  t  i  t
+ e     m  u
+ p     p  p
+       l  i
+       e  d
+
+É a ideia de manter o código simples para que, caso haja a necessídade, seja fácil a manutenção e de fácil compreensão à todos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Diagrama de Blocos (É melhor utilizar o caderno)
+
+ /|
+|_| Entrada Manual
+
+ _____
+|_____| Processamento
+
+ _____
+<_____) Saída
+ _____
+(_____) Início / Fim
+
+/\
+\/ Decisão
+
+() Conector
+
+---> Fluxo de dados
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Fazendo um diagrama de blocos: (Sobre o cálculo de media aritmética)
+
+ ________
+(_Início_)
+     |
+     V
+ //////////////|
+|_nota1;_nota2_| (Nesta etapa são obtidos os dados, neste caso nota1 e nota2)
+	|
+	V
+ _____________________________
+|_Media_=_(nota1_+_nota2)_/_2_| (Nesta etapa são processados os dados, no caso há a soma da nota1 com a nota2, em seguida o resultado desta soma é dividido por 2 e, por fim, o resultado desta divisão é armazenado na variável Media)
+    |
+    V
+ _______
+<_Media_)
+    |
+    v
+ _____
+(_Fim_)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Diagrama de blocos
+
+Exercícios de algoritmo: (Fazer de maneira clara e objetiva para que não haja ambiguidade)
+
+Elaborar um algoritmo na forma de "Diagrama de blocos" para cada um dos casos:
+
+a) Calcular a área de um retângulo; [base * altura]
+b) Calcular a área de um triângulo; [base * altura / 2]
+c) Calcular o perímetro de uma circunferência; [2 * (pi) * r]
+d) Transforme a idade em segundos. [idade * 360 * 24 * 60 * 60]
+

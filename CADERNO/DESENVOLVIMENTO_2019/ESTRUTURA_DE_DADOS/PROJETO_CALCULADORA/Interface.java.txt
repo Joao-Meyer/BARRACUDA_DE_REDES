@@ -1,0 +1,40 @@
+// Programa para exibir mensagens na tela
+
+import java.util.Scanner;
+
+public class Interface {
+	Scanner recebe = new Scanner(System.in);
+
+	public String escolherOperacao(){
+		System.out.println("\nQual operacao voce deseja realizar?\n+ para soma\n- para subtracao\n* para multiplicacao\n/ para divisao\ns para sair\n");
+		String opcao = recebe.next();
+
+		return opcao;
+	}
+
+	public int escolherQuantidadeVariaveis(){
+		System.out.println("\nQuantas variaveis voce deseja utilizar?\n2 para duas variaveis\n3 para tres variaveis");
+		int quantidade = recebe.nextInt();
+
+		return quantidade;
+	}
+
+	public int recebeValor(int i){
+		System.out.println("\nInsira o " + i + "º valor");
+		int num = recebe.nextInt();
+
+		return num;
+	}
+
+	public void exibeResposta(int resposta){
+		System.out.println("\nA resposta eh: " + resposta);
+	}
+
+	public void exibeErro(){
+		System.out.println("\nOpcao invalida, escolha corretamente");
+	}
+
+	public void exibeDespedida(){
+		System.out.println("\nAte a proxima!\n");
+	}
+}

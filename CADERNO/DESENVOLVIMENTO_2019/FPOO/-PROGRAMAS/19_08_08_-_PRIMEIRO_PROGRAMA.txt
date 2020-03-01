@@ -1,0 +1,18 @@
+import java.util.Scanner; 
+
+class Teste {
+
+	public static void main (String args []) {
+
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.printf("\nInforme seu nome\n");
+		String nome = recebe.nextLine();
+
+		System.out.printf("\nBom dia %s, tenha um ótimo dia!\n", nome);
+
+		// System.out.println("\nArri égua 32\n");
+
+	}
+
+}	

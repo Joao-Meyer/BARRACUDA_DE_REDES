@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class CalculaResto {
+  public static void main (String args[]){
+    Scanner recebe = new Scanner (System.in);
+    int dividendo;
+    int divisor;
+    int resto;
+
+    System.out.println ("\nInsira o dividendo, em numero inteiro:");
+    dividendo = recebe.nextInt();
+
+    System.out.println ("\nInsira o divisor, em numero inteiro:");
+    divisor = recebe.nextInt();
+
+    resto = dividendo % divisor;
+
+    System.out.printf ("\nO resto de %d dividido por %d equivale a %d\n", dividendo, divisor, resto);
+  }
+}

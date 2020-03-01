@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Menu Div </title>
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        <div class="menu">
+            <div class="menuItem formatItem">
+                Menu 01
+                
+                <div class="submenu">
+                    <div class="submenuItem formatItem"> Submenu 01 </div>
+                    
+                    <div class="submenuItem formatItem"> Submenu 02 </div>
+                    
+                    <div class="submenuItem formatItem"> Submenu 03 </div>
+                    
+                    <div class="submenuItem formatItem"> Submenu 04 </div>
+                </div>
+            </div>
+            
+            <div class="menuItem formatItem"> Menu 02 </div>
+            
+            <div class="menuItem formatItem"> Menu 03 </div>
+            
+            <div class="menuItem formatItem"> Menu 04 </div>
+            
+            <div class="menuItem formatItem"> Menu 05 </div>
+        </div>
+    </body>
+</html>

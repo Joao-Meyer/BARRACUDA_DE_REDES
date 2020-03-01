@@ -1,0 +1,25 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const routes = require('./routes')
+
+const app = express();
+
+mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-ulu3l.mongodb.net/week10?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+app.use(express.json());
+
+// M'etodos http: get, set, post, delete
+
+// Tipos de par^ametros:
+// Query params: request.query (Filtros, ordenaç~ao, ppaginaç~ao, ...)
+// Route params: request.params (Identificar um recurso na alteraç~ao ou remoç~ao)
+// Body: request.body (Dados para a criaç~ao ou alteraç~ao de um registro)
+
+// MongoDB (N~ao relacional)
+
+app.use(routes);
+
+app.listen(3333);

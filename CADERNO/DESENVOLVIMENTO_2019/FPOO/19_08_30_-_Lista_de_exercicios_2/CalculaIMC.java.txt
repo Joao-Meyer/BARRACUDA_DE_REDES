@@ -1,0 +1,36 @@
+// Programa que calcula o IMC (índice de massa corporal)
+
+import java.util.Scanner;
+
+class CalculaIMC{
+	public static void main(String args[]){
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.print("\nInsira o peso: ");
+		double peso = recebe.nextDouble();
+
+		System.out.print("\nInsira a altura: ");
+		double altura = recebe.nextDouble();
+
+		double imc = peso / (altura * altura);
+
+		if (imc<17){
+			System.out.printf("\nIMC=%.2f que corresponde a muito baixo\n\n", imc);
+		}
+		else if (imc<18.5){
+			System.out.printf("\nIMC=%.2f que corresponde a baixo\n\n", imc);
+		}
+		else if (imc<25){
+			System.out.printf("\nIMC=%.2f que corresponde a normal\n\n", imc);
+		}
+		else if (imc<30){
+			System.out.printf("\nIMC=%.2f que corresponde a obesidade I\n\n", imc);
+		}
+		else if (imc<40){
+			System.out.printf("\nIMC=%.2f que corresponde a obesidade II\n\n", imc);
+		}
+		else {
+			System.out.printf("\nIMC=%.2f que corresponde a obesidade III\n\n", imc);	
+		}
+	}
+}

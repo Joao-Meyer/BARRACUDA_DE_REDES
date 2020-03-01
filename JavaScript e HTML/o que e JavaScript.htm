@@ -1,0 +1,2031 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>WebMasters - JavaScript</title>
+<style>
+A:hover{color:orange;}
+A{color:#FF7F00 ; text-decoration:none;}
+</style>
+<meta name="Microsoft Theme" content="ruy 110, default">
+<meta name="Microsoft Border" content="tlb">
+</head>
+
+<body topmargin="0" leftmargin="0" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#CC0000" alink="#00CC33">
+
+<h1 align="center">JavaScript</h1>
+
+<hr align="center">
+
+<h3 align="center"><a NAME="introdu"></a><b>INTRODUÇÃO</b></h3>
+
+<p ALIGN="left">JavaScript é uma linguagem que permite injetar lógica em páginas
+escritas em HTML (HyperText Mark-up Language). As páginas
+HTML podem ser escritas utilizando-se editores de texto, como o NotePad, Write, etc.
+Porém, existem editores próprios para gerar HTML, tais como HotDog e (mais recomendado)
+Microsoft FrontPage.</p>
+
+<p ALIGN="left">Os parágrafos de lógica do javaScript podem estar &quot;soltos&quot; ou
+atrelados a ocorrência de eventos.</p>
+
+<p ALIGN="left">Os parágrafos soltos são executados na sequência em que aparecem na
+página (documento) e os atrelados a eventos são executados apenas quando o evento
+ocorre.</p>
+
+<p ALIGN="left">Para inserir parágrafos de programação dentro do HTML é necessário
+identificar o início e o fim do set de JavaScript, da seguinte forma:</p>
+
+<p ALIGN="left">&lt;SCRIPT&gt;</p>
+
+<p ALIGN="left">Set de instruções</p>
+
+<p ALIGN="left">&lt;/SCRIPT&gt;</p>
+
+<p ALIGN="left">Este procedimento pode ser adotado em qualquer local da página.
+Entretanto, para melhor visualização e facilidade de manutenção, recomenda-se que toda
+a lógica seja escrita no início do documento, através da criação de funções a serem
+invocadas quando se fizer necessário (normalmente atreladas a eventos).</p>
+
+<p ALIGN="left">Se a lógica é escrita a partir de um determinado evento, não é
+necessário o uso dos comandos &lt;SCRIPT&gt; e &lt;/SCRIPT&gt;.&nbsp;</p>
+
+<p ALIGN="left">Os comandos JavaScript são sensíveis ao tipo de letra (maiúsculas e
+minúsculas) em sua sintaxe. Portanto, é necessário que seja obedecida a forma de
+escrever os comandos, de acordo com a forma apresentada ao longo deste manual. Caso seja
+cometido algum erro de sintaxe quando da escrita de um comando, o JavaScript
+interpretará, o que seria um comando, como sendo o nome de uma variável.</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="logicos"></a><b>OPERADORES LÓGICOS</b></h3>
+
+<p ALIGN="left">São operadores a serem utilizados em comandos condicionais, tais como: IF
+, FOR e WHILE.</p>
+
+<p ALIGN="left">Os comandos condicionais serão vistos mais a frente.
+&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;= = &nbsp;&nbsp;&nbsp;&nbsp;Igual</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;!= &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diferente</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maior</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&gt;= &nbsp;&nbsp;&nbsp;&nbsp;Maior ou Igual</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&lt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menor</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&lt;= &nbsp;&nbsp;&nbsp;&nbsp;Menor ou Igual</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp; &nbsp;&nbsp;E</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;|| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ou</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="matemat"></a><b>OPERADORES MATEMÁTICOS</b></h3>
+
+<p ALIGN="left">São operadores a serem utilizados em cálculos, referências de
+indexadores e manuseio de strings.</p>
+
+<p ALIGN="left">Ao longo do manual estes operadores serão largamente utilizados, dando,
+assim, uma noção mais precisa do seu potencial.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp; adição de valor e
+concatenação de strings</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;&nbsp;&nbsp;subtração de
+valores</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;&nbsp;&nbsp;&nbsp;multiplicação de
+valores</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divisão de
+valores</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;% &nbsp;&nbsp;obtem o resto de uma divisão:</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex: 150 % 13
+retornará 7</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;+= &nbsp;&nbsp;concatena /adiciona ao string/valor já
+existente. Ou seja:</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x
+&nbsp;+= &nbsp;y&nbsp; é o mesmo que&nbsp; x = x + y</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;da mesma forma
+podem ser utilizados: -= , *= , &nbsp;/= ou %=&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;Um contador pode ser simplificado utilizando-se : X++ ou
+&nbsp;X-- &nbsp;o que equivale as expressões:</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X = X + 1
+&nbsp;ou&nbsp; X = X - 1 respectivamente.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;Para inverter sinal:&nbsp; X = -X &nbsp;negativo para
+positivo ou &nbsp;positivo para negativo.</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="especial"></a><b>CONTROLES ESPECIAIS</b> </h3>
+
+<p ALIGN="left">\b - backspace</p>
+
+<p ALIGN="left">\f - form feed</p>
+
+<p ALIGN="left">\n - new line caracters</p>
+
+<p ALIGN="left">\r - carriage return</p>
+
+<p ALIGN="left">\t - tab characters</p>
+
+<p ALIGN="left">// - Linha de comentário</p>
+
+<p ALIGN="left">/*....*/ - Delimitadores para inserir um texto com mais de uma linha como
+comentário.</p>
+
+<p ALIGN="left">Os delimitadores naturais para uma string são &quot; ou ' . Caso seja
+necessário a utilização destes caracteres como parte da string, utilize \ precedendo
+&quot; ou '.</p>
+
+<p ALIGN="left">Ex. alert (&quot;Cuidado com o uso de \&quot; ou \' em uma string&quot;)</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="condicio"></a><b>COMANDOS CONDICIONAIS</b></h3>
+
+<p ALIGN="left">São comandos que condicionam a execução de uma certa tarefa à
+veracidade ou não de uma determinada condição, ou enquanto determinada condição for
+verdadeira.</p>
+
+<p ALIGN="left">São eles:</p>
+
+<p ALIGN="left">Comando IF</p>
+
+<p ALIGN="left">if &nbsp;(condição)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;{ ação para condição satisfeita }</p>
+
+<p ALIGN="left">[ else</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;{ ação para condição não satisfeita } ]</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">if (Idade &lt; 18)</p>
+
+<p ALIGN="left">&nbsp;{Categoria = &quot;Menor&quot; }</p>
+
+<p ALIGN="left">else</p>
+
+<p ALIGN="left">&nbsp;{Categoria = &quot;Maior&quot;}</p>
+
+<p ALIGN="left">Comando FOR</p>
+
+<p ALIGN="left">for ( [inicialização/criação de variável de controle ;]</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[condição ;]</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[incremento da variável de
+controle] )</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { ação }</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">for (x = 0 ; x &lt;= 10 ; x++)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;{alert (&quot;X igual a &quot; + x) }</p>
+
+<p ALIGN="left">ComandoWHILE</p>
+
+<p ALIGN="left">&nbsp;Executa uma ação enquanto determinada condição for verdadeira.</p>
+
+<p ALIGN="left">while (condição)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ ação }</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">var contador = 10</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;while (contador &gt; 1)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+contador-- }</p>
+
+<p ALIGN="left">Move condicional</p>
+
+<p ALIGN="left">receptor = ( (condição) ? verdadeiro : falso)</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">NomeSexo = ((VarSexo == &quot;M&quot;) ? &quot;Masculino&quot; :
+&quot;Feminino&quot;)</p>
+
+<p ALIGN="left">OBS:</p>
+
+<p ALIGN="left">Nos comandos FOR e WHILE a diretiva &quot;break&quot; pode ser utilizada
+para interromper a condição principal e sair do loop. Da mesma forma, a diretiva
+&quot;continue&quot; interrompe uma ação (se determinada condição ocorrer) mas volta
+para o loop.</p>
+
+<p ALIGN="left">Diretivas/condições entre [ ] significam que são opcionais.</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="eventos"></a><b>EVENTOS</b></h3>
+
+<p ALIGN="left">São fatos que ocorrem durante a execução do sistema, a partir dos quais
+o programador pode definir ações a serem realizadas pelo programa.</p>
+
+<p ALIGN="left">Abaixo apresentamos a lista dos eventos possíveis, indicando os momentos
+em que os mesmos podem ocorrer, bem como, os objetos passíveis de sua ocorrência.</p>
+
+<p ALIGN="left">onload - Ocorre na carga do documento. Ou seja, só ocorre no BODY do
+documento.</p>
+
+<p ALIGN="left">onunload - Ocorre na descarga (saída) do documento. Também só ocorre no
+BODY.</p>
+
+<p ALIGN="left">onchange - Ocorre quando o objeto perde o focus e houve mudança de
+conteúdo.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;válido
+para os objetos Text, Select e Textarea.</p>
+
+<p ALIGN="left">onblur - Ocorre quando o objeto perde o focus, independente de ter havido
+mudança.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;válido
+para os objetos Text, Select e Textarea.</p>
+
+<p ALIGN="left">onfocus - Ocorre quando o objeto recebe o focus.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;válido
+para os objetos Text, Select e Textarea.</p>
+
+<p ALIGN="left">onclick - Ocorre quando o objeto recebe um Click do Mouse.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;válido
+para os objetos Buton, Checkbox, Radio, Link, Reset e Submit.</p>
+
+<p ALIGN="left">onmouseover - Ocorre quando o ponteiro do mouse passa por sobre o objeto.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;válido
+apenas para Link.</p>
+
+<p ALIGN="left">onselect - Ocorre quando o objeto é selecionado.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;válido
+para os objetos Text e Textarea.</p>
+
+<p ALIGN="left">onsubmit - Ocorre quando um botão tipo Submit recebe um click do mouse.</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;válido
+apenas para o Form.</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="variavel"></a><b>CRIANDO VARIÁVEIS</b></h3>
+
+<p ALIGN="left">A variável é criada automaticamente, pela simples associação de
+valores a mesma.</p>
+
+<p ALIGN="left">Ex. NovaVariavel = &quot;Jose&quot;</p>
+
+<p ALIGN="left">Foi criada a variável de nome NovaVariavel que, passou a conter a string
+Jose.</p>
+
+<p ALIGN="left">As variáveis podem ser Locais ou Globais. As variáveis que são criadas
+dentro de uma função são Locais e referenciáveis apenas dentro da função. As
+variáveis criadas fora de funções são Globais, podendo serem referenciadas em qualquer
+parte do documento.</p>
+
+<p ALIGN="left">Desta forma, variáveis que precisam ser referenciadas por várias
+funções ou em outra parte do documento, precisam ser definidas como globais.</p>
+
+<p ALIGN="left">Embora não seja recomendável, em uma função, pode ser definida uma
+variável local com o mesmo nome de uma variável global. Para isso utiliza-se o método
+de definição var.</p>
+
+<p ALIGN="left">Ex. Variável Global: MinhaVariavel = &quot;&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variável Local: var MinhaVariavel =
+&quot;&quot;</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="escrevendo"></a><b>ESCREVENDO NO DOCUMENTO</b></h3>
+
+<p ALIGN="left">O JavaScript permite que o programador escreva linhas dentro de uma
+página (documento), através do método write. As linhas escritas desta forma, podem
+conter textos, expressões JavaScript e comandos Html. As linhas escritas através deste
+método aparecerão no ponto da tela onde o comando for inserido.</p>
+
+<p ALIGN="left">Ex:</p>
+
+<p ALIGN="left">&lt;script&gt;</p>
+
+<p ALIGN="left">valor = 30</p>
+
+<p ALIGN="left">document.write (&quot;Minha primeira linha&quot;)</p>
+
+<p ALIGN="left">document.write (&quot;Nesta linha aparecerá o resultado de : &quot; + (10
+* 10 + valor))</p>
+
+<p ALIGN="left">&lt;/script&gt;</p>
+
+<p ALIGN="left">A idéia do exemplo acima é escrever duas linhas. Entretanto o método
+write não insere mudança de linha, o que provocará o aparecimento de apenas uma linha
+com os dois textos emendados.</p>
+
+<p ALIGN="left">Para evitar este tipo de ocorrência, existe o método writeln que escreve
+uma linha e espaceja para a seguinte. Entretanto, em nossos testes, este comando não
+surtiu efeito,obtendo-se o mesmo resultado do método write. A solução encontrada para
+esta situação foi a utilização do comando de mudança de parágrafo da linguagem Html.</p>
+
+<p ALIGN="left">Ex:</p>
+
+<p ALIGN="left">&lt;script&gt;</p>
+
+<p ALIGN="left">valor = 30</p>
+
+<p ALIGN="left">document.write (&quot;&lt;p&gt;Minha primeira linha&lt;/p&gt;&quot;)</p>
+
+<p ALIGN="left">document.write (&quot;&lt;p&gt;Nesta linha aparecerá o resultado de :
+&quot; + (10 * 10 + valor) + &quot;&lt;/p&gt;&quot;)</p>
+
+<p ALIGN="left">&lt;/script&gt;</p>
+
+<p ALIGN="left">Isto resolve a questão da mudança de linha, porém, vai gerar uma linha
+em branco, entre cada linha, por se tratar de mudança de parágrafo. Caso não seja
+desejado a existência da linha em branco, a alternativa é utilizar o comando Html
+&lt;br&gt; que apenas muda de linha.</p>
+
+<p ALIGN="left">Ex:</p>
+
+<p ALIGN="left">&lt;script&gt;</p>
+
+<p ALIGN="left">valor = 30</p>
+
+<p ALIGN="left">document.write (&quot;&lt;br&gt;Minha primeira linha&quot;)</p>
+
+<p ALIGN="left">document.write (&quot;&lt;br&gt;Nesta linha aparecerá o resultado de :
+&quot; + (10 * 10 + valor) )</p>
+
+<p ALIGN="left">&lt;/script&gt;</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="mensagem"></a><b>MENSAGENS</b></h3>
+
+<p ALIGN="left">Existem três formas de comunicação com o usuário através de
+mensagens.</p>
+
+<p ALIGN="left">Apenas Observação.</p>
+
+<p ALIGN="left">alert ( mensagem )</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">alert (&quot;Certifique-se de que as informações estão corretas&quot;)</p>
+
+<p ALIGN="left">Mensagem que retorna confirmação de OK ou CANCELAR</p>
+
+<p ALIGN="left">confirm (mensagem)</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">if (confirm (&quot;Algo está errado...devo continuar??&quot;))</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;{ alert(&quot;Continuando&quot;) }</p>
+
+<p ALIGN="left">else</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;{ alert(&quot;Parando&quot;) }</p>
+
+<p ALIGN="left">Recebe mensagem via caixa de texto Input</p>
+
+<p ALIGN="left">Receptor = prompt (&quot;Minha mensagem&quot;, &quot;Meu texto&quot;)</p>
+
+<p ALIGN="left">Onde:</p>
+
+<p ALIGN="left">Receptor é o campo que vai receber a informação digitada pelo usuário</p>
+
+<p ALIGN="left">Minha mensagem é a mensagem que vai aparecer como Label da caixa de input</p>
+
+<p ALIGN="left">Meu texto é um texto, opcional, que aparecerá na linha de digitação do
+usuário</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">Entrada = prompt(&quot;Informe uma expressão matemática&quot;,
+&quot;&quot;)</p>
+
+<p ALIGN="left">Resultado = eval(Entrada)</p>
+
+<p ALIGN="left">document.write(&quot;O resultado é = &quot; + Resultado)</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="c_funcao"></a><b>CRIANDO FUNÇÕES</b></h3>
+
+<p ALIGN="left">Uma função é um set de instruções, que só devem ser executadas
+quando a função for acionada.</p>
+
+<p ALIGN="left">A sintaxe geral é a seguinte:</p>
+
+<p ALIGN="left">function NomeFunção (Parâmetros)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+Ação }</p>
+
+<p ALIGN="left">Suponha uma função que tenha como objetivo informar se uma pessoa é
+maior ou menor de idade, recebendo como parâmetro a sua idade.</p>
+
+<p ALIGN="left">function Idade (Anos) {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+&nbsp;(Anos &gt; 17)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+alert (&quot;Maior de Idade&quot;) }</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+alert (&quot;menor de Idade&quot;) }</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</p>
+
+<p ALIGN="left">Para acionar esta função, suponha uma caixa de texto, em um formulário,
+na qual seja informada a idade e, a cada informação, a função seja acionada.</p>
+
+<p ALIGN="left">&lt;form&gt;</p>
+
+<p ALIGN="left">&lt;input type=text size=2 maxlength=2 name=&quot;Tempo&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onchange=&quot;Idade(Tempo.value)&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">Observe-se que o parâmetro passado (quando ocorre o evento
+&quot;onchange&quot;) foi o conteúdo da caixa de texto &quot;Tempo&quot; (propriedade
+&quot;value&quot;) e que, na função, chamamos de &quot;Anos&quot;. Ou seja, não existe
+co-relação entre o nome da variável passada e a variável de recepção na função.
+Apenas o conteúdo é passado.</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="intris"></a><b>FUNÇÕES INTRÍNSECAS</b></h3>
+
+<p ALIGN="left">São funções embutidas na própria linguagem. A sintaxe geral é a
+seguinte:</p>
+
+<p ALIGN="left">Result = função (informação a ser processada)</p>
+
+<p ALIGN="left">- eval = Calcula o conteúdo da string</p>
+
+<p ALIGN="left">- parseInt - Transforma string em inteiro</p>
+
+<p ALIGN="left">- parseFloat - Transforma string em número com ponto flutuante</p>
+
+<p ALIGN="left">- date() - Retorna a data e a hora (veja o capítulo manipulando datas)</p>
+
+<p ALIGN="left">ex1: Result = eval ( &quot; (10 * 20) + 2 - 8&quot;)</p>
+
+<p ALIGN="left">ex2: Result = eval (string)</p>
+
+<p ALIGN="left">No primeiro exemplo Result seria igual a 194. No segundo, depende do
+conteúdo da string, que também pode ser o conteúdo (value) de uma caixa de texto.</p>
+
+<p ALIGN="left">- Funções tipicamente Matemáticas:</p>
+
+<p ALIGN="left">Math.abs(número) - retorna o valor absoluto do número (ponto flutuante)</p>
+
+<p ALIGN="left">Math.ceil(número) - retorna o próximo valor inteiro maior que o número</p>
+
+<p ALIGN="left">Math.floor(número) - retorna o próximo valor inteiro menor que o número</p>
+
+<p ALIGN="left">Math.round(número) - retorna o valor inteiro, arredondado, do número</p>
+
+<p ALIGN="left">Math.pow(base, expoente) - retorna o cálculo do exponencial</p>
+
+<p ALIGN="left">Math.max(número1, número2) - retorna o maior número dos dois fornecidos</p>
+
+<p ALIGN="left">Math.min(número1, número2) - retorna o menor número dos dois fornecidos</p>
+
+<p ALIGN="left">Math.sqrt(número) - retorna a raiz quadrada do número</p>
+
+<p ALIGN="left">Math.SQRT2 - retorna a raiz quadrada de 2 (aproximadamente 1.414)</p>
+
+<p ALIGN="left">Math.SQRT_2 - retorna a raiz quadrada de 1/2 (aproximadamente 0.707)</p>
+
+<p ALIGN="left">Math.sin(número) - retorna o seno de um número (anglo em radianos)</p>
+
+<p ALIGN="left">Math.asin(número) - retorna o arco seno de um número (em radianos)</p>
+
+<p ALIGN="left">Math.cos(número) - retorna o cosseno de um número (anglo em radianos)</p>
+
+<p ALIGN="left">Math.acos(número) - retorna o arco cosseno de um número (em radianos)</p>
+
+<p ALIGN="left">Math.tan(número) - retorna a tangente de um número (anglo em radianos)</p>
+
+<p ALIGN="left">Math.atan(número) - retorna o arco tangente de um número (em radianos)</p>
+
+<p ALIGN="left">Math.pi retorna o valor de PI (aproximadamente 3.14159)</p>
+
+<p ALIGN="left">Math.log(número) - retorna o logarítmo de um número</p>
+
+<p ALIGN="left">Math.E - retorna a base dos logarítmos naturais (aproximadamente 2.718)</p>
+
+<p ALIGN="left">Math.LN2 - retorna o valor do logarítmo de 2 (aproximadamente 0.693)</p>
+
+<p ALIGN="left">Math.LOG2E - retorna a base do logarítmo de 2 (aproximadamente 1.442)</p>
+
+<p ALIGN="left">Math.LN10 retorna o valor do logarítmo de 10 (aproximadamente 2.302)</p>
+
+<p ALIGN="left">Math.LOG10E - retorna a base do logarítmo de 10 (aproximadamente 0.434)</p>
+
+<p ALIGN="left">Observação:</p>
+
+<p ALIGN="left">Em todas as funções, quando apresentamos a expressão
+&quot;(número)&quot;, na verdade queremos nos referir a um argumento que será processado
+pela função e que poderá ser: um número, uma variável ou o conteúdo de um objeto
+(propriedade value).</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="novas"></a><b>CRIANDO NOVAS INSTÂNCIAS</b></h3>
+
+<p ALIGN="left">Através do operador new podem ser criadas novas instâncias a objetos já
+existentes, mudando o seu conteúdo, porém, mantendo suas propriedades.</p>
+
+<p ALIGN="left">A sintaxe geral é a seguinte:</p>
+
+<p ALIGN="left">NovoObjeto = new ObjetoExistente (parâmetros)</p>
+
+<p ALIGN="left">Ex1.</p>
+
+<p ALIGN="left">MinhaData = new Date ()</p>
+
+<p ALIGN="left">MinhaData passou a ser um objeto tipo Date, com o mesmo conteúdo
+existente em Date</p>
+
+<p ALIGN="left">(data e hora atual)</p>
+
+<p ALIGN="left">Ex2:</p>
+
+<p ALIGN="left">MinhaData = new Date(1996, 05, 27)</p>
+
+<p ALIGN="left">MinhaData passou a ser um objeto tipo Date, porém, com o conteúdo de uma
+nova data.</p>
+
+<p ALIGN="left">Ex3:</p>
+
+<p ALIGN="left">Suponha a existência do seguinte objeto chamado Empresas</p>
+
+<p ALIGN="left">function Empresas (Emp, Nfunc, Prod)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+this.Emp = Emp</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+this.Nfunc = Nfunc</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+this.Prod = Prod }</p>
+
+<p ALIGN="left">Podemos criar novas instâncias, usando a mesma estrutura, da seguinte
+forma:</p>
+
+<p ALIGN="left">Elogica = new Empresas(&quot;Elogica&quot;, &quot;120&quot;,
+&quot;Serviços&quot;)</p>
+
+<p ALIGN="left">Pitaco = new Empresas(&quot;Pitaco&quot;, &quot;35&quot;,
+&quot;Software&quot;)</p>
+
+<p ALIGN="left">Corisco = new Empresas(&quot;Corisco&quot;, &quot;42&quot;,
+&quot;Conectividade&quot;)</p>
+
+<p ALIGN="left">Assim, a variável Elogica.Nfunc terá o seu conteúdo igual a 120</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="arrays"></a><b>MANIPULANDO ARRAYS</b></h3>
+
+<p ALIGN="left">O JavaScript não tem um tipo de dado ou objeto para manipular arrays. Por
+isso, para trabalhar com arrays é necessário a criação de um objeto com a propriedade
+de criação de um array.</p>
+
+<p ALIGN="left">No exemplo abaixo, criaremos um objeto tipo array de tamanho variável e
+com a função de &quot;limpar&quot; o conteúdo das variáveis cada vez que uma nova
+instância seja criada a partir dele.</p>
+
+<p ALIGN="left">function CriaArray (n) {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.length
+= n</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for (var i = 1 ; i &lt;= n ; i++)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{ this[i] = &quot;&quot; }&nbsp;&nbsp; }</p>
+
+<p ALIGN="left">Agora podemos criar novas instâncias do objeto &quot;CriaArray&quot; e
+alimentá-los com os dados necessários.</p>
+
+<p ALIGN="left">NomeDia = new CriaArray(7)</p>
+
+<p ALIGN="left">NomeDia[0] = &quot;Domingo&quot;</p>
+
+<p ALIGN="left">NomeDia[1] = &quot;Segunda&quot;</p>
+
+<p ALIGN="left">NomeDia [2] = &quot;Terça&quot;</p>
+
+<p ALIGN="left">NomeDia[3] = &quot;Quarta&quot;</p>
+
+<p ALIGN="left">NomeDia[4] = &quot;Quinta&quot;</p>
+
+<p ALIGN="left">NomeDia[5] = &quot;Sexta&quot;</p>
+
+<p ALIGN="left">NomeDia[6] = &quot;Sábado&quot;</p>
+
+<p ALIGN="left">Atividade = new CriaArray(5)</p>
+
+<p ALIGN="left">Atividade[0] = &quot;Analista&quot;</p>
+
+<p ALIGN="left">Atividade[1] = &quot;Programador&quot;</p>
+
+<p ALIGN="left">Atividade[2] = &quot;Operador&quot;</p>
+
+<p ALIGN="left">Atividade[3] = &quot;Conferente&quot;</p>
+
+<p ALIGN="left">Atividade[4] = &quot;Digitador&quot;</p>
+
+<p ALIGN="left">Agora poderemos obter os dados diretamente dos arrays.</p>
+
+<p ALIGN="left">DiaSemana = NomeDia[4]</p>
+
+<p ALIGN="left">Ocupação = Atividade[1]</p>
+
+<p ALIGN="left">DiaSemana passaria a conter Quinta e Ocupação conteria Programador.</p>
+
+<p ALIGN="left">Outra forma de se trabalhar com arrays é criar novas instâncias dentro
+do próprio objeto do</p>
+
+<p ALIGN="left">array, o que proporciona o mesmo efeito de se trabalhar com matriz. Isso
+pode ser feito da</p>
+
+<p ALIGN="left">seguinte forma:</p>
+
+<p ALIGN="left">function Empresas (Emp, Nfunc, Prod) {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.Emp
+= Emp</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.Nfunc
+= Nfunc</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.Prod
+= Prod }</p>
+
+<p ALIGN="left">TabEmp = new Empresas(3)</p>
+
+<p ALIGN="left">TabEmp[1] = new Empresas(&quot;Elogica&quot;, &quot;120&quot;,
+&quot;Serviços&quot;)</p>
+
+<p ALIGN="left">TabEmp[2] = new Empresas(&quot;Pitaco&quot;, &quot;35&quot;,
+&quot;Software&quot;)</p>
+
+<p ALIGN="left">TabEmp[3] = new Empresas(&quot;Corisco&quot;, &quot;42&quot;,
+&quot;Conectividade&quot;)</p>
+
+<p ALIGN="left">Assim, poderemos obter a atividade da empresa número 3, cuja resposta
+seria Conectividade, da seguinte forma:</p>
+
+<p ALIGN="left">Atividade = TabEmp[3].Prod</p>
+
+<p ALIGN="left">Obs:</p>
+
+<p ALIGN="left">É importante lembrar que, embora os exemplos estejam com indexadores
+fixos, os indexadores podem ser referências ao conteúdo de variáveis.</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="string"></a><b>MANIPULANDO STRING's</b></h3>
+
+<p ALIGN="left">O JavaScript é bastante poderoso no manuseio de String´s, fornecendo ao
+programador uma total</p>
+
+<p ALIGN="left">flexibilidade em seu manuseio.</p>
+
+<p ALIGN="left">Abaixo apresentamos os métodos disponíveis para manuseio de string´s.</p>
+
+<p ALIGN="left">string.length - retorna o tamanho da string (quantidade de bytes)</p>
+
+<p ALIGN="left">string.charAt(posição) - retorna o caracter da posição especificada
+(inicia em 0)</p>
+
+<p ALIGN="left">string.indexOf(&quot;string&quot;) - retorna o número da posição onde
+começa a primeira &quot;string&quot;</p>
+
+<p ALIGN="left">string.lastindexOf(&quot;string&quot;) - retorna o número da posição
+onde começa a última &quot;string&quot;</p>
+
+<p ALIGN="left">string.substring(index1, index2) - retorna o conteúdo da string que
+corresponde ao intervalo
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;especificado. Começando no caracter
+posicionado em index1 e terminando no caracter
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imediatamente anterior ao valor
+especificado em index2.</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">Todo = &quot;Elogica&quot;</p>
+
+<p ALIGN="left">Parte = Todo.substring(1, 4)</p>
+
+<p ALIGN="left">(A variável Parte receberá a palavra log)</p>
+
+<p ALIGN="left">string.toUpperCase() - Transforma o conteúdo da string para maiúsculo
+(Caixa Alta)</p>
+
+<p ALIGN="left">string.toLowerCase() - Transforma o conteúdo da string para minúsculo
+(Caixa Baixa)</p>
+
+<p ALIGN="left">escape (&quot;string&quot;) - retorna o valor ASCII da string (vem
+precedido de %)</p>
+
+<p ALIGN="left">unscape(&quot;string&quot;) - retorna o caracter a partir de um valor
+ASCII (precedido de %)</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="datas"></a><b>MANIPULANDO DATAS</b></h3>
+
+<p ALIGN="left">Existe apenas uma função para que se possa obter a data e a hora. É a
+função Date(). Esta função devolve data e hora no formato:Dia da semana, Nome do mês,
+Dia do mês, Hora:Minuto:Segundo e Ano</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">Fri May 24 16:58:02 1996</p>
+
+<p ALIGN="left">Para se obter os dados separadamente, existem os seguintes métodos:</p>
+
+<p ALIGN="left">getDate() - Obtém o dia do mês (numérico de 1 a 31)</p>
+
+<p ALIGN="left">getDay() - Obtém o dia da semana (0 a 6)</p>
+
+<p ALIGN="left">getMonth() - Obtém o mês (numérico de 0 a 11)</p>
+
+<p ALIGN="left">getYear() - Obtém o ano</p>
+
+<p ALIGN="left">getHours() - Obtém a hora (numérico de 0 a 23)</p>
+
+<p ALIGN="left">getMinutes() - Obtém os minutos (numérico de 0 a 59)</p>
+
+<p ALIGN="left">getSeconds() - Obtém os segundos (numérico de 0 a 59)</p>
+
+<p ALIGN="left">No exemplo abaixo obteremos o dia da semana. Para tal, utilizaremos a
+variável DataToda</p>
+
+<p ALIGN="left">para armazenar data/hora e a variável DiaHoje para armazenar o número do
+dia da semana.</p>
+
+<p ALIGN="left">DataToda = new Date()</p>
+
+<p ALIGN="left">DiaHoje = DataToda.getDay()</p>
+
+<p ALIGN="left">Para obter o dia da semana alfa, teremos que construir uma tabela com os
+dias da semana e</p>
+
+<p ALIGN="left">utilizar a variável DiaHoje como indexador.</p>
+
+<p ALIGN="left">function CriaTab (n) {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.length
+= n</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for (var x = 1 ; x&lt;= n ; x++)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{ this[x] = &quot;&quot; }&nbsp;&nbsp; }</p>
+
+<p ALIGN="left">NomeDia = new CriaTab(7)</p>
+
+<p ALIGN="left">NomeDia[0] = &quot;Domingo&quot;</p>
+
+<p ALIGN="left">NomeDia[1] = &quot;Segunda&quot;</p>
+
+<p ALIGN="left">NomeDia [2] = &quot;Terça&quot;</p>
+
+<p ALIGN="left">NomeDia[3] = &quot;Quarta&quot;</p>
+
+<p ALIGN="left">NomeDia[4] = &quot;Quinta&quot;</p>
+
+<p ALIGN="left">NomeDia[5] = &quot;Sexta&quot;</p>
+
+<p ALIGN="left">NomeDia[6] = &quot;Sábado&quot;</p>
+
+<p ALIGN="left">DiaSemana = NomeDia[DiaHoje]</p>
+
+<p ALIGN="left">Para criar uma variável tipo Date com o conteúdo informado pela
+aplicação, existe o método set. Assim, temos os seguintes métodos: setDate, setDay,
+setMonth, setYear, setHours, setMinutes e setSeconds.</p>
+
+<p ALIGN="left">Seguindo o exemplo acima, para mudar o mês para novembro, teríamos:</p>
+
+<p ALIGN="left">DataToda.setMonth(10)</p>
+
+<p ALIGN="left">Exemplos adicionais serão encontrados no capítulo &quot;Usando Timer e
+Date</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="usuario"></a><b>INTERAGINDO COM O USUÁRIO</b></h3>
+
+<p ALIGN="left">A interação com o usuário se dá através de objetos para entrada de
+dados (textos), marcação de opções (radio, checkbox e combo), botões e link's para
+outras páginas.</p>
+
+<p ALIGN="left">Conceitualmente, os objetos são divididos em: Input, Textarea e Select.</p>
+
+<p ALIGN="left">O objeto Input divide-se (propriedade Type) em:</p>
+
+<p ALIGN="left">&#149;Password &#149;Text &#149;Hidden &#149;Checkbox &#149;Radio
+&#149;Button &#149;Reset &#149;Submit</p>
+
+<p ALIGN="left">A construção destes objetos é feita pela linguagem HTML (HiperText
+Mark-up Language). Portanto, é aconselhável que sejam criados utilizando-se ferramentas
+de geração de páginas HTML, como o HotDog ou, mais recomendado, FrontPage.</p>
+
+<p ALIGN="left">Objeto Input TEXT</p>
+
+<p ALIGN="left">É o principal objeto para entrada de dados.</p>
+
+<p ALIGN="left">Suas principais propriedades são: type, size, maxlength, name e value.</p>
+
+<p ALIGN="left">type=text : Especifica um campo para entrada de dados normal</p>
+
+<p ALIGN="left">size : Especifica o tamanho do campo na tela.</p>
+
+<p ALIGN="left">maxlength : Especifica a quantidade máxima de caracteres permitidos.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto</p>
+
+<p ALIGN="left">value : Armazena o conteúdo do campo.</p>
+
+<p ALIGN="left">Os eventos associados a este objeto são: onchange, onblur, onfocus e
+onselect.</p>
+
+<p ALIGN="left">Ex:</p>
+
+<p ALIGN="left">&lt;form name=&quot;TText&quot;&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;Entrada de Texto &lt;input type=text size=20 maxlength=30
+name=&quot;CxTexto&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+value=&quot;&quot; onchange=&quot;alert ('Voce digitou ' + CxTexto.value)&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">Objeto Input PASSWORD</p>
+
+<p ALIGN="left">É o objeto para entrada de Senhas de acesso (password). Os dados
+digitados neste objeto são criptografados e, só são interpretados (vistos) pelo
+&quot;server&quot;, por razões de segurança.</p>
+
+<p ALIGN="left">Suas principais propriedades são: type, size, maxlength, name e value.</p>
+
+<p ALIGN="left">type=password : Especifica um campo para entrada de senha. Os dados
+digitados são substituidos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(na
+tela) por &quot;*&quot;.</p>
+
+<p ALIGN="left">size : Especifica o tamanho do campo na tela.</p>
+
+<p ALIGN="left">maxlength : Especifica a quantidade máxima de caracteres permitidos.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto</p>
+
+<p ALIGN="left">value : Armazena o conteúdo digitado no campo.</p>
+
+<p ALIGN="left">Os eventos associados a este objeto são: onchange, onblur, onfocus e
+onselect.</p>
+
+<p ALIGN="left">Ex:</p>
+
+<p ALIGN="left">&lt;form name=&quot;TPassword&quot;&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;Entrada de Senha&lt;input type=password size=10 maxlength=10
+name=&quot;Senha&quot; value=&quot;&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">Objeto Input HIDDEN</p>
+
+<p ALIGN="left">É um objeto semelhante ao input text, porém, invisível para o usuário.
+Este objeto deve ser utilizado para passar informações ao &quot;server&quot; (quando o
+formulário for submetido) sem que o usuário tome conhecimento. Suas propriedades são:
+name e value.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto.</p>
+
+<p ALIGN="left">value : Armazena o conteúdo do objeto</p>
+
+<p ALIGN="left">Ex:</p>
+
+<p ALIGN="left">&lt;form name=&quot;THidden&quot;&gt;</p>
+
+<p ALIGN="left">&lt;input type=hidden size=20 maxlength=30 name=&quot;HdTexto&quot;
+value=&quot;&quot; &gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">Objeto Input CHECKBOX</p>
+
+<p ALIGN="left">São objetos que permitem ao usuário ligar ou desligar uma determinada
+opção.</p>
+
+<p ALIGN="left">Suas principais propriedades são: name, value e checked.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto</p>
+
+<p ALIGN="left">value : Especifica o valor que será enviado ao &quot;server&quot; se o
+objeto estiver ligado (checked).</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso&nbsp;seja
+omitido, será enviado o valor default &quot;on&quot; .</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esta
+propriedade também serve para ativar comandos lógicos, testando-se a condição</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;de
+&quot;checked&quot;.</p>
+
+<p ALIGN="left">checked : Especifica que o objeto inicialmente estará ligado</p>
+
+<p ALIGN="left">O único evento associado a este objeto é onclick.</p>
+
+<p ALIGN="left">Ex:</p>
+
+<p ALIGN="left">No exemplo abaixo, criaremos um objeto input.text e três objetos
+checkbox. O primeiro checkbox, quando ativado, transformará o texto em caracteres
+minúsculos. O segundo checkbox, quando ativado, transformará o texto em caracteres
+maiúsculos. O terceiro checkbox, quando ativado, dará um aviso do conteúdo que será
+recebido pelo &quot;server&quot; caso o formulário seja submetido para este.</p>
+
+<p ALIGN="left">&lt;SCRIPT&gt;</p>
+
+<p ALIGN="left">function AltMaiusc () {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;document.TCheck.Muda.value =
+document.TCheck.Muda.value.toUpperCase()
+&nbsp;&nbsp;&nbsp;&nbsp;document.TCheck.Opt1.checked = false</p>
+
+<p ALIGN="left">}</p>
+
+<p ALIGN="left">function AltMinusc () {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;document.TCheck.Muda.value =
+document.TCheck.Muda.value.toLowerCase() &nbsp;&nbsp;&nbsp;document.TCheck.Opt2.checked =
+false</p>
+
+<p ALIGN="left">}</p>
+
+<p ALIGN="left">&lt;/SCRIPT&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">&lt;form name=&quot;TCheck&quot;&gt;</p>
+
+<p ALIGN="left">Muda Case &lt;input type=text size=20 maxlength=20
+name=&quot;Muda&quot;&gt; &lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">Minusculo&lt;input type=checkbox name=&quot;Opt1&quot; value=&quot;1&quot;
+checked</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;if
+(this.checked)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+AltMinusc() } &quot;&gt;</p>
+
+<p ALIGN="left">Maiusculo&lt;input type=checkbox name=&quot;Opt2&quot; value=&quot;2&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;if
+(this.checked)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+AltMaiusc() } &quot;&gt;</p>
+
+<p ALIGN="left">Demo valor&lt;input type=checkbox name=&quot;Opt3&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;if
+(Opt3.checked)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{alert
+('Server recebera = ' + Opt3.value) } &quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">Existe ainda uma outra forma de manipular este objeto, em forma de array,
+que é a seguinte: form.elements[index].propriedade. Esta não é uma boa forma porque o
+index é único dentro de um formulário, exigindo muito cuidado quando se acrescenta ou
+se deleta um objeto, pois, neste caso, haverá um natural deslocamento do index, podendo
+comprometer a lógica.</p>
+
+<p ALIGN="left">Objeto Input RADIO</p>
+
+<p ALIGN="left">São objetos que permitem ao usuário a escolha de apenas uma alternativa,
+diante de uma série de opções.</p>
+
+<p ALIGN="left">Suas principais propriedades são: name, value e checked.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto. Para caracterizar uma mesma série de
+opções, todos os
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objetos desta
+série têm que ter o mesmo &quot;name&quot;.</p>
+
+<p ALIGN="left">value : Especifica o valor que será enviado ao &quot;server&quot; se o
+objeto estiver ligado (checked). Caso
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seja omitido,
+será enviado o valor default &quot;on&quot; . Esta propriedade também serve para</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ativar
+comandos lógicos, testando-se a condição de &quot;checked&quot;.</p>
+
+<p ALIGN="left">checked : Especifica que o objeto inicialmente estará ligado</p>
+
+<p ALIGN="left">Para utilização deste objeto é importante o conhecimento de outras
+propriedades associadas:</p>
+
+<p ALIGN="left">Objeto.length : Retorna a quantidade de opções existentes na lista</p>
+
+<p ALIGN="left">Objeto.[index].value : retorna o texto (value) associado a cada opção</p>
+
+<p ALIGN="left">Objeto.[index].checked : retorna verdadeiro ou falso</p>
+
+<p ALIGN="left">O único evento associado a este objeto é onclick.</p>
+
+<p ALIGN="left">Ex. No exemplo abaixo temos dois set's de objetos radio. O primeiro tem o
+objetivo de mudar a cor de fundo do documento atual. O segundo tem o objetivo levar
+informações ao &quot;server&quot;.</p>
+
+<p ALIGN="left">&lt;p&gt;Radio&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input
+type=radio name=&quot;Rad&quot; value=&quot;1&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;document.bgColor='green'&quot;&gt;
+Fundo Verde</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio name=&quot;Rad&quot; value=&quot;2&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+onclick=&quot;document.bgColor='blueviolet'&quot;&gt; Fundo Violeta</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio name=&quot;Rad&quot; value=&quot;3&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+onclick=&quot;document.bgColor='#FFFF00'&quot;&gt; Fundo Amarelo</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">Objeto Input BUTTON</p>
+
+<p ALIGN="left">Este objeto tem por finalidade criar um botão ao qual se possa atrelar
+operações lógicas, a serem executadas quando o mesmo receber um click.</p>
+
+<p ALIGN="left">Suas propriedades são: name e value.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto.</p>
+
+<p ALIGN="left">value : Especifica o nome que aparecerá sobre o botão</p>
+
+<p ALIGN="left">O único evento associado a este objeto é onclick.</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">&lt;form method=&quot;POST&quot; name=&quot;TstButton&quot;&gt;</p>
+
+<p ALIGN="left">Digite um Texto &lt;input type=text size=30 maxlength=30
+name=&quot;Teste&quot; value=&quot;&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;&lt;p&gt;</p>
+
+<p ALIGN="left">Click no Botao &lt;input type=button name=&quot;Bteste&quot;
+value=&quot;Botao de teste&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;alert
+('Voce digitou: ' + TstButton.Teste.value)&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">Objeto Input RESET</p>
+
+<p ALIGN="left">Este objeto é um botão que tem por finalidade, única, limpar os campos
+digitados pelo usuário, restaurando o conteúdo do formulário para os valores iniciais.</p>
+
+<p ALIGN="left">É recomendável a utilização deste objeto, para facilitar o usuário a
+limpar suas informações, uma vez que a utilização da opção &quot;reload&quot; do
+&quot;browser&quot; (que seria uma forma) não perde as infromações digitadas.</p>
+
+<p ALIGN="left">Suas propriedades são: name e value.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto.</p>
+
+<p ALIGN="left">value : Especifica o nome que aparecerá sobre o botão</p>
+
+<p ALIGN="left">O único evento associado a este objeto é onclick.</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">&lt;form method=&quot;POST&quot; name=&quot;TesteRes&quot;&gt;</p>
+
+<p ALIGN="left">Digite um Texto&lt;input type=text size=10 maxlength=20
+name=&quot;Teste&quot; value=&quot;&quot;&gt;</p>
+
+<p ALIGN="left">Apague o Texto &lt;input type=reset name=&quot;Bres&quot;
+value=&quot;Reset&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">Objeto Input SUBMIT</p>
+
+<p ALIGN="left">Este objeto é um botão que tem por finalidade submeter (enviar) o
+conteúdo dos objetos do formulário ao &quot;server&quot;. O formulário será submetido
+à URL especificada na propriedade &quot;action&quot; do formulário.</p>
+
+<p ALIGN="left">Suas propriedades são: name e value.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto.</p>
+
+<p ALIGN="left">value : Especifica o nome que aparecerá sobre o botão</p>
+
+<p ALIGN="left">O único evento associado a este objeto é onclick. Embora se possa
+atrelar lógica a este evento, não se pode evitar que o formulário seja submetido,
+portanto, não é aconselhavel o seu uso. Mais seguro e mais útil é a utilização da
+propriedade onSubmit do formulário. Este permite que se atrele lógica e decida-se pela
+submissão ou não.</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">&lt;script&gt;</p>
+
+<p ALIGN="left">function TestaVal() {</p>
+
+<p ALIGN="left">if (document.TesteSub.Teste.value == &quot;&quot;) {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp; alert (&quot;Campo nao Preenchido...Form nao
+Submetido&quot;)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp; return false }</p>
+
+<p ALIGN="left">else {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp; alert (&quot;Tudo Ok....Form Submetido&quot;)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp; return true } }</p>
+
+<p ALIGN="left">&lt;/script&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">&lt;form method=&quot;POST&quot; name=&quot;TesteSub&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+onSubmit=&quot;return TestaVal()&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+action=&quot;http://10.0.5.2/scripts/isapielo.dll/vbloja.loja.action&quot;&gt;</p>
+
+<p ALIGN="left">Digite um Texto &lt;input type=text size=10 maxlength=10
+name=&quot;Teste&quot; value=&quot;&quot;&gt;</p>
+
+<p ALIGN="left">Botao Submit &lt;input type=submit name=&quot;Bsub&quot; value=&quot;Manda
+p/Server&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">No exemplo acima, o formulário está sendo submetido a URL
+&quot;10.0.5.2&quot; (que é o endereço IP</p>
+
+<p ALIGN="left">de um &quot;Server&quot;). Este servidor está rodando o &quot;Microsoft
+Internet Information Server&quot;. Estamos</p>
+
+<p ALIGN="left">enviando os dados a um &quot;OLE&quot;, que está no subdiretório
+&quot;scripts&quot;, chamado &quot;isapielo.dll&quot;, que tem</p>
+
+<p ALIGN="left">por objetivo fazer a conecção com aplicações escritas em VB. A
+aplicação VB que está sendo</p>
+
+<p ALIGN="left">chamada, é um OLE de nome &quot;vbloja&quot; no qual estamos acionando a
+classe &quot;loja&quot; e o método</p>
+
+<p ALIGN="left">&quot;action&quot;.</p>
+
+<p ALIGN="left">A aplicação VB, deste exemplo, fará apenas a devolução dos dados
+recebidos pelo Server.</p>
+
+<p ALIGN="left">Objeto TEXTAREA</p>
+
+<p ALIGN="left">É um objeto para entrada de dados em um campo de múltiplas linhas. Suas
+principais propriedades são: name, rows e cols.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto</p>
+
+<p ALIGN="left">rows : Especifica a quantidade de linhas que aparecerão na tela</p>
+
+<p ALIGN="left">cols : Especifica a quantidade de caracteres que aparecerão em cada linha</p>
+
+<p ALIGN="left">value : Acessa o conteúdo do campo via programação.</p>
+
+<p ALIGN="left">Os eventos associados a este objeto são: onchange, onblur, onfocus e
+onselect.</p>
+
+<p ALIGN="left">Ex:</p>
+
+<p ALIGN="left">&lt;form name=&quot;TesteTextarea&quot;&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">Texto de Múltiplas Linhas &lt;textarea name=&quot;MultText&quot; rows=2
+cols=40&gt;</p>
+
+<p ALIGN="left">Primeira linha do texto inicial</p>
+
+<p ALIGN="left">segunda linha do texto inicial</p>
+
+<p ALIGN="left">&lt;/textarea&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">Objeto SELECT</p>
+
+<p ALIGN="left">É um objeto para entrada de opções, onde o usuário, a partir de uma
+lista de alternativas, seleciona uma ou mais opções.</p>
+
+<p ALIGN="left">Suas principais propriedades são: name, size, value e multiple.</p>
+
+<p ALIGN="left">name : Especifica o nome do objeto</p>
+
+<p ALIGN="left">size : Especifica a quantidade de opções que aparecerão na tela
+simultaneamente</p>
+
+<p ALIGN="left">value : Associa um valor ou string para cada opção (opcional)</p>
+
+<p ALIGN="left">multiple : Especifica a condição de múltipla escolha (usando-se a tecla
+Ctrl)</p>
+
+<p ALIGN="left">Para utilização deste objeto é importante o conhecimento de outras
+propriedades associadas:</p>
+
+<p ALIGN="left">Objeto.length : Retorna a quantidade de opções existentes na lista</p>
+
+<p ALIGN="left">Objeto.selectedindex : Retorna o &quot;index&quot; do objeto selecionado
+(primeiro = 0) Objeto.options[index].text : retorna o texto externo associado a cada
+opção Objeto.options[index].value : retorna o texto interno (value) associado a cada
+opção Objeto.options[index].selected : retorna verdadeiro ou falso</p>
+
+<p ALIGN="left">Os eventos associados a este objeto são: onchange, onblur e onfocus.</p>
+
+<p ALIGN="left">Ex1:</p>
+
+<p ALIGN="left">Neste exemplo é importante observar os seguintes aspectos:</p>
+
+<p ALIGN="left">a) A lista permite apenas uma seleção</p>
+
+<p ALIGN="left">b) A quarta opção aparecerá inicialmente selecionada (propriedade
+&quot;selected&quot;)</p>
+
+<p ALIGN="left">c) Não utilizamos a propriedade &quot;value&quot;. Assim, a propriedade
+&quot;text&quot; e a propriedade &quot;value&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;passam a ter o mesmo valor, ou seja, o valor
+externo que aparece na tela.</p>
+
+<p ALIGN="left">&lt;script&gt;</p>
+
+<p ALIGN="left">function Verselect(Campo) {</p>
+
+<p ALIGN="left">Icombo = Campo.selectedIndex</p>
+
+<p ALIGN="left">alert (&quot;Voce escolheu &quot; + Campo.options[Icombo].text) }</p>
+
+<p ALIGN="left">&lt;/script&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">Objeto Select &lt;select name=&quot;Combo1&quot; size=1
+onchange=&quot;Verselect(Combo1)&quot;&gt;</p>
+
+<p ALIGN="left">&lt;option&gt;Opcao 1</p>
+
+<p ALIGN="left">&lt;option&gt;Opcao 2</p>
+
+<p ALIGN="left">&lt;option&gt;Opcao 3</p>
+
+<p ALIGN="left">&lt;option selected&gt;Opcao 4 (recomendada)</p>
+
+<p ALIGN="left">&lt;option&gt;Opcao 5</p>
+
+<p ALIGN="left">&lt;option&gt;Opcao 6</p>
+
+<p ALIGN="left">&lt;/select&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">Ex2:</p>
+
+<p ALIGN="left">Neste exemplo é importante observar os seguintes aspectos:</p>
+
+<p ALIGN="left">a) A lista permite múltiplas seleções</p>
+
+<p ALIGN="left">b) Utilizamos a propriedade &quot;value&quot;. Assim as propriedades
+&quot;text&quot; e &quot;value&quot;</p>
+
+<p ALIGN="left">têm valores diferentes: text retornará Escolha 1 a Escolha 4 e value</p>
+
+<p ALIGN="left">retornará List1 a List4.</p>
+
+<p ALIGN="left">c) O parâmetro passado, quando da ocorrência do evento onblur, foi this.</p>
+
+<p ALIGN="left">Esta diretiva significa que estamos passando este objeto.</p>
+
+<p ALIGN="left">&lt;script&gt;</p>
+
+<p ALIGN="left">function Vermult(Lista) {</p>
+
+<p ALIGN="left">var opcoes = &quot;&quot;</p>
+
+<p ALIGN="left">for (i = 0 ; i &lt; Lista.length ; i++) {</p>
+
+<p ALIGN="left">if (Lista.options[i].selected) {</p>
+
+<p ALIGN="left">opcoes += (Lista.options[i].value + &quot;, &quot;) }</p>
+
+<p ALIGN="left">}</p>
+
+<p ALIGN="left">alert (&quot;As opcoes escolhidas foram : &quot; + opcoes) }</p>
+
+<p ALIGN="left">&lt;/script&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">Objeto Select2 &lt;select name=&quot;Combo2&quot; size=4 multiple
+onblur=&quot;Vermult(this)&quot;&gt;</p>
+
+<p ALIGN="left">&lt;option value=&quot;List1&quot;&gt;Escolha 1 &lt;/option&gt;</p>
+
+<p ALIGN="left">&lt;option value=&quot;List2&quot;&gt;Escolha 2 &lt;/option&gt;</p>
+
+<p ALIGN="left">&lt;option value=&quot;List3&quot;&gt;Escolha 3 &lt;/option&gt;</p>
+
+<p ALIGN="left">&lt;option value=&quot;List4&quot;&gt;Escolha 4 &lt;/option&gt;</p>
+
+<p ALIGN="left">&lt;/select&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">Focando um Objeto</p>
+
+<p ALIGN="left">Este método permite que o cursor seja ativado em um determinado objeto
+(focado). Isso pode ser feito na carga do documento, a partir da ocorrência de um evento
+ou mesmo dentro de uma função.</p>
+
+<p ALIGN="left">Observe que até agora o usuário tinha que dar um &quot;Click&quot; para
+focar o objeto desejado.</p>
+
+<p ALIGN="left">De forma semelhante existe o método &quot;Select&quot;. Este método
+marca o conteúdo do objeto com uma tarja roxa, permitindo ao usuário, em caso de
+substituição do conteúdo do campo, não ter que deletar o conteúdo anterior, pois, com
+este método, a deleção se dá de forma automática quando da digitação do novo
+conteúdo.</p>
+
+<p ALIGN="left">Os métodos &quot;Focus&quot; e &quot;Select&quot; podem ser utilizados
+nos seguintes objetos:</p>
+
+<p ALIGN="left">password, select, text e textarea</p>
+
+<p ALIGN="left">No exemplo abaixo, utilizaremos o evento onload para setar o focus para o
+primeiro objeto do formulário e os métodos focus e select para, na rotina de crítica
+dos dados, focar o objeto que contiver erro de preenchimento.</p>
+
+<p ALIGN="left">Ex.</p>
+
+<p ALIGN="left">&lt;body onload=&quot;document.TstFocus.Nome.focus()&quot;&gt;</p>
+
+<p ALIGN="left">&lt;script&gt;</p>
+
+<p ALIGN="left">DdosOk = true</p>
+
+<p ALIGN="left">function Criticar() {</p>
+
+<p ALIGN="left">&nbsp;&nbsp;DadosOk = false</p>
+
+<p ALIGN="left">&nbsp;&nbsp;DataAtual = new Date()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;MesAtual = DataAtual.getMonth() + 1</p>
+
+<p ALIGN="left">&nbsp;&nbsp;AnoAtual = DataAtual.getYear() + 1900</p>
+
+<p ALIGN="left">&nbsp;&nbsp;Nome = document.TstFocus.Nome.value</p>
+
+<p ALIGN="left">&nbsp;&nbsp;Mes = parseInt(document.TstFocus.Mes.value)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;Ano = parseInt (document.TstFocus.Ano.value)</p>
+
+<p ALIGN="left">//</p>
+
+<p ALIGN="left">&nbsp;&nbsp;if (Ano &lt; 1900)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Ano = Ano + 1900 }</p>
+
+<p ALIGN="left">&nbsp;&nbsp;if (Nome == &quot;&quot;)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;{ alert (&quot;Informe o seu Nome, Não deixe em
+branco&quot;)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Nome.focus()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return }</p>
+
+<p ALIGN="left">&nbsp;&nbsp;if (Mes &lt; 1 || Mes &gt; 12)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;{ alert (&quot;O Mês informado não é válido,
+informe corretamente&quot;)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Mes.focus()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Mes.select()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return }</p>
+
+<p ALIGN="left">&nbsp;&nbsp;if (Ano == AnoAtual &amp;&amp; Mes &gt; MesAtual)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;{ alert (&quot;O período informado é superior a
+data atual&quot;)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Mes.focus()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Mes.select()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return }</p>
+
+<p ALIGN="left">&nbsp;&nbsp;if (Ano &lt; 1996 || Ano &gt; AnoAtual)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;{ alert (&quot;O Ano informado não é válido,
+informe corretamente&quot;)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Ano.focus()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Ano.select()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return }</p>
+
+<p ALIGN="left">&nbsp;&nbsp;DadosOk = true</p>
+
+<p ALIGN="left">}</p>
+
+<p ALIGN="left">&lt;/script&gt;</p>
+
+<p ALIGN="left">&lt;form name=&quot;TstFocus&quot; method=&quot;POST&quot;&gt;</p>
+
+<p ALIGN="left">&lt;p&gt;</p>
+
+<p ALIGN="left">Informe o seu Nome &lt;input type=text size=30 maxlength=30
+name=&quot;Nome&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;p&gt; Informe o mês desejado &lt;input type=text size=2 maxlength=2
+name=&quot;Mes&quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;p&gt; Informe o ano desejado &lt;input type=text size=4 maxlength=4
+name=&quot;Ano&quot; &gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;p&gt; &lt;input type=button name=&quot;Testa&quot; value=&quot;Testar
+Validade&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;Criticar()</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+(DadosOk)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{alert
+('Todos os Dados estão Corretos') } &quot;&gt;</p>
+
+<p ALIGN="left">&lt;/p&gt;</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left">&lt;/body&gt;</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="timedate"></a><b>USANDO TIME e DATE</b></h3>
+
+<p ALIGN="left">É um método que permite a programação para que uma determinada ação
+só ocorra após o transcurso de um determinado tempo.</p>
+
+<p ALIGN="left">Variável = setTimeout (&quot;ação&quot;, tempo)</p>
+
+<p ALIGN="left">Onde:</p>
+
+<p ALIGN="left">Variável é uma variável apenas para controle do timer</p>
+
+<p ALIGN="left">ação é a ação que se quer realizar.</p>
+
+<p ALIGN="left">tempo é o tempo de espera para que a ação ocorra, em milisegundos.</p>
+
+<p ALIGN="left">Obs:</p>
+
+<p ALIGN="left">É importante observar que a ação só ocorrerá uma vez. Para que a
+ação volte a ocorrer, será necessário repetir o comando dentro da ação, obtendo-se,
+assim, um LOOP.</p>
+
+<p ALIGN="left">Para interromper um LOOP, provocado pela forma acima, deve-se utilizar o
+seguinte método:</p>
+
+<p ALIGN="left">clearTimeout (Variável)</p>
+
+<p ALIGN="left">Onde:</p>
+
+<p ALIGN="left">Variável é o nome da variável de controle do timer.</p>
+
+<p ALIGN="left">Abaixo encontra-se um exemplo de um formulário que apresenta a data e
+hora atual, atualizando os dados a cada um segundo, tendo dois botões de rádio que tem a
+função de ativar e desativar a atualização dos dados. Apresenta também, fora do
+formulário, a data contendo dia e mês por extenso.</p>
+
+<p ALIGN="left">&lt;script&gt;</p>
+
+<p ALIGN="left">function Hoje() {</p>
+
+<p ALIGN="left">ContrRelogio = setTimeout (&quot;Hoje()&quot;, 1000)</p>
+
+<p ALIGN="left">Hr = new Date()</p>
+
+<p ALIGN="left">dd = Hr.getDate()</p>
+
+<p ALIGN="left">mm = Hr.getMonth() + 1</p>
+
+<p ALIGN="left">aa = Hr.getYear()</p>
+
+<p ALIGN="left">hh = Hr.getHours()</p>
+
+<p ALIGN="left">min = Hr.getMinutes()</p>
+
+<p ALIGN="left">seg = Hr.getSeconds()</p>
+
+<p ALIGN="left">DataAtual = ((dd &lt; 10) ? &quot;0&quot; + dd + &quot;/&quot; : dd +
+&quot;/&quot;)</p>
+
+<p ALIGN="left">DataAtual += ((mm &lt; 10) ? &quot;0&quot; + mm + &quot;/&quot; + aa : mm
++ &quot;/&quot; + aa)</p>
+
+<p ALIGN="left">HoraAtual = ((hh &lt; 10) ? &quot;0&quot; + hh + &quot;:&quot; : hh +
+&quot;:&quot;)</p>
+
+<p ALIGN="left">HoraAtual += ((min &lt; 10) ? &quot;0&quot; + min + &quot;:&quot; : min +
+&quot;:&quot;)</p>
+
+<p ALIGN="left">HoraAtual += ((seg &lt; 10) ? &quot;0&quot; + seg : seg)</p>
+
+<p ALIGN="left">document.DataHora.Data.value=DataAtual</p>
+
+<p ALIGN="left">document.DataHora.Hora.value=HoraAtual</p>
+
+<p ALIGN="left">}</p>
+
+<p ALIGN="left">//</p>
+
+<p ALIGN="left">function CriaArray (n) {</p>
+
+<p ALIGN="left">this.length = n }</p>
+
+<p ALIGN="left">//</p>
+
+<p ALIGN="left">NomeDia = new CriaArray(7)</p>
+
+<p ALIGN="left">NomeDia[0] = &quot;Domingo&quot;</p>
+
+<p ALIGN="left">NomeDia[1] = &quot;Segunda&quot;</p>
+
+<p ALIGN="left">NomeDia[2] = &quot;Terça&quot;</p>
+
+<p ALIGN="left">NomeDia[3] = &quot;Quarta&quot;</p>
+
+<p ALIGN="left">NomeDia[4] = &quot;Quinta&quot;</p>
+
+<p ALIGN="left">NomeDia[5] = &quot;Sexta&quot;</p>
+
+<p ALIGN="left">NomeDia[6] = &quot;Sábado&quot;</p>
+
+<p ALIGN="left">//</p>
+
+<p ALIGN="left">NomeMes = new CriaArray(12)</p>
+
+<p ALIGN="left">NomeMes[0] = &quot;Janeiro&quot;</p>
+
+<p ALIGN="left">NomeMes[1] = &quot;Fevereiro&quot;</p>
+
+<p ALIGN="left">NomeMes[2] = &quot;Março&quot;</p>
+
+<p ALIGN="left">NomeMes[3] = &quot;Abril&quot;</p>
+
+<p ALIGN="left">NomeMes[4] = &quot;Maio&quot;</p>
+
+<p ALIGN="left">NomeMes[5] = &quot;Junho&quot;</p>
+
+<p ALIGN="left">NomeMes[6] = &quot;Julho&quot;</p>
+
+<p ALIGN="left">NomeMes[7] = &quot;Agosto&quot;</p>
+
+<p ALIGN="left">NomeMes[8] = &quot;Setembro&quot;</p>
+
+<p ALIGN="left">NomeMes[9] = &quot;Outubro&quot;</p>
+
+<p ALIGN="left">NomeMes[10] = &quot;Novembro&quot;</p>
+
+<p ALIGN="left">NomeMes[11] = &quot;Dezembro&quot;</p>
+
+<p ALIGN="left">//</p>
+
+<p ALIGN="left">Data1 = new Date()</p>
+
+<p ALIGN="left">dia = Data1.getDate()</p>
+
+<p ALIGN="left">dias = Data1.getDay()</p>
+
+<p ALIGN="left">mes = Data1.getMonth()</p>
+
+<p ALIGN="left">ano = Data1.getYear()</p>
+
+<p ALIGN="left">document.write (&quot;Recife, &quot; + NomeDia[dias] + &quot; &quot; + dia
++ &quot; de &quot; +</p>
+
+<p ALIGN="left">NomeMes[mes] + &quot; de &quot; + (ano + 1900 ) )</p>
+
+<p ALIGN="left">&lt;/script&gt;</p>
+
+<p ALIGN="left">&lt;form name=&quot;DataHora&quot;&gt;</p>
+
+<p ALIGN="left">Data : &lt;input type=text size=10 maxlength=10 name=&quot;Data&quot;&gt;</p>
+
+<p ALIGN="left">Hora : &lt;input type=text size=10 maxlength=10 name=&quot;Hora&quot;&gt;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio name=&quot;Botao&quot; value=&quot;Para Relogio&quot; checked</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;clearTimeout(ContrRelogio)&quot;&gt;Desativa</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio name=&quot;Botao&quot; value=&quot;Ativa Relogio&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;ContrRelogio
+= setTimeout('Hoje()', 1000)&quot;&gt;Ativa</p>
+
+<p ALIGN="left">&lt;/form&gt;</p>
+
+<p ALIGN="left"><a HREF="index.htm#indice">Índice</a> </p>
+
+<hr align="center">
+
+<h3 ALIGN="center"><a NAME="novasjan"></a><b>ABRINDO NOVAS JANELAS</b> </h3>
+
+<p ALIGN="left">Neste capítulo mostraremos como podem ser abertas novas janelas sobre uma
+janela contendo o documento principal.&nbsp;</p>
+
+<p ALIGN="left">É importante não confundir esta forma de abrir janelas com a divisão da
+tela em várias partes, ou mesmo com a chamada de outras páginas. Para que não existam
+dúvidas, explicaremos um pouco sobre estes dois outros métodos.&nbsp;</p>
+
+<p ALIGN="left">A divisão de uma tela em várias janelas contendo documentos diferentes
+é feita através do objeto FRAME do Html. Neste caso, a tela inteira é considerada como
+um FrameSet e cada parte em que ela for dividida é considerada como um Frame. Cada Frame
+é definido dentro do FrameSet através da especificação dos parâmetros: % da tela na
+vertical (cols), % da tela na horizontal (rows) e nome de cada frame. Uma vez criado o
+FrameSet poderemos abrir documentos distintos em cada Frame. Para fazer isto, acrescente
+ao link do documento a diretiva target=nome do frame.</p>
+
+<p ALIGN="left">Ex.&nbsp;</p>
+
+<p ALIGN="left">&lt;href=&quot;Eventos.htm&quot; target=&quot;Principal&quot;&gt;&nbsp;</p>
+
+<p ALIGN="left">Isto fará com que o arquivo html Eventos.htm seja aberto dentro do frame
+de nome Principal</p>
+
+<p ALIGN="left">A simples chamade de outras telas (documentos) é feita através do link
+para o documento desejado.</p>
+
+<p ALIGN="left">Ex.&nbsp;</p>
+
+<p ALIGN="left">&lt;href=&quot;Eventos.htm&quot; &gt;&nbsp;</p>
+
+<p ALIGN="left">Isto fará com que o arquivo html Eventos.htm seja aberto em
+substituição a tela existente.</p>
+
+<p ALIGN="left">Bem, voltemos ao nosso caso que é a abertura de janelas sobre um
+documento. Isto é feito através de comandos JavaScript, que permitem: Abrir uma janela,
+Abrir um documento dentro desta janela, Escrever o conteúdo da janela, Fechar a janela e
+Fechar o documento.&nbsp;</p>
+
+<p ALIGN="left">Abrindo a Janela</p>
+
+<p ALIGN="left">A sintaxe geral deste método é a seguinte:</p>
+
+<p ALIGN="left">Variavel = window.open (&quot;Url&quot;, &quot;Nome da janela&quot;,
+&quot;Opções&quot;)</p>
+
+<p ALIGN="left">Onde:&nbsp;</p>
+
+<p ALIGN="left">Variavel - Nome que será atribuido como propriedade da janela.&nbsp;</p>
+
+<p ALIGN="left">Url - Endereço Internet onde a janela será aberta. Normalmente voce
+estará utilizando a sua&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; própria Url, neste caso,
+preencha com &quot;&quot;.&nbsp;</p>
+
+<p ALIGN="left">Nome da Janela - É o nome que aparecerá no top da janela (Título)&nbsp;</p>
+
+<p ALIGN="left">Opções - São as opções que definem as características da janela,
+quais sejam:</p>
+
+<p ALIGN="left">&#149;toolbar - Cria uma barra de ferramentas tipo &quot;Back&quot;,
+&quot;Forward&quot;, etc.</p>
+
+<p ALIGN="left">&#149;location - Abre a barra de location do browse&nbsp;</p>
+
+<p ALIGN="left">&#149;directories - Abre a barra de ferramentas tipo &quot;What's
+New&quot;, &quot;Handbook&quot;, etc.</p>
+
+<p ALIGN="left">&#149;status - Abre uma barra de status no rodapé da janela</p>
+
+<p ALIGN="left">&#149;scrollbars - Abre barras de rolamento vertical e horizontal</p>
+
+<p ALIGN="left">&#149;menubar - Cria uma barra de menu tipo &quot;File&quot;,
+&quot;Edit&quot;, etc.</p>
+
+<p ALIGN="left">&#149;resizable - Permite ao usuário redimencionar a janela</p>
+
+<p ALIGN="left">&#149;width - Especifica a largura da janela, em pixels</p>
+
+<p ALIGN="left">&#149;height - Especifica a altura da janela, em pixels</p>
+
+<p ALIGN="left">Todas as opções (exceto width e height) são boleanas e podem ser
+setadas de duas formas. Exemplo: &quot;toolbar&quot; ou &quot;toolbar=1&quot;) são a
+mesma coisa. Se nada for especificado, entende-se que todas as opções estão ligadas;
+Caso seja especificada qualquer opção, será entendido que estão ligadas apenas as
+opções informadas.&nbsp;</p>
+
+<p ALIGN="left">As opções devem ser informadas separadas por vírgula, sem espaço entre
+elas.</p>
+
+<p ALIGN="left">Abrindo um Documento</p>
+
+<p ALIGN="left">Para abrir um documento dentro da janela, deve ser utilizado o seguinte
+método:&nbsp;</p>
+
+<p ALIGN="left">Variavel.document.open()</p>
+
+<p ALIGN="left">Onde &quot;Variavel&quot; é o nome da variável associada ao método
+window.open</p>
+
+<p ALIGN="left">Escrevendo no Documento</p>
+
+<p ALIGN="left">Para escrever a tela no documento, deve ser utilizado o seguinte
+método:&nbsp;</p>
+
+<p ALIGN="left">Variavel.document.write (&quot;Comandos html, Comandos JavaScript, Textos,
+etc.&quot;)</p>
+
+<p ALIGN="left">Fechando a Janela</p>
+
+<p ALIGN="left">Para fechar a janela, utilize o seguinte método:&nbsp;</p>
+
+<p ALIGN="left">Variavel.document.write (&quot;window.close()&quot;)</p>
+
+<p ALIGN="left">Fechando o Documento</p>
+
+<p ALIGN="left">Para fechar o documento, utilize o seguinte método:&nbsp;</p>
+
+<p ALIGN="left">Variavel.document.close ()</p>
+
+<p ALIGN="left">A seguir, apresentamos um exemplo no qual estamos abrindo um documento
+onde o usuário escolherá uma opção (Elógica ou Recife) e dará um Click em um botão
+(Nova Janela). Neste momento será aberta uma nova janela que conterá a foto escolhida
+pelo usuário e um botão que,&nbsp;</p>
+
+<p ALIGN="left">ao receber o Click, fechará a janela.</p>
+
+<p ALIGN="left">Normalmente, qualquer href ou src dentro de uma página, por padrão,
+acessa o arquivo ou a imagem no mesmo diretório onde está a página atual, a menos que
+seja especificado um novo caminho (Path).&nbsp;</p>
+
+<p ALIGN="left">No caso de abertura de uma nova janela, através do método window.open,
+as versões mais antigas dos browses não conseguem &quot;ver&quot; o Path, sendo
+necessária a completa informação do caminho (path) onde o arquivo ou imagem estão
+armazenados, em todas as chamadas dos comandos Html href ou src.&nbsp;</p>
+
+<p ALIGN="left">Observe que na função estamos utilizando dois novos métodos:</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; navigator.appVersion para verificarmos a
+versão do browse que esta sendo utilizado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+document.location. para obtermos o Path da localização do arquivo Html que
+está&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+correntemente em uso.&nbsp;</p>
+
+<p ALIGN="left">No exemplo abaixo estamos, inicialmente, identificando a versão do
+browse.Caso seja antiga, para não escrevermos todo o caminho a cada chamada e ainda,
+considerando que os arquivos chamados estão no mesmo diretório da página atual, estamos
+obtendo o Path do arquivo atual e eliminando o nome do arquivo que está na última
+referencia do Path. Quando fizermos a chamada das imagens (comando src) só será
+necessário a concatenação do nome do arquivo chamado com a raiz do path que, no
+exemplo, armazenamos na variável de nome Local.</p>
+
+<p ALIGN="left">&lt;script&gt;&nbsp;</p>
+
+<p ALIGN="left">function Abrejanela(Opcao) {&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; Versao = navigator.appVersion&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; Versao = Versao.substring(0, 1)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; Local = &quot;&quot;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; if&nbsp; (Versao &lt; 3)&nbsp; {&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Local =
+document.location&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UltLoc =
+Local.lastIndexOf(&quot;/&quot;)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Local =
+Local.substring(0, UltLoc + 1)</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+
+<p ALIGN="left">//&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; NovaJanela = window.open (&quot;&quot;,
+&quot;OutraJanela&quot;, &quot;width=300,height=400&quot;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+NovaJanela.document.open()&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; NovaJanela.document.write
+(&quot;&lt;html&gt;&lt;head&gt;&lt;title&gt;Nova Janela&quot;)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; NovaJanela.document.write
+(&quot;&lt;/title&gt;&lt;/head&gt;&lt;body
+bgcolor='white'&gt;&quot;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NovaJanela.document.write
+(&quot;&lt;form&gt;&quot;)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; if (Opcao == 1)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { NovaJanela.document.write
+(&quot;&lt;br&gt;Logomarca Elogica&lt;hr&gt;&lt;br&gt;&quot;)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+NovaJanela.document.write&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&quot;&lt;img width=200 height=200 src=&quot; + Local + &quot;Marcaelo.gif&gt;&quot;)
+}&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; else&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { NovaJanela.document.write
+(&quot;&lt;br&gt;Recife Alto Astral&lt;hr&gt;&lt;br&gt;&quot;)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+NovaJanela.document.write&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&quot;&lt;img width=150 height=200 src=&quot; + Local + &quot;Recife.gif&gt;&quot;)
+}&nbsp;</p>
+
+<p ALIGN="left">//&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; NovaJanela.document.write
+(&quot;&lt;br&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;/form&gt;&quot;)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; NovaJanela.document.write
+(&quot;&lt;form&gt;&lt;input type='button' name='Fecha'&quot; +&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;value='Fecha Janela'&quot; + &quot;onclick='window.close()'&gt;&quot;)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; NovaJanela.document.write
+(&quot;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&quot;)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp; NovaJanela.document.close() }&nbsp;</p>
+
+<p ALIGN="left">&lt;/script&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;body&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;p&gt;&lt;/p&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;p&gt;Escolha a foto a ser apresentada na nova janela:&lt;/p&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;form method=&quot;POST&quot; name=&quot;Form1&quot;&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;p&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;input type=radio name=&quot;Opcao&quot; value=&quot;1&quot;
+checked&gt;Elogica&nbsp;</p>
+
+<p ALIGN="left">&lt;input type=radio name=&quot;Opcao&quot;
+value=&quot;2&quot;&gt;Recife&nbsp;</p>
+
+<p ALIGN="left">&lt;/p&gt; &lt;p&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;input type=&quot;button&quot; name=&quot;Envia&quot; value=&quot;Nova
+Janela&quot;&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+onclick=&quot;if (Form1.Opcao[0].checked == true)&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{Abrejanela(Form1.Opcao[0].value) }&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+else&nbsp;</p>
+
+<p ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{Abrejanela(Form1.Opcao[1].value) } &quot;&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;/p&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;/form&gt;&nbsp;</p>
+
+<p ALIGN="left">&lt;/body&gt;&nbsp;</p>
+<hr align="center">
+</body>
+</html>

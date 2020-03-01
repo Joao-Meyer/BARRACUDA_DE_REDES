@@ -1,0 +1,48 @@
+/* Reset */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    width: 50px;
+    height: 200px;
+}
+
+.iconeMenu {
+    width: 50px;
+    height: 50px;
+    background-image: url(../icones/temple_japan.png);
+    background-repeat: no-repeat;
+}
+
+.containerMenu {
+    width: 0px;
+    height: 0px;
+    margin-top: 50px;
+    background-color: #e6052e;
+    /*background-color: rgb(230, 5, 5, a.5);*/
+    position: absolute;
+    margin-left: -200px;
+    opacity: 0;
+    visibility: hidden;
+    /*transition: 1s;*/
+}
+
+.iconeMenu:hover > .containerMenu {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0px;
+    transition: 1s;
+    width: 200px;
+    height: 400px;
+    
+}
+
+.menuItem {
+    width: inherit;
+    height: 35px;
+    padding: 15px;
+    text-align: center;
+}

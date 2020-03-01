@@ -1,0 +1,46 @@
+// Terceira versao do programa que verifica verificaParentizacao
+
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class VerificaParentizacao {
+  public static void main(String[] args) {
+    String expressao = JOptionPane.showInputDialog(null,"Insira uma expressao:");
+    Pilha pilha = new Pilha(expressao);
+
+    //Chamar funcao que empilha as chaves, colchetes e parenteses
+    empilhaParenteses(pilha, expressao);
+    
+    if (pilha.estaVazia()) {
+    	JOptionPane.showMessageDialog(null,"A parentizacao esta correta!");
+    }
+    else {
+    	JOptionPane.showMessageDialog(null,"A parentizacao esta errada!");
+    }
+    
+//    pilha.close();
+  }
+
+  public static void empilhaParenteses(Pilha pilha, String expressao){
+    for(int i = 0; i < pilha.getCapacidade(); i++){
+      if (expressao.charAt(i) == '{'){
+    	  pilha.push(expressao.charAt(i));
+      }
+      else if (expressao.charAt(i) == '['){
+    	  pilha.push(expressao.charAt(i));   
+      }
+      else if (expressao.charAt(i) == '('){
+    	  pilha.push(expressao.charAt(i));
+      }
+      else if (expressao.charAt(i) == '}' && !pilha.estaVazia() &&pilha.getUltimoCaracter() == '{'){
+    	  pilha.pop();
+      }
+      else if (expressao.charAt(i) == ']' && !pilha.estaVazia() && pilha.getUltimoCaracter() == '['){
+    	  pilha.pop();
+      }
+      else if (expressao.charAt(i) == ')' && !pilha.estaVazia() && pilha.getUltimoCaracter() == '('){
+    	  pilha.pop();
+      }
+    }
+  }
+}

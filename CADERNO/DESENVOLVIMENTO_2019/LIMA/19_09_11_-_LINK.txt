@@ -1,0 +1,41 @@
+<a href="Endereço da pagina" title="Link para a pagina x" target="_blank">
+	processo
+</a>
+
+title="Link para a pagina x" ---------> serve para dar um titulo ao link
+target="_blank " ------->  serve para abrir em uma nova guia 
+
+ex:
+
+<a href=”ENDEREÇO DO LINK PARA ONDE VOCÊ QUER REDIRECIONAR O USUÁRIO”><img src=”ENDEREÇO ONDE A IMAGEM ESTÁ HOSPEDADA” alt=”Descrição da imagem”/></a>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+fazer alteraçores de cores 
+
+<body link="" vlink="" alink="">
+
+link - troca a cor do link antes do click
+vlink - formata a cor do ink apos ser clicado 
+alink - formata a cor do link durante o click 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!-- A ancora é um link entre conteúdos na mesma pagina.
+obs: não esquecer de criar um nome para o lugar que a ancora deverá chamar (id="sevicos") -->
+
+exemplo: <a href="#servicos">
+			serviços
+		</a>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Para fazer um link de Download -->
+
+<a href="download/dados.zip">
+	Download
+</a>
+
+---------------

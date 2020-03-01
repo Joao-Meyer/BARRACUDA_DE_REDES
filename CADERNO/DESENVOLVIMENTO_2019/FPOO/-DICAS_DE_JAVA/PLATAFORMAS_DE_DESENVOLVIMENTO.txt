@@ -1,0 +1,6 @@
+repl.ti --> plataforma web para desenvolvimento
+
+atom --> outra plataforma de desenvolvimento, nós pegamos um executável do ftp do senai
+
+eclipse --> uma ide famosa, tem disponível, também, no ftp do senai
+

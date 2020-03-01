@@ -1,0 +1,77 @@
+LINGUAGEM DE MARCAÇÃO
+
+*WEB 
+|->Front-end
+	|->HTML
+
+	|->Softwares Gráficos
+		|->Photoshop
+		|->Fireworks
+		|->Gimp (Livre)
+		|->Corel
+
+	|->Animações (MORREU)
+		|->Softwares
+			|->Flash
+				|->Plugin Adobe Flash Player
+
+			|->SilverLight
+
+	|->CSS (Estilizar Sites)
+
+	|->JAVA
+		|->Validação de Formulário
+		|->Animação
+		|->Efeitos com usuário (interações)
+		|->...
+
+		|->Frameworks (bibliotecas)
+			|->JQUERY
+			|->NodeJS
+			|->Angular
+			|->...
+
+	|->HTML5
+		|->Padronizar
+		|->HTML
+		|->JAVA
+
+|->Back-end
+	|->Linguagem de programação (AS QUE TEM "*" SÃO AS QUE O PROFESSOR RECOMENDA DAR FOCO PORQUE SÃO POPULARES, DÁ DINHEIRO)
+		|->JAVA*
+		|->ASP*
+		|->ASP.NET*
+		|->PHP*
+		|->JAVA*
+		|->C#
+		|->RUBY
+
+	|->Banco de Dados
+		|->SQLSERVER
+		|->ORACLE
+		|->MYSQL
+		|->POSTGRESQL
+		|->MARIADB
+		|->...
+
+		|->SQL
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+hTTp://www.nome.com.br
+
+http (protocolo)
+||||->protocol
+|||->transfer
+||->text
+|->hiper
+
+www
+|||->web
+||->wide
+|->world
+
+com, med, org, gov, edu, mil ... (classificação do ramo de atividade, segmento onde atua)
+
+br (localização do servidor de onde é hospedado o site)
+

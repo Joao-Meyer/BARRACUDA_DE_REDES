@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+class OperacoesBasicas {
+  public static void main (String args[]){
+    Scanner recebe = new Scanner (System.in);
+
+    double num1;
+    double num2;
+    double soma;
+    double subtracao;
+    double multiplicacao;
+    double divisao;
+    int opcao;
+
+    System.out.println ("\nInsira o primeiro valor:");
+    num1 = recebe.nextDouble();
+
+    System.out.println ("\nInsira o sugundo valor:");
+    num2 = recebe.nextDouble();
+
+    System.out.println ("\n Escolha uma opcao equivalente a operacao desejada: 1-Para soma, 2-Para subtracao, 3-Para multiplicacao, 4-Para divisao ou 5-Para todas as operacoes basicas");
+    opcao = recebe.nextInt();
+
+    while (opcao < 1 || opcao > 5){
+      System.out.println ("\n Escolha uma opcao valida: 1-Para soma, 2-Para subtracao, 3-Para multiplicacao, 4-Para divisao ou 5-Para todas as operacoes basicas");
+      opcao = recebe.nextInt();
+    }
+
+    if (opcao == 1) {
+      soma = num1 + num2;
+      System.out.printf ("\nA soma de %.2f com %.2f equivale a %.2f\n", num1, num2, soma);
+    }
+    else if (opcao == 2) {
+      subtracao = num1 - num2;
+      System.out.printf ("\nA %.2f subtraido de %.2f equivale a %.2f\n", num2, num1, subtracao);
+    }
+    else if (opcao == 3) {
+      multiplicacao = num1 * num2;
+      System.out.printf ("\n%.2f multiplicado por %.2f equivale a %.2f\n", num1, num2, multiplicacao);
+    }
+    else if (opcao == 4) {
+      divisao = num1 / num2;
+      System.out.printf ("\nA divisao de %.2f por %.2f equivale a %.2f\n", num1, num2, divisao);
+    }
+    else if (opcao == 5) {
+      multiplicacao = num1 * num2;
+      divisao = num1 / num2;
+      subtracao = num1 - num2;
+      soma = num1 + num2;
+
+      System.out.printf ("\nA soma de %.2f com %.2f equivale a %.2f\n", num1, num2, soma);
+      System.out.printf ("\nA %.2f subtraido de %.2f equivale a %.2f\n", num2, num1, subtracao);
+      System.out.printf ("\n%.2f multiplicado por %.2f equivale a %.2f\n", num1, num2, multiplicacao);
+      System.out.printf ("\nA divisao de %.2f por %.2f equivale a %.2f\n", num1, num2, divisao);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Desconto {
+  public static void main (String args[]){
+    Scanner recebe = new Scanner (System.in);
+
+    double valorInicial;
+    double valorFinal;
+    double desconto;
+    int descontoEmPorcentagem;
+
+    System.out.print("\nInsira o valor inicial: ");
+    valorInicial = recebe.nextDouble();
+    System.out.print("\n\nInsira o valor do desconto em porcentagem: ");
+    descontoEmPorcentagem = recebe.nextInt();
+
+    desconto = descontoEmPorcentagem * 0.01;
+    valorFinal = valorInicial - (valorInicial * desconto);
+
+    //System.out.printf("\n\nR$%.2f com um desconto de %.2f\% fica por R$%.2f\n", valorInicial, descontoEmPorcentagem, valorFinal);
+    System.out.println("\n\nR$"+valorInicial+" com um desconto de "+descontoEmPorcentagem+"% fica por R$"+valorFinal);
+  }
+}

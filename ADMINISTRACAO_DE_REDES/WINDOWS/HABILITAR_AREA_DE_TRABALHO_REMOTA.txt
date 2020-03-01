@@ -1,0 +1,2 @@
+Para acessar remotamente este servidor, será necessário abrir o Server Manager e clicar em 'Local Server', feito isso, vais ver que terá a opção 'Remote Desktop', por padrão vem desabilitado. Podes clicar ali e habilitar, permitindo conexões remota.
+Já na sua estação, de onde será realizado a conexão remota, basta abrir o executar (Winkey + R) ou até mesmo digitar no menu iniciar 'MSTSC' e dar um enter, depois de abrir, é só informar o IP do servidor ou o nome do mesmo, caso esteja com DNS configurado. 

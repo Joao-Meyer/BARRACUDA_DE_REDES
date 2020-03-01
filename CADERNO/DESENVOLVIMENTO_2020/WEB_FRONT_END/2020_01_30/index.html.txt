@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Testando o JavaScrito</title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>Controle de notas</h1>
+        <br>
+        Nome: 
+        <input type="text" id="nome">
+        <br>
+        Nota1:
+        <input type="text" id="nota1">
+        <br>
+        Nota2:
+        <input type="text" id="nota2">
+        <br>
+        Media:
+        <input type="text" id="media" disabled>
+        <br>
+        Situação: 
+        <input type="text" id="situacao" disabled>
+        <br>
+        <br>
+        <input type="button" value="Calcular" id="calcular">
+
+        <script src="./.js"></script>
+    </body>
+</html>

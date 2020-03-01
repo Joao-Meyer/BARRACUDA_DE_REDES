@@ -1,0 +1,10 @@
+import javax.swing.JOptionPane;
+public class PedeNome
+{
+   public static void main (String args[])
+   {
+      String nome=JOptionPane.showInputDialog("Qual o Seu Nome?");
+      String message=String.format("Olá %s. Seja Bem Vindo!!!", nome);
+      JOptionPane.showMessageDialog(null, message);
+   }
+}

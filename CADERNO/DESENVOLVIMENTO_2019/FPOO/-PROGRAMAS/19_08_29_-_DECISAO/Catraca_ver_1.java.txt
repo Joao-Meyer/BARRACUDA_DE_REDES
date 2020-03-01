@@ -1,0 +1,23 @@
+//Este codigo e uma simulacao de uma catraca de onibus para treinar estruturas de decisao
+
+import java.util.Scanner;
+
+class Main {
+
+	public static void main (String args []) {
+
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.print("\nInsira o saldo atual: ");
+		double saldo = recebe.nextDouble();
+
+    System.out.print("\nInsira o vlor da tarifa atual: ");
+		double tarifa = recebe.nextDouble();
+
+    if (saldo >= tarifa){
+      saldo = saldo - tarifa;
+      System.out.printf("Pode passar, seu saldo atual agora e de R$ %.2f", saldo);
+    }
+	}
+
+}

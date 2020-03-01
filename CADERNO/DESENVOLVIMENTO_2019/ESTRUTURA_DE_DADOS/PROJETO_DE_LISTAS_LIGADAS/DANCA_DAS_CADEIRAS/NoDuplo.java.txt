@@ -1,0 +1,33 @@
+public class NoDuplo {
+	private int info;
+	private NoDuplo prox;
+	private NoDuplo ant;
+	
+	public NoDuplo (int info) {
+		this.info = info;
+		this.prox = null;
+		this.ant = null;
+	}
+	public int getInfo() {
+		return this.info;
+	}
+	public void setInfo(int info) {
+		this.info = info;
+	}
+	public NoDuplo getProx() {
+		return this.prox;
+	}
+	public void setProx(NoDuplo prox) {
+		this.prox = prox;
+	}
+	public NoDuplo getAnt() {
+		return this.ant;
+	}
+	public void setAnt(NoDuplo ant) {
+		this.ant = ant;
+	}
+	@Override
+	public String toString () {
+		return "[" + this.info + "] ";
+	}
+}

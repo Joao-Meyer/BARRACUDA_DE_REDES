@@ -1,0 +1,122 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class DancaDosDesempregados {
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        StringBuilder bufferCasoDeTeste = new StringBuilder();
+        StringBuilder bufferSaida = new StringBuilder();
+
+        int N, k, m;
+        String[] valores;
+
+        // utilização da LinkedList por ser mais rápida na remoção
+        ListaCircular circulo = new ListaCircular();
+
+        // ler entrada separando valores por espaço
+        valores = br.readLine().split(" ");
+
+        N = Integer.parseInt(valores[0]);
+        k = Integer.parseInt(valores[1]);
+        m = Integer.parseInt(valores[2]);
+
+        while (N != 0 && k != 0 && m != 0) {
+
+            // limpar buffer do caso de teste
+            bufferCasoDeTeste.delete(0, bufferCasoDeTeste.length());
+
+            // garante que o círculo está vazio
+            circulo.clear();
+
+            // preenche os valores de 1 a N no círculo
+            for (int i = 1; i <= N; i++) {
+                circulo.add(i);
+            }
+
+            // --------------------------------------
+            int contagemDeNosQueSairam = 0;
+            No noSentidoHorario = circulo.getPrimeiroNo();
+            No noSentidoAntiHorario = circulo.getUltimoNo();
+
+            while (contagemDeNosQueSairam < N) {
+
+                // caminha no sentido horário
+                for (int i = 1; i < k; i++) {
+                    noSentidoHorario = noSentidoHorario.getProximo();
+                }
+
+                // caminha no sentido anti-horário
+                for (int i = 1; i < m; i++) {
+                    noSentidoAntiHorario = noSentidoAntiHorario.getAnterior();
+                }
+
+                if (noSentidoHorario == noSentidoAntiHorario) {
+
+                    // guarda o nó que irá sair e o remove das referências do anterior e do próximo
+                    No noDeSaida = noSentidoHorario;
+                    noDeSaida.getAnterior().setProximo(noDeSaida.getProximo());
+                    noDeSaida.getProximo().setAnterior(noDeSaida.getAnterior());
+
+                    // passa para o próximo disponível
+                    noSentidoHorario = noSentidoHorario.getProximo();
+                    noSentidoAntiHorario = noSentidoAntiHorario.getAnterior();
+
+                    contagemDeNosQueSairam++;
+
+                    // adiciona no buffer o valor que está saindo
+                    bufferCasoDeTeste.append(String.format("%3d,", noDeSaida.getValor()));
+
+                } else {
+
+                    // guarda o nó que irá sair no sentido horário e o remove das referências do anterior e do próximo
+                    No noDeSaidaSentidoHorario = noSentidoHorario;
+                    noDeSaidaSentidoHorario.getAnterior().setProximo(noDeSaidaSentidoHorario.getProximo());
+                    noDeSaidaSentidoHorario.getProximo().setAnterior(noDeSaidaSentidoHorario.getAnterior());
+
+                    contagemDeNosQueSairam++;
+
+                    // guarda o nó que irá sair no sentido anti-horário e o remove das referências do anterior e do próximo
+                    No noDeSaidaSentidoAntiHorario = noSentidoAntiHorario;
+                    noDeSaidaSentidoAntiHorario.getAnterior().setProximo(noDeSaidaSentidoAntiHorario.getProximo());
+                    noDeSaidaSentidoAntiHorario.getProximo().setAnterior(noDeSaidaSentidoAntiHorario.getAnterior());
+
+                    // passa para o próximo disponível
+                    noSentidoHorario = noSentidoHorario.getProximo();
+                    if (noSentidoHorario == noDeSaidaSentidoAntiHorario) {
+                        noSentidoHorario = noSentidoHorario.getProximo();
+                    }
+                    noSentidoAntiHorario = noSentidoAntiHorario.getAnterior();
+                    if (noSentidoAntiHorario == noDeSaidaSentidoHorario) {
+                        noSentidoAntiHorario = noSentidoAntiHorario.getAnterior();
+                    }
+
+                    contagemDeNosQueSairam++;
+
+                    // adiciona no buffer os valores que estão saindo
+                    bufferCasoDeTeste.append(String.format("%3d%3d,", noDeSaidaSentidoHorario.getValor(), noDeSaidaSentidoAntiHorario.getValor()));
+                }
+
+            }
+
+            bufferSaida.append(bufferCasoDeTeste.substring(0, bufferCasoDeTeste.length() - 1)).append("\n");
+
+            // --------------------------------------
+            // ler entrada novamente separando valores por espaço
+            valores = br.readLine().split(" ");
+
+            N = Integer.parseInt(valores[0]);
+            k = Integer.parseInt(valores[1]);
+            m = Integer.parseInt(valores[2]);
+        }
+
+        // exibe na saída padrão o buffer criado removendo a última vírgula
+        System.out.println(bufferSaida.substring(0, bufferSaida.length() - 1));
+
+        br.close();
+    }
+
+}
+

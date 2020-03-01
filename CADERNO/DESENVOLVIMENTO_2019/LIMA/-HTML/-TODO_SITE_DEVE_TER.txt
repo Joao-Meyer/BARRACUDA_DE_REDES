@@ -1,0 +1,8 @@
+Todo site deve ter
+	|-> Cabeçalho
+	|-> Conteúdo
+	|-> Menu
+	|-> Rodapé
+
+wireframe - exemplo:
+https://wireframe.cc/M7FU9I

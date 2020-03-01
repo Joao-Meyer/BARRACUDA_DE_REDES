@@ -1,0 +1,29 @@
+/******************************************
+MediaAritmetica.java
+Calcula a média aritmetica entre duas notas
+******************************************/
+import java.util.Scanner;
+
+class MediaAritmetica {
+
+    public static void main (String args[]) {
+
+        double nota1;
+        double nota2;
+        double mediaAritmetica;
+
+        Scanner armazena = new Scanner (System.in);
+
+        System.out.println ("\nInsira a primeira nota: ");
+        nota1 = armazena.nextDouble();
+
+        System.out.println ("\nInsira a segunda nota: ");
+        nota2 = armazena.nextDouble();
+
+        mediaAritmetica = (nota1 + nota2) / 2;
+
+        System.out.printf ("\nA nota aritmetica entre %.2f e %.2f e %.2f", nota1, nota2, mediaAritmetica);
+
+    }
+
+}

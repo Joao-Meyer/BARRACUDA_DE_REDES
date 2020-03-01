@@ -1,0 +1,47 @@
+Para fazer uso do JFrame, temos que importar essa classe do pacote swing, que contém diversas funcionalidades para programação gráfica:
+import javax.swing.JFrame;
+
+Cada objeto que criamos é um frame, ou janela, diferente. Uma aplicação normal tem dezenas ou centenas de frames.
+
+Nessa seção vamos criar alguns objetos da classe JFrame passando uma String argumento para o construtor padrão, essa string será o título de nossa aplicação.
+
+Esses JFrames, porém, possuem dezenas de funcionalidades e opções, usaremos as funcionalidades: o que ocorre quando clicamos no 'x' de close, adicionar panels, definir o tamanho do frame e se ele será visível ou não.
+
+Como dissemos, o JFrame é uma Classe. E para criar uma classe, criamos um objeto.
+Assim, nossa janela será um objeto chamado "janela".
+Vamos passar uma string para o construtor dessa classe, que servirá como título de nosso frame/janela.
+
+Porém, para vermos nosso frame, precisamos definir uma funcionalidade: que ele seja visível!
+Pode parecer óbvio, mas um programa pode ter muitos, mas muitos frames, e obviamente não podemos exibir todos, senão nossa tela ficaria uma bagunça.
+
+Assim, para exibir esse frame, usamos o método setVisible, que recebe true ou false.
+Portanto, um simples programa em Java que cria e exibe um frame será:
+
+import javax.swing.JFrame;
+
+public class framesPanels {
+    public static void main(String[] args) {
+ JFrame janela = new JFrame("Meu primeiro frame em Java");
+ janela.setVisible(true);
+    }
+}
+
+
+Note que vai ser criado uma janela, mas provavelmente você nem vai notar. Isso porque não fornecemos o tamanho da janela, então ela foi criado com 0 pixel de largura e 0 de altura.
+Vamos usar o método setVisible, que recebe um tipo boolean. Como queremos a janela visível, colocamos true.
+
+Caso queira definir um tamanho pré-definido, use o método setSize(), que recebe dois parâmetros com os pixels da janela (horizontal e vertical):
+
+
+
+import javax.swing.JFrame;
+
+public class framesPanels {
+    public static void main(String[] args) {
+ JFrame janela = new JFrame("Meu primeiro frame em Java");
+        janela.setSize(300,200);
+ janela.setVisible(true);
+    }
+}
+
+Fonte: http://www.javaprogressivo.net/2012/11/JFrame-e-JPanelDesenhando-em-Java.html

@@ -1,0 +1,333 @@
+<!-- WIREFRAME DESTA PAGINA (P I S A D I N H A): https://wireframe.cc/IoxEfK -->
+
+<html>
+	<head>
+		<title> P I S A D I N H A </title>
+	</head>
+
+	<body bgcolor="black" text="white" link="white" vlink="#9af097">
+			<!-- Tabela que compõe a pagina como um todo -->
+		<table border="1" width="1000" height="1600" align="center" cellpadding="0" cellspacing="0">
+				<!-- Linha do cabeçalho -->
+			<tr height="20%">				
+				<td width="100%">
+						<!-- Tabela do cabeçalho -->
+					<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="80%">	<!-- Coluna do nome da pagina -->
+								<table border="1" width="75%" height="100%" align="right" cellpadding="0" cellspacing="0"> <!-- Tabela do nome da pagina -->
+									<tr height="50%" align="center" valign="bottom">	<!-- Linha do nome da pagina -->
+										<td>
+											<h1>
+												PLAYLISTS POR MEYRIHEN
+											</h1>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem da pagina -->
+										<td width="100%" height="100%">
+											<img src="imagens/onda quadrada verde.jpeg" width="50%" height="100%">
+										</td>
+									</tr>
+								</table>
+							</td>
+
+							<td width="20%">	<!-- Coluna das redes sociais -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">	<!-- Tabela das redes sociais -->
+									<tr height="50%" align="center">	<!-- Linha da imagem de cima -->
+										<td>
+											<a href="https://www.facebook.com/" title="Link para o facebook" target="_blank">
+												<img src="imagens/facebook-logo.png" width="60%" height="60%">
+											</a>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem de baixo -->
+										<td>
+											<a href="https://www.instagram.com/?hl=pt-br" title="Link para o facebook" target="_blank">
+												<img src="imagens/instagram-logo.png" width="60%" height="60%">
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr height="70%">	<!-- Linha do conteúdo -->
+				<td width="100%">
+						<!-- Tabela do conteúdo -->	
+					<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+						<tr height="45%" align="center">	<!-- Linha do conteúdo superior -->
+							<td>
+									<!-- Tabela do conteúdo superior -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+									<tr>
+											<!-- Coluna do menu -->
+										<td width="20%">
+												<!-- Tabela do menu -->
+											<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+												<tr height="10%" align="center">	<!-- Linha do "título" -->
+													<td>
+														Playlists
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina home -->
+													<td>
+														<a href="Pagina_Home.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															H O M E
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 2 -->
+													<td>
+														<a href="Pagina_2.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															!Querolisten
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 3 -->
+													<td>
+														<a href="Pagina_3.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															X R Y
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 4 -->
+													<td>
+														<a href="Pagina_4.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															F A T H E R
+														</a>
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 5 -->
+													<td>
+														<a href="Pagina_5.html" tile="Link para a pagina P I S A D I N H A" target="_blank">
+															Outras
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+											<!-- Coluna do conteúdo superior -->
+										<td width="80%">
+												<!-- Tabela do conteúdo superior -->									
+											<table border="1" width="75%" height="100%" align="left" cellpadding="0" cellspacing="0">
+													<!-- Linha do conteúdo superior - cima -->
+												<tr height="50%" align="center">
+													<td>
+														<a href="https://open.spotify.com/playlist/09To96LkxL67xNRQ8p8lXi?si=MFCity2FRJutuG-0h8D7fQ" tile="Link para a playlist Pisadinha 2019" target="_blank">
+															<img src="imagens/pisadinha 2019 2.jpeg" title="Imagem da playlist" width="40%" height="100%">
+														</a>
+													</td>
+												</tr>
+													<!-- Linha do conteúdo superior - baixo -->
+												<tr height="50%">
+													<td>
+															<!-- Tabela do conteúdo superior - baixo -->
+														<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+															<tr height="40%" align="center">
+																<td>
+																	<h2>
+																		Pisadinhas 2019
+																	</h2>
+																</td>
+															</tr>
+
+															<tr height="60%" align="center">
+																<td>
+																	Uma playlist inteiramente dedicada à anti-sofrência, a pisadinha, um gênero musical que é envolvente, dançante e, por que não, apaixonante? Mas de qualquer maneira ela dá uma levantada no quer que seja que tu derrubou e não levanta, autoestima, amigo, copo, tudo.
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+						<tr height="55%" align="center">	<!-- Linha do conteúdo inferior -->
+							<td>
+									<!-- Tabela do conteúdo inferior -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+										<!-- Linha do conteúdo inferior - cima -->
+									<tr height="10%" valign="bottom" align="left">
+										<td>
+											<h3>
+												Quem aparece por aqui?
+											</h3>
+										</td>
+									</tr>
+
+										<!-- Linha do conteúdo inferior - baixo -->
+									<tr height="90%" align="center">
+										<td>
+												<!-- Tabela do conteúdo inferior - baixo -->
+											<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+													<!-- Linha do conteúdo inferior - baixo - cima -->
+												<tr height="70%">
+													<td>
+															<!-- Tabela do conteúdo inferior - baixo - cima -->
+														<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+															<tr>
+																	<!-- Coluna 1 do conteúdo inferior - baixo - cima -->
+																<td width="25%" valign="top" align="center">
+																		<!-- Tabela 1 do conteúdo inferior - baixo - cima -->
+																	<table border="1" width="100%" height="80%" align="right" cellpadding="0" cellspacing="0">
+																			<!-- Linha da imagem -->
+																		<tr height="50%" align="center">
+																			<td>
+																				<a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" tile="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																					<img src="imagens/baroes da pisadinha.jpeg" title="Os Barões da Pisadinha" width="60%" height="100%">
+																				</a>
+																			</td>
+																		</tr>
+
+																			<!-- Linha do texto -->
+																		<tr height="50%" align="center">
+																			<td>
+																				<p>
+																					Com um nome desses não tinham como ficar de fora,											
+																					<a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" tile="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																						Os Barões da Pisadinha</a>
+																					fazem jús a seu nome e entregam o que prometem: Muita pisadinha.
+																				</p>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+
+																	<!-- Coluna 2 do conteúdo inferior - baixo - cima -->
+																<td width="25%" valign="bottom" align="center">
+																		<!-- Tabela 2 do conteúdo inferior - baixo - cima -->
+																	<table border="1" width="100%" height="80%" align="right" cellpadding="0" cellspacing="0">
+																			<!-- Linha da imagem -->
+																		<tr height="50%" align="center">
+																			<td>
+																				<a href="https://genius.com/artists/Wesley-safadao" tile="Link para a pagina de Wesley Safadão" target="_blank">
+																					<img src="imagens/wesley safadao.jpg" title="Wesley Safadão" width="80%" height="100%">
+																				</a>
+																			</td>
+																		</tr>
+
+																			<!-- Linha do texto -->
+																		<tr height="50%" align="center">
+																			<td>
+																				<p>																									
+																					<a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" tile="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																						Wesley Safadão</a>
+																					tem musicas tão boas quanto seu nome espalhafatoso, um grande ícone do forró que nos oferece, humildemente, ótimas experiências com as suas pisadinhas.
+																				</p>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+
+																	<!-- Coluna 3 do conteúdo inferior - baixo - cima -->
+																<td width="25%" valign="top" align="center">
+																		<!-- Tabela 3 do conteúdo inferior - baixo - cima -->
+																	<table border="1" width="100%" height="80%" align="right" cellpadding="0" cellspacing="0">
+																			<!-- Linha da imagem -->
+																		<tr height="50%" align="center">
+																			<td>
+																				<a href="https://www.letras.mus.br/lambasaia/" tile="Link para a pagina de Lambasaia" target="_blank">
+																					<img src="imagens/lambasaia.jpeg" title="Lambasaia" width="80%" height="100%">
+																				</a>
+																			</td>
+																		</tr>
+
+																			<!-- Linha do texto -->
+																		<tr height="50%" align="center">
+																			<td>
+																				<p>																									
+																					<a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" tile="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																						Lambasaia</a>
+																					possui, como o próprio diria, um olhar de vigarista, e suas músicas têm uma linha muito parecida, pisadinhas que falam sobre festejar e "curtir" a mulherada, olhe o perfil dele por sua conta e risco.
+																				</p>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+
+																	<!-- Coluna 4 do conteúdo inferior - baixo - cima -->
+																<td width="25%" valign="bottom" align="center">
+																		<!-- Tabela 4 do conteúdo inferior - baixo - cima -->
+																	<table border="1" width="100%" height="80%" align="right" cellpadding="0" cellspacing="0">
+																			<!-- Linha da imagem -->
+																		<tr height="50%" align="center">
+																			<td>
+																				<img src="imagens/garota safada.jpg" title="Banda Garota Safada" width="70%" height="100%">
+																			</td>
+																		</tr>
+
+																			<!-- Linha do texto -->
+																		<tr height="50%" align="center">
+																			<td>
+																				<p>
+																					Com um nome desses não tinham como ficar de fora,											
+																					<a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" tile="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																						Os Barões da Pisadinha</a>
+																					fazem jús a seu nome e entregam o que prometem: Muita pisadinha.
+																				</p>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+
+													<!-- Linha do conteúdo inferior - baixo - baixo -->
+												<tr height="30%">
+													<td>
+															<!-- Tabela do conteúdo inferior - baixo - baixo -->
+														<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+															<tr align="center">
+																<td  align="center" valign="middle" width="25%">
+																	<img src="imagens/dj guuga.jpg" title="Dj Guuga" width="80%" height="100%">
+																</td>
+
+																<td  align="center" valign="bottom" width="25%">
+																	Texto
+																</td>
+
+																<td  align="center" valign="middle" width="25%">
+																	<img src="imagens/saia rodada.png" title="Saia Rodada" width="80%" height="100%">
+																</td>
+
+																<td  align="center" valign="bottom" width="25%">
+																	Texto
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>					
+				</td>
+			</tr>
+
+			<tr height="10%">	<!-- Linha do rodapé -->
+				<td align="center">
+					Feito por Meyrihen
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

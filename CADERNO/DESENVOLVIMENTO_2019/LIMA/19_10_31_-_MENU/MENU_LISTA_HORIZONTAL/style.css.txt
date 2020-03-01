@@ -1,0 +1,29 @@
+/*RESET CSS*/
+
+div, ul, li, h1, h2, h3, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.formatItens {
+    color: purple;
+    font-family: verdana;
+    font-size: 16px;
+    text-align: center;
+    list-style: none;
+}
+
+.menu {
+    width: 600px;
+    height: 50px;
+    background-color: yellow;
+}
+
+.menuItem {
+    width: 125px;
+    height: 35px;
+    padding: 15px;
+    float: left;
+    margin-left: 20px;
+    background-color: lightcyan;
+}

@@ -1,0 +1,81 @@
+A maior parte dos métodos e constantes, no que se refere as fontes, estão na classe Font.
+Como:
+public final static int PLAIN
+	
+Constante que representa o estilo plano
+public final static int BOLD
+	
+Constante que representa o estilo negrito
+public final static int ITALIC
+	
+Constante que representa o estilo itálico
+public Font( String name,int style, int size )
+	
+Criar um objeto do tipo Font
+public int getStyle()
+	
+Retorna o estilo de fonte
+public int getSize()
+	
+Retorna o tamanho da fonte
+public String getName()
+	
+Retorna o nome da fonte
+public String getFamily()
+	
+Retorna o nome da família da fonte
+public boolean isPlain()
+	
+True se for plana, false se não
+public boolean isBold()
+	
+True se estiver negrita, false se não
+public boolean isItalic()
+	
+True se estiver itálica, false se não
+public Font getFont()
+	
+Retorna uma referência do tipo Font
+public void setFont( Font f )
+	
+Setar a font, estilo e tamanho da fonte
+
+Estilo de fontes: Font.PLAIN, Font.ITALIC  e Font.BOLD
+O Java padrão possui 5 fontes: Serif, Monospaced,SansSerif, Dialog and DialogInput
+
+Dentro de uma classe que estende a JPanel, usamos os recursos da Font com um objeto da Graphics, como se fosse um componente para a pintura/gráficos.
+
+Para escrevermos strings coloridas, primeiro setamos a fonte, depois usamos o método drawString(), como segue :
+
+
+public void paintComponent( Graphics g)
+{
+                super.paintComponent(g);
+
+                g.setFont( new Font(“Serif”, Font.BOLD, 15) );
+                g.drawString(“ Serif 15, negrito”, 20, 30 );
+
+                g.setFont( new Font(“Monospaced”, Font.ITALIC, 15) );
+                g.drawString(“Monospaced 15, itálico”, 20, 30 );
+
+                g.setFont( new Font(“SansSerif”, Font.PLAIN, 15) );
+                g.drawString(“SansSerif 15, plano”, 20, 30 );
+
+                g.setColor( Color.RED);
+                g.setFont( new Font(“Serif”, Font.BOLD + Font.ITALIC, 15) );
+                g.drawString(g.getFont().getName() + “ “+ g.getFont().getSize() + “ point negrito e itálico”, 20, 100 );
+}
+
+
+
+
+Note que para a fonte estar em negrito e em itálico, passamos a soma dos argumentos:
+Font.BOLD + Font.ITALIC
+Prático. Bem bolado, esse Java, não?
+
+Há ainda a classe FontMetrics, que tem métodos para manipulação da altura da fonte e espaços (height, descent, ascent e leading):
+
+leading: distância entre a base da acentuação (^, ~, ') e o nível superior
+ascent: distância entre a base (baseline) e o teto de uma letra normal sem acentuação
+descent: distância entre a base (baseline) e o limite inferior, em letras que tem 'perna', como y e g
+height: toda a altura, desde a base da 'perna' até a parte de cimado acento: g ã

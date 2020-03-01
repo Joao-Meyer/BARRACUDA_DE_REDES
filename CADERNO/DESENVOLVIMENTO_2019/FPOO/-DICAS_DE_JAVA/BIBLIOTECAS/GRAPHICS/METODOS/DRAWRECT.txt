@@ -1,0 +1,84 @@
+ O método drawRect: como desenhar retângulos e quadrados em Java
+
+Assim como método drawLine, o método drawRect pertence ao objeto da classe Graphics, no nosso caso ele se chamará 'g'.
+Também como o o drawLine, o drawRect recebe 4 argumentos, mas não são todos coordenadas.
+
+Os dois primeiros números são as coordenadas da origem (distância horizontal e distância vertical).
+Os dois últimos são a largura e a altura do retângulo em relação ao ponto de origem.
+
+Ou seja, para desenhar um retângulo que tem origem em (0,0) e largura 50 e altura 100, fazemos:
+g.drawRec(0,0,50,100);
+
+
+
+Para desenhar um retângulo que tem sua orgem no centro do frame com largura 50 e altura 100 (em relação a origem), fazemos:
+g.drawRect( getWidth()/2 , getHeight()/2, 50, 100);
+
+
+
+Note que é a largura que é 50, e a altura é 100.
+50 e 100 NÃO SÃO AS COORDENADAS DE UM PONTO! 50 é a largura do retângulo, a partir da origem, e 100 é a altura do retângulo, em relação a origem.
+
+Veja quando colocamos os dois códigos juntos:
+g.drawRec(0,0,50,100);
+g.drawRect( getWidth()/2 , getHeight()/2, 50, 100);
+
+
+
+
+Desenhando um Cubo
+Se você não se lembra bem, um cubo nada mais é que 6 quadrados. E se realmente não é bom em geometria, um quadrado é um retângulo de lados iguais.
+
+Trazendo para nosso conceito de programação gráfica em Java, quadrado é desenhado pelo método drawRect com largura igual a altura.
+
+Vamos iniciar nosso cubo então.
+Primeiro, vamos desenhar dois quadrados, de lado 100. Criamos um, e o segundo criamos de modo que  sua origem esteja dentro do primeiro quadrado.
+A origem do primeiro será em:
+(t(getWidth()/10 , getHeight()/10)
+
+Vamos colocar a origem do segundo no centro do primeiro quadrado.
+As coordenadas do centro do primeiro quadrado são:
+Eixo x: larguraOrigem + 50
+Eixo y: alturaOrigem + 50
+
+Então, desenhamos o segundo quadrado da seguinte maneira:
+g.drawRect( (getWidth()/10) + 50, (getHeight()/10) + 50, 100, 100);
+
+Temos a seguinte figura:
+
+
+
+A próxima parte é criar 4 linhas, que ligarão os vértices.
+
+A linha que liga os vértices (cantos) superiores esquerdo:
+g.drawLine(getWidth()/10, getHeight()/10, (getWidth()/10) + 50, (getHeight()/10) + 50);
+
+A linha que liga os vértices inferiores esquerdo:
+g.drawLine(getWidth()/10, (getHeight()/10) + 50, (getWidth()/10) + 100, (getHeight()/10) + 50 + 100);
+
+A linha que liga os vértices superiores direitos:
+g.drawLine( (getWidth()/10) + 100, getHeight()/10, (getWidth()/10) + 50 + 100, (getHeight()/10) + 50);
+
+A linha que liga os vértices inferiores direto:
+g.drawLine(  (getWidth()/10) + 100, (getHeight()/10) + 100, (getWidth()/10) + 100 + 50, (getHeight()/10) + 100 + 50);
+
+
+Obtemos, portanto, a figura do seguinte cubo:
+
+
+
+
+O código do nosso método paintComponent que desenha esse cubo, fica:
+
+public void paintComponent( Graphics g ){
+    super.paintComponent( g );
+    
+    g.drawRect(getWidth()/10 , getHeight()/10,100,100);
+    g.drawRect( (getWidth()/10) + 50, (getHeight()/10) + 50, 100, 100);
+    
+    g.drawLine(getWidth()/10, getHeight()/10, (getWidth()/10) + 50, (getHeight()/10) + 50);
+    g.drawLine(getWidth()/10, (getHeight()/10) + 100, (getWidth()/10) + 50, (getHeight()/10) + 50 + 100);
+    g.drawLine( (getWidth()/10) + 100, getHeight()/10, (getWidth()/10) + 50 + 100, (getHeight()/10) + 50);
+    g.drawLine(  (getWidth()/10) + 100, (getHeight()/10) + 100, (getWidth()/10) + 100 + 50, (getHeight()/10) + 100 + 50);
+
+}

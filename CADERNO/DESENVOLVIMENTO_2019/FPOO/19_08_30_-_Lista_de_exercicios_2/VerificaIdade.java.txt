@@ -1,0 +1,19 @@
+// Programa que verifica se uma idade digitada está ou não na maioridade brasileira
+
+import java.util.Scanner;
+
+class VerificaIdade{
+	public static void main(String args[]){
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.print("\nInsira uma idade em anos: ");
+		int idade = recebe.nextInt();
+
+		if (idade>=18){
+			System.out.print("\nEh maior de idade\n\n");
+		}
+		else {
+			System.out.print("\nEh menor de idade\n\n");
+		}
+	}
+}

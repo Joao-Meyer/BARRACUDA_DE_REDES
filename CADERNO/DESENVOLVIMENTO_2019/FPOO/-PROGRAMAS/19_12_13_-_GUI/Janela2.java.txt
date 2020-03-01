@@ -1,0 +1,109 @@
+package org.com.gui;
+
+import java.awt.Color;
+import javax.swing.JButton;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Calendar;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+public class Janela2 extends JFrame implements ActionListener{
+	// Objeto calendário
+	Calendar calendario = Calendar.getInstance();
+	
+	//  Objetos botão
+	JButton btnMensagem = new JButton("Pintar de vermelho");
+	JButton btnMensagem2 = new JButton("Enviar");
+	JButton btnSair = new JButton("Sair");
+	
+	// Objetos Label
+	JLabel lblNome = new JLabel("Nome: ");
+	JLabel lblAnoDeNascimento = new JLabel("Ano de nascimento: ");
+	
+	// Objetos Campo de Texto
+	JTextField txtNome = new JTextField();
+	JTextField txtAnoDeNascimento = new JTextField();
+	
+	// Método construtor da classe Janela2
+	public Janela2() {
+		// Janela2		
+		setTitle("G-OST");
+		setSize(500, 400);
+		setLocationRelativeTo(null);
+		setResizable(false);
+		getContentPane().setBackground(Color.getHSBColor(1.0f, 0.0f, 1.0f));
+//		getContentPane().setBackground(Color.ge);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		// Botões
+//		JButton btnMensagem = new JButton("Mensagem");
+//		JButton btnSair = new JButton("Sair");
+		setLayout(null);
+		btnMensagem.setBounds(50, 300, 150, 30);
+		btnMensagem2.setBounds(50, 240, 100, 30);
+		btnSair.setBounds(340, 300, 100, 30);
+//		btnMensagem.setLabel("Mensagem");
+//		btnSair.setLabel("Sair");
+		btnMensagem.setBackground(Color.getHSBColor(1.0f, 0.5f, 1.0f));
+		btnMensagem2.setBackground(Color.getHSBColor(0.3f, 0.6f, 0.8f));
+		add(btnMensagem);
+		add(btnMensagem2);
+		add(btnSair);
+		
+		// Labels
+		lblNome.setBounds(50, 40, 60, 20);
+		lblAnoDeNascimento.setBounds(50, 80, 120, 20);
+		add(lblNome);
+		add(lblAnoDeNascimento);
+		
+		// Text Fields
+		txtNome.setBounds(110, 40, 200, 20);
+		txtAnoDeNascimento.setBounds(210, 80, 100, 20);
+		add(txtNome);
+		add(txtAnoDeNascimento);
+		
+		// Action Listener
+		btnMensagem.addActionListener(this);
+		btnMensagem2.addActionListener(this);
+		btnSair.addActionListener(this);
+	}
+	public void actionPerformed(ActionEvent event) {
+		if (event.getSource() ==  btnMensagem) {
+			getContentPane().setBackground(Color.getHSBColor(1.0f, 1.0f, 1.0f));
+		}
+		else if (event.getSource() == btnSair) {
+			System.exit(0);
+		}
+		else if (event.getSource() == btnMensagem2) {
+			String nome = txtNome.getText();
+			nome = nome.trim();
+			if (txtAnoDeNascimento.getText().equals("")) {
+				txtAnoDeNascimento.setText(Integer.toString(calendario.get(Calendar.YEAR)));
+			}
+			int anoDeNascimento = Integer.parseInt(txtAnoDeNascimento.getText());
+			int anoAtual = calendario.get(Calendar.YEAR);
+			int idade = anoAtual - anoDeNascimento;
+			
+			if (!nome.equals("")) {
+				getContentPane().setBackground(Color.getHSBColor(0.3f, 1.0f, 1.0f));
+				JOptionPane.showMessageDialog(null, "Enviado");
+				getContentPane().setBackground(Color.getHSBColor(1.0f, 0.0f, 1.0f));
+				
+				JOptionPane.showMessageDialog(null, "Bem vindo(a) " + nome + " !\nSua idade é " + idade);
+			}
+			else if (nome.equals("")) {
+				getContentPane().setBackground(Color.getHSBColor(1.0f, 1.0f, 1.0f));
+				JOptionPane.showMessageDialog(null, "Insira um nome");
+				getContentPane().setBackground(Color.getHSBColor(1.0f, 0.0f, 1.0f));
+			}
+		}
+	}
+	public static void main(String[] args) {
+		new Janela2();
+	}
+}

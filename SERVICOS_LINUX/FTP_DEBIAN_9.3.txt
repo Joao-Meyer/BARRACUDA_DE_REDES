@@ -1,0 +1,50 @@
+viapt install proftpd-basic
+
+Ir no /etc/hosts (mudar o nome do hostname, caso você tenha mudado e colocar o IP e os nomes da máquina)
+
+systemctl restart proftpd
+
+Configurar o arquivo /etc/proftpd/proftpd.conf 
+
+vi /etc/proftpd/proftpd.conf 
+
+No arquivo fazer as seguintes mudanças: 
+
+-Deixar off o IPV6 
+-Verificar se o servertype está "Stand Alone" 
+-Colocar o server name atual (caso você tenha mudado)
+-Acrescentar uma linha com o "DisplayConnect /usr/local/etc/proftpd.banner
+
+systemctl restart proftpd
+
+Entrar em /usr/local/etc/proftpd.banner e colocar a mensagem de boas vinda para quem entrar pelo modo de texto.
+
+systemctl restart proftpd
+
+Teste de acesso
+
+apt install ftp
+ftp user@ip
+
+
+Pasta root
+
+editar o arquivo /etc/proftpd/proftpd.conf 
+DefultRoot = ~/ftp
+restartar o serviço
+criar o diretório /ftp no aluno (com o próprio aluno)
+
+Anônimo
+
+editar o arquivo /etc/proftpd/proftpd.conf 
+descomentar a sessão que começa com <anonymous ~ftp>
+aumentar o Controlmaxclientes para até 100 
+systemctl restart proftpd
+dar permissão chmod o+r /srv/ftp/*
+
+SFTP 
+
+apt install openssh-server
+
+sftp aluno@ip
+

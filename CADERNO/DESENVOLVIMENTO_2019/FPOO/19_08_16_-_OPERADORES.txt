@@ -1,0 +1,11 @@
+//Casting (conversão de variáveis de um tipo para outro tipo)
+
+int numero1 = 10;
+int numero2 = 3;
+
+double divisao = 0;
+
+divisao = numero1 / numero2; // Aqui "divisao" ficara com o valor de "3.0"
+divisao = numero1 / (double) numero2; // Aqui "divisao" ficaria com o valor de "3.3" por conta da conversão de uma das variáveis
+								// da equação ter sido convertida em "double", logo o resultado sairá em double.
+

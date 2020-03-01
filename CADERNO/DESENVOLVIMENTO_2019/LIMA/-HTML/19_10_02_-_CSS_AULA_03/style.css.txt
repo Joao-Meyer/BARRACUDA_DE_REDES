@@ -1,0 +1,132 @@
+/* Pseudo Elementos */
+
+/* Permite formatar a primeira letra de uma frase */
+p::first-letter{
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Permite formatar apenas a linha de cada frase */
+p::first-line{
+	color:green;
+	font-style: italic;
+}
+
+/* Permite formatar a seleção dos textos, literalmente,
+quando você seleciona alguma palavra com o mouse.
+
+Caso seja necessário aplicar um formatação para todas
+as tags html, podemos utilizar o símbolo "*"
+*/
+p::selection, -moz-selection{
+	background-color: yellow;
+}
+
+/* p::-moz-selection{
+	background-color: yellow;
+}
+
+p::-webkit-selection{
+	background-color: yellow;
+} */
+
+/* Exemplo de compartilhamento de CSS
+
+!important - deve ser usado em casos onde precisa-se
+dar prioridade a uma formatação
+*/
+h1, h2, h3, h4{
+	font-family:"comic sans ms";
+	font-style: italic;
+	text-decoration: underline;
+	text-align: center;
+	color: purple;
+}
+
+h1 {
+	color: red;
+}
+
+h2 {
+	color: blue;
+}
+
+/* 
+	border:	solid
+			doted
+			dashed
+			double
+			groove
+			ridge
+			inset
+			outset
+
+ */
+.texto {
+	font-family: verdana;
+	font-size: 18px;
+	color: orange;
+	text-align: center;
+	border:solid 2px #fe5674;
+	background-color: #cace;
+}
+
+.lista {
+	width:800px;
+	height:50px;
+	background-color: pink;
+}
+
+
+/* Podemos referenciar o elemento da li criando uma classe
+para ela ou através da hierarquia de elementos
+
+Ex:
+
+Usando um class
+	
+	.itens{
+	
+	}
+
+OU
+
+Usando hierarquia de elementos
+	
+	.lista li{
+	
+	}
+*/
+.lista li {
+	font-family: serif;
+	color: #f0de;
+	text-align: center;
+	width: 150px;
+	height: 42px;
+	background-color: yellow;
+
+	/* Permite mudar o tipo de marcador */
+	list-style: url("../imagens/lobinho.png");
+
+	/* Para criar uma lista horizontal, podemos utilizar:
+		display: inline;
+		float: left;
+	 */
+	float: left;
+}
+
+/* Exemplo de pseudo classes */
+
+.lista li:first-child{
+	background-color: orange;
+	color:red;
+}
+
+.lista li:hover{
+	background-color: purple;
+}
+
+.lista li:last-child{
+	color:blue;
+}

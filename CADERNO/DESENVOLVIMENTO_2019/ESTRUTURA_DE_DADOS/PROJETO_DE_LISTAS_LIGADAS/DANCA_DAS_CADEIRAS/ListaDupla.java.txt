@@ -1,0 +1,75 @@
+public class ListaDupla {
+	private NoDuplo prim;
+	public ListaDupla() {
+		this.prim = null;
+	}
+	public boolean listaDuplaVazia() {
+		return this.prim == null;
+	}
+	public NoDuplo getPrim() {
+		return this.prim;
+	}
+	public void setPrim(NoDuplo prim) {
+		this.prim = prim;
+	}
+	@Override
+	public String toString() {
+		String msg = "";
+		if (listaDuplaVazia())
+			msg += "lista vazia";
+		else {
+			NoDuplo aux = this.prim;
+			while (aux.getProx() != null) {
+				msg += aux + "-> ";
+				aux = aux.getProx();
+			}
+			msg += aux;
+		}
+		return msg;
+	}
+	public void insereInicio(int i) {
+		NoDuplo novo = new NoDuplo(i);
+		if (listaDuplaVazia()) {
+			novo.setProx(novo);
+			novo.setAnt(novo);
+		}
+		else {
+			novo.setProx(prim);
+			novo.setAnt(prim.getAnt());
+			novo.getAnt().setProx(novo);
+			novo.getProx().setAnt(novo);
+		}
+		this.prim = novo;
+	}
+	public void insereFim(int i) {
+		NoDuplo novo = new NoDuplo(i);
+		if (listaDuplaVazia()) {
+			this.prim = novo;
+			novo.setProx(novo);
+			novo.setAnt(novo);
+		}
+		else {
+			novo.setProx(prim);
+			novo.setAnt(prim.getAnt());
+			novo.getAnt().setProx(novo);
+			novo.getProx().setAnt(novo);
+		}
+	}
+	public int removeDaPosicao (int pos) {
+		NoDuplo aux = this.prim;
+		int i;
+		if (aux == aux.getAnt()) { //esvaziou a lista
+			i = prim.getInfo();
+			prim = null;
+			return i;
+		}
+		for (i=1; i<pos; i++)
+			aux = aux.getProx();
+		i = aux.getInfo();
+		aux.getAnt().setProx(aux.getProx());
+		aux.getProx().setAnt(aux.getAnt());
+		if (aux == prim)
+			prim = prim.getProx();
+		return i;
+	}
+}

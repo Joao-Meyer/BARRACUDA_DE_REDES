@@ -1,0 +1,176 @@
+<html>
+
+	<head>	
+		<title> G-OST </title>
+	</head>
+	<!-- 
+		210_cb=20141204001710.png - sapo
+		Super-Sonico-Imagem-Destaque.jpg - sonico
+		iu.gif - webnamorada
+		iu2VBXZ0J4.jpg - irmão do jorel
+		Txchaina_numba_1.png - china
+		MV5BMzYxZDk2OWEtOGU1OS00M2YyLTgxOTYtMDI5MTc0MjgxNTM5XkEyXkFqcGdeQXVyNjc3OTE4Nzk@__V1_.jpg - greg
+		
+		
+	-->
+	<body background = "imagens\Super-Sonico-Imagem-Destaque.jpg" bgcolor="#facada" text="white">
+		<h1>
+			Listas Ordenadas
+		</h1>
+		
+		<!--
+		
+			 <ol> - Cria uma lista ordenada
+
+			<li> - Cria cada item da lista
+
+			<ol type=	"1" - números
+						"a" - letras minusculo
+						"A" - letras maiúsculo
+						"i" - algarismo romano minusculo
+						"I" - algarismo romano maiúsculo
+			
+			<ol start="n" - define o inicio do marcador a partir do n elemento
+			
+		-->
+		
+		<h4>
+			"Garotas de cabelo colorido e filtro de raposa vão sempre te enganar"
+		</h4>
+		
+		<ol type="I" start="0">
+			<li>
+				Laranja
+			</li>
+			
+			<li>
+				Banana
+			</li>
+			
+			<li>
+				Morango
+			</li>
+			
+			<li>
+				Tomate, sim, o tomate é fruta
+			</li>
+		</ol>
+		
+		<h1>
+			Listas não ordenadas
+		</h1>
+		
+		<!--
+		
+			<ul> - Cria uma lista não ordenada
+			
+			<ul type=	"circle" - circulo sem preenchimento
+						"disc" - circulo preenchido
+						"square" - quadrado
+		
+		-->
+		
+		<h4>
+			Lista de nomes com G
+		</h4>
+		
+		<ul>
+			<li>
+				<font color = "yellow">
+					Gerson	
+				</font>
+			</li>
+			
+			<li>
+				Genivaldo
+			</li>
+			
+			<li>
+				George
+			</li>
+		</ul>
+		
+		<h1>
+			Listas encadeadas
+		</h1>
+		
+		<ol>
+			<li>
+				Estados Brasileiros
+			
+				<ol type = "a">
+					<li>
+						<font color = "red">
+							<u>
+								Minas Gerais
+							</u>
+						</font>
+					</li>
+				
+					<li>
+						<font color = "blue">
+							São Paulo
+						</font>
+					</li>
+				
+					<li>
+						<font color = "green">
+							Rio Grande do Sul
+						</font>
+					</li>
+				
+					<li>
+						<font color = "purple">
+							Rio de Janeiro
+						</font>
+					</li>
+				</ol>
+			</li>
+				<br>
+				</br>
+			<li>
+				Capitais Brasileiras
+			
+				<ul type = "square">
+					<li>
+						<font color = "red">
+							Belo Horizonte
+						</font>
+					</li>
+				
+					<li>
+						<font color = "blue">
+							São Paulo
+						</font>
+					</li>
+				
+					<li>
+						<font color = "green">
+							Porto Alegre
+						</font>
+					</li>
+				
+					<li>
+						<font color = "purple">
+							Rio de Janeiro
+						</font>
+					</li>
+				</ul>
+			</li>
+		</ol>
+		
+		<!--
+			<img> - permite colocar uma imagem no site
+			
+			<img	src = "" - caminho da imagem
+					width = "" - largura da imagem
+					height = "" - altura da imagem
+					border = "" - coloca uma borda na imagem
+					alt = "" - (obrigatório) coloca um texto alternativo caso a imagem não carregue
+					title = "" - permite colocar um título na imagem (serve para o narrador dos sistemas operacionais ler para deficientes visuais)
+			
+			
+		-->
+		<img src = "imagens/Txchaina_numba_1.png" title = "Txchaina_numba_1" alt = "Imagem ilustrativa de um grafitti que vi">
+	</body>
+</html>

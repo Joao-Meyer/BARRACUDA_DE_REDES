@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>  </title>
+        
+        <meta charset="utf-8">
+        
+        <style>
+            textarea {
+                /* Trava o redimensionamento da textarea. */
+                resize: none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!--
+            Todos os elementos de formulário, precisam estar entre a tag form, para conseguirmos retirá-los para o PHP.
+
+            action - Define para qual página será enviado os dados dos itens do form.
+
+            method (get/post) - Define como será a retirada dos itens do form (get envia para a URL e post envia por variáveis (ocultas) no próprio navegador).
+        -->
+        
+        <form name="frmFormularios" action="index.php" method="get">
+            Nome:
+                <input type="text" name="txtNome" value="" size="50" maxlength="10">
+            
+            <br><br>
+            
+            Estado:
+                <select name="sltEstados">
+                    <option value=""> Selecione um estado </option>
+
+                    <option value="SP"> Soa Poula </option>
+
+                    <option value="RJ" selected> Erre Jóta </option>
+                </select>
+            
+            <br><br>
+            
+            <!--
+                type="radio" - Permite dar opções de escolha, e para forçar apenas uma escolha precisamos deixar o elemento com nome igual.
+            -->
+            Sexo:
+                <input type="radio" name="rdoSexo" value="B" checked> Bom
+
+                <input type="radio" name="rdoSexo" value="F"> Feminino
+
+                <input type="radio" name="rdoSexo" value="M"> Masculino
+
+                <input type="radio" name="rdoSexo" value="NB"> Não Binário
+
+                <input type="radio" name="rdoSexo" value="PN"> Prefiro não responder
+            
+            <br><br>
+            
+            <!--
+                type="checkbox" - Permite dar opções de múltipla escolha.
+            -->
+            Idiomas:
+                <input type="checkbox" name="chkPort" value="PT" checked> Português
+                <input type="checkbox" name="chkIng" value="EN"> Inglês
+                <input type="checkbox" name="chkEsp" value="ES"> Espanhol
+            
+            <br><br>
+            
+            Observações:
+                <textarea name="txtObs" cols="20" rows="7"></textarea>
+            
+            <br><br>
+            
+            Senha:
+                <input type="password" name="txtSenha" value="">
+            
+            <br><br>
+            
+            <input type="submit" name="btnEnviar" value="Enviar">
+            
+            <input type="reset" name="btnLimpar" value="Limpar">
+        </form>
+    </body>
+</html>

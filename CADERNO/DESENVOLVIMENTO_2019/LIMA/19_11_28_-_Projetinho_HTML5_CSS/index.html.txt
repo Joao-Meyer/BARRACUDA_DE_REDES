@@ -1,0 +1,962 @@
+<!-- WIREFRAME: https://wireframe.cc/VhQ1Ni -->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <Title> G-OST </Title>
+
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <script src="js/jquery.js"></script>
+        
+        <script src="js/ancora.js"></script>
+    </head>
+    
+    <body>
+            <!-- Seção para o menu -->
+        <div id="containerMenu">
+            <div class="container">
+                <nav id="menu">
+                    <ul class="menu">
+                        
+                        <li class="menuItem">
+                            <a href="#containerQuerolisten"> !Querolisten </a>
+                        </li>
+                        
+                        <li class="menuItem">
+                            <a href="#containerXRY"> X R Y </a>
+                        </li>
+                        
+                        <li class="menuItem">
+                            <a href="#containerFATHER"> F A T H E R </a>
+                        </li>
+                        
+                        <li class="menuItem">
+                            <a href="#containerPisadinha"> Pisadinha </a>
+                        </li>
+                        
+                        <li class="menuItem">
+                            <a href="#containerBrasileirinhas"> Brasileirinhas </a>
+                        </li>
+                        
+                        <li class="menuItem">
+                            <a href="#containerLofiHipHop"> Japanese Lofi Hip-Hop </a>
+                        </li>
+                        
+                        <li class="menuItem">
+                            <a href="#containerDeathMetal"> Death Metal </a>
+                        </li>
+                        
+                        <li class="menuItem">
+                            <a href="#containerTRASH"> T R A S H </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="containerMenuIcon">
+                    <figure class="menuIcon">    
+                        <a href="https://pt-br.facebook.com/" title="Site Facebook" target="_blank">
+                            <img src="imagens/facebook-logo.png" alt="Logo do Facebook">
+                        </a>
+                    </figure>
+                </div>
+                
+                <div class="containerMenuIcon">
+                    <figure class="menuIcon">    
+                        <a href="https://www.instagram.com/?hl=pt-br" title="Site Instagram" target="_blank">
+                            <img src="imagens/instagram-logo.png" alt="Logo do Instagram">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+            <!-- Seção para o slogan -->
+        <header>
+            <div id="slogan">
+                "A música é o vínculo que une a vida do espírito à vida dos sentidos. A melodia é a vida sensível da poesia."
+
+                Ludwig van Beethoven
+            </div>
+            
+            <div id="containerAudio">
+                <audio controls src="musicas/beethoven_sonata_ao_luar_moonlight_sonata.mp3"></audio>
+            </div>
+        </header>
+        
+            <!-- Seção !Querolisten -->
+        <div id="containerQuerolisten">
+            <section class="container">
+                <a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/3LLzAayc12woy0IST2n1QO?si=fMFZQxuqSWa9wJegbCvY-A" title="Link para a playlist !Querolisten" target="_blank">
+                    <h2> !Querolisten </h2>
+                </a>
+                
+                <div class="conteudoEsquerda">
+                    <div class="conteudoQuerolisten">
+                        <div class="conteudoQuerolistenImagem">
+                            <figure id="querolistenIcon">    
+                                <img src="imagens/!querolisten2.jpeg" alt="Icone da playlist !Querolisten">
+                            </figure>
+                        </div>
+
+                        <div class="conteudoQuerolistenTexto">
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. 
+                            </p>
+                        </div>
+                        
+                        <!-- <audio controls src="musicas/y2mate.com%20-%2002_regras_da_loja_part_bk_prod_crimenow_-jyMoCaTW_Q.mp3"></audio> -->
+                    </div>
+
+                    <div class="conteudoArtista1E2">
+                        <div class="containerAssunto">
+                            <div class="containerImagemAssunto">
+                                <figure class="figureImagemAssunto">
+                                    <img src="imagens/yung%20buda.jpg" alt="Imagem do cantor Yung Buda">
+                                </figure>
+                            </div>
+
+                            <div class="containerTextoDoAssunto">
+                                <p>
+                                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="containerAssunto">
+                            <div class="containerTextoDoAssunto">
+                                <p>
+                                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. 
+                                </p>
+                            </div>
+
+                            <div class="containerImagemAssunto">
+                                <figure class="figureImagemAssunto">
+                                    <img src="imagens/baco%20exu%20do%20blues.jpg" alt="Imagem do cantor Baco Exu do Blues">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="conteudoDireita">
+                    <div class="conteudo4Artistas">
+                        <div class="conteudoArtista3">
+                            <div class="conteudoArtista3Imagem">
+                                <figure class="conteudoArtista3Icon">
+                                    <img src="imagens/hot%20e%20oreia.jpg" alt="Imagem dos cantores Hot e Oreia">
+                                </figure>
+                            </div>
+
+                            <div class="conteudoArtista3Texto">
+                                <p>
+                                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="conteudoArtista3">
+                            <div class="conteudoArtista3Imagem">
+                                <figure class="conteudoArtista3Icon">
+                                    <img src="imagens/luiz%20lins.png" alt="Imagem do cantor Luiz Lins">
+                                </figure>
+                            </div>
+
+                            <div class="conteudoArtista3Texto">
+                                <p>
+                                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="conteudoArtista3">
+                            <div class="conteudoArtista3Imagem">
+                                <figure class="conteudoArtista3Icon">
+                                    <img src="imagens/recayd%20mob3.jpg" alt="Imagem dos cantores da Recayd Mob">
+                                </figure>
+                            </div>
+
+                            <div class="conteudoArtista3Texto">
+                                <p>
+                                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="conteudoArtista3">
+                            <div class="conteudoArtista3Imagem">
+                                <figure class="conteudoArtista3Icon">
+                                    <img src="imagens/djonga.jpg" alt="Imagem do cantor Djonga">
+                                </figure>
+                            </div>
+
+                            <div class="conteudoArtista3Texto">
+                                <p>
+                                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoBaixo">
+                        <div class="conteudo2Artistas">
+                            <div class="conteudoArtista10">
+                                <div class="conteudoArtista10Imagem">
+                                    <figure class="conteudoArtista10Icon">
+                                        <img src="imagens/chico%20buarque.jpg" alt="Imagem do cantor Chico Buarque">
+                                    </figure>
+                                </div>
+
+                                <div class="conteudoArtista10Texto">
+                                    <p>
+                                        Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé. 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="conteudoArtista10">
+                                <div class="conteudoArtista10Imagem">
+                                    <figure class="conteudoArtista10Icon">
+                                        <img src="imagens/legiao%20urbana.jpg" alt="Imagem da banda Legião Urbana">
+                                    </figure>
+                                </div>
+
+                                <div class="conteudoArtista10Texto">
+                                    <p>
+                                        Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="conteudo3Artistas">
+                            <div class="conteudoArtista7">
+                                <div class="conteudoArtista7Imagem">
+                                    <figure class="conteudoArtista7Icon">
+                                        <img src="imagens/demonios%20da%20garoa.jpg" alt="Imagem da banda Demonios da Garoa">
+                                    </figure>
+                                </div>
+
+                                <div class="conteudoArtista7Texto">
+                                    <p>
+                                        Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="conteudoArtista7">
+                                <div class="conteudoArtista7Imagem">
+                                    <figure class="conteudoArtista7Icon">
+                                        <img src="imagens/liniker.jpeg" alt="Imagem da banda Liniker e os Caramelous">
+                                    </figure>
+                                </div>
+
+                                <div class="conteudoArtista7Texto">
+                                    <p>
+                                        Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="conteudoArtista9">
+                                <div class="conteudoArtista9Imagem">
+                                    <figure class="conteudoArtista9Icon">
+                                        <img src="imagens/cicero.jpg" alt="Imagem do cantor Cicero">
+                                    </figure>
+                                </div>
+
+                                <div class="conteudoArtista9Texto">
+                                    <p>
+                                        Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+             <!-- Seção X R Y -->
+        <div id="containerXRY">
+            <section class="container">
+                <a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/0qSBuvT7CfqdFpWokllA9V?si=96p3DNdjRL-NzAIOpbxDnQ" title="Link para a playlist FATHER" target="_blank">
+                    <h2> X R Y </h2>
+                </a>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/xry.jpeg" alt="Icone da playlist X R Y">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/los%20hermanos.jpg" alt="Imagem da banda Los Hermanos">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius.
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/o%20terno.png" alt="Imagem da banda O Terno">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/nill2.jpg" alt="Imagem do cantor Nill">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius.
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/konai%20e%20luiz%20lins.jpg" alt="Imagem dos cantores Konai e Luiz Lins">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="linhaDeConteudo1">
+                    <div class="containerAssuntoHorizontal zeraMargin">
+                        <div class="containerImagemAssunto">
+                            <figure class="figureImagemAssunto">
+                                <img src="imagens/konai.png" alt="Imagem do cantor Konai">
+                            </figure>
+                        </div>
+
+                        <div class="containerTextoDoAssuntoHorizontal">
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="containerAssuntoHorizontal zeraMargin">
+                        <div class="containerImagemAssunto">
+                            <figure class="figureImagemAssunto">
+                                <img src="imagens/soulstripper.png" alt="Imagem da banda Soulstripper">
+                            </figure>
+                        </div>
+
+                        <div class="containerTextoDoAssuntoHorizontal">
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="linhaDeConteudo2">
+                    <div class="containerAssuntoHorizontal zeraMargin">
+                        <div class="containerImagemAssunto">
+                            <figure class="figureImagemAssunto">
+                                <img src="imagens/pink%20floyd.jpg" alt="Imagem da banda Pink Floyd">
+                            </figure>
+                        </div>
+
+                        <div class="containerTextoDoAssuntoHorizontal">
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="containerAssuntoHorizontal zeraMargin">
+                        <div class="containerImagemAssunto">
+                            <figure class="figureImagemAssunto">
+                                <img src="imagens/G-0ST.jpeg" alt="Imagem da banda System of a Down">
+                            </figure>
+                        </div>
+
+                        <div class="containerTextoDoAssuntoHorizontal">
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Seção F A T H E R -->
+        <div id="containerFATHER">
+            <section class="container">
+                <a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/0qSBuvT7CfqdFpWokllA9V?si=96p3DNdjRL-NzAIOpbxDnQ" title="Link para a playlist FATHER" target="_blank">
+                    <h2> F A T H E R </h2>
+                </a>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/father2.jpeg" alt="Icone da playlist F A T H E R">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/angra.jpg" alt="Imagem da banda Angra">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/the%20smiths.jpg" alt="Imagem da banda The Smiths">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/the%20cure.jpg" alt="Imagem da banda The Cure">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/amy.jpg" alt="Imagem da cantora Amy Winehouse">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="linhaDeConteudo1">
+                    <div class="containerAssuntoHorizontal zeraMargin">
+                        <div class="containerImagemAssunto">
+                            <figure class="figureImagemAssunto">
+                                <img src="imagens/depeche%20mode.jpg" alt="Imagem da banda Depeche Mode">
+                            </figure>
+                        </div>
+
+                        <div class="containerTextoDoAssuntoHorizontal">
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é.  
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="containerAssuntoHorizontal zeraMargin">
+                        <div class="containerImagemAssunto">
+                            <figure class="figureImagemAssunto">
+                                <img src="imagens/foster%20the%20people.jpg" alt="Imagem da banda Foster the People">
+                            </figure>
+                        </div>
+
+                        <div class="containerTextoDoAssuntoHorizontal">
+                            <p>
+                               Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="linhaDeConteudo2">
+                    <div class="containerAssuntoHorizontal zeraMargin">
+                        <div class="containerImagemAssunto">
+                            <figure class="figureImagemAssunto">
+                                <img src="imagens/o%20rappa.jpg" alt="Imagem da banda O Rappa">
+                            </figure>
+                        </div>
+
+                        <div class="containerTextoDoAssuntoHorizontal">
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="containerAssuntoHorizontal zeraMargin">
+                        <div class="containerImagemAssunto">
+                            <figure class="figureImagemAssunto">
+                                <img src="imagens/system%20of%20a%20down.jpg" alt="Imagem da banda System of a Down">
+                            </figure>
+                        </div>
+
+                        <div class="containerTextoDoAssuntoHorizontal">
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Seção Pisadinha -->
+        <div id="containerPisadinha">
+            <section class="container">
+                <a href="https://open.spotify.com/playlist/09To96LkxL67xNRQ8p8lXi?si=MFCity2FRJutuG-0h8D7fQ" title="Link para a playlist Pisadinha 2019" target="_blank">
+                    <h2> Pisadinha </h2>
+                </a>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/pisadinha%202019%202.jpeg" alt="Icone da playlist Pisadinha">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Playlist inteiramente dedicada a anti-sofrência, a pisadinha é um gênero musical que é envolvente, dançante e, por que não, apaixonante? Ela dá uma levantada no quer que seja que tu derrubou e não levanta: autoestima, amigo, copo, bom... tudo.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/baroes%20da%20pisadinha.jpeg" alt="Imagem da banda Os Barões da Pisadinha">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Com um nome desses não tinham como ficar de fora,											
+																					<a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" title="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																						Os Barões da Pisadinha</a>
+																					fazem jús a seu nome e entregam o que prometem: Muita pisadinha.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            <a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" title="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																						Wesley Safadão</a>
+																					tem musicas tão boas quanto seu nome espalhafatoso, um grande ícone do forró que nos oferece, humildemente, ótimas experiências com as suas pisadinhas.
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/wesley%20safadao.jpg" alt="Imagem do cantor Wesley Safadão">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/lambasaia.jpeg" alt="Imagem do cantor Lambasaia">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            <a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" title="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																						Lambasaia</a>
+																					possui, como o próprio diria, um olhar de vigarista, e suas músicas têm uma linha muito parecida, pisadinhas que falam sobre festejar e "curtir" a mulherada, olhe o perfil dele por sua conta e risco.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            <a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" title="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+																						Wesley Safadão</a>
+																					é tão presente no meio que chega a aparecer aqui novamente, porém, desta vez, com sua antiga banda 
+                            <a href="https://www.letras.mus.br/os-baroes-da-pisadinha/" title="Link para a pagina de Os Barões da Pisadinha" target="_blank">
+                                                                                        Garota Safada</a>
+                                                                                    que não deixa a desejar quando se trata de arrastar pé e ralar buxo com a pessoa amada.
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/garota%20safada.jpg" alt="Imagem da banda Garota Safada">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+              <!-- Seção Brasileirinhas -->
+        <div id="containerBrasileirinhas">
+            <section class="container">
+                <a href="https://open.spotify.com/user/h58dlllsxl4vpk4ril3iqlflk/playlist/5SZE5GbiIeHk08kilyaYj7?si=XcJ_8nNtQ76_8lJU975h_Q" title="Link para a Playlist Brasileirinhas" target="_blank">
+                    <h2> Brasileirinhas </h2>
+                </a>
+                
+                <div class="containerAssunto containerDescricaoPlaylist">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/brasileirinhas.jpeg" alt="Icone da playlist Brasileirinhas">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            <a href="https://open.spotify.com/user/h58dlllsxl4vpk4ril3iqlflk/playlist/5SZE5GbiIeHk08kilyaYj7?si=XcJ_8nNtQ76_8lJU975h_Q" title="Link para a Playlist Brasileirinhas" target="_blank">
+																Brasileirinhas</a>
+															, criada por Matheus de Castro Ferreira, recheada de músicas nacionais dos mais diversos gêneros, daquelas que tocam nas rádios frequêntes da casa de seus avós.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/alceu%20valenca.jpg" alt="Imagem do cantor Alceu Valença">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Alguns dos artistas que aparecem por aqui são 
+												<a href="https://genius.com/artists/Alceu-valenca" title="Link para a pagina de Alceu Valença" target="_blank">
+													Alceu Valença</a>
+												,
+												<a href="https://genius.com/artists/Alcione" title="Link para a pagina de Alcione" target="_blank">
+													Alcione</a>
+												e
+												<a href="https://genius.com/artists/Belchior" title="Link para a pagina de Belchior" target="_blank">
+													Belchior</a>
+												, essas e outras estrelas compõem boa parte da MPB que é vista em peso nesta playlist.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Todos fazem musica boa (pode perguntar para sua avó, ela vai concordar comigo) com diversos gêneros como o samba, forró, xote, xaxado, e MPB propriamente dita.
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/alcione.jpg" alt="Imagem da cantora Alcione">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/belchior.jpg" alt="Imagem do cantor Belchior">
+                        </figure>
+                    </div>
+                    
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Seção Japanese Lofi Hip-Hop -->
+        <div id="containerLofiHipHop">
+            <section class="container">
+                <a href="https://open.spotify.com/user/thebootlegboy/playlist/5QjgJ20xSbkyfDY2iPERtz?si=LRJrC0abTXSG2kM42o1X1A" title="Link para a Playlist Japanese Lofi Hip-Hop" target="_blank">
+                    <h2> Japanese Lofi Hip-Hop </h2>
+                </a>
+                
+                <div class="containerAssunto containerDescricaoPlaylist">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/lofi.jpeg" alt="Icone da playlist Japanese Lofi Hip-Hop">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            <a href="https://open.spotify.com/user/thebootlegboy/playlist/5QjgJ20xSbkyfDY2iPERtz?si=LRJrC0abTXSG2kM42o1X1A" title="Link para a Playlist Japanese Lofi Hip-Hop" target="_blank">
+																Japanese Lofi Hip-Hop</a>
+															, criada por thebootlegboy, contém músicas do estilo Lofi com a temática japonesa e possui diversos artistas que eu até então desconhecia.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/tragic%20hero.jpg" alt="Imagem do albúm Tragic Hero">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Alguns dos albuns que aparecem por aqui são 
+												<a href="https://genius.com/albums/Redrose" title="Link para a pagina de RedRose" target="_blank">
+													Tragic Hero, do artista RedRose</a>
+												,
+												<a href="https://genius.com/albums/Rude" title="Link para a pagina de Rude" target="_blank">
+													Eternal Youth, do artista Rude</a>
+												e
+												<a href="https://genius.com/albums/Elijah-nang" title="Link para a pagina de Elijah Nang" target="_blank">
+													Lost In Japan II, do artista Elijah Nang</a>
+												, todas as músicas têm um ritmo calmo e arremetem ao Japão assim como o esperado. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Numa tentativa frustrada de achar algo que me ajudasse a dormir encontrei músicas muito boas e tranquilas, ideais para som de background.
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/eternal%20youth.jpg" alt="Imagem do albúm Eternal Youth">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/lost%20in%20japan%20ii.jpg" alt="Imagem do albúm Lost In Japan II">
+                        </figure>
+                    </div>
+                    
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Seção Death Metal -->
+        <div id="containerDeathMetal">
+            <section class="container">
+                <a href="https://open.spotify.com/playlist/2vivknVOeJD7BUYnnuztrE?si=Zzdr57jHSBqQC5P9mIUuJg" title="Link para a Playlist Death Metal" target="_blank">
+                    <h2> Death Metal </h2>
+                </a>
+                
+                <div class="containerAssunto containerDescricaoPlaylist">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/death%20metal.jpeg" alt="Icone da playlist Death Metal">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            <a href="https://open.spotify.com/playlist/2vivknVOeJD7BUYnnuztrE?si=Zzdr57jHSBqQC5P9mIUuJg" title="Link para a Playlist Death Metal" target="_blank">
+																Death Metal</a>
+															, criada por 1264038079, contém músicas um pouco diferentes assim como o nome de seu criador e faz juz ao seu nome onde boa parte das letras eu não compreendo por serem gritos, porém são boas.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/the%20black%20dahlia%20murder%20ritual.jpg" alt="Imagem do albúm Ritual">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Alguns dos albuns que aparecem por aqui são 
+												<a href="https://genius.com/albums/The-black-dahlia-murder/Ritual" title="Link para a pagina de Ritual" target="_blank">
+													Ritual, da banda The Black Dahlia Murder</a>
+												,
+												<a href="https://genius.com/albums/Lamb-of-god/Sacrament" title="Link para a pagina de Sacrament" target="_blank">
+													Sacrament, da banda Lamb of God</a>
+												e
+												<a href="https://genius.com/albums/The-black-dahlia-murder/Nocturnal" title="Link para a pagina de Nocturnal" target="_blank">
+													Nocturnal, também da banda The Black Dahlia Murder</a>
+												, entre outros albuns e singles que são gritaria pura.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Ainda não sequer ousei procurar a letra das músicas mas algo me diz que seria algo como sangue, tripas e amor a entidades diversas, realmente cativante!
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/lamb%20of%20god%20sacrament.jpg" alt="Imagem do albúm Sacrament">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/the%20black%20dahlia%20murder%20nocturnal.jpg" alt="Nocturnal">
+                        </figure>
+                    </div>
+                    
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Seção T R A S H -->
+        <div id="containerTRASH">
+            <section class="container">
+                <a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/2t48FPwmGAHHmor43ulPST?si=hnT8akXlTsGIlHGnDVr83A" title="Link para a Playlist T R A S H" target="_blank">
+                    <h2> T R A S H </h2>
+                </a>
+                
+                <div class="containerAssunto containerDescricaoPlaylist">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/trash.jpeg" alt="Icone da playlist T R A S H">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            <a href="https://open.spotify.com/user/9cxs09rji7kji1smz3qnxwzd4/playlist/2t48FPwmGAHHmor43ulPST?si=hnT8akXlTsGIlHGnDVr83A" title="Link para a Playlist T R A S H" target="_blank">
+																T R A S H</a>
+															, criada por Meyrihen (sim, eu de novo), se trata de uma playlist com albúns inteiros de certos artistas, além de ser, como sempre, um ótimo mix de sabores onde pode-se encontrar um pouco de tudo.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/arctic%20monkeys.png" alt="Imagem da banda Arctic Monkeys">
+                        </figure>
+                    </div>
+
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Algumas das bandas que aparecem por aqui são 
+												<a href="https://genius.com/artists/Arctic-monkeys" title="Link para a pagina de Arctic Monkeys" target="_blank">
+													Arctic Monkeys</a>
+												,
+												<a href="https://genius.com/artists/Alt-j" title="Link para a pagina de Alt-j" target="_blank">
+													Alt-j</a>
+												e
+												<a href="https://genius.com/artists/Bastille" title="Link para a pagina de Bastille" target="_blank">
+													Bastille</a>
+												,  eu diria que boa parte são indie porém têm alguma boa fama além de é claro, serem boas, afinal sou eu quem julgo aqui.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Nesta playlist albuns e as vezes até mesmo todas as músicas de certos artistas se fazem presente e são dos mais variados gêneros pois esta playlist compreende quase todo o meu acervo. 
+                        </p>
+                    </div>
+                    
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/alt-j.jpg" alt="Imagem da banda Alt-j">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="containerAssunto conteudoAssunto">
+                    <div class="containerImagemAssunto">
+                        <figure class="figureImagemAssunto">
+                            <img src="imagens/bastille.jpg" alt="Imagem da banda Bastille">
+                        </figure>
+                    </div>
+                    
+                    <div class="containerTextoDoAssunto">
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Posuere libero varius.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <h1> Meyrihen </h1>
+        </footer>
+    </body>
+</html>

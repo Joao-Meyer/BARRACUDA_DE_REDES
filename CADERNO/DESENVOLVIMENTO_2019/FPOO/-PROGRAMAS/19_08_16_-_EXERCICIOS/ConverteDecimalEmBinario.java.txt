@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class ConverteDecimalEmBinario {
+
+  public static void main (String args []){
+
+      Scanner recebe = new Scanner(System.in);
+
+      System.ou.println ("\nDigite o numero decimal, inteiro, a ser convertido em binario:");
+      int decimal = recebe.nextInt();
+
+      string 
+
+  }
+
+}

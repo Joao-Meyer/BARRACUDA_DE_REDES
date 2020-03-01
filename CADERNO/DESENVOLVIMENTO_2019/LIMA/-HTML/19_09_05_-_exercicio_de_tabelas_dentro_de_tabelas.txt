@@ -1,0 +1,477 @@
+<html>
+	<head>
+		<title> G-OST "Ai meu deus, eu vou morrer sozinho" </title>
+	</head>
+	
+	<body topmargin="0" leftmargin="0" rightmatgin="0" bottommargin="0">
+	
+		<!-- Caixa principal do site -->
+		<table width="1200" height="2000" border="1" align="center" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+						<tr height="300">	<!-- Linha do Cabeçalho -->
+							<td>
+								<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="20%">	<!-- Coluna do Logo -->
+										</td>
+										
+										<td width="60%">	<!-- Coluna do Título -->
+										</td>
+										
+										<td width="20%" valign="middle">	<!-- Coluna das Redes Sociais -->
+											<table width="80%" height="80%" align="center" border="1" cellspacing="0" cellpadding="0">
+												<tr height="70%">	<!-- Icone do Carrinho de compras -->
+													<td colspan="3" width="100%">
+													</td>
+												</tr>
+												
+												<tr height="30%">	<!-- Linha dos icones das 3 redes sociais -->
+													<td width="33%">								
+													</td>
+													
+													<td width="34%">
+													</td>
+													
+													<td width="33%">
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>							
+						</tr>
+						
+						<tr height="1600">	<!-- Linha do Conteúdo -->
+							<td>
+								<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+									<tr height="80">
+										<td>	<!-- Area do menu -->
+											<table width="80%" height="80%" border="0" cellpadding="0" cellspacing="10" align="center" valign="middle">
+												<tr align="center" height="100%">
+													<td width="20%" bgcolor="#b0aeae">
+														Home
+													</td>
+													
+													<td width="20%" bgcolor="#b0aeae">
+														Home
+													</td>
+													
+													<td width="20%" bgcolor="#b0aeae">
+														Home
+													</td>
+													
+													<td width="20%" bgcolor="#b0aeae">
+														Home
+													</td>
+													
+													<td width="20%" bgcolor="#b0aeae">
+														Home
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									
+									<tr height="1520">
+										<td>	<!-- Area do conteudo final -->
+											<table width="100%" height="100%" border="1" cellpadding="0" cellspacing="0">
+												<tr height="25%">	<!-- Seção de conteúdo 1 -->
+													<td>
+														<table width="100%" height="100%" border="1" cellpadding="0" cellspacing="0">
+															<tr height="20%">
+																<td align="center">
+																	<h1>
+																		Titulo
+																	</h1>
+																</td>
+															</tr>
+															
+															<tr height="80%">
+																<td>
+																	<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td width="15%" align="center">
+																				Imagem
+																			</td>
+																			
+																			<td width="15%" align="center">
+																				Texto
+																			</td>
+																			
+																			<td width="15%">
+																				<table width="100%" height="100%" border="1" cellpadding="0" cellspacing="0">
+																					<tr height="20%">
+																						<td align="center">
+																							<h2>
+																								Subtitulo
+																							</h2>
+																						</td>
+																					</tr>
+																					
+																					<tr height="80%">
+																						<td align="center">
+																							<p>
+																								Texto
+																							</p>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			
+																			<td width="35%" align="center">
+																				Video
+																			</td>
+																			
+																			<td width="20%" align="center">
+																				Texto
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												
+												<tr height="20%">	<!-- Seção de conteúdo 2 -->
+													<td>
+														<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+															<tr height="20%">
+																<td>
+																	<h1>
+																		Titulo
+																	</h1>
+																</td>
+															</tr>
+															
+															<tr height="80%">
+																<td>
+																	<table height="100%" width="100%" border="1" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td width="15%" align="center">
+																				<p>
+																					Texto
+																				</p>
+																			</td>
+																		
+																			<td width="25%" align="center">
+																				Imagem
+																			</td>
+																		
+																			<td width="30%">
+																					<!-- Divisão de subtitulo e conteúdo -->
+																				<table height="100%" width="100%" border="1" cellpadding="0" cellspacing="0">
+																					<tr height="15%">
+																						<td width="100%" align="center">
+																							<h2>
+																								Subtitulo
+																							</h2>
+																						</td>
+																					</tr>
+																				
+																					<tr height="85%">
+																						<td width="100%">
+																								<!-- Divisão entre conteúdo da esquerda e direita -->
+																							<table height="100%" width="100%" border="1" cellpadding="0" cellspacing="0">
+																								<tr>
+																									<td width="50%" align="center">
+																										Imagem
+																									</td>
+																								
+																									<td width="50%">
+																											<!-- Organização do texto e imagens -->
+																										<table height="100%" width="100%" border="1" cellpadding="0" cellspacing="0">
+																											<tr height="50%">
+																												<td width="100%" colspan="2" align="center">
+																													Texto
+																												</td>
+																											</tr>
+																										
+																											<tr height="50%">
+																												<td width="50%" align="center">
+																													Imagem
+																												</td>
+																											
+																												<td width="50%" align="center">
+																													Imagem
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		
+																			<td width="30%">
+																					<!-- Divisão de subtitulo e conteúdo -->
+																				<table height="100%" width="100%" border="1" cellpadding="0" cellspacing="0">
+																					<tr height="15%">
+																						<td width="100%" align="center">
+																							<h2>
+																								Subtitulo
+																							</h2>
+																						</td>
+																					</tr>
+																				
+																					<tr height="85%">
+																						<td width="100%">
+																								<!-- Divisão entre conteúdo da esquerda e direita -->
+																							<table height="100%" width="100%" border="1" cellpadding="0" cellspacing="0">
+																								<tr height="100%">
+																									<td width="50%">
+																											<!-- Organização do texto e imagens -->
+																										<table height="100%" width="100%" border="1" cellpadding="0" cellspacing="0">
+																											<tr height="50%">
+																												<td colspan="2" width="100%" align="center">
+																													Texto
+																												</td>
+																											</tr>
+																										
+																											<tr height="50%">
+																												<td width="50%" align="center">
+																													Imagem
+																												</td>
+																											
+																												<td width="50%" align="center">
+																													Imagem
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								
+																									<td width="50%" align="center">
+																										Imagem
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												
+												<tr height="40%">	<!-- Seção de conteúdo 3 -->
+													<td>
+															<!-- Divisão entre assuntos da esquerda e direita -->
+														<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+															<tr>
+																<td width="80%">
+																		<!-- Divisão entre assunto de cima e de baixo do lado esquerdo -->
+																	<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+																		<tr height="50%">
+																			<td>
+																					<!-- Arranjo do assunto de cima do lado esquerdo -->
+																				<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+																					<tr height="30%">
+																						<td width="100%" colspan="4">
+																							<h1>
+																								Titulo
+																							</h1>
+																						</td>
+																					</tr>
+																					
+																					<tr height="70%">
+																						<td width="22%" align="center">
+																								<!-- Arranjo do texto com foto do lado esquerdo -->
+																							<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+																								<tr height="50%">
+																									<td width="50%" align="center">
+																										Imagem
+																									</td>
+																									
+																									<td width="50%" align="center">
+																										Texto
+																									</td>
+																								</tr>
+																								
+																								<tr height="50%">
+																									<td colspan="2" width="100%" align="center">
+																										Texto
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																						
+																						<td width="31%" align="center">
+																							Imagem
+																						</td>
+																						
+																						<td width="22%" align="center">
+																							Texto
+																						</td>
+																						
+																						<td width="25%" align="center">
+																							Texto
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		
+																		<tr height="50%">
+																			<td>
+																					<!-- Arranjo do assunto de baixo do lado esquerdo -->
+																				<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+																					<tr height="30%">
+																						<td colspan="3" width="100%">
+																							<h1>
+																								Titulo
+																							</h1>
+																						</td>
+																					</tr>
+																					
+																					<tr height="70%">
+																						<td width="25%" align="center">
+																							Texto
+																						</td>
+																						
+																						<td width="25%" align="center">
+																								<!-- Arranjo das fotos do centro -->
+																							<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+																								<tr height="50%">
+																									<td width="50%" align="center">
+																										Imagem
+																									</td>
+																									
+																									<td width="50%" align="center">
+																										Imagem
+																									</td>
+																								</tr>
+																								
+																								<tr height="50%">
+																									<td width="50%" align="center">
+																										Imagem
+																									</td>
+																									
+																									<td width="50%" align="center">
+																										Imagem
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																						
+																						<td width="50%" align="center">
+																							Texto
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																
+																<td width="20%">
+																		<!-- Arranjo dos assuntos de cima e de baixo do lado direito -->
+																	<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">
+																		<tr height="10%" align="center">
+																			<td>
+																				Subtitulo
+																			</td>
+																		</tr>
+																		
+																		<tr height="25%" align="center">
+																			<td>
+																				Imagem
+																			</td>
+																		</tr>
+																		
+																		<tr height="15%" align="center">
+																			<td>
+																				Texto
+																			</td>
+																		</tr>
+																		
+																		<tr height="10%" align="center">
+																			<td>
+																				Subtitulo
+																			</td>
+																		</tr>
+																			
+																		<tr height="25%" align="center">
+																			<td>
+																				Imagem
+																			</td>
+																		</tr>
+																		
+																		<tr height="15%" align="center">
+																			<td>
+																				Texto
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												
+												<tr height="15%">	<!-- Seção de conteúdo 4 -->
+													<td>
+															<!-- Arranjo do assunto de baixo do lado esquerdo -->
+														<table width="100%" height="100%" border="1" cellspacing="0" cellpadding="0">							
+															<tr height="50%">
+																<td colspan="7" width="100%">
+																</td>
+															</tr>
+															
+															<tr height="50%">
+																<td width="10%" align="center">
+																	Imagem
+																</td>
+
+																<td width="10%" align="center">
+																	Texto
+																</td>
+
+																<td width="13%" align="center">
+																	Imagem
+																</td>
+
+																<td width="25%" align="center">
+																	Texto
+																</td>
+
+																<td width="13%" align="center">
+																	Imagem
+																</td>
+
+																<td width="13%" align="center">
+																	Texto
+																</td>
+
+																<td width="16%" align="center">
+																	Imagem
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>									
+										</td>
+									</tr>
+								</table>
+							</td>							
+						</tr>
+						
+						<tr height="100">	<!-- Linha do Rodapé -->
+							<td>
+							</td>							
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

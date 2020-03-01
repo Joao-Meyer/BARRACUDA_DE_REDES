@@ -1,0 +1,18 @@
+Código		O que faz
+
+\n			Nova linha. Posiciona o cursor de tela no início da próxima linha (enter)
+
+\t			Tabulação horizontal. Move o cursor de tela para a próxima parada de tabulação. (tab)
+
+\r			Posiciona o cursor da tela no início da linha atual - não avança para a próxima linha. Qualquer saída de caracteres gerada depois de algum retorno já gerado é sobrescrito os caracteres anteriores gerados na linha atual.
+
+\\			Barras invertidas. Utilizada para imprimir um caractere de barra invertida.
+
+\”			Aspas duplas. Utilizada para imprimir um caractere de aspas duplas. Exemplo, System.out.println(“\”aspas\””); exibe “aspas”
+
+//			Comenta uma linha de modo que possa ser lido por quem ver o código porém não será considerado na hora de
+			compilar
+
+/* */			Comenta um bloco de modo que possa ser lido por quem ver o código porém não será considerado na hora de
+			compilar
+

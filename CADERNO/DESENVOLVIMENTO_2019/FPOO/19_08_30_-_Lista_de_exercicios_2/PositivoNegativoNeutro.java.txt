@@ -1,0 +1,22 @@
+// Este programa verifica se um numero é positivo, negativo ou neutro
+
+import java.util.Scanner;
+
+class PositivoNegativoNeutro {
+	public static void main (String args []){
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.print("\nInsira um numero pequeno: ");
+		byte numero = recebe.nextByte();
+
+		if (numero == 0){
+			System.out.print ("\nE zero (Neutro)\n\n");
+		}
+		else if (numero >0){
+			System.out.print ("\nE positivo\n\n");
+		}
+		else {
+			System.out.print ("\nE negativo\n\n");
+		}
+	}
+}

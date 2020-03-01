@@ -1,0 +1,35 @@
+Listas
+
+Lista ordenada
+	|-> <ol> - Cria uma lista ordenada
+
+	|-> <li> - Cria cada item da lista
+
+	|-> <ol type=	"1" - números
+				"a" - letras minusculo
+				"A" - letras maiúsculo
+				"i" - algarismo romano minusculo
+				"I" - algarismo romano maiúsculo
+
+	|-> <ol start="n" - define o inicio do marcador a partir do n elemento
+
+Lista não ordenada
+	|-> <ul> - Cria uma lista não ordenada
+			
+	|-> <ul type=	"circle" - circulo sem preenchimento
+				"disc" - circulo preenchido
+				"square" - quadrado
+
+Imagens
+	|-> <img> - permite colocar uma imagem no site
+			
+	|-> <img	src = "" - caminho da imagem
+			width = "" - largura da imagem
+			height = "" - altura da imagem
+			border = "" - coloca uma borda na imagem
+			alt = "" - (obrigatório) coloca um texto alternativo caso a imagem não carregue
+			title = "" - permite colocar um título na imagem (serve para o narrador dos sistemas operacionais ler para deficientes visuais)
+
+imagem  no fundo da pagina 
+	<body background="\Marcel\HTML\Imagens\ultimate.jpg">
+obs: colocar o caminho onde a imagem se encontra.

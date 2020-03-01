@@ -1,0 +1,36 @@
+VARIÁVEIS PRIMITIVAS
+
+TIPO			TAMANHO		VAL. MAX		VAL. MIN.		EXEMPLO
+
+void				----				----				----				-----
+boolean			1 bit				TRUE			FALSE			boolean b = true;
+byte				1 byte			127				-128				byte b = 65;
+short				2 bytes			(2^15) -1			-2^15			short s = 65;
+char				2 bytes			(2^16) -1			0				char c = 'A'; / char c = 65;
+int				4 bytes			(2^31) -1			-2^31			int i = 65;
+float				4 bytes			(2-2^23) -2^127	2^-149			float f = 65f;
+long				8 bytes			(2^63) -1			-2^63			long l = 65L;
+double			8 bytes			(2-2^52) -2^1023	2^-1074			double d = 65.55;
+
+
+POSSÍVEIS CONVERSÕES
+*Impl. quer dizer que a conversão é implícita e automática, ou seja, não precisa indicar o "cast" explicitamente
+
+PARA >	byte		short		char		int		long		float		double
+DE V
+
+byte		----		Impl.		(char)	Impl.		Impl.		Impl.		Impl.
+
+short		(byte)	----		(char)	Impl.		Impl.		Impl.		Impl.
+
+char		(byte)	(short)	----		Impl.		Impl.		Impl.		Impl.
+
+int		(byte)	(short)	(char)	----		Impl.		Impl.		Impl.
+
+long		(byte)	(short)	(char)	(int)		----		Impl.		Impl.
+
+float		(byte)	(short)	(char)	(int)		(long)	----		Impl.
+
+double	(byte)	(short)	(char)	(int)		(long)	(float)	----
+
+

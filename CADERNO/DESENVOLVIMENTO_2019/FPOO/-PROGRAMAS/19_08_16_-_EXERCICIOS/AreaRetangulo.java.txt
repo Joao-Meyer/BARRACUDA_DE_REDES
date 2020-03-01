@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class AreaRetangulo {
+
+  public static void main (String args[]){
+
+    Scanner recebe = new Scanner (System.in);
+
+    System.out.print ("\nDigite o tamanho da base do retangulo: ");
+    double base = recebe.nextDouble();
+
+    System.out.print ("\nDigite o tamanho da altura do retangulo: ");
+    double altura = recebe.nextDouble();
+
+    double areaRetangulo = base * altura;
+
+    System.out.printf ("\nA area de um retangulo de base " + base + " e altura " + altura + " e %.2f", areaRetangulo);
+
+  }
+
+}

@@ -1,0 +1,252 @@
+/* Classes globais */
+.container {
+    width: 1300px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: orange;*/
+}
+
+
+h1, h2 {
+    font-family: arial;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+
+h2 {
+    height: 50px;
+    font-size: 24px;
+    color: #ff9900;
+    text-align: center;
+    margin-left: 0px;
+}
+
+p {
+    font-family: verdana;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    width: 85%;
+    min-height: 5px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* MENU */
+#containerMenu {
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+}
+
+#logo, #logoPagina, #logoPagina img {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+#menu {
+    width: 900px;
+    height: inherit;
+    float: left;
+}
+
+.menu {
+    width: inherit;
+    height: inherit;
+}
+
+.menuItem {
+    width: 150px;
+    height: 35px;
+    padding-top: 15px;
+    background-color: #ff9900;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    list-style: none;
+}
+
+.menuItem:hover {
+    background-color: #000000;
+    color: white;
+}
+
+#redesSociais {
+    width: 250px;
+    height: inherit;
+    float: left;
+}
+
+.iconeRS {
+    width: 50px;
+    height: inherit;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Seção do cabeçalho */
+
+header {
+    width: 100%;
+    height: 600px;
+        /* Colca uma imagem de fundo */
+    background-image: url(../imagens/dragao.jpeg);
+        /* Trabalha a repetição da imagem */
+    background-repeat: no-repeat;
+        /* Trabalha no alinhamento da imagem */
+    background-position: center;
+        /* 
+            Trabalha o tamanho da imagem
+        OBS: podendo ser em valores (px ou %) ou 
+        contain - deixa a imagem do tamanho original, mas não cobre todo o espaço
+        cover - aplica zoom na imagem até ela ocupar todo o espaço
+        */
+    background-size: cover;
+    
+        /* Permite fixar a imagem, dando um efeito de rolagem na imagem */
+    background-attachment: fixed;
+    
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+#slogan {
+    width: 500px;
+    height: 100px;
+    background-color: rgba(255, 191, 219, 0.5);
+    font-family: "comic sans ms";
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 3px;
+    /* Permite travar a caixa para não sofrer alteração de tamanho no padding */
+    box-sizing: border-box;
+}
+
+
+/* Seção empresa */
+#containerEmpresa {
+    width: 100%;
+    height: 400px;
+    background-color: #ff9900;
+}
+
+.empresaConteudo {
+    background-color: #000000;
+    width: 250px;
+    height: 300px;
+    float: left;
+    margin-left: 60px;
+}
+
+.empresaIcones, .empresaIcones img {
+    width: 250px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seção de serviços */
+
+#containerServicos {
+    width: 100%;
+    height: 500px;
+    background-color: magenta;
+    
+    background-image: url(../imagens/icarlos.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#containerServicos .container {
+    background-color: rgba(255, 153, 0,0.5);
+}
+
+.servicoConteudo {
+    width: 250px;
+    height: 400px;
+    background-color: #ffffff;
+    float: left;
+    margin-left: 140px;
+    box-shadow: 10px 10px 10px #ffaa00;
+}
+
+.servicoConteudo p {
+    color: #000000;
+}
+
+/* Seção da Instituição */
+
+#containerInstituicao {
+    width: 100%;
+    height: 600px;
+    background-color: #ff9900;
+}
+
+.instituicaoConteudo, .instituicaoConteudoVisao {
+    width: 250px;
+    height: 400px;
+    background-color: #242424;
+    float: left;
+    margin-left: 42px;
+}
+
+.missaoImagem, .missaoImagem img {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instituicaoConteudoVisao {
+    width: 350px;
+}
+
+.valoresImagem, .valoresImagem img {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#containerContatos {
+    width: 100%;
+    height: 450px;
+    background-color: #000000;
+}
+
+#contatos, #mapa {
+    width: 500px;
+    height: 350px;
+    float: left;
+    margin-top: 50px;
+    background-color: #ff9900;
+    margin-left: 150px;
+}
+
+.mapaImagem, .mapaImagem img {
+    width: inherit;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}

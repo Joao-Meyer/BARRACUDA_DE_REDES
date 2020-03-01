@@ -1,0 +1,23 @@
+No caso eu instalei num FEDORA
+
+1 - Baixar do site da oracle o Java Development Kit
+
+2 - Logar como Root
+
+3 - Por meio do gerenciador de pacotes (ou downloads, não sei ao certo) instalar o conteúdo que foi baixado:
+#rpm -ivh jdk-12.0.2_linux-x64_bin.rpm
+(obs: o parâmetro "-ivh" também não sei o que é ao certo)
+
+4 - Após a instalação confirmar se está ok por meio dos comandos:
+# java -version
+# javac -version
+Após os comandos deve aparecer a respectiva versão do java que foi instalada
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Caso você tenha mais de uma versão do JDK na máquina você pode alternar entre elas:
+
+1 - Primeiro você checa quais são as opções disponíveis por meio do comando:
+# update-alternatives --config java
+
+2 - Após você verificar você escolhe a versão desejada ao colocar o número que corresponde a ela no diálogo que irá abrir

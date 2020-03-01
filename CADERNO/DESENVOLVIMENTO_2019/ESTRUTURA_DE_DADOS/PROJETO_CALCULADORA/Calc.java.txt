@@ -1,0 +1,32 @@
+// Programa para simular uma calculadora
+
+public class Calc {
+
+	static int soma(int n1, int n2){
+		return (n1+n2);
+	}
+
+	static int soma(int n1, int n2, int n3){
+		return (n1 + n2 + n3);
+	}
+
+	static int subtrai(int n1, int n2){
+		return (n1-n2);
+	}
+
+	static int multiplica(int n1, int n2){
+		return (n1 * n2);
+	}
+
+	static int multiplica(int n1, int n2, int n3){
+		return (n1 * n2 * n3);
+	}
+
+	static int divide(int n1, int n2){
+		return (n1 / n2);
+	}
+
+	static void sair(){
+		System.exit(0);
+	}
+}

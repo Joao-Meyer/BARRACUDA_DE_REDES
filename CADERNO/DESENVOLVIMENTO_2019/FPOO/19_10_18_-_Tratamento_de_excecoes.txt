@@ -1,0 +1,18 @@
+// Tratamento de exceções com Try e Catch
+
+// Dentro do bloco de try é colocada toda instrução que possa resultar numa exceção
+//Ex1:
+try {
+	int n = ler.nextInt();
+}
+
+//Ex2:
+try {
+	JOP.showInputDialog();
+}
+
+// O try desvia o fluxo de dados para um catch e pode-se ter mais de um catch para um mesmo try
+
+// Nunca existe um catch sem um try, e nunca existe um try sem um catch
+
+// Dentro do bloco de catch é colocad

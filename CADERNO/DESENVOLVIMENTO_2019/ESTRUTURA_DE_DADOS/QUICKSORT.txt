@@ -1,0 +1,94 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Ordenacao {
+	
+	static void preencheVetor(int v[]) {
+		Random r = new Random();
+		for (int i = 0; i<v.length; i++){
+			v[i] = r.nextInt(10 * v.length);
+		}
+	}
+
+	static void mostraVetor(String msg, int v[]) {
+		System.out.println("\n" + msg);
+		for (int i = 0; i<v.length; i++){
+			System.out.print(v[i] + " ");
+		}
+		System.out.println("\n");
+	}
+	
+	static void bubbleSort(int[] v){
+		int i, j, aux;
+		for (i=1; i<v.length; i++){
+			for (j=0; j<v.length-i; j++){
+				if (v[j] > v[j+1]){
+					aux = v[j];
+					v[j] = v[j+1];
+					v[j+1] = aux;
+				}
+			}
+		}
+	}
+	
+	static void quickSort(int A[], int p, int r){
+		if (p < r){
+			int q = partition (A, p, r);
+			System.out.println ("p = " + p + ", r = " + r + ", q = " + q);
+			quickSort (A, p, q-1);
+			quickSort (A, q+1, r);
+		}
+	}
+	
+	static int partition (int A[], int p, int r){
+		int i, j, aux, x;
+		x = A[r];
+		i = p - 1;
+		for (j=p; j<r; j++){
+			if (A[j] <= x){
+				i++;
+				aux = A[i];
+				A[i] = A[j];
+				A[j] = aux;
+			}
+		}
+		i++;
+		aux = A[i];
+		A[i] = A[j];
+		A[j] = aux;
+		return i;
+	}
+	
+	public static void main (String args[]) {
+		int v[], n;
+		Scanner input = new Scanner(System.in);
+		System.out.print("n: ");
+		n = input.nextInt();
+		
+		while (n>0){
+			v = new int[n];
+			preencheVetor(v);
+			//mostraVetor("1o Vetor Gerado:", v);
+			System.out.println("\nbubbling\n");
+			bubbleSort(v);
+			
+			//mostraVetor("Vetor Ordenado: bubbleSort: ", v);
+			
+			preencheVetor(v);
+			//mostraVetor("2o Vetor Gerado:", v);
+			System.out.println("\nquicking 1a vez\n");
+			quickSort(v, 0, v.length-1);
+			//mostraVetor("Vetor Ordenado: quickSort: ", v);
+			
+			/*
+			System.out.println("\nquicking 2a vez\n");
+			quickSort(v, 0, v.length-1);
+			*/
+			
+			System.out.print("n: ");
+			n = input.nextInt();
+		}
+		
+		
+	}
+}

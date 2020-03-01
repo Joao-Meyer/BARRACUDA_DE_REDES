@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<title>G-OST</title>
+		<!-- "Nunca confie em meninas de óculos" -->
+	</head>
+	<body bgcolor = "#facada" text = "white">
+	<!--
+		<table> - indica a criação de uma tabela
+		
+		<table	width - altura da tabela
+				height - tamanho da da tabela
+				border - coloca uma borda na tabela
+				bgcolor - coloca uma cor de fundo
+				background - imagem dentro da tabela
+				align =	"left" - alinha a tabela à esquerda
+						"right" - alinha a tabela à direita
+						"center" - alinha a tabela no centro
+				bordercolor - cor na borda da tabela
+				cellspacing - espaçamento entre celulas da tabela
+				cellpadding - espaçamento interno nas celulas (margem interna na celula)
+		
+		<tr> - indica a criação de linhas
+		
+		<tr	height - altura apenas da linhas
+			bgcolor - cor de fundo na linhas
+			background - imagem dentro da linha da tabela
+			align =	"left" - alinhar o conteúdo de todas as células à esquerda
+					"center" - alinhar o conteúdo de todas as células no centro
+					"right" - alinhar o conteúdo de todas as células daquela linha à direita
+					"justify" - alinha o conteúdo de todas as células daquela linha de maneita justificada
+		
+		<td> - indica a criação de colunas
+		
+		<td	width - largura da célula
+			bgcolor - cor de fundo apenas na célula
+			background - imagem dentro de cada célula
+			align - alinhamento dentro da célula
+			valign - alinhamento vertical do conteúdo da célula (top, middle, bottom)
+			colspan - mesclagem de celulas entre colunas
+			rowspan - mesclagem de celulas entre linhas
+		
+	-->
+		<table align = "center" width = "680" height = "340" border = "2" bordercolor = "#03ecfc" bgcolor = "#fcfc03">
+			<tr height = "340" bgcolor = "#03ecfc" align = "justify">
+				<td width = "340">
+					<img src = "imagens/iu.gif" title = "webnamorada" alt = "Gif de uma Webnamorada">
+				</td>
+				
+				<td width = "340" bgcolor = "03ecfc" align = "justify" valign = "middle">
+					"Eu te amo, mas ninguém pode ver a gente junto."
+				</td>
+			</tr>
+			
+			<!--<tr height = "340">
+				<td>
+					
+				</td>
+				
+				<td>
+				
+				</td>
+			</tr>-->
+		</table>
+		
+		<br></br>
+		
+		<table width = "800" height = "1050" align = "center" border = "0">
+			<!-- Linha 1 -->
+			
+			<tr height = "50">
+				<td colspan = "3" width = "800" align = "center" valign = "middle"> <!-- Coluna 2 -->
+					<h1>
+						<font face = "comic sans ms" size = "12">
+							Titulo
+						</font>
+					</h1>
+				</td>
+			</tr>
+				
+			<!-- Linha 2 -->
+				
+			<tr height = "275">
+				<td rowspan = "2" width = "250" align = "center" valign = "middle"> <!-- Coluna 1 -->
+					<img src = "imagens/210_cb=20141204001710.png" width = "250" height = "300" title = "Sapinho Sapeca" alt = "imagem de um sapo de over the garden wall">
+				</td>
+				
+				<td width = "300" align = "center" valign = "middle"> <!-- Coluna 2 -->
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+					</p>
+				</td>
+				
+				<td width = "250" align = "center" valign = "middle"> <!-- Coluna 3 -->
+					<img src = "imagens/MV5BMzYxZDk2OWEtOGU1OS00M2YyLTgxOTYtMDI5MTc0MjgxNTM5XkEyXkFqcGdeQXVyNjc3OTE4Nzk@__V1_.jpg" width = "250" height = "175" title = "Greg" alt = "Greg de over the garden wall">
+				</td>
+			</tr>
+			
+			<!-- Linha 3 -->
+			
+			<tr height = "275">
+				<!-- <td width = "250" align = "center" valign = "middle"> <!-- Coluna 1
+					<p> 
+						Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+					</p>
+				</td> -->
+				
+				<td colspan = "2" width = "550" align = "center" valign = "middle"> <!-- Coluna 2 -->
+					<img src = "imagens/iu2VBXZ0J4.jpg" width = "500" height = "250" title = "Irmão do Jorel" alt = "Irmão do Jorel de Irmão do Jorel">
+				</td>
+				
+				<!-- <td width = "250" align = "center" valign = "middle"> <!-- Coluna 3
+					<p>
+						Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+					</p>
+				</td>
+			</tr> -->
+			
+			<!-- Linha 4 -->
+			
+			<tr height = "450" align = "center" valign = "middle ">
+				<td width = "800" colspan = "3"> <!-- Coluna 1 -->
+					<img src = "imagens/Super-Sonico-Imagem-Destaque.jpg" width = "800" height = "450">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

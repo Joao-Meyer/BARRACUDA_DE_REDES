@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Menu Div </title>
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        <div class="menu">
+            <div class="iconeMenu">
+                <div class="containerMenu">
+                    <div class="menuItem"> Item 01 </div>
+                    
+                    <div class="menuItem"> Item 02 </div>
+                    
+                    <div class="menuItem"> Item 03 </div>
+                    
+                    <div class="menuItem"> Item 04 </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

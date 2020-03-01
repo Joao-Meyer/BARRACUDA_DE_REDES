@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title> G-OST </title>
+	</head>
+
+	<body bgcolor="black" text="white">
+			<!-- Tabela que compõe a pagina como um todo -->
+		<table border="1" width="1000" height="1600" align="center" cellpadding="0" cellspacing="0">
+			<tr height="20%">	<!-- Linha do cabeçalho -->
+				<td width="100%">
+						<!-- Tabela do cabeçalho -->
+					<table border="1" width="100%" height="100%" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="80%">	<!-- Coluna do nome da pagina -->
+								<table border="1" width="75%" height="100%" align="right" cellpadding="0" cellspacing="0"> <!-- Tabela do nome da pagina -->
+									<tr height="50%" align="center" valign="bottom">	<!-- Linha do nome da pagina -->
+										<td>
+											<h1>
+												Nome da pagina
+											</h1>
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem da pagina -->
+										<td>
+											Imagem da pagina
+										</td>
+									</tr>
+								</table>
+							</td>
+
+							<td width="20%">	<!-- Coluna das redes sociais -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">	<!-- Tabela das redes sociais -->
+									<tr height="50%" align="center">	<!-- Linha da imagem de cima -->
+										<td>
+											Imagem cima
+										</td>
+									</tr>
+
+									<tr height="50%" align="center">	<!-- Linha da imagem de baixo -->
+										<td>
+											Imagem baixo
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr height="70%">	<!-- Linha do conteúdo -->
+				<td width="100%">
+						<!-- Tabela do conteúdo -->	
+					<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+						<tr height="45%" align="center">	<!-- Linha do conteúdo superior -->
+							<td>
+									<!-- Tabela do conteúdo superior -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="20%">	<!-- Coluna do menu -->
+											<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">	<!-- Tabela do menu -->
+												<tr height="10%" align="center">	<!-- Linha do "título" -->
+													<td>
+														Playlists
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 1 -->
+													<td>
+														Pagina 1
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 2 -->
+													<td>
+														Pagina 2
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 3 -->
+													<td>
+														Pagina 3
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 4 -->
+													<td>
+														Pagina 4
+													</td>
+												</tr>
+
+												<tr height="15%" align="center">	<!-- Linha da pagina 5 -->
+													<td>
+														Pagina 5
+													</td>
+												</tr>
+											</table>
+										</td>
+											<!-- Coluna do conteúdo superior -->
+										<td width="80%">
+												<!-- Tabela do conteúdo superior -->
+											<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+												
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+						<tr height="55%" align="center">	<!-- Linha do conteúdo inferior -->
+							<td>
+									<!-- Tabela do conteúdo inferior -->
+								<table border="1" width="100%" height="100%" align="right" cellpadding="0" cellspacing="0">
+									
+								</table>
+							</td>
+						</tr>
+					</table>					
+				</td>
+			</tr>
+
+			<tr height="10%">	<!-- Linha do rodapé -->
+				<td align="center">
+					Feito por Meyrihen
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

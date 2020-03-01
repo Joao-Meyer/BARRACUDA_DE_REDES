@@ -1,0 +1,46 @@
+Falando sobre binário e múltiplos
+
+Km Hm Dm M dm cm mm
+0  0  0  1  0  0  0
+
+Karen Hoje Da Muitos doces com mel
+
+512 256 128   64   32   16   8   4   2   1
+
+1   2   4   8  16  32  64 128 256 512
+0   1   1   0   1   1   0   1   1   1  = 950
+
+Tabela ASCII (utiliza binário e é uma tabela para o inglês)
+
+Unicode (abrange todos os caracteres, dos mais variados tipo, até mesmo emojis)
+
+Software - é um programa desenvolvido por meio de uma linguagem de programação por meio de alguma lógica
+
+Algoritmo - é um passo a passo para a resolução de um problema, uma sequencia lógica para a resolução de algum problema
+
+	|->Descrição narrativa
+
+	|->Diagrama de blocos
+
+	|->...
+
+Para que seja feito um algoritmo são necessários (Exemplos baseados numa receita):
+
+	|->Saída - Problema, objetivo (Bolo de cenoura para 4 pessoas) ---É preciso definir a saída para que se defina os dados necessários
+
+	|->Entrada - dados (Ingredientes como 2 xícaras de chá de farinha trigo, 4 cenouras, 2 colheres de fermento, 3 ovos, etc...) ---São de acordo com a necessidade da saída e é necessário precisar o tipo, quantidade e etc sobre estes dados
+
+	|->Algoritmo ou processamento - passo a passo e etapas (Receita / modo de preparo (1º Quebre o ovo...)) ---Especificar, com detalhes, cada passo do processamento e se necessário, subdividir cada etapa quantas vezes necessárias para que não deixe abertura para duplas interpretações
+
+
+Exemplo: Cálculo de média
+
+Saída: Média aritmética das notas de 4 alunos
+
+Entrada: nota1, nota2, nota3, nota4
+
+Algoritmo: 
+	1º - Obter as 4 notas
+	2º - Somar o valor das 4 notas
+	3º - Dividir o resultado da soma das 4 notas por 4
+	4º - Mostrar o valor obtido, da divisão, para o usuário

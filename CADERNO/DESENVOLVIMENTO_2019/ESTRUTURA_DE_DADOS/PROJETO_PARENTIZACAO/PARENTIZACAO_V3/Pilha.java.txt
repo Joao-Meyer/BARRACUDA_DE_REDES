@@ -1,0 +1,46 @@
+// Terceira versao de um programa para criar e manipular uma pilha
+
+import java.util.Scanner;
+
+public class Pilha{
+  private char pilha[];
+  private int tamanhoAtual;
+  private int capacidade;
+
+  public Pilha(String expressao){
+    capacidade = expressao.length();
+    pilha = new char[capacidade];
+    tamanhoAtual = 0;
+  }
+
+  public int getCapacidade(){
+    return capacidade;
+  }
+
+  public int getTamanhoAtual(){
+    return tamanhoAtual;
+  }
+  
+  public char getUltimoCaracter() {
+	  return pilha[tamanhoAtual - 1];
+  }
+  
+  public boolean estaVazia() {
+	  return tamanhoAtual == 0;
+  }
+  
+  public boolean estaCheia() {
+	  return tamanhoAtual == capacidade;
+  }
+  
+  public void push(char caracter) {
+	  pilha[tamanhoAtual] = caracter;
+	  tamanhoAtual++;
+  }
+  
+  public char pop() {
+	  char caracter = pilha[tamanhoAtual - 1];
+	  tamanhoAtual--;
+	  return caracter;
+  }
+}
