@@ -1,0 +1,10 @@
+Coloque a Iso de Instalação no Drive Óptico do Debian e execute esse comandos
+
+mkdir /mnt/cd
+mount /dev/cdrom /mnt/cd
+echo 'deb [trusted=yes] file:/mnt/cd stretch main contrib' >> /etc/apt/sources.list
+apt update
+
+
+alias repo='mount /dev/cdrom /mnt/cd'
+

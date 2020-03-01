@@ -1,0 +1,12 @@
+[Unit]
+Description=Firewall
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/etc/init.d/firewall.sh start
+ExecStop=/etc/init.d/firewall.sh stop
+ExecReload=/etc/init.d/firewall.sh restart
+
+[Install]
+WantedBy=default.target
