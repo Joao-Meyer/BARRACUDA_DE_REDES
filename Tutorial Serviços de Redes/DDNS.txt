@@ -26,11 +26,14 @@ Para isso, utilize o comando: nsupdate -k (caminho do arquivo ddns.key)
 
 Alguns comandos úteis para configuração via nsupdate:
 
-
-
-
-
-
+nsupdate
+> server dns.home
+> key dhcpupdate N8Hk2RUFO84bEVl3uGTD2A==
+> zone home
+> update add 50.0.168.192.in-addr.arpa 600 IN PTR happynode.home.
+> send
+> update add happynode.home. 600 IN A 192.168.0.50
+> send
 
 Para utilização do DDNS com dhcp realize as configurações a seguir:
 Abra o arquivo dhcpd.conf e adicione as seguintes configurações:
