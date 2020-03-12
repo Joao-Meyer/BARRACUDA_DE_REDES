@@ -1,0 +1,76 @@
+Instalar o Samba
+
+apt install libcups2 
+apt install samba 
+apt install samba-common
+
+Criar um diretório anônimo e mudar permissões
+
+mkdir /srv/share/anonimo -p 
+chown -R root:users /srv/share/anonimo
+chmod g+w 
+
+Compartilhamento usuário Anônimo
+
+mv /etc/samba/smb.conf /etc/samba/smb.conf.bkp
+vi /etc/samba/smb.conf 
+
+[global]
+workgroup= GRUPO 
+security= user
+map to guest= bad user
+
+[anonimo]
+patch= /srv/share/anonimo 
+force group= users
+browsable= yes
+writable= yes
+guest ok= yes
+
+systemctl restart samba
+
+Usuário Autenticado
+
+vi /srv/share/documentos -p
+chmod 777 /srv/share/documentos
+chgrp users /srv/share/documentos
+vi /etc/samba/smb.conf 
+
+[global]
+workgroup= GRUPO 
+security= user
+map to guest= bad user
+
+[documentos] 
+comment= compartilhamento autenticado 
+path= /srv/share/documentos
+valid users= @users
+force group= users 
+writable= yes 
+
+systemctl restart samba
+
+Criar o usuário Tux para Teste
+
+useradd tux -m -G users
+passwd tux 
+smbpasswd -a 
+
+adicionar usuário no samba 
+
+addgroup (usuário desejado) users 
+smbpasswd (senha desejada)
+
+Compartilhar Home
+
+Fazer uma nova sessão em /etc/samba/smb.conf
+
+[homes]
+comment= Home do usuário
+browseable= no
+valid users= %S
+writable= yes
+create mask= 0700
+directory mask= 0700 
+
+systemctl restart samba
