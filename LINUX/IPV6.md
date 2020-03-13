@@ -7,4 +7,11 @@ A quantidade de IPs disponiveis no IPv6 é tão grande que cada ser humano na te
 
 Em pouco tempo, aprender sobre o IPv6 vai ser a nova necessidade na área de TI.
 
-No arquivo "Links" desse Git temos um tutorial de IPv6 da própria NIC.BR (Praticamente a empresa que vende IPs privados aqui no Brasil e em grande parte do mundo).
+Tutoriais de IPv6 da própria NIC.BR (Praticamente a empresa que vende IPs privados aqui no Brasil e em grande parte do mundo).
+
+###### IPV6 NICBR
+https://tutoriais.semanainfrabr.nic.br/files/apresentacao/arquivo/168/Tutorial%20IPv6%20B%C3%A1sico%20-%20Endre%C3%A7amento%20e%20Planejamento%20de%20Redes%20(4).pdf
+
+http://ipv6.br/post/habilitando-ipv6-no-linux/
+
+http://ipv6.br/post/enderecamento-ipv6/
