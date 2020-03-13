@@ -4,6 +4,11 @@ http://dontpad.com/NaCaladaDaNoiteEleVaiBaterNaSuaMae
 # FORMATAR ARQUIVOS .MD
 https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8
 
+# IPV6 by NICBR
+https://tutoriais.semanainfrabr.nic.br/files/apresentacao/arquivo/168/Tutorial%20IPv6%20B%C3%A1sico%20-%20Endre%C3%A7amento%20e%20Planejamento%20de%20Redes%20(4).pdf
+
+http://ipv6.br/post/habilitando-ipv6-no-linux/
+
 # COMO DECLARAR IMPOSTO DE RENDA
 https://blog.toroinvestimentos.com.br/como-declarar-imposto-de-renda-2018-irpf
 
