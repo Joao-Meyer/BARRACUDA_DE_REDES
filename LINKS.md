@@ -1,4 +1,4 @@
-# DONT PAD DO VINI:
+# DONT PAD DO VINI
 http://dontpad.com/NaCaladaDaNoiteEleVaiBaterNaSuaMae
 
 # FORMATAR ARQUIVOS .MD
