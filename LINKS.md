@@ -9,6 +9,8 @@ https://tutoriais.semanainfrabr.nic.br/files/apresentacao/arquivo/168/Tutorial%2
 
 http://ipv6.br/post/habilitando-ipv6-no-linux/
 
+http://ipv6.br/post/enderecamento-ipv6/
+
 # COMO DECLARAR IMPOSTO DE RENDA
 https://blog.toroinvestimentos.com.br/como-declarar-imposto-de-renda-2018-irpf
 
