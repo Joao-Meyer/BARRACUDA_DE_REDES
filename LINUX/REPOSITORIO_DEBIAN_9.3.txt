@@ -1,0 +1,26 @@
+setterm -bold on -store &&
+mkdir /mnt/share && 
+mkdir /mnt/repo && 
+seq 3 | xargs -I@ mkdir /mnt/repo/blu@ && 
+mount -t nfs -o nfsvers=3 10.107.132.20:/home/celso/FTP/Linux/debian93 /mnt/share && 
+seq 3 | xargs -I@ mount -t iso9660 -o loop,ro /mnt/share/debian-9.3.0-amd64-BD-@.iso /mnt/repo/blu@ && 
+seq 3 | xargs -I@ echo deb [trusted=yes] file:/mnt/repo/blu@ stretch main contrib > /etc/apt/sources.list && 
+apt update && 
+clear && 
+apt install figlet openssh-server -y && 
+clear && 
+figlet ok
+			
+#Repositorio na internet
+
+echo # Repositorio da internet >> /etc/apt/sources.list
+echo deb http://ftp.br.debian.org/debian stretch main contrib non-free >> /etc/apt/sources.list
+
+echo "auto enp0s8
+allow-hotplug enp0s8
+iface enp0s8 inet static
+address 192.168.0.120
+netmask 255.255.255.0
+network 192.168.0.0
+broadcast 192.168.0.255" >> /etc/network/interfaces &&
+/etc/init.d/networking restart

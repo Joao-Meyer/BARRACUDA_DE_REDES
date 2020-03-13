@@ -1,0 +1,17 @@
+#############################SSH SERVER######################
+apt install openssh-server 
+ssh -C usuario@ip -p 22
+#############################SSH CLIENT######################
+apt install openssh-client 
+ssh -C usuario@ip -p 22
+#############################COPIA REMOTA####################
+scp usuario@ip + onde está o arquivo + para onde ele vai 
+#############################CONECTAR ROOT POR SSH SEM SENHA##########
+ssh-keygen -t rsa
+enter 
+enter
+enter
+ssh -copy -id aluno@ip do server -p 22
+
+(ele sempre pede a senha)
+

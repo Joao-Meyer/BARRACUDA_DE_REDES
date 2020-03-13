@@ -1,0 +1,1783 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <TITLE>Manual JavaScript</TITLE>
+   <META NAME="GENERATOR" CONTENT="Mozilla/3.04Gold (Win95; I) [Netscape]">
+<BODY TEXT="#000000" BGCOLOR="#C0C0C0" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000" BACKGROUND="fundo067.jpg">
+
+(c) 1997 Luis Carlos de Andrade Rodrigues. dricci@uninet.com.br Todos direitos reservados.
+<br><P>
+<I><FONT FACE="JESTER"><FONT SIZE=+2>Manual JavaScript</FONT></FONT></I><BR>
+<BR>
+</P>
+
+<H3><I><FONT FACE="JESTER">Operadores Matem&aacute;ticos</FONT></I></H3>
+
+<P><FONT FACE="JESTER">S&atilde;o operadores a serem utilizados em c&aacute;lculos,
+refer&ecirc;ncias de indexadores e manuseio de strings. <BR>
+Ao longo do manual estes operadores ser&atilde;o largamente utilizados,
+dando, assim, uma no&ccedil;&atilde;o mais <BR>
+precisa do seu potencial.</FONT></P>
+
+<P><FONT FACE="JESTER">&nbsp;&nbsp;&nbsp;&nbsp;<B>&nbsp;+</B>&nbsp;&nbsp;&nbsp;
+adi&ccedil;&atilde;o de valor e concatena&ccedil;&atilde;o de strings <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>- </B>&nbsp;&nbsp;&nbsp;&nbsp;subtra&ccedil;&atilde;o
+de valores <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<B>* &nbsp;</B>&nbsp;&nbsp;&nbsp;multiplica&ccedil;&atilde;o
+de valores <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<B>/ </B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divis&atilde;o
+de valores <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<B>%</B> &nbsp;&nbsp;obtem o resto de uma divis&atilde;o:
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex: 150 %
+13 retornar&aacute; 7 <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7
+% 3 retornar&aacute; 1 <BR>
+&nbsp;&nbsp;&nbsp;<B>+=</B> &nbsp;&nbsp;concatena /adiciona ao string/valor
+j&aacute; existente. Ou seja: <BR>
+&nbsp;&nbsp;<B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x
+&nbsp;+= &nbsp;y</B>&nbsp; &eacute; o mesmo que&nbsp; <B>x = x + y <BR>
+</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;da mesma
+forma podem ser utilizados: -= , <B>*= , &nbsp;/= </B>ou <B>%=&nbsp; <BR>
+</B>&nbsp;&nbsp;&nbsp;Um contador pode ser simplificado utilizando-se :
+<B>X++</B> ou &nbsp;<B>X-- &nbsp;</B>o que equivale as express&otilde;es:
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>X = X +
+1</B> &nbsp;ou&nbsp; <B>X = X - 1 </B>respectivamente. <BR>
+&nbsp;&nbsp;&nbsp;Para inverter sinal:&nbsp; <B>X = -X &nbsp;negativo </B>para
+<B>positivo </B>ou &nbsp;<B>positivo </B>para <B>negativo. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B>
+</FONT>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Operadores L&oacute;gicos</FONT></I></H3>
+
+<P><FONT FACE="JESTER">S&atilde;o operadores a serem utilizados em comandos
+condicionais, tais como: <B>IF , FOR e WHILE. <BR>
+</B>Os comandos condicionais ser&atilde;o vistos mais a frente.<B> </B>&nbsp;&nbsp;&nbsp;&nbsp;</FONT></P>
+
+<P><FONT FACE="JESTER"><B>&nbsp;&nbsp;&nbsp;&nbsp;== </B>&nbsp;&nbsp;&nbsp;&nbsp;Igual
+<BR>
+&nbsp;&nbsp;&nbsp;<B>&nbsp;!= &nbsp;</B>&nbsp;&nbsp;&nbsp;&nbsp;Diferente
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<B>&gt; </B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maior
+<BR>
+&nbsp;&nbsp;&nbsp;<B>&nbsp;&gt;=</B> &nbsp;&nbsp;&nbsp;&nbsp;Maior ou Igual
+<BR>
+&nbsp;&nbsp;&amp;n0bsp;<B>&nbsp;&lt; </B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menor
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<B>&lt;= </B>&nbsp;&nbsp;&nbsp;&nbsp;Menor ou Igual
+<BR>
+&nbsp;&nbsp;&nbsp;<B>&nbsp;&amp;&amp;</B> &nbsp;&nbsp;E <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<B>|| </B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ou
+</FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Controles Especiais</FONT></I></H3>
+
+<P><FONT FACE="JESTER"><B>\b </B>- backspace <BR>
+<B>\f </B>- form feed <BR>
+<B>\n</B> - new line caracters <BR>
+<B>\r</B> - carriage return <BR>
+<B>\t </B>- tab characters <BR>
+//<B> </B>- Linha de coment&aacute;rio <BR>
+<B>/*....*/</B> - Delimitadores para inserir um texto com mais de uma linha
+como coment&aacute;rio.</FONT></P>
+
+<P><FONT FACE="JESTER">Os delimitadores naturais para uma string s&atilde;o
+<B>&quot;</B> ou <B>'</B> . Caso seja necess&aacute;rio a utiliza&ccedil;&atilde;o
+destes caracteres como parte da string, utilize<B> </B>\ precedendo <B>&quot;</B>
+ou <B>'</B>. </FONT></P>
+
+<P><FONT FACE="JESTER">Ex. alert (&quot;Cuidado com o uso de \&quot; ou
+\' em uma string&quot;) </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Comandos Condicionais</FONT></I></H3>
+
+<P><FONT FACE="JESTER">S&atilde;o comandos que condicionam a execu&ccedil;&atilde;o
+de uma certa tarefa &agrave; veracidade ou n&atilde;o de uma <BR>
+determinada condi&ccedil;&atilde;o, ou enquanto determinada condi&ccedil;&atilde;o
+for verdadeira. <BR>
+S&atilde;o eles:</FONT></P>
+
+<P><FONT FACE="JESTER"><B>Comando IF</B> </FONT></P>
+
+<P><FONT FACE="JESTER"><B>if &nbsp;(</B>condi&ccedil;&atilde;o<B>) <BR>
+</B>&nbsp;&nbsp;&nbsp;&nbsp;<B>{</B> a&ccedil;&atilde;o para condi&ccedil;&atilde;o
+satisfeita <B>}</B> <BR>
+[ <B>else</B> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<B>{</B> a&ccedil;&atilde;o para condi&ccedil;&atilde;o
+n&atilde;o satisfeita <B>}</B> ] </FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+if (Idade &lt; 18) <BR>
+&nbsp;{Categoria = &quot;Menor&quot; } <BR>
+else <BR>
+&nbsp;{Categoria = &quot;Maior&quot;}</FONT></P>
+
+<P><FONT FACE="JESTER"><B>Comando FOR</B> </FONT></P>
+
+<P><FONT FACE="JESTER"><B>for (</B> [inicializa&ccedil;&atilde;o/cria&ccedil;&atilde;o
+de vari&aacute;vel de controle<B> ;</B>] <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[condi&ccedil;&atilde;o <B>;</B>]
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[incremento da vari&aacute;vel
+de controle] <B>) <BR>
+</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <B>{</B> a&ccedil;&atilde;o <B>}</B>
+</FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+for (x = 0 ; x &lt;= 10 ; x++) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{alert (&quot;X igual a &quot; + x) }</FONT></P>
+
+<P><FONT FACE="JESTER"><B>ComandoWHILE</B> </FONT></P>
+
+<P><FONT FACE="JESTER">Executa uma a&ccedil;&atilde;o enquanto determinada
+condi&ccedil;&atilde;o for verdadeira. </FONT></P>
+
+<P><FONT FACE="JESTER"><B>while (</B>condi&ccedil;&atilde;o<B>) <BR>
+</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>{</B> a&ccedil;&atilde;o
+<B>}</B></FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+var contador = 10 <BR>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;while (contador &gt; 1) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+contador-- }</FONT></P>
+
+<P><FONT FACE="JESTER"><B>Move condicional</B> </FONT></P>
+
+<P><FONT FACE="JESTER">receptor = <B>( (</B>condi&ccedil;&atilde;o<B>)
+?</B> verdadeiro<B> :</B> falso<B>)</B></FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+NomeSexo = ((VarSexo == &quot;M&quot;) ? &quot;Masculino&quot; : &quot;Feminino&quot;)</FONT></P>
+
+<P><FONT FACE="JESTER">OBS: <BR>
+Nos comandos FOR e WHILE a diretiva &quot;<B>break</B>&quot; pode ser utilizada
+para interromper a <BR>
+condi&ccedil;&atilde;o principal e sair do loop. Da mesma forma, a diretiva
+&quot;<B>continue</B>&quot; interrompe uma <BR>
+a&ccedil;&atilde;o (se determinada condi&ccedil;&atilde;o ocorrer) mas
+volta para o loop. <BR>
+Diretivas/condi&ccedil;&otilde;es entre <B>[ ]</B> significam que s&atilde;o
+opcionais. </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Eventos</FONT></I></H3>
+
+<P><FONT FACE="JESTER">S&atilde;o fatos que ocorrem durante a execu&ccedil;&atilde;o
+do sistema, a partir dos quais o programador pode <BR>
+definir a&ccedil;&otilde;es a serem realizadas pelo programa. <BR>
+Abaixo apresentamos a lista dos eventos poss&iacute;veis, indicando os
+momentos em que os mesmos <BR>
+podem ocorrer, bem como, os objetos pass&iacute;veis de sua ocorr&ecirc;ncia.</FONT></P>
+
+<P><FONT FACE="JESTER"><B>onload</B> - Ocorre na carga do documento. Ou
+seja, s&oacute; ocorre no BODY do documento.</FONT></P>
+
+<P><FONT FACE="JESTER"><B>onunload</B> - Ocorre na descarga (sa&iacute;da)
+do documento. Tamb&eacute;m s&oacute; ocorre no BODY. <BR>
+<BR>
+<B>onchange</B> - Ocorre quando o objeto perde o focus e houve mudan&ccedil;a
+de conte&uacute;do. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&aacute;lido
+para os objetos Text, Select e Textarea. <BR>
+<BR>
+<B>onblur </B>- Ocorre quando o objeto perde o focus, independente de ter
+havido mudan&ccedil;a. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&aacute;lido
+para os objetos Text, Select e Textarea. <BR>
+<BR>
+<B>onfocus</B> - Ocorre quando o objeto recebe o focus. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&aacute;lido
+para os objetos Text, Select e Textarea. <BR>
+<BR>
+<B>onclick</B> - Ocorre quando o objeto recebe um Click do Mouse. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&aacute;lido
+para os objetos Buton, Checkbox, Radio, Link, Reset e Submit. <BR>
+<BR>
+<B>onmouseover</B> - Ocorre quando o ponteiro do mouse passa por sobre
+o objeto. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&aacute;lido
+apenas para Link. <BR>
+<BR>
+<B>onselect</B> - Ocorre quando o objeto &eacute; selecionado. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&aacute;lido
+para os objetos Text e Textarea. <BR>
+<BR>
+<B>onsubmit</B> - Ocorre quando um bot&atilde;o tipo Submit recebe um click
+do mouse. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&aacute;lido
+apenas para o Form. </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Criando Vari&aacute;veis</FONT></I></H3>
+
+<P><FONT FACE="JESTER">A vari&aacute;vel &eacute; criada automaticamente,
+pela simples associa&ccedil;&atilde;o de valores a mesma.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex. NovaVariavel = &quot;Jose&quot; </FONT></P>
+
+<P><FONT FACE="JESTER">Foi criada a vari&aacute;vel de nome <B>NovaVariavel</B>
+que, passou a conter a string <B>Jose</B>. </FONT></P>
+
+<P><FONT FACE="JESTER">As vari&aacute;veis podem ser <B>Locais</B> ou <B>Globais</B>.
+As vari&aacute;veis que s&atilde;o criadas dentro de uma fun&ccedil;&atilde;o
+s&atilde;o Locais e referenci&aacute;veis apenas dentro da fun&ccedil;&atilde;o.
+As vari&aacute;veis criadas fora de fun&ccedil;&otilde;es s&atilde;o Globais,
+podendo serem referenciadas em qualquer parte do documento. </FONT></P>
+
+<P><FONT FACE="JESTER">Desta forma, vari&aacute;veis que precisam ser referenciadas
+por v&aacute;rias fun&ccedil;&otilde;es ou em outra parte do documento,
+precisam ser definidas como globais.</FONT></P>
+
+<P><FONT FACE="JESTER">Embora n&atilde;o seja recomend&aacute;vel, em uma
+fun&ccedil;&atilde;o, pode ser definida uma vari&aacute;vel local com o
+mesmo nome de uma vari&aacute;vel global. Para isso utiliza-se o m&eacute;todo
+de defini&ccedil;&atilde;o <B>var</B>.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex. Vari&aacute;vel Global : MinhaVariavel = &quot;&quot;
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vari&aacute;vel Local &nbsp;&nbsp;:
+var MinhaVariavel = &quot;&quot; </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Escrevendo no Documento</FONT></I></H3>
+
+<P><FONT FACE="JESTER">O JavaScript permite que o programador escreva linhas
+dentro de uma p&aacute;gina (documento), <BR>
+atrav&eacute;s do m&eacute;todo <B>write. </B>As linhas escritas desta
+forma, podem conter textos, express&otilde;es <BR>
+JavaScript e comandos Html. As linhas escritas atrav&eacute;s deste m&eacute;todo
+aparecer&atilde;o no ponto <BR>
+da tela onde o comando for inserido.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+&lt;script&gt; <BR>
+valor = 30 <BR>
+document.write (&quot;Minha primeira linha&quot;) <BR>
+document.write (&quot;Nesta linha aparecer&aacute; o resultado de : &quot;
++ (10 * 10 + valor)) <BR>
+&lt;/script&gt;</FONT></P>
+
+<P><FONT FACE="JESTER">A id&eacute;ia do exemplo acima &eacute; escrever
+duas linhas. Entretanto o m&eacute;todo <B>write</B> n&atilde;o insere
+mudan&ccedil;a de linha, o que provocar&aacute; o aparecimento de apenas
+uma linha com os dois textos emendados. <BR>
+Para evitar este tipo de ocorr&ecirc;ncia, existe o m&eacute;todo <B>writeln</B>
+que escreve uma linha e espaceja para a seguinte. Entretanto, em nossos
+testes, este comando n&atilde;o surtiu efeito,obtendo-se o mesmo resultado
+do m&eacute;todo <B>write</B>. A solu&ccedil;&atilde;o encontrada para
+esta situa&ccedil;&atilde;o foi a utiliza&ccedil;&atilde;o do comando de
+mudan&ccedil;a de par&aacute;grafo da linguagem Html.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+&lt;script&gt; <BR>
+valor = 30 <BR>
+document.write (&quot;&lt;p&gt;Minha primeira linha&lt;/p&gt;&quot;) <BR>
+document.write (&quot;&lt;p&gt;Nesta linha aparecer&aacute; o resultado
+de : &quot; + (10 * 10 + valor) + &quot;&lt;/p&gt;&quot;) <BR>
+&lt;/script&gt;</FONT></P>
+
+<P><FONT FACE="JESTER">Isto resolve a quest&atilde;o da mudan&ccedil;a
+de linha, por&eacute;m, vai gerar uma linha em branco, entre cada linha,
+por se tratar de mudan&ccedil;a de par&aacute;grafo. Caso n&atilde;o seja
+desejado a exist&ecirc;ncia da linha em branco, a alternativa &eacute;
+utilizar o comando Html <B>&lt;br&gt; </B>que apenas muda de linha.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+&lt;script&gt; <BR>
+valor = 30 <BR>
+document.write (&quot;&lt;br&gt;Minha primeira linha&quot;) <BR>
+document.write (&quot;&lt;br&gt;Nesta linha aparecer&aacute; o resultado
+de : &quot; + (10 * 10 + valor) ) <BR>
+&lt;/script&gt;</FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Mensagens</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Existem tr&ecirc;s formas de comunica&ccedil;&atilde;o
+com o usu&aacute;rio atrav&eacute;s de mensagens. </FONT></P>
+
+<P><FONT FACE="JESTER"><B>Apenas Observa&ccedil;&atilde;o:</B> </FONT></P>
+
+<P><FONT FACE="JESTER"><B>alert (</B> mensagem <B>)</B> </FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+alert (&quot;Certifique-se de que as informa&ccedil;&otilde;es est&atilde;o
+corretas&quot;) </FONT></P>
+
+<P><FONT FACE="JESTER"><B>Mensagem que retorna confirma&ccedil;&atilde;o
+de OK ou CANCELAR:</B> </FONT></P>
+
+<P><FONT FACE="JESTER"><B>confirm (</B>mensagem<B>) </B></FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+if (confirm (&quot;Algo est&aacute; errado...devo continuar??&quot;)) <BR>
+&nbsp;&nbsp;&nbsp;{ alert(&quot;Continuando&quot;) } <BR>
+else <BR>
+&nbsp;&nbsp;&nbsp;{ alert(&quot;Parando&quot;) }</FONT></P>
+
+<P><FONT FACE="JESTER"><B>Recebe mensagem via caixa de texto Input:</B>
+</FONT></P>
+
+<P><FONT FACE="JESTER">Receptor = <B>prompt (</B>&quot;Minha mensagem&quot;<B>,</B>
+&quot;Meu texto&quot;<B>) </B></FONT></P>
+
+<P><FONT FACE="JESTER">Onde: <BR>
+<B>Receptor</B> &eacute; o campo que vai receber a informa&ccedil;&atilde;o
+digitada pelo usu&aacute;rio <BR>
+<B>Minha mensagem</B> &eacute; a mensagem que vai aparecer como <B>Label
+</B>da caixa de input <BR>
+<B>Meu texto</B> &eacute; um texto, opcional, que aparecer&aacute; na linha
+de digita&ccedil;&atilde;o do usu&aacute;rio </FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+Entrada = prompt(&quot;Informe uma express&atilde;o matem&aacute;tica&quot;,
+&quot;&quot;) <BR>
+Resultado = eval(Entrada) <BR>
+document.write(&quot;O resultado &eacute; = &quot; + Resultado) </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Criando Fun&ccedil;&otilde;es</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Uma fun&ccedil;&atilde;o &eacute; um set de instru&ccedil;&otilde;es,
+que s&oacute; devem ser executadas quando a fun&ccedil;&atilde;o for acionada.</FONT></P>
+
+<P><FONT FACE="JESTER">A sintaxe geral &eacute; a seguinte: </FONT></P>
+
+<P><FONT FACE="JESTER"><B>function </B>NomeFun&ccedil;&atilde;o <B>(</B>Par&acirc;metros<B>)</B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>{</B>
+A&ccedil;&atilde;o <B>}</B></FONT></P>
+
+<P><FONT FACE="JESTER">Suponha uma fun&ccedil;&atilde;o que tenha como
+objetivo informar se uma pessoa &eacute; maior ou menor de idade, recebendo
+como par&acirc;metro a sua idade. </FONT></P>
+
+<P><FONT FACE="JESTER">function Idade (Anos) { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+&nbsp;(Anos &gt; 17) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+alert (&quot;Maior de Idade&quot;) } <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+alert (&quot;menor de Idade&quot;) } <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</FONT></P>
+
+<P><FONT FACE="JESTER">Para acionar esta fun&ccedil;&atilde;o, suponha
+uma caixa de texto, em um formul&aacute;rio, na qual seja informada a idade
+e, a cada informa&ccedil;&atilde;o, a fun&ccedil;&atilde;o seja acionada.
+</FONT></P>
+
+<P><FONT FACE="JESTER">&lt;form&gt; &lt;input type=text size=2 maxlength=2
+name=&quot;Tempo&quot; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onchange=&quot;Idade(Tempo.value)&quot;&gt;
+&lt;/form&gt; Observe-se que o par&acirc;metro passado (quando ocorre o
+evento &quot;onchange&quot;) foi o conte&uacute;do da caixa de texto &quot;Tempo&quot;
+(propriedade &quot;value&quot;) e que, na fun&ccedil;&atilde;o, chamamos
+de &quot;Anos&quot;. Ou seja, n&atilde;o existe co-rela&ccedil;&atilde;o
+entre o nome da vari&aacute;vel passada e a vari&aacute;vel de recep&ccedil;&atilde;o
+na fun&ccedil;&atilde;o. Apenas o conte&uacute;do &eacute; passado.</FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Fun&ccedil;&otilde;es Intr&iacute;nsecas</FONT></I></H3>
+
+<P><FONT FACE="JESTER">S&atilde;o fun&ccedil;&otilde;es embutidas na pr&oacute;pria
+linguagem. A sintaxe geral &eacute; a seguinte: </FONT></P>
+
+<P><FONT FACE="JESTER">Result = fun&ccedil;&atilde;o (informa&ccedil;&atilde;o
+a ser processada) </FONT></P>
+
+<P><FONT FACE="JESTER">- <B>eval</B> = Calcula o conte&uacute;do da string
+<BR>
+- <B>parseInt</B> - Transforma string em inteiro <BR>
+- <B>parseFloat </B>- Transforma string em n&uacute;mero com ponto flutuante
+<BR>
+- <B>date() </B>- Retorna a data e a hora (veja o cap&iacute;tulo manipulando
+datas) </FONT></P>
+
+<P><FONT FACE="JESTER">ex1: Result = eval ( &quot; (10 * 20) + 2 - 8&quot;)
+</FONT></P>
+
+<P><FONT FACE="JESTER">ex2: Result = eval (string) </FONT></P>
+
+<P><FONT FACE="JESTER">No primeiro exemplo Result seria igual a 194. No
+segundo, depende do conte&uacute;do da string, que tamb&eacute;m pode ser
+o conte&uacute;do (value) de uma caixa de texto. </FONT></P>
+
+<P><B><FONT FACE="JESTER">- Fun&ccedil;&otilde;es tipicamente Matem&aacute;ticas:
+</FONT></B></P>
+
+<P><FONT FACE="JESTER"><B>Math.abs</B>(n&uacute;mero) - retorna o valor
+absoluto do n&uacute;mero (ponto flutuante) <BR>
+<B>Math.ceil</B>(n&uacute;mero) - retorna o pr&oacute;ximo valor inteiro
+maior que o n&uacute;mero <BR>
+<B>Math.floor</B>(n&uacute;mero) - retorna o pr&oacute;ximo valor inteiro
+menor que o n&uacute;mero <BR>
+<B>Math.round</B>(n&uacute;mero) - retorna o valor inteiro, arredondado,
+do n&uacute;mero <BR>
+<B>Math.pow</B>(base, expoente) - retorna o c&aacute;lculo do exponencial
+<BR>
+<B>Math.max</B>(n&uacute;mero1, n&uacute;mero2) - retorna o maior n&uacute;mero
+dos dois fornecidos <BR>
+<B>Math.min</B>(n&uacute;mero1, n&uacute;mero2) - retorna o menor n&uacute;mero
+dos dois fornecidos <BR>
+<B>Math.sqrt</B>(n&uacute;mero) - retorna a raiz quadrada do n&uacute;mero
+<BR>
+<B>Math.SQRT2</B> - retorna a raiz quadrada de 2 (aproximadamente 1.414)
+<BR>
+<B>Math.SQRT_2</B> - retorna a raiz quadrada de 1/2 (aproximadamente 0.707)
+<BR>
+<B>Math.sin</B>(n&uacute;mero) - retorna o seno de um n&uacute;mero (anglo
+em radianos) <BR>
+<B>Math.asin</B>(n&uacute;mero) - retorna o arco seno de um n&uacute;mero
+(em radianos) <BR>
+<B>Math.cos</B>(n&uacute;mero) - retorna o cosseno de um n&uacute;mero
+(anglo em radianos) <BR>
+<B>Math.acos</B>(n&uacute;mero) - retorna o arco cosseno de um n&uacute;mero
+(em radianos) <BR>
+<B>Math.tan</B>(n&uacute;mero) - retorna a tangente de um n&uacute;mero
+(anglo em radianos) <BR>
+<B>Math.atan</B>(n&uacute;mero) - retorna o arco tangente de um n&uacute;mero
+(em radianos) <BR>
+<B>Math.pi</B> retorna o valor de PI (aproximadamente 3.14159) <BR>
+<B>Math.log</B>(n&uacute;mero) - retorna o logar&iacute;tmo de um n&uacute;mero
+<BR>
+<B>Math.E -</B> retorna a base dos logar&iacute;tmos naturais (aproximadamente
+2.718) <BR>
+<B>Math.LN2</B> - retorna o valor do logar&iacute;tmo de 2 (aproximadamente
+0.693) <BR>
+<B>Math.LOG2E -</B> retorna a base do logar&iacute;tmo de 2 (aproximadamente
+1.442) <BR>
+<B>Math.LN10</B> retorna o valor do logar&iacute;tmo de 10 (aproximadamente
+2.302) <BR>
+<B>Math.LOG10E -</B> retorna a base do logar&iacute;tmo de 10 (aproximadamente
+0.434) <BR>
+<BR>
+<B>Observa&ccedil;&atilde;o: <BR>
+</B>Em todas as fun&ccedil;&otilde;es, quando apresentamos a express&atilde;o
+&quot;(n&uacute;mero)&quot;, na verdade queremos <BR>
+nos referir a um argumento que ser&aacute; processado pela fun&ccedil;&atilde;o
+e que poder&aacute; ser: um n&uacute;mero, <BR>
+uma vari&aacute;vel ou o conte&uacute;do de um objeto (propriedade <B>value</B>).
+</FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Criando Novas Inst&acirc;ncias</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Atrav&eacute;s do operador <B>new </B>podem ser
+criadas novas inst&acirc;ncias a objetos j&aacute; existentes, mudando
+o <BR>
+seu conte&uacute;do, por&eacute;m, mantendo suas propriedades. </FONT></P>
+
+<P><FONT FACE="JESTER">A sintaxe geral &eacute; a seguinte: </FONT></P>
+
+<P><FONT FACE="JESTER">NovoObjeto = new ObjetoExistente (par&acirc;metros)
+</FONT></P>
+
+<P><FONT FACE="JESTER">Ex1. <BR>
+MinhaData = new Date () </FONT></P>
+
+<P><FONT FACE="JESTER"><B>MinhaData</B> passou a ser um objeto tipo <B>Date</B>,
+com o mesmo conte&uacute;do existente em Date <BR>
+(data e hora atual) </FONT></P>
+
+<P><FONT FACE="JESTER">Ex2: <BR>
+MinhaData = new Date(1996, 05, 27) </FONT></P>
+
+<P><FONT FACE="JESTER"><B>MinhaData</B> passou a ser um objeto tipo <B>Date</B>,
+por&eacute;m, com o conte&uacute;do de uma nova data. </FONT></P>
+
+<P><FONT FACE="JESTER">Ex3: <BR>
+Suponha a exist&ecirc;ncia do seguinte objeto chamado <B>Empresas <BR>
+<BR>
+</B>function Empresas (Emp, Nfunc, Prod) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+this.Emp = Emp <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+this.Nfunc = Nfunc <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+this.Prod = Prod }</FONT></P>
+
+<P><FONT FACE="JESTER">Podemos criar novas inst&acirc;ncias, usando a mesma
+estrutura, da seguinte forma: </FONT></P>
+
+<P><FONT FACE="JESTER">Elogica = new Empresas(&quot;Elogica&quot;, &quot;120&quot;,
+&quot;Servi&ccedil;os&quot;) <BR>
+Pitaco = new Empresas(&quot;Pitaco&quot;, &quot;35&quot;, &quot;Software&quot;)
+<BR>
+Corisco = new Empresas(&quot;Corisco&quot;, &quot;42&quot;, &quot;Conectividade&quot;)
+</FONT></P>
+
+<P><FONT FACE="JESTER">Assim, a vari&aacute;vel <B>Elogica.Nfunc</B> ter&aacute;
+o seu conte&uacute;do igual a <B>120</B> </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Manipulando Arrays</FONT></I></H3>
+
+<P><FONT FACE="JESTER">O JavaScript n&atilde;o tem um tipo de dado ou objeto
+para manipular arrays. Por isso, para trabalhar com arrays &eacute; necess&aacute;rio
+a cria&ccedil;&atilde;o de um objeto com a propriedade de cria&ccedil;&atilde;o
+de um array. </FONT></P>
+
+<P><FONT FACE="JESTER">No exemplo abaixo, criaremos um objeto tipo array
+de tamanho vari&aacute;vel e com a fun&ccedil;&atilde;o de &quot;<B>limpar</B>&quot;
+o conte&uacute;do das vari&aacute;veis cada vez que uma nova inst&acirc;ncia
+seja criada a partir dele. </FONT></P>
+
+<P><FONT FACE="JESTER">function CriaArray (n) { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.length
+= n <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for (var i = 1 ; i &lt;= n ; i++) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{ this[i] = &quot;&quot; }&nbsp;&nbsp; } </FONT></P>
+
+<P><FONT FACE="JESTER">Agora podemos criar novas inst&acirc;ncias do objeto
+&quot;CriaArray&quot; e aliment&aacute;-los com os dados necess&aacute;rios.</FONT></P>
+
+<P><FONT FACE="JESTER">NomeDia = new CriaArray(7) <BR>
+NomeDia[0] = &quot;Domingo&quot; <BR>
+NomeDia[1] = &quot;Segunda&quot; <BR>
+NomeDia [2] = &quot;Ter&ccedil;a&quot; <BR>
+NomeDia[3] = &quot;Quarta&quot; <BR>
+NomeDia[4] = &quot;Quinta&quot; <BR>
+NomeDia[5] = &quot;Sexta&quot; <BR>
+NomeDia[6] = &quot;S&aacute;bado&quot; </FONT></P>
+
+<P><FONT FACE="JESTER">Atividade = new CriaArray(5) <BR>
+Atividade[0] = &quot;Analista&quot; <BR>
+Atividade[1] = &quot;Programador&quot; <BR>
+Atividade[2] = &quot;Operador&quot; <BR>
+Atividade[3] = &quot;Conferente&quot; <BR>
+Atividade[4] = &quot;Digitador&quot; </FONT></P>
+
+<P><FONT FACE="JESTER">Agora poderemos obter os dados diretamente dos arrays.
+</FONT></P>
+
+<P><FONT FACE="JESTER">DiaSemana = NomeDia[4] <BR>
+Ocupa&ccedil;&atilde;o = Atividade[1] </FONT></P>
+
+<P><FONT FACE="JESTER">DiaSemana passaria a conter <B>Quinta</B> e Ocupa&ccedil;&atilde;o
+conteria <B>Programador</B>.</FONT></P>
+
+<P><FONT FACE="JESTER">Outra forma de se trabalhar com arrays &eacute;
+criar novas inst&acirc;ncias dentro do pr&oacute;prio objeto do <BR>
+array, o que proporciona o mesmo efeito de se trabalhar com matriz. Isso
+pode ser feito da <BR>
+seguinte forma: </FONT></P>
+
+<P><FONT FACE="JESTER">function Empresas (Emp, Nfunc, Prod) { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.Emp
+= Emp <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.Nfunc
+= Nfunc <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.Prod
+= Prod }</FONT></P>
+
+<P><FONT FACE="JESTER">TabEmp = new Empresas(3) <BR>
+TabEmp[1] = new Empresas(&quot;Elogica&quot;, &quot;120&quot;, &quot;Servi&ccedil;os&quot;)
+<BR>
+TabEmp[2] = new Empresas(&quot;Pitaco&quot;, &quot;35&quot;, &quot;Software&quot;)
+<BR>
+TabEmp[3] = new Empresas(&quot;Corisco&quot;, &quot;42&quot;, &quot;Conectividade&quot;)</FONT></P>
+
+<P><FONT FACE="JESTER">Assim, poderemos obter a atividade da empresa n&uacute;mero
+3, cuja resposta seria <B>Conectividade</B>, da seguinte forma: </FONT></P>
+
+<P><FONT FACE="JESTER">Atividade = TabEmp[3].Prod </FONT></P>
+
+<P><FONT FACE="JESTER">Obs: <BR>
+&Eacute; importante lembrar que, embora os exemplos estejam com indexadores
+fixos, os indexadores podem ser refer&ecirc;ncias ao conte&uacute;do de
+vari&aacute;veis. </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Manipulando String's</FONT></I></H3>
+
+<P><FONT FACE="JESTER">O JavaScript &eacute; bastante poderoso no manuseio
+de String&acute;s, fornecendo ao programador uma total <BR>
+flexibilidade em seu manuseio. <BR>
+Abaixo apresentamos os m&eacute;todos dispon&iacute;veis para manuseio
+de string&acute;s.</FONT></P>
+
+<P><FONT FACE="JESTER">string<B>.length</B> - retorna o tamanho da string
+(quantidade de bytes)</FONT></P>
+
+<P><FONT FACE="JESTER">string<B>.charAt</B>(posi&ccedil;&atilde;o) - retorna
+o caracter da posi&ccedil;&atilde;o especificada (inicia em 0) </FONT></P>
+
+<P><FONT FACE="JESTER">string<B>.indexOf</B>(&quot;string&quot;) - retorna
+o n&uacute;mero da posi&ccedil;&atilde;o onde come&ccedil;a a primeira
+&quot;string&quot; </FONT></P>
+
+<P><FONT FACE="JESTER">string<B>.lastindexOf</B>(&quot;string&quot;) -
+retorna o n&uacute;mero da posi&ccedil;&atilde;o onde come&ccedil;a a &uacute;ltima
+&quot;string&quot; </FONT></P>
+
+<P><FONT FACE="JESTER">string<B>.substring</B>(index1, index2) - retorna
+o conte&uacute;do da string que corresponde ao intervalo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;especificado.
+Come&ccedil;ando no caracter posicionado em index1 e terminando no caracter
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imediatamente anterior
+ao valor especificado em index2. </FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+Todo = &quot;Elogica&quot; <BR>
+Parte = Todo.substring(1, 4) </FONT></P>
+
+<P><FONT FACE="JESTER">(A vari&aacute;vel <B>Parte</B> receber&aacute;
+a palavra <B>log</B>) </FONT></P>
+
+<P><FONT FACE="JESTER">string<B>.toUpperCase</B>() - Transforma o conte&uacute;do
+da string para mai&uacute;sculo (Caixa Alta)</FONT></P>
+
+<P><FONT FACE="JESTER">string<B>.toLowerCase</B>() - Transforma o conte&uacute;do
+da string para min&uacute;sculo (Caixa Baixa) </FONT></P>
+
+<P><FONT FACE="JESTER"><B>escape</B> (&quot;string&quot;) - retorna o valor
+ASCII da string (vem precedido de %) </FONT></P>
+
+<P><FONT FACE="JESTER"><B>unscape</B>(&quot;string&quot;) - retorna o caracter
+a partir de um valor ASCII (precedido de %) </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Manipulando Datas</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Existe apenas uma fun&ccedil;&atilde;o para que
+se possa obter a data e a hora. &Eacute; a fun&ccedil;&atilde;o <B>Date()</B>.
+Esta fun&ccedil;&atilde;o devolve data e hora no formato:Dia da semana,
+Nome do m&ecirc;s, Dia do m&ecirc;s, Hora:Minuto:Segundo e Ano </FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+<B>Fri May 24 16:58:02 1996 </B></FONT></P>
+
+<P><FONT FACE="JESTER">Para se obter os dados separadamente, existem os
+seguintes m&eacute;todos: </FONT></P>
+
+<P><FONT FACE="JESTER"><B>getDate()</B> - Obt&eacute;m o dia do m&ecirc;s
+(num&eacute;rico de 1 a 31) <BR>
+<B>getDay()</B> - Obt&eacute;m o dia da semana (0 a 6) <BR>
+<B>getMonth()</B> - Obt&eacute;m o m&ecirc;s (num&eacute;rico de 0 a 11)
+<BR>
+<B>getYear() </B>- Obt&eacute;m o ano <BR>
+<B>getHours()</B> - Obt&eacute;m a hora (num&eacute;rico de 0 a 23) <BR>
+<B>getMinutes()</B> - Obt&eacute;m os minutos (num&eacute;rico de 0 a 59)
+<BR>
+<B>getSeconds() </B>- Obt&eacute;m os segundos (num&eacute;rico de 0 a
+59)</FONT></P>
+
+<P><FONT FACE="JESTER">No exemplo abaixo obteremos o dia da semana. Para
+tal, utilizaremos a vari&aacute;vel <B>DataToda</B> <BR>
+para armazenar data/hora e a vari&aacute;vel <B>DiaHoje</B> para armazenar
+o n&uacute;mero do dia da semana.</FONT></P>
+
+<P><FONT FACE="JESTER">DataToda = new Date() <BR>
+DiaHoje = DataToda.getDay() </FONT></P>
+
+<P><FONT FACE="JESTER">Para obter o dia da semana <B>alfa</B>, teremos
+que construir uma tabela com os dias da semana e <BR>
+utilizar a vari&aacute;vel <B>DiaHoje</B> como indexador. </FONT></P>
+
+<P><FONT FACE="JESTER">function CriaTab (n) { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.length
+= n <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for (var x = 1 ; x&lt;= n ; x++) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{ this[x] = &quot;&quot; }&nbsp;&nbsp; } </FONT></P>
+
+<P><FONT FACE="JESTER">NomeDia = new CriaTab(7) <BR>
+NomeDia[0] = &quot;Domingo&quot; <BR>
+NomeDia[1] = &quot;Segunda&quot; <BR>
+NomeDia [2] = &quot;Ter&ccedil;a&quot; <BR>
+NomeDia[3] = &quot;Quarta&quot; <BR>
+NomeDia[4] = &quot;Quinta&quot; <BR>
+NomeDia[5] = &quot;Sexta&quot; <BR>
+NomeDia[6] = &quot;S&aacute;bado&quot; </FONT></P>
+
+<P><FONT FACE="JESTER">DiaSemana = NomeDia[DiaHoje] </FONT></P>
+
+<P><FONT FACE="JESTER">Para criar uma vari&aacute;vel tipo Date com o conte&uacute;do
+informado pela aplica&ccedil;&atilde;o, existe o m&eacute;todo <BR>
+<B>set</B>. Assim, temos os seguintes m&eacute;todos: <B>setDate</B>, <B>setDay</B>,
+<B>setMonth</B>, <B>setYear</B>, <B>setHours</B>, <B>setMinutes</B> e <B>setSeconds</B>.
+<BR>
+Seguindo o exemplo acima, para mudar o m&ecirc;s para novembro, ter&iacute;amos:
+</FONT></P>
+
+<P><FONT FACE="JESTER">DataToda<B>.setMonth(</B>10<B>) </B></FONT></P>
+
+<P><FONT FACE="JESTER">Exemplos adicionais ser&atilde;o encontrados no
+cap&iacute;tulo &quot;<B>Usando Timer e Date</B>&quot;.</FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Interagindo com o Usu&aacute;rio</FONT></I></H3>
+
+<P><FONT FACE="JESTER">A intera&ccedil;&atilde;o com o usu&aacute;rio se
+d&aacute; atrav&eacute;s de objetos para entrada de dados (textos), marca&ccedil;&atilde;o
+de op&ccedil;&otilde;es (radio, checkbox e combo), bot&otilde;es e link's
+para outras p&aacute;ginas.</FONT></P>
+
+<P><FONT FACE="JESTER">Conceitualmente, os objetos s&atilde;o divididos
+em: <B>Input</B>, <B>Textarea</B> e <B>Select</B>. </FONT></P>
+
+<P><FONT FACE="JESTER">O objeto <B>Input</B> divide-se (propriedade Type)
+em: </FONT></P>
+
+<UL>
+<LI><FONT FACE="JESTER">Password </FONT></LI>
+
+<LI><FONT FACE="JESTER">Text</FONT></LI>
+
+<LI><FONT FACE="JESTER">Hidden</FONT></LI>
+
+<LI><FONT FACE="JESTER">Checkbox</FONT></LI>
+
+<LI><FONT FACE="JESTER">Radio</FONT></LI>
+
+<LI><FONT FACE="JESTER">Button</FONT></LI>
+
+<LI><FONT FACE="JESTER">Reset</FONT></LI>
+
+<LI><FONT FACE="JESTER">Submit</FONT></LI>
+</UL>
+
+<P><FONT FACE="JESTER">A constru&ccedil;&atilde;o destes objetos &eacute;
+feita pela linguagem HTML (HiperText Mark-up Language). Portanto, &eacute;
+aconselh&aacute;vel que sejam criados utilizando-se ferramentas de gera&ccedil;&atilde;o
+de p&aacute;ginas HTML, como o HotDog ou, mais recomendado, FrontPage.
+</FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto Input TEXT</FONT></I></H3>
+
+<P><FONT FACE="JESTER">&Eacute; o principal objeto para entrada de dados.
+<BR>
+Suas principais propriedades s&atilde;o: type, size, maxlength, name e
+value. </FONT></P>
+
+<P><FONT FACE="JESTER"><B>type</B>=text : Especifica um campo para entrada
+de dados normal <BR>
+<B>size</B> : Especifica o tamanho do campo na tela. <BR>
+<B>maxlength </B>: Especifica a quantidade m&aacute;xima de caracteres
+permitidos. <BR>
+<B>name</B> : Especifica o nome do objeto <BR>
+<B>value</B> : Armazena o conte&uacute;do do campo. </FONT></P>
+
+<P><FONT FACE="JESTER">Os eventos associados a este objeto s&atilde;o:
+onchange, onblur, onfocus e onselect. </FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+&lt;form name=&quot;TText&quot;&gt; <BR>
+&lt;p&gt;Entrada de Texto &lt;input type=text size=20 maxlength=30 name=&quot;CxTexto&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+value=&quot;&quot; onchange=&quot;alert ('Voce digitou ' + CxTexto.value)&quot;&gt;
+<BR>
+&lt;/p&gt; <BR>
+&lt;/form&gt; </FONT><BR>
+<BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto Input PASSWORD</FONT></I></H3>
+
+<P><FONT FACE="JESTER">&Eacute; o objeto para entrada de Senhas de acesso
+(password). Os dados digitados neste objeto s&atilde;o criptografados e,
+s&oacute; s&atilde;o interpretados (vistos) pelo &quot;server&quot;, por
+raz&otilde;es de seguran&ccedil;a. <BR>
+Suas principais propriedades s&atilde;o: type, size, maxlength, name e
+value.</FONT></P>
+
+<P><FONT FACE="JESTER"><B>type=password</B> : Especifica um campo para
+entrada de senha. Os dados digitados s&atilde;o substituidos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(na
+tela) por &quot;*&quot;. <BR>
+<B>size </B>: Especifica o tamanho do campo na tela. <BR>
+<B>maxlength</B> : Especifica a quantidade m&aacute;xima de caracteres
+permitidos. <BR>
+<B>name </B>: Especifica o nome do objeto <BR>
+<B>value</B> : Armazena o conte&uacute;do digitado no campo. </FONT></P>
+
+<P><FONT FACE="JESTER">Os eventos associados a este objeto s&atilde;o:
+onchange, onblur, onfocus e onselect. </FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+&lt;form name=&quot;TPassword&quot;&gt; <BR>
+&lt;p&gt;Entrada de Senha&lt;input type=password size=10 maxlength=10 name=&quot;Senha&quot;
+value=&quot;&quot;&gt; <BR>
+&lt;/p&gt; <BR>
+&lt;/form&gt; </FONT><BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto Input HIDDEN</FONT></I></H3>
+
+<P><FONT FACE="JESTER">&Eacute; um objeto semelhante ao input text, por&eacute;m,
+invis&iacute;vel para o usu&aacute;rio. Este objeto deve ser utilizado
+para passar informa&ccedil;&otilde;es ao &quot;server&quot; (quando o formul&aacute;rio
+for submetido) sem que o usu&aacute;rio tome conhecimento. Suas propriedades
+s&atilde;o: name e value. </FONT></P>
+
+<P><FONT FACE="JESTER"><B>name</B> : Especifica o nome do objeto. <BR>
+<B>value</B> : Armazena o conte&uacute;do do objeto </FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+&lt;form name=&quot;THidden&quot;&gt; <BR>
+&lt;input type=hidden size=20 maxlength=30 name=&quot;HdTexto&quot; value=&quot;&quot;
+&gt; <BR>
+&lt;/form&gt; <BR>
+&lt;/p&gt; </FONT><BR>
+<BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto Input CHECKBOX</FONT></I></H3>
+
+<P><FONT FACE="JESTER">S&atilde;o objetos que permitem ao usu&aacute;rio
+ligar ou desligar uma determinada op&ccedil;&atilde;o.</FONT></P>
+
+<P><FONT FACE="JESTER">Suas principais propriedades s&atilde;o: name, value
+e checked.</FONT></P>
+
+<P><FONT FACE="JESTER"><B>name</B> : Especifica o nome do objeto <BR>
+<B>value</B> : Especifica o valor que ser&aacute; enviado ao &quot;server&quot;
+se o objeto estiver ligado (checked). <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso&nbsp;seja
+omitido, ser&aacute; enviado o valor default &quot;on&quot; . <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esta
+propriedade tamb&eacute;m serve para ativar comandos l&oacute;gicos, testando-se
+a condi&ccedil;&atilde;o <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;de
+&quot;checked&quot;. <BR>
+<B>checked</B> : Especifica que o objeto inicialmente estar&aacute; ligado
+</FONT></P>
+
+<P><FONT FACE="JESTER">O &uacute;nico evento associado a este objeto &eacute;
+onclick.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+No exemplo abaixo, criaremos um objeto input.text e tr&ecirc;s objetos
+checkbox. O primeiro checkbox, quando ativado, transformar&aacute; o texto
+em caracteres min&uacute;sculos. O segundo checkbox, quando ativado, transformar&aacute;
+o texto em caracteres mai&uacute;sculos. O terceiro checkbox, quando ativado,
+dar&aacute; um aviso do conte&uacute;do que ser&aacute; recebido pelo &quot;server&quot;
+caso o formul&aacute;rio seja submetido para este.</FONT></P>
+
+<P><FONT FACE="JESTER">&lt;SCRIPT&gt; <BR>
+function AltMaiusc () { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;document.TCheck.Muda.value = document.TCheck.Muda.value.toUpperCase()
+&nbsp;&nbsp;&nbsp;&nbsp;document.TCheck.Opt1.checked = false <BR>
+} <BR>
+function AltMinusc () { <BR>
+&nbsp;&nbsp;&nbsp;document.TCheck.Muda.value = document.TCheck.Muda.value.toLowerCase()
+&nbsp;&nbsp;&nbsp;document.TCheck.Opt2.checked = false <BR>
+} <BR>
+&lt;/SCRIPT&gt; <BR>
+&lt;p&gt; <BR>
+&lt;form name=&quot;TCheck&quot;&gt; <BR>
+Muda Case &lt;input type=text size=20 maxlength=20 name=&quot;Muda&quot;&gt;
+&lt;/p&gt; <BR>
+&lt;p&gt; <BR>
+Minusculo&lt;input type=checkbox name=&quot;Opt1&quot; value=&quot;1&quot;
+checked <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;if
+(this.checked) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+AltMinusc() } &quot;&gt; <BR>
+Maiusculo&lt;input type=checkbox name=&quot;Opt2&quot; value=&quot;2&quot;
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;if
+(this.checked) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+AltMaiusc() } &quot;&gt; <BR>
+Demo valor&lt;input type=checkbox name=&quot;Opt3&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;if
+(Opt3.checked) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{alert
+('Server recebera = ' + Opt3.value) } &quot;&gt; <BR>
+&lt;/p&gt; <BR>
+&lt;/form&gt; </FONT></P>
+
+<P><FONT FACE="JESTER">Existe ainda uma outra forma de manipular este objeto,
+em forma de array, que &eacute; a seguinte: <B>form.elements[index].propriedade</B>.
+Esta n&atilde;o &eacute; uma boa forma porque o index &eacute; &uacute;nico
+dentro de um formul&aacute;rio, exigindo muito cuidado quando se acrescenta
+ou se deleta um objeto, pois, neste caso, haver&aacute; um natural deslocamento
+do index, podendo comprometer a l&oacute;gica. </FONT><BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto Input RADIO</FONT></I></H3>
+
+<P><FONT FACE="JESTER">S&atilde;o objetos que permitem ao usu&aacute;rio
+a escolha de apenas uma alternativa, diante de uma s&eacute;rie de op&ccedil;&otilde;es.
+<BR>
+Suas principais propriedades s&atilde;o: name, value e checked. </FONT></P>
+
+<P><FONT FACE="JESTER"><B>name</B> : Especifica o nome do objeto. Para
+caracterizar uma mesma s&eacute;rie de op&ccedil;&otilde;es, todos os &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objetos
+desta s&eacute;rie t&ecirc;m que ter o mesmo &quot;name&quot;. <BR>
+<B>value</B> : Especifica o valor que ser&aacute; enviado ao &quot;server&quot;
+se o objeto estiver ligado (checked). Caso &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seja
+omitido, ser&aacute; enviado o valor default &quot;on&quot; . Esta propriedade
+tamb&eacute;m serve para <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ativar
+comandos l&oacute;gicos, testando-se a condi&ccedil;&atilde;o de &quot;checked&quot;.
+<BR>
+<B>checked</B> : Especifica que o objeto inicialmente estar&aacute; ligado
+</FONT></P>
+
+<P><FONT FACE="JESTER">Para utiliza&ccedil;&atilde;o deste objeto &eacute;
+importante o conhecimento de outras propriedades associadas: </FONT></P>
+
+<P><FONT FACE="JESTER">Objeto<B>.length</B> : Retorna a quantidade de op&ccedil;&otilde;es
+existentes na lista <BR>
+Objeto<B>.[</B>index<B>]</B>.value : retorna o texto (value) associado
+a cada op&ccedil;&atilde;o <BR>
+Objeto<B>.[</B>index<B>].checked</B> : retorna verdadeiro ou falso </FONT></P>
+
+<P><FONT FACE="JESTER">O &uacute;nico evento associado a este objeto &eacute;
+onclick.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex. No exemplo abaixo temos dois set's de objetos
+radio. O primeiro tem o objetivo de mudar a cor de fundo do documento atual.
+O segundo tem o objetivo levar informa&ccedil;&otilde;es ao &quot;server&quot;.
+</FONT></P>
+
+<P><FONT FACE="JESTER">&lt;p&gt;Radio&lt;/p&gt; <BR>
+&lt;p&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=radio
+name=&quot;Rad&quot; value=&quot;1&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;document.bgColor='green'&quot;&gt;
+Fundo Verde <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio name=&quot;Rad&quot; value=&quot;2&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+onclick=&quot;document.bgColor='blueviolet'&quot;&gt; Fundo Violeta <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio name=&quot;Rad&quot; value=&quot;3&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+onclick=&quot;document.bgColor='#FFFF00'&quot;&gt; Fundo Amarelo <BR>
+&lt;/p&gt; <BR>
+&lt;p&gt; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio name=&quot;Rad2&quot; value=&quot;1&quot;&gt; Solteiro <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio name=&quot;Rad2&quot; value=&quot;2&quot;&gt; Casado <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+type=radio checked name=&quot;Rad2&quot; value=&quot;3&quot;&gt; Tico Tico
+<BR>
+&lt;/p&gt; </FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto Input BUTTON</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Este objeto tem por finalidade criar um bot&atilde;o
+ao qual se possa atrelar opera&ccedil;&otilde;es l&oacute;gicas, a serem
+executadas quando o mesmo receber um click.</FONT></P>
+
+<P><FONT FACE="JESTER">Suas propriedades s&atilde;o: name e value. </FONT></P>
+
+<P><FONT FACE="JESTER"><B>name</B> : Especifica o nome do objeto. <BR>
+<B>value</B> : Especifica o nome que aparecer&aacute; sobre o bot&atilde;o
+</FONT></P>
+
+<P><FONT FACE="JESTER">O &uacute;nico evento associado a este objeto &eacute;
+onclick.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+&lt;p&gt; <BR>
+&lt;form method=&quot;POST&quot; name=&quot;TstButton&quot;&gt; <BR>
+Digite um Texto &lt;input type=text size=30 maxlength=30 name=&quot;Teste&quot;
+value=&quot;&quot;&gt; <BR>
+&lt;/p&gt;&lt;p&gt; <BR>
+Click no Botao &lt;input type=button name=&quot;Bteste&quot; value=&quot;Botao
+de teste&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;alert
+('Voce digitou: ' + TstButton.Teste.value)&quot;&gt; <BR>
+&lt;/p&gt; <BR>
+&lt;/form&gt; </FONT><BR>
+<BR>
+<BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto Input RESET</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Este objeto &eacute; um bot&atilde;o que tem por
+finalidade, &uacute;nica, limpar os campos digitados pelo usu&aacute;rio,
+restaurando o conte&uacute;do do formul&aacute;rio para os valores iniciais.
+<BR>
+&Eacute; recomend&aacute;vel a utiliza&ccedil;&atilde;o deste objeto, para
+facilitar o usu&aacute;rio a limpar suas informa&ccedil;&otilde;es, uma
+vez que a utiliza&ccedil;&atilde;o da op&ccedil;&atilde;o &quot;reload&quot;
+do &quot;browser&quot; (que seria uma forma) n&atilde;o perde as infroma&ccedil;&otilde;es
+digitadas. </FONT></P>
+
+<P><FONT FACE="JESTER">Suas propriedades s&atilde;o: name e value. </FONT></P>
+
+<P><FONT FACE="JESTER"><B>name</B> : Especifica o nome do objeto. <BR>
+<B>value</B> : Especifica o nome que aparecer&aacute; sobre o bot&atilde;o
+</FONT></P>
+
+<P><FONT FACE="JESTER">O &uacute;nico evento associado a este objeto &eacute;
+onclick.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+&lt;p&gt; <BR>
+&lt;form method=&quot;POST&quot; name=&quot;TesteRes&quot;&gt; <BR>
+Digite um Texto&lt;input type=text size=10 maxlength=20 name=&quot;Teste&quot;
+value=&quot;&quot;&gt; <BR>
+Apague o Texto &lt;input type=reset name=&quot;Bres&quot; value=&quot;Reset&quot;&gt;
+<BR>
+&lt;/form&gt; <BR>
+&lt;/p&gt; </FONT><BR>
+<BR>
+<BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto Input SUBMIT</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Este objeto &eacute; um bot&atilde;o que tem por
+finalidade submeter (enviar) o conte&uacute;do dos objetos do formul&aacute;rio
+ao &quot;server&quot;. O formul&aacute;rio ser&aacute; submetido &agrave;
+URL especificada na propriedade &quot;action&quot; do formul&aacute;rio.
+<BR>
+Suas propriedades s&atilde;o: name e value. </FONT></P>
+
+<P><FONT FACE="JESTER"><B>name </B>: Especifica o nome do objeto. <BR>
+<B>value </B>: Especifica o nome que aparecer&aacute; sobre o bot&atilde;o
+</FONT></P>
+
+<P><FONT FACE="JESTER">O &uacute;nico evento associado a este objeto &eacute;
+onclick. Embora se possa atrelar l&oacute;gica a este evento, n&atilde;o
+se pode evitar que o formul&aacute;rio seja submetido, portanto, n&atilde;o
+&eacute; aconselhavel o seu uso. Mais seguro e mais &uacute;til &eacute;
+a utiliza&ccedil;&atilde;o da propriedade onSubmit do formul&aacute;rio.
+Este permite que se atrele l&oacute;gica e decida-se pela submiss&atilde;o
+ou n&atilde;o. </FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+&lt;script&gt; <BR>
+function TestaVal() { <BR>
+if (document.TesteSub.Teste.value == &quot;&quot;) { <BR>
+&nbsp;&nbsp;&nbsp; alert (&quot;Campo nao Preenchido...Form nao Submetido&quot;)
+<BR>
+&nbsp;&nbsp;&nbsp; return false } <BR>
+else { <BR>
+&nbsp;&nbsp;&nbsp; alert (&quot;Tudo Ok....Form Submetido&quot;) <BR>
+&nbsp;&nbsp;&nbsp; return true } } <BR>
+&lt;/script&gt; <BR>
+&lt;p&gt; <BR>
+&lt;form method=&quot;POST&quot; name=&quot;TesteSub&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; onSubmit=&quot;return
+TestaVal()&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; action=&quot;http://10.0.5.2/scripts/isapielo.dll/vbloja.loja.action&quot;&gt;
+<BR>
+Digite um Texto &lt;input type=text size=10 maxlength=10 name=&quot;Teste&quot;
+value=&quot;&quot;&gt; <BR>
+Botao Submit &lt;input type=submit name=&quot;Bsub&quot; value=&quot;Manda
+p/Server&quot;&gt; <BR>
+&lt;/p&gt; <BR>
+&lt;/form&gt; <BR>
+<BR>
+No exemplo acima, o formul&aacute;rio est&aacute; sendo submetido a URL
+&quot;10.0.5.2&quot; (que &eacute; o endere&ccedil;o IP <BR>
+de um &quot;Server&quot;). Este servidor est&aacute; rodando o &quot;Microsoft
+Internet Information Server&quot;. Estamos <BR>
+enviando os dados a um &quot;OLE&quot;, que est&aacute; no subdiret&oacute;rio
+&quot;scripts&quot;, chamado &quot;isapielo.dll&quot;, que tem <BR>
+por objetivo fazer a conec&ccedil;&atilde;o com aplica&ccedil;&otilde;es
+escritas em VB. A aplica&ccedil;&atilde;o VB que est&aacute; sendo <BR>
+chamada, &eacute; um OLE de nome &quot;vbloja&quot; no qual estamos acionando
+a classe &quot;loja&quot; e o m&eacute;todo <BR>
+&quot;action&quot;. <BR>
+A aplica&ccedil;&atilde;o VB, deste exemplo, far&aacute; apenas a devolu&ccedil;&atilde;o
+dos dados recebidos pelo Server.</FONT></P>
+
+<P><BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto TEXTAREA</FONT></I></H3>
+
+<P><FONT FACE="JESTER">&Eacute; um objeto para entrada de dados em um campo
+de m&uacute;ltiplas linhas. Suas principais propriedades s&atilde;o: name,
+rows e cols.</FONT></P>
+
+<P><FONT FACE="JESTER"><B>name</B> : Especifica o nome do objeto <BR>
+<B>rows</B> : Especifica a quantidade de linhas que aparecer&atilde;o na
+tela <BR>
+<B>cols</B> : Especifica a quantidade de caracteres que aparecer&atilde;o
+em cada linha <BR>
+<B>value </B>: Acessa o conte&uacute;do do campo via programa&ccedil;&atilde;o.
+</FONT></P>
+
+<P><FONT FACE="JESTER">Os eventos associados a este objeto s&atilde;o:
+onchange, onblur, onfocus e onselect. </FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+&lt;form name=&quot;TesteTextarea&quot;&gt; <BR>
+&lt;p&gt; <BR>
+Texto de M&uacute;ltiplas Linhas &lt;textarea name=&quot;MultText&quot;
+rows=2 cols=40&gt; <BR>
+Primeira linha do texto inicial <BR>
+segunda linha do texto inicial <BR>
+&lt;/textarea&gt; <BR>
+&lt;/p&gt; </FONT><BR>
+<BR>
+<BR>
+<BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Objeto SELECT</FONT></I></H3>
+
+<P><FONT FACE="JESTER">&Eacute; um objeto para entrada de op&ccedil;&otilde;es,
+onde o usu&aacute;rio, a partir de uma lista de alternativas, seleciona
+uma ou mais op&ccedil;&otilde;es. <BR>
+Suas principais propriedades s&atilde;o: name, size, value e multiple.</FONT></P>
+
+<P><FONT FACE="JESTER"><B>name</B> : Especifica o nome do objeto <BR>
+<B>size</B> : Especifica a quantidade de op&ccedil;&otilde;es que aparecer&atilde;o
+na tela simultaneamente <BR>
+<B>value</B> : Associa um valor ou string para cada op&ccedil;&atilde;o
+(opcional) <BR>
+<B>multiple</B><I> </I>: Especifica a condi&ccedil;&atilde;o de m&uacute;ltipla
+escolha (usando-se a tecla Ctrl)</FONT></P>
+
+<P><FONT FACE="JESTER">Para utiliza&ccedil;&atilde;o deste objeto &eacute;
+importante o conhecimento de outras propriedades associadas: </FONT></P>
+
+<P><FONT FACE="JESTER"><B>Objeto.length</B> : Retorna a quantidade de op&ccedil;&otilde;es
+existentes na lista <BR>
+<B>Objeto.selectedindex</B> : Retorna o &quot;index&quot; do objeto selecionado
+(primeiro = 0) <B>Objeto.options[index].text</B> : retorna o texto externo
+associado a cada op&ccedil;&atilde;o <B>Objeto.options[index].value</B>
+: retorna o texto interno (value) associado a cada op&ccedil;&atilde;o
+<B>Objeto.options[index].selected</B> : retorna verdadeiro ou falso </FONT></P>
+
+<P><FONT FACE="JESTER">Os eventos associados a este objeto s&atilde;o:
+onchange, onblur e onfocus. </FONT></P>
+
+<P><FONT FACE="JESTER">Ex1: <BR>
+Neste exemplo &eacute; importante observar os seguintes aspectos: <BR>
+a) A lista permite apenas uma sele&ccedil;&atilde;o <BR>
+b) A quarta op&ccedil;&atilde;o aparecer&aacute; inicialmente selecionada
+(propriedade &quot;selected&quot;) <BR>
+c) N&atilde;o utilizamos a propriedade &quot;value&quot;. Assim, a propriedade
+&quot;text&quot; e a propriedade &quot;value&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;passam a ter o mesmo valor, ou seja, o valor externo
+que aparece na tela. <BR>
+. <BR>
+&lt;script&gt; <BR>
+function Verselect(Campo) { <BR>
+Icombo = Campo.selectedIndex <BR>
+alert (&quot;Voce escolheu &quot; + Campo.options[Icombo].text) } <BR>
+&lt;/script&gt; <BR>
+&lt;p&gt; <BR>
+Objeto Select &lt;select name=&quot;Combo1&quot; size=1 onchange=&quot;Verselect(Combo1)&quot;&gt;
+<BR>
+&lt;option&gt;Opcao 1 <BR>
+&lt;option&gt;Opcao 2 <BR>
+&lt;option&gt;Opcao 3 <BR>
+&lt;option selected&gt;Opcao 4 (recomendada) <BR>
+&lt;option&gt;Opcao 5 <BR>
+&lt;option&gt;Opcao 6 <BR>
+&lt;/select&gt; <BR>
+&lt;/p&gt; <BR>
+<BR>
+Ex2: <BR>
+Neste exemplo &eacute; importante observar os seguintes aspectos: <BR>
+a) A lista permite m&uacute;ltiplas sele&ccedil;&otilde;es <BR>
+b) Utilizamos a propriedade &quot;value&quot;. Assim as propriedades &quot;text&quot;
+e &quot;value&quot; <BR>
+t&ecirc;m valores diferentes: text retornar&aacute; Escolha 1 a Escolha
+4 e value <BR>
+retornar&aacute; List1 a List4. <BR>
+c) O par&acirc;metro passado, quando da ocorr&ecirc;ncia do evento onblur,
+foi <B>this</B>. <BR>
+Esta diretiva significa que estamos passando este objeto. <BR>
+. <BR>
+&lt;script&gt; <BR>
+function Vermult(Lista) { <BR>
+var opcoes = &quot;&quot; <BR>
+for (i = 0 ; i &lt; Lista.length ; i++) { <BR>
+if (Lista.options[i].selected) { <BR>
+opcoes += (Lista.options[i].value + &quot;, &quot;) } <BR>
+} <BR>
+alert (&quot;As opcoes escolhidas foram : &quot; + opcoes) } <BR>
+&lt;/script&gt; <BR>
+&lt;p&gt; <BR>
+Objeto Select2 &lt;select name=&quot;Combo2&quot; size=4 multiple onblur=&quot;Vermult(this)&quot;&gt;
+<BR>
+&lt;option value=&quot;List1&quot;&gt;Escolha 1 &lt;/option&gt; <BR>
+&lt;option value=&quot;List2&quot;&gt;Escolha 2 &lt;/option&gt; <BR>
+&lt;option value=&quot;List3&quot;&gt;Escolha 3 &lt;/option&gt; <BR>
+&lt;option value=&quot;List4&quot;&gt;Escolha 4 &lt;/option&gt; <BR>
+&lt;/select&gt; <BR>
+&lt;/p&gt; </FONT><BR>
+<BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Focando um Objeto</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Este m&eacute;todo permite que o cursor seja ativado
+em um determinado objeto (focado). Isso pode ser feito na carga do documento,
+a partir da ocorr&ecirc;ncia de um evento ou mesmo dentro de uma fun&ccedil;&atilde;o.
+<BR>
+Observe que at&eacute; agora o usu&aacute;rio tinha que dar um &quot;Click&quot;
+para focar o objeto desejado.</FONT></P>
+
+<P><FONT FACE="JESTER">De forma semelhante existe o m&eacute;todo &quot;Select&quot;.
+Este m&eacute;todo marca o conte&uacute;do do objeto com uma tarja roxa,
+permitindo ao usu&aacute;rio, em caso de substitui&ccedil;&atilde;o do
+conte&uacute;do do campo, n&atilde;o ter que deletar o conte&uacute;do
+anterior, pois, com este m&eacute;todo, a dele&ccedil;&atilde;o se d&aacute;
+de forma autom&aacute;tica quando da digita&ccedil;&atilde;o do novo conte&uacute;do.</FONT></P>
+
+<P><FONT FACE="JESTER">Os m&eacute;todos &quot;Focus&quot; e &quot;Select&quot;
+podem ser utilizados nos seguintes objetos:</FONT></P>
+
+<P><FONT FACE="JESTER"><B>password</B>, <B>select</B>, <B>text</B> e<B>
+textarea</B></FONT></P>
+
+<P><FONT FACE="JESTER">No exemplo abaixo, utilizaremos o evento <B>onload</B>
+para setar o <B>focus</B> para o primeiro objeto do formul&aacute;rio e
+os m&eacute;todos <B>focus</B> e <B>select</B> para, na rotina de cr&iacute;tica
+dos dados, focar o objeto que contiver erro de preenchimento.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex. <BR>
+&lt;body onload=&quot;document.TstFocus.Nome.focus()&quot;&gt; <BR>
+&lt;script&gt; <BR>
+DdosOk = true <BR>
+function Criticar() { <BR>
+&nbsp;&nbsp;DadosOk = false <BR>
+&nbsp;&nbsp;DataAtual = new Date() <BR>
+&nbsp;&nbsp;MesAtual = DataAtual.getMonth() + 1 <BR>
+&nbsp;&nbsp;AnoAtual = DataAtual.getYear() + 1900 <BR>
+&nbsp;&nbsp;Nome = document.TstFocus.Nome.value <BR>
+&nbsp;&nbsp;Mes = parseInt(document.TstFocus.Mes.value) <BR>
+&nbsp;&nbsp;Ano = parseInt (document.TstFocus.Ano.value) <BR>
+// <BR>
+&nbsp;&nbsp;if (Ano &lt; 1900) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Ano = Ano + 1900 } <BR>
+&nbsp;&nbsp;if (Nome == &quot;&quot;) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{ alert (&quot;Informe o seu Nome, N&atilde;o deixe
+em branco&quot;) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Nome.focus() <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return } <BR>
+&nbsp;&nbsp;if (Mes &lt; 1 || Mes &gt; 12) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{ alert (&quot;O M&ecirc;s informado n&atilde;o
+&eacute; v&aacute;lido, informe corretamente&quot;) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Mes.focus()
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Mes.select() <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return } <BR>
+&nbsp;&nbsp;if (Ano == AnoAtual &amp;&amp; Mes &gt; MesAtual) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{ alert (&quot;O per&iacute;odo informado &eacute;
+superior a data atual&quot;) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Mes.focus() <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Mes.select() <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return } <BR>
+&nbsp;&nbsp;if (Ano &lt; 1996 || Ano &gt; AnoAtual) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{ alert (&quot;O Ano informado n&atilde;o &eacute;
+v&aacute;lido, informe corretamente&quot;) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Ano.focus()
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.TstFocus.Ano.select() <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return } <BR>
+&nbsp;&nbsp;DadosOk = true <BR>
+} <BR>
+&lt;/script&gt; </FONT></P>
+
+<P><FONT FACE="JESTER">&lt;form name=&quot;TstFocus&quot; method=&quot;POST&quot;&gt;
+<BR>
+&lt;p&gt; <BR>
+Informe o seu Nome &lt;input type=text size=30 maxlength=30 name=&quot;Nome&quot;&gt;
+<BR>
+&lt;/p&gt; <BR>
+&lt;p&gt; Informe o m&ecirc;s desejado &lt;input type=text size=2 maxlength=2
+name=&quot;Mes&quot;&gt; <BR>
+&lt;/p&gt; <BR>
+&lt;p&gt; Informe o ano desejado &lt;input type=text size=4 maxlength=4
+name=&quot;Ano&quot; &gt; <BR>
+&lt;/p&gt; <BR>
+&lt;p&gt; &lt;input type=button name=&quot;Testa&quot; value=&quot;Testar
+Validade&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;Criticar()
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+(DadosOk) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{alert
+('Todos os Dados est&atilde;o Corretos') } &quot;&gt; <BR>
+&lt;/p&gt; <BR>
+&lt;/form&gt; <BR>
+&lt;/body&gt; </FONT><BR>
+<BR>
+</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Usando Timer e Date</FONT></I></H3>
+
+<P><FONT FACE="JESTER">&Eacute; um m&eacute;todo que permite a programa&ccedil;&atilde;o
+para que uma determinada a&ccedil;&atilde;o s&oacute; ocorra ap&oacute;s
+o transcurso de um determinado tempo.</FONT></P>
+
+<P><FONT FACE="JESTER">Vari&aacute;vel = <B>setTimeout (</B>&quot;a&ccedil;&atilde;o&quot;,
+tempo<B>)</B> </FONT></P>
+
+<P><FONT FACE="JESTER">Onde: <BR>
+<B>Vari&aacute;vel</B> &eacute; uma vari&aacute;vel apenas para controle
+do timer <BR>
+<B>a&ccedil;&atilde;o</B> &eacute; a a&ccedil;&atilde;o que se quer realizar.
+<BR>
+<B>tempo</B> &eacute; o tempo de espera para que a a&ccedil;&atilde;o ocorra,
+em milisegundos.</FONT></P>
+
+<P><FONT FACE="JESTER">Obs: <BR>
+&Eacute; importante observar que a a&ccedil;&atilde;o s&oacute; ocorrer&aacute;
+uma vez. Para que a a&ccedil;&atilde;o volte a ocorrer, ser&aacute; necess&aacute;rio
+repetir o comando dentro da a&ccedil;&atilde;o, obtendo-se, assim, um LOOP.</FONT></P>
+
+<P><FONT FACE="JESTER">Para interromper um LOOP, provocado pela forma acima,
+deve-se utilizar o seguinte m&eacute;todo: </FONT></P>
+
+<P><FONT FACE="JESTER"><B>clearTimeout (</B>Vari&aacute;vel<B>)</B> </FONT></P>
+
+<P><FONT FACE="JESTER">Onde: <BR>
+<B>Vari&aacute;vel</B> &eacute; o nome da vari&aacute;vel de controle do
+timer.</FONT></P>
+
+<P><BR>
+<FONT FACE="JESTER">Abaixo encontra-se um exemplo de um formul&aacute;rio
+que apresenta a data e hora atual, atualizando os dados a cada um segundo,
+tendo dois bot&otilde;es de r&aacute;dio que tem a fun&ccedil;&atilde;o
+de ativar e desativar a atualiza&ccedil;&atilde;o dos dados. Apresenta
+tamb&eacute;m, fora do formul&aacute;rio, a data contendo dia e m&ecirc;s
+por extenso. <BR>
+. <BR>
+&lt;script&gt; <BR>
+function Hoje() { <BR>
+ContrRelogio = setTimeout (&quot;Hoje()&quot;, 1000) <BR>
+Hr = new Date() <BR>
+dd = Hr.getDate() <BR>
+mm = Hr.getMonth() + 1 <BR>
+aa = Hr.getYear() <BR>
+hh = Hr.getHours() <BR>
+min = Hr.getMinutes() <BR>
+seg = Hr.getSeconds() <BR>
+DataAtual = ((dd &lt; 10) ? &quot;0&quot; + dd + &quot;/&quot; : dd + &quot;/&quot;)
+<BR>
+DataAtual += ((mm &lt; 10) ? &quot;0&quot; + mm + &quot;/&quot; + aa :
+mm + &quot;/&quot; + aa) <BR>
+HoraAtual = ((hh &lt; 10) ? &quot;0&quot; + hh + &quot;:&quot; : hh + &quot;:&quot;)
+<BR>
+HoraAtual += ((min &lt; 10) ? &quot;0&quot; + min + &quot;:&quot; : min
++ &quot;:&quot;) <BR>
+HoraAtual += ((seg &lt; 10) ? &quot;0&quot; + seg : seg) <BR>
+document.DataHora.Data.value=DataAtual <BR>
+document.DataHora.Hora.value=HoraAtual <BR>
+} <BR>
+// <BR>
+function CriaArray (n) { <BR>
+this.length = n } <BR>
+// <BR>
+NomeDia = new CriaArray(7) <BR>
+NomeDia[0] = &quot;Domingo&quot; <BR>
+NomeDia[1] = &quot;Segunda&quot; <BR>
+NomeDia[2] = &quot;Ter&ccedil;a&quot; <BR>
+NomeDia[3] = &quot;Quarta&quot; <BR>
+NomeDia[4] = &quot;Quinta&quot; <BR>
+NomeDia[5] = &quot;Sexta&quot; <BR>
+NomeDia[6] = &quot;S&aacute;bado&quot; <BR>
+// <BR>
+NomeMes = new CriaArray(12) <BR>
+NomeMes[0] = &quot;Janeiro&quot; <BR>
+NomeMes[1] = &quot;Fevereiro&quot; <BR>
+NomeMes[2] = &quot;Mar&ccedil;o&quot; <BR>
+NomeMes[3] = &quot;Abril&quot; <BR>
+NomeMes[4] = &quot;Maio&quot; <BR>
+NomeMes[5] = &quot;Junho&quot; <BR>
+NomeMes[6] = &quot;Julho&quot; <BR>
+NomeMes[7] = &quot;Agosto&quot; <BR>
+NomeMes[8] = &quot;Setembro&quot; <BR>
+NomeMes[9] = &quot;Outubro&quot; <BR>
+NomeMes[10] = &quot;Novembro&quot; <BR>
+NomeMes[11] = &quot;Dezembro&quot; <BR>
+// <BR>
+Data1 = new Date() <BR>
+dia = Data1.getDate() <BR>
+dias = Data1.getDay() <BR>
+mes = Data1.getMonth() <BR>
+ano = Data1.getYear() <BR>
+document.write (&quot;Recife, &quot; + NomeDia[dias] + &quot; &quot; +
+dia + &quot; de &quot; + <BR>
+NomeMes[mes] + &quot; de &quot; + (ano + 1900 ) ) <BR>
+&lt;/script&gt; <BR>
+&lt;form name=&quot;DataHora&quot;&gt; <BR>
+Data : &lt;input type=text size=10 maxlength=10 name=&quot;Data&quot;&gt;
+<BR>
+Hora : &lt;input type=text size=10 maxlength=10 name=&quot;Hora&quot;&gt;
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=radio
+name=&quot;Botao&quot; value=&quot;Para Relogio&quot; checked <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;clearTimeout(ContrRelogio)&quot;&gt;Desativa
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=radio
+name=&quot;Botao&quot; value=&quot;Ativa Relogio&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;ContrRelogio
+= setTimeout('Hoje()', 1000)&quot;&gt;Ativa <BR>
+&lt;/form&gt; </FONT><BR>
+<BR>
+<BR>
+
+<HR WIDTH="100%"></P>
+
+<H3><I><FONT FACE="JESTER">Escrevendo Textos Rolantes</FONT></I></H3>
+
+<P><FONT FACE="JESTER">Observe o rodap&eacute; desta p&aacute;gina....
+existe uma mensagem que est&aacute; sempre rolando. <BR>
+Na verdade, o texto n&atilde;o est&aacute; rolando como d&aacute; a impress&atilde;o.
+O que ocorre &eacute; a troca do conte&uacute;do <BR>
+a cada um segundo. Para fazer isto escrevemos uma fun&ccedil;&atilde;o
+que, a cada segundo, desloca o texto <BR>
+em um caracter. Ou seja: elimina o primeiro caracter, deslocando o texto,
+e insere um novo caracter no final do texto. Quando o novo texto &eacute;
+exibido obtemos o efeito apresentado. <BR>
+<BR>
+No exemplo abaixo apresentamos o c&oacute;digo necess&aacute;rio para criar
+textos rolantes. Os textos ser&atilde;o <BR>
+apresentados na &aacute;rea de status (rodap&eacute;) da p&aacute;gina
+bem como em uma caixa de texto de um formul&aacute;rio. <BR>
+Inicialmente definimos as vari&aacute;veis a serem utilizadas pela fun&ccedil;&atilde;o
+e preenchemos com &quot;brancos&quot; <BR>
+a vari&aacute;vel que conter&aacute; o texto a ser exibido, para que o
+texto comece a ser exibido a partir do <BR>
+canto direito da caixa. <BR>
+No momento em que o documento &eacute; carregado, utilizamos o evento <B>onload</B>
+para ativar a fun&ccedil;&atilde;o <BR>
+que far&aacute; a apresenta&ccedil;&atilde;o dos textos.</FONT></P>
+
+<P><FONT FACE="JESTER">Ex: <BR>
+&lt;html&gt; <BR>
+&lt;script&gt; <BR>
+/* ----- Apresenta uma caixa de texto rolante no rodap&eacute; da p&aacute;gina
+<BR>
+*/ <BR>
+var Texto = &quot;Grupo El&oacute;gica - Manual Java Script - Principais
+Comandos............&quot; <BR>
+var Tamanho = Texto.length <BR>
+var Trab = Texto.length <BR>
+var Trab1=0 <BR>
+var Temp = &quot;&quot; <BR>
+var Mensagem=&quot;&quot; <BR>
+var CtrTime=&quot;&quot; <BR>
+for (x=0 ; x &lt;= 200 ; x++) { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mensagem += &quot; &quot; } <BR>
+// <BR>
+function Mostra() { <BR>
+&nbsp;&nbsp; if (Trab &lt;= Tamanho &amp;&amp; Trab&gt; 0) { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Temp = Mensagem.substring(1,
+Mensagem.length) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mensagem = Temp + Texto.substring(Trab1,Trab1
++ 1) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trab-- <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trab1++ } <BR>
+&nbsp;&nbsp;else { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trab = Texto.length <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trab1 = 0 } <BR>
+&nbsp;&nbsp;window.status = Mensagem <BR>
+&nbsp;&nbsp;document.Form1.Letreiro.value = Mensagem.substring(150, Mensagem.length)
+<BR>
+&nbsp;&nbsp;CtrTime = setTimeout(&quot;Mostra()&quot;, 100) <BR>
+} <BR>
+&lt;/script&gt; <BR>
+&lt;body onload=&quot;CtrTime = setTimeout('Mostra()', 100)&quot;&gt; <BR>
+&lt;form method=&quot;POST&quot; name=Form1&gt; <BR>
+&lt;p&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;font size=4&gt; <BR>
+Apresenta&ccedil;&atilde;o de caixa de texto rolante&lt;/font&gt;&lt;/font&gt;
+&lt;/p&gt; <BR>
+&lt;p&gt;&lt;input type=text size=50 maxlength=100 name=&quot;Letreiro&quot;&gt;
+&lt;/p&gt; <BR>
+&lt;/form&gt; <BR>
+&lt;/body&gt; <BR>
+&lt;/html&gt; </FONT></P>
+
+<H3><I><FONT FACE="JESTER">Abrindo Novas Janelas</FONT></I></H3>
+
+<P>Neste cap&iacute;tulo mostraremos como podem ser abertas novas janelas
+sobre uma janela contendo o documento principal. <BR>
+<BR>
+&Eacute; importante n&atilde;o confundir esta forma de abrir janelas com
+a divis&atilde;o da tela em v&aacute;rias partes, ou mesmo com a chamada
+de outras p&aacute;ginas. Para que n&atilde;o existam d&uacute;vidas, explicaremos
+um pouco sobre estes dois outros m&eacute;todos. </P>
+
+<P>A divis&atilde;o de uma tela em v&aacute;rias janelas contendo documentos
+diferentes &eacute; feita atrav&eacute;s do objeto <B>FRAME</B> do Html.
+Neste caso, a tela inteira &eacute; considerada como um <B>FrameSet</B>
+e cada parte em que ela for dividida &eacute; considerada como um <B>Frame.</B>
+Cada <B>Frame</B> &eacute; definido dentro do <B>FrameSet</B> atrav&eacute;s
+da especifica&ccedil;&atilde;o dos par&acirc;metros: % da tela na vertical
+(cols), % da tela na horizontal (rows) e nome de cada frame. Uma vez criado
+o <B>FrameSet </B>poderemos abrir documentos distintos em cada <B>Frame.</B>
+Para fazer isto, acrescente ao <B>link</B> do documento a diretiva <B>target=nome
+do frame.</B></P>
+
+<P>Ex. <BR>
+&lt;href=&quot;Eventos.htm&quot; target=&quot;Principal&quot;&gt; <BR>
+Isto far&aacute; com que o arquivo html <B>Eventos.htm</B> seja aberto
+dentro do frame de nome <B>Principal</B></P>
+
+<P>A simples chamade de outras telas (documentos) &eacute; feita atrav&eacute;s
+do <B>link</B> para o documento desejado.</P>
+
+<P>Ex. <BR>
+&lt;href=&quot;Eventos.htm&quot; &gt; <BR>
+Isto far&aacute; com que o arquivo html <B>Eventos.htm</B> seja aberto
+em substitui&ccedil;&atilde;o a tela existente.</P>
+
+<P>Bem, voltemos ao nosso caso que &eacute; a abertura de janelas sobre
+um documento. Isto &eacute; feito atrav&eacute;s de comandos JavaScript,
+que permitem: Abrir uma janela, Abrir um documento dentro desta janela,
+Escrever o conte&uacute;do da janela, Fechar a janela e Fechar o documento.
+<BR>
+<BR>
+<B>Abrindo a Janela</B> </P>
+
+<P>A sintaxe geral deste m&eacute;todo &eacute; a seguinte:</P>
+
+<P>Variavel <B>=</B> <B>window.open (&quot;</B>Url<B>&quot;, &quot;</B>Nome
+da janela<B>&quot;, &quot;</B>Op&ccedil;&otilde;es<B>&quot;)</B></P>
+
+<P>Onde: <BR>
+Variavel - Nome que ser&aacute; atribuido como propriedade da janela. <BR>
+Url - Endere&ccedil;o <B>Internet</B> onde a janela ser&aacute; aberta.
+Normalmente voce estar&aacute; utilizando a sua <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pr&oacute;pria Url, neste
+caso, preencha com <B>&quot;&quot;</B>. <BR>
+Nome da Janela - &Eacute; o nome que aparecer&aacute; no top da janela
+(T&iacute;tulo) <BR>
+Op&ccedil;&otilde;es - S&atilde;o as op&ccedil;&otilde;es que definem as
+caracter&iacute;sticas da janela, quais sejam:</P>
+
+<UL>
+<LI><B>toolbar</B> - Cria uma barra de ferramentas tipo &quot;Back&quot;,
+&quot;Forward&quot;, etc.</LI>
+
+<LI><B>location</B> - Abre a barra de <B>location</B> do browse </LI>
+
+<LI><B>directories</B> - Abre a barra de ferramentas tipo &quot;What's
+New&quot;, &quot;Handbook&quot;, etc.</LI>
+
+<LI><B>status</B> - Abre uma barra de status no rodap&eacute; da janela</LI>
+
+<LI><B>scrollbar</B> - Abre barras de rolamento vertical e horizontal</LI>
+
+<LI><B>menubar </B>- Cria uma barra de menu tipo &quot;File&quot;, &quot;Edit&quot;,
+etc.</LI>
+
+<LI><B>resizable</B> - Permite ao usu&aacute;rio redimencionar a janela</LI>
+
+<LI><B>width</B> - Especifica a largura da janela, em pixels</LI>
+
+<LI><B>height</B> - Especifica a altura da janela, em pixels</LI>
+</UL>
+
+<P>Todas as op&ccedil;&otilde;es (exceto <B>width</B> e <B>height</B>)
+s&atilde;o boleanas e podem ser setadas de duas formas. Exemplo: &quot;toolbar&quot;
+ou &quot;toolbar=1&quot;) s&atilde;o a mesma coisa. Se nada for especificado,
+entende-se que todas as op&ccedil;&otilde;es est&atilde;o ligadas; Caso
+seja especificada qualquer op&ccedil;&atilde;o, ser&aacute; entendido que
+est&atilde;o ligadas apenas as op&ccedil;&otilde;es informadas. <BR>
+As op&ccedil;&otilde;es devem ser informadas separadas por v&iacute;rgula,
+sem espa&ccedil;o entre elas.</P>
+
+<P><B>Abrindo um Documento</B> </P>
+
+<P>Para abrir um documento dentro da janela, deve ser utilizado o seguinte
+m&eacute;todo: <BR>
+Variavel.<B>document.open()</B></P>
+
+<P><B>Onde</B> &quot;Variavel&quot; &eacute; o nome da vari&aacute;vel
+associada ao m&eacute;todo <B>window.open</B></P>
+
+<P>Escrevendo no Documento </P>
+
+<P>Para escrever a tela no documento, deve ser utilizado o seguinte m&eacute;todo:
+<BR>
+Variavel<B>.document.write (&quot;</B>Comandos html, Comandos JavaScript,
+Textos, etc.<B>&quot;)</B></P>
+
+<P><B>Fechando a Janela</B> </P>
+
+<P>Para fechar a janela, utilize o seguinte m&eacute;todo: <BR>
+Variavel<B>.document.write (&quot;window.close()&quot;)</B></P>
+
+<P><B>Fechando o Documento</B> </P>
+
+<P>Para fechar o documento, utilize o seguinte m&eacute;todo: <BR>
+Variavel<B>.document.close ()</B></P>
+
+<P>A seguir, apresentamos um exemplo no qual estamos abrindo um documento
+onde o usu&aacute;rio escolher&aacute; uma op&ccedil;&atilde;o (El&oacute;gica
+ou Recife) e dar&aacute; um Click em um bot&atilde;o (Nova Janela). Neste
+momento ser&aacute; aberta uma nova janela que conter&aacute; a foto escolhida
+pelo usu&aacute;rio e um bot&atilde;o que, <BR>
+ao receber o Click, fechar&aacute; a janela.</P>
+
+<P>Normalmente, qualquer <B>href </B>ou <B>src</B> dentro de uma p&aacute;gina,
+por padr&atilde;o, acessa o arquivo ou a imagem no mesmo diret&oacute;rio
+onde est&aacute; a p&aacute;gina atual, a menos que seja especificado um
+novo caminho (Path). <BR>
+No caso de abertura de uma nova janela, atrav&eacute;s do m&eacute;todo
+<B>window.open,</B> as vers&otilde;es mais antigas dos browses n&atilde;o
+conseguem &quot;ver&quot; o <B>Path</B>, sendo necess&aacute;ria a completa
+informa&ccedil;&atilde;o do caminho (path) onde o arquivo ou imagem est&atilde;o
+armazenados, em todas as chamadas dos comandos Html <B>href </B>ou <B>src.
+<BR>
+</B>Observe que na fun&ccedil;&atilde;o estamos utilizando dois novos m&eacute;todos:<BR>
+<B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;navigator.appVersion</B> para verificarmos
+a vers&atilde;o do browse que esta sendo utilizado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>document.location</B>.
+para obtermos o <B>Path</B> da localiza&ccedil;&atilde;o do arquivo Html
+que est&aacute; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;correntemente
+em uso. <BR>
+No exemplo abaixo estamos, inicialmente, identificando a vers&atilde;o
+do browse.Caso seja antiga, para n&atilde;o escrevermos todo o caminho
+a cada chamada e ainda, considerando que os arquivos chamados est&atilde;o
+no mesmo diret&oacute;rio da p&aacute;gina atual, estamos obtendo o <B>Path</B>
+do arquivo atual e eliminando o nome do arquivo que est&aacute; na &uacute;ltima
+referencia do <B>Path</B>. Quando fizermos a chamada das imagens (comando
+<B>src</B>) s&oacute; ser&aacute; necess&aacute;rio a concatena&ccedil;&atilde;o
+do nome do arquivo chamado com a raiz do path que, no exemplo, armazenamos
+na vari&aacute;vel de nome <B>Local.</B></P>
+
+<P>&lt;script&gt; <BR>
+function Abrejanela(Opcao) { <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Versao = navigator.appVersion <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Versao = Versao.substring(0, 1)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local = &quot;&quot;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if &nbsp;(Versao &lt; 3) &nbsp;{ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local = document.location
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UltLoc = Local.lastIndexOf(&quot;/&quot;)
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local = Local.substring(0,
+UltLoc + 1)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>
+// <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela = window.open (&quot;&quot;, &quot;OutraJanela&quot;,
+&quot;width=300,height=400&quot;) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.open()
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.write (&quot;&lt;html&gt;&lt;head&gt;&lt;title&gt;Nova
+Janela&quot;) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.write (&quot;&lt;/title&gt;&lt;/head&gt;&lt;body
+bgcolor='white'&gt;&quot;) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.write
+(&quot;&lt;form&gt;&quot;) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Opcao == 1) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ NovaJanela.document.write (&quot;&lt;br&gt;Logomarca
+Elogica&lt;hr&gt;&lt;br&gt;&quot;) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.write
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&quot;&lt;img
+width=200 height=200 src=&quot; + Local + &quot;Marcaelo.gif&gt;&quot;)
+} <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ NovaJanela.document.write (&quot;&lt;br&gt;Recife
+Alto Astral&lt;hr&gt;&lt;br&gt;&quot;) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.write
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&quot;&lt;img
+width=150 height=200 src=&quot; + Local + &quot;Recife.gif&gt;&quot;) }
+<BR>
+// <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.write (&quot;&lt;br&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;/form&gt;&quot;)
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.write (&quot;&lt;form&gt;&lt;input
+type='button' name='Fecha'&quot; + <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;value='Fecha
+Janela'&quot; + &quot;onclick='window.close()'&gt;&quot;) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.write (&quot;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;&quot;)
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NovaJanela.document.close() } <BR>
+&lt;/script&gt; </P>
+
+<P>&lt;body&gt; <BR>
+&lt;p&gt;&lt;/p&gt; <BR>
+&lt;p&gt;Escolha a foto a ser apresentada na nova janela:&lt;/p&gt; <BR>
+&lt;form method=&quot;POST&quot; name=&quot;Form1&quot;&gt; <BR>
+&lt;p&gt; <BR>
+&lt;input type=radio name=&quot;Opcao&quot; value=&quot;1&quot; checked&gt;Elogica
+<BR>
+&lt;input type=radio name=&quot;Opcao&quot; value=&quot;2&quot;&gt;Recife
+<BR>
+&lt;/p&gt; &lt;p&gt; <BR>
+&lt;input type=&quot;button&quot; name=&quot;Envia&quot; value=&quot;Nova
+Janela&quot; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&quot;if
+(Form1.Opcao[0].checked == true) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Abrejanela(Form1.Opcao[0].value)
+} <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Abrejanela(Form1.Opcao[1].value)
+} &quot;&gt; <BR>
+&lt;/p&gt; <BR>
+&lt;/form&gt; <BR>
+&lt;/body&gt; </P>
+
+</BODY>
+</HTML>

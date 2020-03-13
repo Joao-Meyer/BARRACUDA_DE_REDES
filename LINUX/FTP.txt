@@ -1,0 +1,62 @@
+############################FTP###########################
+
+~ apt install proftpd-basic
+
+Ir no /etc/hosts (mudar o nome do hostname, caso você tenha mudado e colocar o IP e os nomes da máquina)
+
+restartar o serviço
+
+Configurar o arquivo /etc/proftpd/proftpd.conf 
+
+~ vi /etc/proftpd/proftpd.conf 
+
+No arquivo fazer as seguintes mudanças: 
+
+-Deixar off o IPV6 
+-Verificar se o servertype está "Stand Alone" 
+-Colocar o server name atual (caso você tenha mudado)
+-Acrescentar uma linha com o "DisplayConnect /usr/local/etc/proftpd.banner
+
+salvar e sair
+
+reiniciar o serviço proftpd
+
+Entrar em /usr/local/etc/proftpd.banner e colocar a mensagem de boas vinda para quem entrar pelo modo de texto.
+
+reiniciar o serviço proftpd novamente
+
+#########ACESSAR O FTP PELO LINUX############
+
+apt install ftp
+ftp 10.10.10.1
+usuario:123
+senha:123
+
+
+################ENJAULAMENTO##################
+
+editar o arquivo /etc/proftpd/proftpd.conf 
+DefultRoot = ~/ftp
+restartar o serviço
+criar o diretório /ftp no aluno (com o próprio aluno)
+
+
+###############ANÔNIMO#########################
+editar o arquivo /etc/proftpd/proftpd.conf 
+descomentar a sessão que começa com <anonymous ~ftp>
+aumentar o Controlmaxclientes para até 100 
+restartar o serviço 
+dar permissão chmod o+r /srv/ftp/*
+
+###############SFTP#############################
+instalar o pacote openssh-server
+logar
+stpf aluno@ip
+
+#################ACESSO FTP######################
+apt install ftp
+ftp + o ip
+
+
+
+

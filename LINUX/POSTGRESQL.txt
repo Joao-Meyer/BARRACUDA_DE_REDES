@@ -1,0 +1,67 @@
+Instalando o servidor PostgreSQL no Linux
+
+Instalando os pacotes:
+
+Debian/Ubuntu.
+
+# apt-get install postgresql
+
+Fedora/CentOS.
+
+# yum install postgresql-server
+
+Feita a instalação, crie a base de dados, inicie o serviço e já habilite para iniciar durante o boot:
+
+# service postgresql initdb
+# service postgresql start
+# chkconfig postgresql on
+
+Configurando o PostgreSQL
+Atribua a senha no usuário postgres do PostgreSQL:
+
+# su postgres -c psql
+ALTER USER postgres WITH PASSWORD 'senha';
+\q
+
+Para permitir que acesse o banco apenas informando a senha, configure no arquivo pg_hba.conf, alterando a coluna METHOD de todas as linhas de "ident" para "md5".
+
+O diretório dos arquivos de configuração do PostgreSQL:
+
+    Debian/Ubuntu: /etc/postgresql/8.4/main/
+    Fedora/CentOS: /var/lib/pgsql/data/ 
+
+
+Feito a instalação e mudança de senha do usuário postgres, você estará apto a desenvolver o trabalho no seu computador conectando normalmente ao postgres, porém, se a ideia é disponibilizar o acesso ao banco para receber conexões de outras máquinas, você vai ter que alterar dois arquivos no diretório do PostgreSQL: postgresql.conf e pg_hba.conf.
+
+No arquivo postgresql.conf, na linha listen_addresses, descomente-o removendo o "#" e troque o "localhost" por "*", deixando a linha assim:
+
+listen_addresses = '*'
+
+Dessa forma seu PostgreSQL vai "escutar" não só conexões provenientes da sua própria máquina. A próxima configuração no mesmo arquivo é habilitar a encriptação de passwords, para fazer isso descomente a linha abaixo removendo o "#", ficando a linha assim:
+
+password_encryption = on
+
+Finalmente a próxima configuração no arquivo pg_hba.conf. Neste arquivo você consegue restringir o acesso ao seu banco de dados por IP. Normalmente queremos liberar o acesso para todos os IPs em uma faixa, no meu exemplo, quero liberar para todas as máquinas da rede 10.5.2.0/16, então eu adiciono a seguinte linha:
+
+host all all 10.5.2.0 255.255.0.0 md5
+
+Terminando a configuração, reinicie o PostgreSQL.
+
+Debian/Ubuntu:
+
+# /etc/init.d/postgresql-8.4 restart
+
+Fedora/CentOS:
+
+# service postgresql restart
+
+Testando a conexão:
+
+# psql -U postgres
+Senha para usuário postgres:
+psql (8.4.4)
+Digite "help" para ajuda.
+
+postgres=#
+
+Pronto! 
