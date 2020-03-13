@@ -1,0 +1,50 @@
+|||||||||Grafana|||||||||
+
+Site https://grafana.com/grafana/download, porém o proxy do SENAI o bloqueia, então utilizamos os arquivos que o professor baixou pelo debian no site
+
+copiar para o servidor zabbix:
+	grafana-clock-panel-4db3437
+	grafana_5.4.0_amd64.deb
+	alexanderzobnin-grafana-zabbix-v3.9.1-0-ga5afa8d
+
+instalar
+	dpkg -i grafana_5.4.0_amd64.deb			-i = Instalar
+	systemctl daemon-reload
+	systemctl enable grafana-server
+	systemctl start grafana-server
+
+Acessar
+	IPdoServidor:3000			O Proxy do SENAI bloqueia, acesse via máquina virtual.
+	Usuário e Senha: admin
+
+Forma de Instalar plugin (Firewall do SENAI bloqueia)
+	grafana-cli plugins install alexanderzobnin-zabbix-app
+
+Forma de Instalar plugin 
+	Site: https://grafana.com/
+	Em <Plugins> <Zabbix> ou <Clock> etc...
+	Clique em "Install Pluggin" e siga os passos.
+	Utilizamos a forma do zip file, que o professor já baixou.
+
+Forma que instalamos
+	cp *.zip /var/lib/grafana/plugins/
+	/var/lib/grafana/plugins/
+	apt install unzip
+	unzip grafana-clock-panel-4db3437.zip
+	unzip alexanderzobnin-grafana-zabbix-v3.9.1-0-ga5afa8d.zip
+		Reinicie o Serviço do Grafana
+
+O resto eu não preciso nem falar kk.
+
+Clicar em Add data source
+Escolher Zabbix
+
+No campo HTTP
+	http://IPServidorZabbix/zabbix/api_jsonrpc.php
+
+Em Zabbix API details
+	Colocar username e senha do loggin no zabbix
+
+
+
+
