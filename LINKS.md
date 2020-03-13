@@ -1,31 +1,13 @@
 # DONT PAD DO VINI:
 http://dontpad.com/NaCaladaDaNoiteEleVaiBaterNaSuaMae
-
-# RESULTADOS DA PESQUISA DE COMO RESOLVER OS PROBLEMAS DE RECEBIMENTO E ENVIO DE E-MAILS NO OUTLOOK:
-
-https://support.microsoft.com/pt-br/help/813514/error-occurs-when-you-send-or-receive-an-email-message-in-outlook-or-o
-
-https://support.office.com/pt-br/article/corrigir-sua-conex%C3%A3o-de-email-do-outlook-ao-reparar-seu-perfil-4d5febf6-7623-486b-9a9f-d5cfc4264af3
-
-https://support.microsoft.com/pt-br/help/272227/how-to-repair-your-outlook-personal-folder-file-pst
-
-https://support.microsoft.com/pt-br/help/2758902/how-to-set-up-an-internet-email-account-in-outlook-2013-or-2016
-
-https://docs.microsoft.com/pt-br/exchange/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/
+# FORMATAR ARQUIVOS .MD
+https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8
 
 # COMO DECLARAR IMPOSTO DE RENDA:
 https://blog.toroinvestimentos.com.br/como-declarar-imposto-de-renda-2018-irpf
 
 # MONTAR SERVIDOR WEB DOMESTICO:
 https://guiatech.net/como-montar-um-servidor-web-domestico/
-
-# Manual de uma impressora:
-http://h10032.www1.hp.com/ctg/Manual/c01859611
-
-# Vídeo do YouTube ensinando à configurar uma impressora hp em rede:
-https://www.youtube.com/watch?v=Apy7Tz8-0BU
-
-https://www.msn.com/pt-br/estilo-de-vida/moda/macacão-15-modelos-e-maneiras-diferentes-de-usar/ss-BBTg4jH?ocid=spartanntp_edu
 
 # Vídeo sobre Qnap NAS:
 https://www.youtube.com/watch?v=spXFvfJn-EIv
@@ -35,12 +17,6 @@ http://www.psmgestec.com.br/doc_geral/Legrand/Apost_novas/PSM_MOD5_MAR2016_PARAM
 
 # Ferramenta construct:
 https://www.youtube.com/watch?v=bzgzXRgBAS0
-
-# ISOs Debian:
-https://cdimage.debian.org/debian-cd/9.8.0/
-
-# ISOs Debian 32 bits:
-https://cdimage.debian.org/debian-cd/9.8.0/i386/iso-cd/
 
 # Espelhamento nas portas do swtich l3 HP 1910:
 https://techexpert.tips/pt-br/hp-switch-pt-br/configuracao-do-espelhamento-de-porta-do-switch-hp/
@@ -60,12 +36,6 @@ https://www.techtudo.com.br/dicas-e-tutoriais/noticia/2014/07/como-acessar-o-win
 # Autenticação do roteador no ad Windows server:
 http://brainwork.com.br/2009/12/10/autenticao-do-roteador-no-ad-windows-server-2008/
 
-# Gabarito CGE 2175 (Prova Senai 07/04/19):
-https://gpsonline.sesisenaisp.org.br/gabaritohtml.aspx?plano=195&processo=18
-
-# Deixar o computador mais rápido sem instalar nada:
-https://www.techtudo.com.br/noticias/noticia/2015/07/confira-dicas-para-deixar-o-computador-mais-rapido-sem-instalar-nada.html
-
 # Criar a mídia de instalação do Windows 10 home/Pro (via USB/DVD)
 https://www.microsoft.com/pt-br/software-download/windows10
 
@@ -75,24 +45,8 @@ https://ti-redes.webnode.com.br/configuracoes-basicas/comandos-basicos-roteadore
 # COMO DECLARAR IMPOSTO DE RENDA:
 https://blog.toroinvestimentos.com.br/como-declarar-imposto-de-renda-2018-irpf
 
-# OTIMIZAÇÃO DO COMPUTADOR:
-
-https://pt.wikihow.com/Melhorar-o-Desempenho-do-seu-PC
-
-https://pt.wikihow.com/Fazer-Desfragmenta%C3%A7%C3%A3o-no-Windows-10
-
-https://www.tecmundo.com.br/aumentar-desempenho/3042-guia-basico-como-melhorar-o-desempenho-do-computador.htm
-
-https://support.microsoft.com/pt-br/help/4002019/windows-10-improve-pc-performance
-
-https://www.techtudo.com.br/dicas-e-tutoriais/2019/02/como-melhorar-o-desempenho-do-seu-pc-para-rodar-melhor-os-seus-games.ghtml
-
-https://www.techtudo.com.br/dicas-e-tutoriais/2017/07/como-melhorar-o-desempenho-do-computador-com-windows-10.ghtml
-
 # VPN EM WINDOWS:
 https://www.youtube.com/watch?v=ZoxB-GKEum8
-
-
 
 # SITE PARA TRANSFERÊNCIA DE ARQUIVOS:
 https://wetransfer.com/
@@ -130,6 +84,6 @@ https://tecadmin.net/install-docker-on-fedora/
 # INSTALAÇÃO POR RPM EM LINUX:
 https://www.vivaolinux.com.br/dica/Instalando-pacotes-utilizando-RPM
 
-# Programa para deixar o pendrive bootavel:
+# PENDRIVE BOOTAVEL
 https://rufus.ie/
 
