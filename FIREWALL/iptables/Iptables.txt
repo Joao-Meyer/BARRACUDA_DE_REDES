@@ -1,0 +1,16 @@
+Permirtir Passagem de Pacotes entre placas de rede:
+
+Esse arquivo só aceita 0 (desligado) e 1(ligado)
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+Regra no firewall para liberar passagem dos pacotes:
+
+iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
+
+A partir deste ponto já é possivel pingar ips de redes externas
+
+Para redirecionar portas:
+
+iptables -t nat -A PREROUTING -p tcp -i enp0s8 --dport 5000 -j DNAT --to 192.168.0.3:22
+
