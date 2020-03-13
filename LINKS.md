@@ -1,7 +1,7 @@
-DONT PAD DO VINI:
+# DONT PAD DO VINI:
 http://dontpad.com/NaCaladaDaNoiteEleVaiBaterNaSuaMae
 
-RESULTADOS DA PESQUISA DE COMO RESOLVER OS PROBLEMAS DE RECEBIMENTO E ENVIO DE E-MAILS NO OUTLOOK:
+# RESULTADOS DA PESQUISA DE COMO RESOLVER OS PROBLEMAS DE RECEBIMENTO E ENVIO DE E-MAILS NO OUTLOOK:
 
 https://support.microsoft.com/pt-br/help/813514/error-occurs-when-you-send-or-receive-an-email-message-in-outlook-or-o
 
@@ -11,72 +11,71 @@ https://support.microsoft.com/pt-br/help/272227/how-to-repair-your-outlook-perso
 
 https://support.microsoft.com/pt-br/help/2758902/how-to-set-up-an-internet-email-account-in-outlook-2013-or-2016
 
-https://docs.microsoft.com/pt-br/exchange/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365
-/
+https://docs.microsoft.com/pt-br/exchange/fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/
 
-COMO DECLARAR IMPOSTO DE RENDA:
+# COMO DECLARAR IMPOSTO DE RENDA:
 https://blog.toroinvestimentos.com.br/como-declarar-imposto-de-renda-2018-irpf
 
-MONTAR SERVIDOR WEB DOMESTICO:
+# MONTAR SERVIDOR WEB DOMESTICO:
 https://guiatech.net/como-montar-um-servidor-web-domestico/
 
-Manual de uma impressora:
+# Manual de uma impressora:
 http://h10032.www1.hp.com/ctg/Manual/c01859611
 
-Vídeo do YouTube ensinando à configurar uma impressora hp em rede:
+# Vídeo do YouTube ensinando à configurar uma impressora hp em rede:
 https://www.youtube.com/watch?v=Apy7Tz8-0BU
 
 https://www.msn.com/pt-br/estilo-de-vida/moda/macacão-15-modelos-e-maneiras-diferentes-de-usar/ss-BBTg4jH?ocid=spartanntp_edu
 
-Vídeo sobre Qnap NAS:
+# Vídeo sobre Qnap NAS:
 https://www.youtube.com/watch?v=spXFvfJn-EIv
 
-Power point sobre certificação de cabos:
+# Power point sobre certificação de cabos:
 http://www.psmgestec.com.br/doc_geral/Legrand/Apost_novas/PSM_MOD5_MAR2016_PARAMETROS_DE_TESTE.pdf
 
-Ferramenta construct:
+# Ferramenta construct:
 https://www.youtube.com/watch?v=bzgzXRgBAS0
 
-ISOs Debian:
+# ISOs Debian:
 https://cdimage.debian.org/debian-cd/9.8.0/
 
-ISOs Debian 32 bits:
+# ISOs Debian 32 bits:
 https://cdimage.debian.org/debian-cd/9.8.0/i386/iso-cd/
 
-Espelhamento nas portas do swtich l3 HP 1910:
+# Espelhamento nas portas do swtich l3 HP 1910:
 https://techexpert.tips/pt-br/hp-switch-pt-br/configuracao-do-espelhamento-de-porta-do-switch-hp/
 
-Configurar interface web no Sw L3 HP 1910:
+# Configurar interface web no Sw L3 HP 1910:
 https://www.impacta.com.br/blog/2015/02/03/como-configurar-switch-hp-v1910-24g/
 
-VAGAS SENAI:
+# VAGAS SENAI:
 https://curriculo.sesisenaisp.org.br/
 
-Quebrar senha do windows server 2008:
+# Quebrar senha do windows server 2008:
 https://social.technet.microsoft.com/Forums/pt-BR/56428f04-91ab-4548-b11b-031a327dc015/quebra-de-senha-do-windows-server-2008?forum=winsrv2008pt
 
-Quebrar senha windows:
+# Quebrar senha windows:
 https://www.techtudo.com.br/dicas-e-tutoriais/noticia/2014/07/como-acessar-o-windows-depois-de-esquecer-ou-perder-senha.html
 
-Autenticação do roteador no ad Windows server:
+# Autenticação do roteador no ad Windows server:
 http://brainwork.com.br/2009/12/10/autenticao-do-roteador-no-ad-windows-server-2008/
 
-Gabarito CGE 2175 (Prova Senai 07/04/19):
+# Gabarito CGE 2175 (Prova Senai 07/04/19):
 https://gpsonline.sesisenaisp.org.br/gabaritohtml.aspx?plano=195&processo=18
 
-Deixar o computador mais rápido sem instalar nada:
+# Deixar o computador mais rápido sem instalar nada:
 https://www.techtudo.com.br/noticias/noticia/2015/07/confira-dicas-para-deixar-o-computador-mais-rapido-sem-instalar-nada.html
 
-Criar a mídia de instalação do Windows 10 home/Pro (via USB/DVD)
+# Criar a mídia de instalação do Windows 10 home/Pro (via USB/DVD)
 https://www.microsoft.com/pt-br/software-download/windows10
 
-Comandos para Roteadores Cisco 
+# Comandos para Roteadores Cisco 
 https://ti-redes.webnode.com.br/configuracoes-basicas/comandos-basicos-roteadores-cisco/
 
-COMO DECLARAR IMPOSTO DE RENDA:
+# COMO DECLARAR IMPOSTO DE RENDA:
 https://blog.toroinvestimentos.com.br/como-declarar-imposto-de-renda-2018-irpf
 
-OTIMIZAÇÃO DO COMPUTADOR:
+# OTIMIZAÇÃO DO COMPUTADOR:
 
 https://pt.wikihow.com/Melhorar-o-Desempenho-do-seu-PC
 
@@ -90,15 +89,15 @@ https://www.techtudo.com.br/dicas-e-tutoriais/2019/02/como-melhorar-o-desempenho
 
 https://www.techtudo.com.br/dicas-e-tutoriais/2017/07/como-melhorar-o-desempenho-do-computador-com-windows-10.ghtml
 
-VPN EM WINDOWS:
+# VPN EM WINDOWS:
 https://www.youtube.com/watch?v=ZoxB-GKEum8
 
 
 
-SITE PARA TRANSFERÊNCIA DE ARQUIVOS:
+# SITE PARA TRANSFERÊNCIA DE ARQUIVOS:
 https://wetransfer.com/
 
-JAVA:
+# JAVA:
 https://www.devmedia.com.br/programando-com-java/24170
 
 https://www.devmedia.com.br/guia/java/34372
@@ -109,28 +108,28 @@ https://www.devmedia.com.br/entrada-de-dados-classe-scanner/21366
 
 http://www.javaprogressivo.net/
 
-HTML:
+# HTML:
 https://www.w3schools.com/
 
-KOTLIN:
+# KOTLIN:
 https://developer.android.com/kotlin/resources?hl=pt-br
 https://www.androidpro.com.br/blog/kotlin/kotlin/
 https://www.codigofonte.com.br/artigos/5-dicas-para-se-tornar-um-desenvolvedor-de-kotlin
 https://pt.slideshare.net/felipe_pedroso/aprendendo-kotlin-na-prtica
 https://kotlinlang.org/docs/tutorials/getting-started-eclipse.html
 
-INSTALAÇÃO DO POSTGRES NO FEDORA:
+# INSTALAÇÃO DO POSTGRES NO FEDORA:
 https://tecadmin.net/install-postgresql-11-on-fedora/
 
-INSTALAÇÃO DO PGADMIN NO FEDORA:
+# INSTALAÇÃO DO PGADMIN NO FEDORA:
 https://fedorabr.org/index.php?p=/discussion/179/tutorial-como-instalar-o-pgadmin-4-no-fedora-30-29-28-comando-terminal
 
-INSTALAÇÃO DO DOCKER NO FEDORA:
+# INSTALAÇÃO DO DOCKER NO FEDORA:
 https://tecadmin.net/install-docker-on-fedora/
 
-INSTALAÇÃO POR RPM EM LINUX:
+# INSTALAÇÃO POR RPM EM LINUX:
 https://www.vivaolinux.com.br/dica/Instalando-pacotes-utilizando-RPM
 
-Programa para deixar o pendrive bootavel:
+# Programa para deixar o pendrive bootavel:
 https://rufus.ie/
 
