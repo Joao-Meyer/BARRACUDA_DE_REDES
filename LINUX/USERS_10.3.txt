@@ -1,0 +1,37 @@
+Para utilizar o sistema é necessário ter as credenciais de um usuário (como o nome diz, ele pode "usar" o sistema)
+
+O usuário root no linux é o usuário mais poderoso do Linux que literalmente tem acesso a todos os arquivos e pastas do sistema
+
+Mas podemos adicionar usuários normais que só podem criar e editar pastas e arquivos em que ele tem permissão(Geralmente concedida pelo usuário Root)
+
+Existem dois comando para criar usuários: adduser e useradd
+
+O comando adduser cria um usuário com uma pasta "home" e cria um mini-arquivo com informações sobre o usuário(Telefone, Endereço, Nome e etc...)
+
+Já o comando useradd cria simplesmente um usuário com senha e o adiciona no arquivo passwd(arquivo padrão de usuários linux) ou no arquivo shadow(arquivo de usuários criptografados, caso esteja habilitado)
+
+Existem diversos argumentos para personalizar a criação do usuário
+
+-d, −−home HOME_DIR : define o nome do diretório home do usuário (mas não o cria).
+-s, −−shell SHELL : define o shell padrão do usuário.
+-h, −−help : exibe as opções do comando.
+
+Para alterar a senha do usuário utilize o comando: passwd
+
+Todo usuário cria um grupo com o seu nome no momento em que é criado. Mas isso pode ser alterado mudando o GID do usuário durante a instalação.
+
+O grupo pode ser criado previamente com o comando addgroup. Ele tem opções parecidas como adduser, use -h para obter um help.
+Para remover um grupo utilize o comando delgroup
+
+Todo usuário tem um número de identificação que é chamado de UID, esse número pode ser alterado na criação de usuário.
+
+Além disso, também podemos colocar uma data de validade para a senha do usuário, para isso utilizamos o comando chage
+A utilização dele é bem fácil, basta digitar chage e ver as opções para a validade das senhas.
+
+Para ver as informações de um usuário utilize o o comando finger
+Para modificar informações do usuário(senha, grupo, home e etc...), utilize o comando usermod
+
+Para apagar usuários, utilize o comando deluser ou userdel
+ 
+
+

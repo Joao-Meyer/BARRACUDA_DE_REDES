@@ -1,0 +1,18 @@
+Variáveis são palavras curtas que podem carregar mais informações dentro delas
+
+Por exemplo: A=20000
+
+Podemos usar o comando echo para ver o que tem dentro da Variável
+Por exemplo: echo $A
+Resultado:20000
+
+Não se esqueça de colocar o símbolo '$' antes de chamar uma variável
+Ele serve para indicar ao sistema que a variável não é um caractere comum
+
+Para criar variáveis permanentes, devemos adicionar a variável ao bash ( o interpretador padrão do Debian Linux)
+
+Para isso adicionamos o seguinte comando na última linha do arquivo: /etc/bash.bashrc
+
+export DATE=($date)
+
+

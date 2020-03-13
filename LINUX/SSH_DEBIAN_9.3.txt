@@ -1,0 +1,41 @@
+SSH Server
+
+SSH é um protocolo de acesso remoto
+Sucessor do Telnet, que tem como diferença principal a utilização de criptografia em sua comunicação servidor-cliente
+
+O utilitário para acessar sistemas utilizando o ssh já vem instalado por padrão em sistemas Debian(openssh-client)
+Mas para ser acessado é necessário ser um servidor SSH.
+
+apt install openssh-server 
+
+Para acessar um servidor ssh, utilize o comando abaixo:
+
+ssh - C usuário@ip -p 22
+
+Opcional:
+
+-C = Compacta as informações na Trocadas entre o servidor e o cliente
+
+usuário@ = Por padrão o SSH tenta realizar o acesso utilizando o usuário Root, por isso podemos usar esse argumento para alterar o usuário que estamos utilizando para fazer o acesso
+
+-p 22 = A porta padrão de acesso do SSH é a 22, mas pode ser alterada com esse argumento.
+
+Com o protocolo SSH é possível realizar cópias remotas e seguras de arquivos com o comando SCP.
+
+scp usuario@ip + onde está o arquivo + para onde ele vai 
+
+O acesso Root é negado por padrão, por isso se quiser fazer o uso do protocolo SSH para acessar o usuário Root é necessário alterar o arquivo "/etc/ssh/sshd.conf"
+
+Mas, habilitar o acesso Root não é uma Prática segura, por isso podemos realizar o acesso seguro e sem senha por meio de Chaves RSA.
+
+Troca de chaves para conexão segura sem senha:
+
+Primeiro Crie uma chave criptografada que serve para os dois servidores se comunicarem sem serem expostos na rede:
+
+ssh-keygen -t rsa
+
+Depois copie a chave para o Cliente que deseja realizar o acesso ou para o Servidor que deseja acessar:
+
+ssh -copy -id aluno@ip do server -p 22
+
+

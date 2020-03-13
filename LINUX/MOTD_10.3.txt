@@ -1,0 +1,11 @@
+O motd é um dos modos de mostrar mensagens especificas para os usuários ao logon
+
+Para editar a mensagem antes do login
+Edite o arquivo: /etc/issue
+
+Para editar a mensagem pós login
+Edite o arquivo: /etc/motd
+
+Você também pode executar um script shell no logon do usuário para mostrar mensagens mais personalizadas, como por exemplo usando variáveis.
+
+Para isso coloque-o na Pasta: /etc/profile.d/

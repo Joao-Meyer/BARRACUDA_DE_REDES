@@ -1,0 +1,44 @@
+apt install isc-dhcp-server 
+
+Escolher a Interface de Rede que distribuirá o DHCP
+vi /etc/default/isc-dhcp-server
+"INTERFACESV4="enp0s9"
+
+
+Backup (Opcional)
+
+mv /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.bkp
+
+; no final de Todas as linhas
+
+option domain-name "dominio que você quer";
+
+option domain-name-servers 10.10.10.254, 8.8.8.8; (colocar o IP do seu DNS)
+
+default-lease-time 86400;
+
+max-lease-time 604800;
+
+authoritative;
+
+Subnet 10.10.10.0 netmask 255.255.255.0 {
+	range 10.10.10.10 10.10.10.100;
+	option subnet-mask 255.255.255.0;
+	option broadcast-address 10.10.10.255;
+	option routers 10.10.10.254;
+}
+
+systemctl start isc-dhcp-server
+
+Checar os Clientes DHCP
+
+tail -f /var/lib/dhcp/dhcpd.leases
+
+Fixar endereço por MAC
+
+host nome-do-host {
+	hardware ethernet mac-separado-por-: ;
+	fixed-address ip;
+}
+
+

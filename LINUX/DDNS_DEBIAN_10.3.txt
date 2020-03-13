@@ -35,6 +35,7 @@ nsupdate
 > update add happynode.home. 600 IN A 192.168.0.50
 > send
 
+
 Para utilização do DDNS com dhcp realize as configurações a seguir:
 Abra o arquivo dhcpd.conf e adicione as seguintes configurações:
 
@@ -57,3 +58,4 @@ zone 1.168.192.in-addr.arpa. {
 }
 
 Após realizar as configurações só reiniciar o serviço DHCP e testar com um cliente
+

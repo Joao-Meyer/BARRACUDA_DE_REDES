@@ -1,4 +1,4 @@
-# DONT PAD DO VINI
+# DONTPAD DO VINI
 http://dontpad.com/NaCaladaDaNoiteEleVaiBaterNaSuaMae
 
 # FORMATAR ARQUIVOS .MD
@@ -87,4 +87,15 @@ https://www.vivaolinux.com.br/dica/Instalando-pacotes-utilizando-RPM
 
 # PENDRIVE BOOTAVEL
 https://rufus.ie/
+
+# VLSM
+http://www.dltec.com.br/blog/redes/vlsm-conceitos-e-exemplo-para-o-ccna/
+
+# TUTORIAL GITHUB
+https://gist.github.com/leocomelli/2545add34e4fec21ec16#adicionar-um-diret%C3%B3rio-em-espec%C3%ADfico
+
+# TUTORIAIS DIVERSOS LINUX
+https://roll.urown.net/index.html
+
+
 

@@ -1,3 +1,5 @@
+#Repositório Local no Senai Jandira
+
 setterm -bold on -store &&
 mkdir /mnt/share && 
 mkdir /mnt/repo && 
@@ -16,11 +18,6 @@ figlet ok
 echo # Repositorio da internet >> /etc/apt/sources.list
 echo deb http://ftp.br.debian.org/debian stretch main contrib non-free >> /etc/apt/sources.list
 
-echo "auto enp0s8
-allow-hotplug enp0s8
-iface enp0s8 inet static
-address 192.168.0.120
-netmask 255.255.255.0
-network 192.168.0.0
-broadcast 192.168.0.255" >> /etc/network/interfaces &&
-/etc/init.d/networking restart
+#Repositório com DVDs ou BDs oficiais Debian
+
+apt-cdrom add

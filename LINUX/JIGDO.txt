@@ -1,0 +1,18 @@
+Jigdo é tipo um torrent de download de Isos
+
+Ele funciona com um Arquivo .jigdo
+
+O uso é bem Fácil
+
+Em um Sistema Debian basta baixar o pacote jigdo-file
+
+Depois baixe um arquivo .jigdo de sua preferência e use o comando
+
+"jigdo-lite debian-10.3.0-amd64-BD-1.jigdo"
+
+Aperte enter duas vezes e aguarde o download
+
+Ao final do Download cheque se na pasta onde o comando foi executado se o arquivo ISO se encontra.
+
+
+ 
