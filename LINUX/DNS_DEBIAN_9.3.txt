@@ -1,4 +1,4 @@
-Versão de Software Usada: Debian 9.3
+Versão de Software Usada: Debian 9.3 e 10.3
 
 Instale o Pacote Bind9: 
 	
@@ -33,12 +33,12 @@ exemplo.com.br.
 
 Depois nas Ultimas linhas do arquivo adicione alguns parâmetros
 
-@ 	    IN 	NS 		ns1.exemplo.com.br
-@ 	    IN 	MX 10 	mail.exemplo.com.br (Parâmetro de Email Opcional)
-ns1 	    IN 	A 		192.168.0.13 
-www    IN 	CNAME 	ns1 
-ftp 	    IN 	A 		192.168.0.13 (Parâmetro de Ftp Opcional)
-mail     IN 	A 		192.168.0.13 (Parâmetro de Email Opcional)
+@ 	    IN 	NS 	  ns1.exemplo.com.br
+@ 	    IN 	MX 10 	  mail.exemplo.com.br (Parâmetro de Email Opcional)
+ns1 	    IN 	A 	  192.168.0.13 
+www   	    IN 	CNAME 	  ns1 
+ftp 	    IN 	A 	  192.168.0.13 (Parâmetro de Ftp Opcional)
+mail        IN 	A 	  192.168.0.13 (Parâmetro de Email Opcional)
 
 Link para o print: https://imagizer.imageshack.com/img923/9426/EsAjPG.png
 
@@ -69,7 +69,52 @@ A única diferença é nas configurações de zona:
 
 SRVLNX	IN	AAAA	2001:db8:c0ca:1::1
 
+
+REVERSE DNS
+
+O DNS Recursivo ou reverso faz exatamente o contrário que o servidor DNS faz, ele assosia os nomes com IPs, para acelerar o tempo de resposta da rede
+
+A configuração de Zona dele é bem parecida, com exceção da Rede, que é o ip da rede ao contrário + in-addr.arpa.
+
+zone "0.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.exemplo.rev";
+}; 
+
+A configuração do Banco de Dados é um pouco diferente, onde invertemos o ip e o nome das entradas e em vez de A usamos PTR.
+@ 	    IN 	NS 	  exemplo.com.br
+10	    IN 	PTR 	  exemplo.com.br
+10 	    IN 	PTR 	  ns1.exemplo.com.br 
+11	    IN  PTR	  ns2.exemplo.com.br
+
+REVERSE DNS utilizando IPv6
+
+A configuração do DNS REVERSO com IPv6 é um pouco mais complicada, nela precisamos declarar todos os octetos de rede. Diferente dos outros lugares onde usamos IPv6, não podemos abreviar os Zeros.
+
+zone "1.0.0.0.a.c.0.c.8.b.d.0.1.0.0.2.ip6.arpa" {
+	type master;
+	file "/etc/bind/db.exemplo.rev";
+}; 
+
+A configuração do Banco de dados também é complicada:
+
+@ 	    IN 	NS 	  exemplo.com.br
+1.0.0.0.a.c.0.c.8.b.d.0.1.0.0.2.ip6.arpa. IN PTR exemplo.com.br
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0 	  IN PTR ns1.exemplo.com.br 
+2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0 	  IN PTR ns2.exemplo.com.br
+
 DNS SLAVE
+
+O DNS Slave é uma cópia do Servidor DNS MASTER, ele serve para substiuir o Master caso ele não funcione por algum motivo
+
+A unica coisa que precisamos configurar nele é a zona, onde definimos de onde ele copiará os arquivos de configuração
+
+zone "exemplo.com.br" {
+	type slave;
+	masters {192.168.0.1;};
+}; 
+
+Após as configurações, o servidor slave automaticamente Copiará as configurações do master e ficará em standby até ser nescessário
 
 
 
