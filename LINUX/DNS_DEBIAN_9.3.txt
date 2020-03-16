@@ -4,7 +4,7 @@ Instale o Pacote Bind9:
 	
 	apt install bind9
 
-------------------------------------------------------------------------------------------------------- MASTER DNS -------------------------------------------------------------------------------------------------------
+MASTER DNS
 
 Edite o arquivo /etc/bind/named.conf.local (Pode adicionar a zona em qualquer um dos arquivos named.conf já que todos são lidos)
 
@@ -62,8 +62,14 @@ Para utilizar esse Servidor DNS em outros PCs é só adicionar o IP do server na
 
 Link para o print: https://imagizer.imageshack.com/img921/8717/s6WzPY.png
 
+DNS utilizando IPv6
 
-------------------------------------------------------------------------------------------------------- DNS SLAVE -------------------------------------------------------------------------------------------------------
+A configuração é bem parecida 
+A única diferença é nas configurações de zona:
+
+SRVLNX	IN	AAAA	2001:db8:c0ca:1::1
+
+DNS SLAVE
 
 
 
