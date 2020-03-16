@@ -41,4 +41,22 @@ host nome-do-host {
 	fixed-address ip;
 }
 
+DHCP com endereçamento IPv6
+
+vi /etc/default/isc-dhcp-server
+"INTERFACESV6="ens33"
+
+cp /etc/dhcp/dhcpd6.conf /etc/dhcp/dhcpd6.conf.bkp
+
+Realize as configurações igual no DHCPv4 com algumas pequenas mudanças que você notará no arquivo
+
+Por algum motivo o DHCP não envia a mascára de rede correta, por isso a comunicação entre cliente e servidor não funciona.
+Para resolver isso teremos que adicionar manualmente a rota até o servidor
+
+ip -6 ro add 2001:db8:c0ca:1::/64 dev ens33
+
+E para esse comando executar sempre que o cliente iniciar adicione o comando ao script de inicialização route.sh
+
+echo "ip -6 ro add 2001:db8:c0ca:1::/64 dev ens33" > /etc/profile.d/route.sh
+
 
