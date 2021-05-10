@@ -83,7 +83,36 @@ E com isso a aplicação já está subindo.
 
 Por meio do SEQUELIZE é possível criar o banco de dados e também manipular.
 
-Primeiro é necessário conectar ao database, para poder prosseguir foi consultada a documentação oficial do SEQUELIZE em <https://sequelize.org/master/manual/getting-started.html>.
+É necessário conectar ao database, para poder prosseguir foi consultada a documentação oficial do SEQUELIZE em <https://sequelize.org/master/manual/getting-started.html>.
+
+Antes de tudo, é bom especificar para o sequelize onde ficarão os arquivos através do arquivo que fica na raiz do projeto ".sequelizerc":
+
+> 
+```
+const path = require("path");
+
+module.exports = {
+  config: path.resolve(__dirname, "src", "config", "database.js"),
+  "migrations-path": path.resolve(__dirname, "src", "migrations"),
+  "models-path": path.resolve(__dirname, "src", "models"),
+  "seeders-path": path.resolve(__dirname, "src", "seeders")
+};
+```
+
+Primeiro criamos um projeto vazio com o comando:
+>
+```
+    npx sequelize-cli init
+```
+Obs: Este comando deve ser executado dentro do diretório onde estas pastas vão ficar (ex: src)
+
+Este comando cria as sequintes pastas:
+- config, contêm um arquivo config que fala para o CLI como conectar com o banco de dados
+- models, contêm todos os modelos do projeto (que serão criados posteriormente)
+- migrations, contêm todos os arquivos de migrations
+- seeders, contêm todos os arquivos seed
+
+### Configuração
 
 Para conectar ao database foi usado o seguinte trecho de código como base:
 > 
@@ -107,7 +136,7 @@ const sequelize = new Sequelize('database', 'username', 'password', {
 });
 ```
 
-Optamos pela última opção, e o trecho de código ficou assim:
+Optamos pela última opção e o trecho de código ficou assim, dentro do arquivo "./src/config/database.js":
 > 
 ```javascript
 const { Sequelize } = require('sequelize');
@@ -134,27 +163,12 @@ module.exports = {
   }
 }
 ```
-Logo já podemos criar o banco de dados, conforme as configurações, com o comando:
+Logo já podemos criar o banco de dados (vazio), conforme as configurações, com o comando:
 >
 ```
 npx sequelize db:create
 ```
 
-### Migrations
-Primeiro criamos um projeto vazio com o comando:
->
-```
-    npx sequelize-cli init
-```
-Obs: Este comando deve ser executado dentro do diretório onde estas pastas vão ficar (ex: src)
-
-Este comando cria as sequintes pastas:
-- config, contêm um arquivo config que fala para o CLI como conectar com o banco de dados
-- models, contêm todos os modelos do projeto (que serão criados posteriormente)
-- migrations, contêm todos os arquivos de migrations
-- seeders, contêm todos os arquivos seed
-
-### Configuração
 Antes prossseguir é necessário informar ao CLI como conectar ao banco de dados. Para tal editamos o arquivo config/config.json.
 Lá substituímos os valores com as informações do nosso banco de dados. Ficou assim:
 > 
@@ -184,6 +198,7 @@ Lá substituímos os valores com as informações do nosso banco de dados. Ficou
 }
 ```
 
+### Migrations
 ### Criando modelo (e migrations)
 Para criar um novo modelo por meio de migrations é necessário executar o seguinte comando:
 >
