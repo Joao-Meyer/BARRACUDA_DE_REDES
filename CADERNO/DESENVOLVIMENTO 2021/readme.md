@@ -114,6 +114,35 @@ Este comando cria as sequintes pastas:
 
 ### Configuração
 
+Antes prossseguir é necessário informar ao CLI como conectar ao banco de dados. Para tal editamos o arquivo config/config.json.
+Lá substituímos os valores com as informações do nosso banco de dados. Ficou assim:
+> 
+```json
+{
+  "development": {
+    "username": "root",
+    "password": "bcd127",
+    "database": "chama_ti",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "bcd127",
+    "database": "chama_ti",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "bcd127",
+    "database": "chama_ti",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+```
+
 Para conectar ao database foi usado o seguinte trecho de código como base:
 > 
 ```javascript
@@ -167,35 +196,6 @@ Logo já podemos criar o banco de dados (vazio), conforme as configurações, co
 >
 ```
 npx sequelize db:create
-```
-
-Antes prossseguir é necessário informar ao CLI como conectar ao banco de dados. Para tal editamos o arquivo config/config.json.
-Lá substituímos os valores com as informações do nosso banco de dados. Ficou assim:
-> 
-```json
-{
-  "development": {
-    "username": "root",
-    "password": "bcd127",
-    "database": "chama_ti",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": "bcd127",
-    "database": "chama_ti",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": "bcd127",
-    "database": "chama_ti",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
 ```
 
 ### Migrations
