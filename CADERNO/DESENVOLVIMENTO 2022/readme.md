@@ -26,8 +26,16 @@ mysql2 para utilização do MySQL
 jest para testes ( utilizado para testar a API, também, durante o desenvolvimento )
 > npm i jest
 
+supertest para auxiliar nos testes da api
+> npm i supertest
+
+cross-env para auxiliar nos testes da api
+> npm i cross-env
+
+/*
 cross-fecth para auxiliar nos testes de endpoints da api
 > npm i cross-fetch
+*/
 
 Obs: Posteriormente substituir pelo supertest e o cross-env para testes mais robustos ( https://www.youtube.com/watch?v=B1kWb7tWoxs&t=2s&ab_channel=RafaelLeme )
 
@@ -37,17 +45,6 @@ jsonwebtoken para autenticação de usuários
 + Criar o servidor e a aplicação
 
 dentro de src adicionar os arquivos:
-
-app.js
-```
-const express = require('express');
-
-const server = express();
-
-server.use(express.json());
-
-module.exports = server;
-```
 
 routes.js
 ```
@@ -65,38 +62,47 @@ routes.get('/', (req, res) => {
 module.exports = routes;
 ```
 
+app.js
+```
+const express = require('express');
+const routes = require('./routes');
+
+const server = express();
+
+server.use(express.json());
+
+server.use(routes);
+
+module.exports = server;
+```
+
 index.js
 ```
 const app = require('./app');
-const routes = require('./routes');
 
-const port = 3000;
+const PORT = 3000;
 
-app.use(routes);
-
-app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
 ```
 
 Adicionar o script de testes para verificar se a API sobe normalmente
 
-dentro de src/tests:
+dentro de src/tests/integration:
 
 api.test.js
 ```
-const fetch = require('cross-fetch');
-
-const baseUrl = 'http://localhost:3000';
+const request = require('supertest');
+const app = require('../../app');
 
 describe('API', () => {
-    test('API está de pé.', async() => {
-        const response = await fetch( baseUrl );
+    test('A API está de pé.', async () => {
+        const response = await request(app).get('/');
 
-        const responseBody = await response.json();
-
-        expect( response.status ).toBe( 200 );
-        expect( responseBody.statusRes ).toBe( 'ok' )
+        expect(response.ok).toBeTruthy();
+        expect(response.body.statusRes).toBe('ok');
+        expect(response.body).toHaveProperty('message');
     })
-})
+});
 ```
 
 Adicionar os scripts do servidor e de teste dentro do package.json:
@@ -109,8 +115,13 @@ Adicionar os scripts do servidor e de teste dentro do package.json:
 //...
 ```
 
-Iniciar o servidor e rodar o teste:
+Obs: O script de test pode ser adicionado rodando:
+> npx jest --init
+
+Para iniciar o servidor rodar:
 > npm run dev
+
+Para o teste rodar:
 > npm run test
 
 ## BANCO DE DADOS + BACKEND
@@ -122,17 +133,27 @@ dentro de config:
 database.js
 ```
 module.exports = {
-    dialect : "mysql",
-    host : "localhost",
-    username : "root",
-    password : "a1s2d3f4",
-    database : "treino_prova",
-    logging: console.log,
-    define : {
-        timestamp : true,
-        underscored : true
+    dialect: 'mysql',
+    host: 'localhost',
+    username: 'root',
+    password: 'password',
+    database: process.env.NODE_ENV !== 'production' ? 'database_name_test' : 'database_name',
+    logging: process.env.NODE_ENV !== 'production' ? console.log : false,
+    define: {
+        timestamp: true,
+        underscored: true,
     }
 }
+```
+Obs: Adicionamos variáveis de ambiente do cross-env para os testes
+
+Adicionamos os novos parâmetros nos scripts
+
+package.json
+```
+//...
+"test": "cross-env NODE_ENV=test jest"
+//...
 ```
 
 dentro da pasta database:
@@ -152,15 +173,12 @@ module.exports = connection;
 index.js
 ```
 const app = require('./app');
-const routes = require('./routes');
 
 require('./database');
 
-const port = 3000;
+const PORT = 3000;
 
-app.use(routes);
-
-app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
 ```
 
 + Criar um arquivo na raiz do projeto .sequelizerc para indicar onde estão as configurações que fizemos do sequelize
@@ -353,42 +371,49 @@ module.exports = routes;
 
 + Testar adicionando um teste
 
+Criar uma preparação para a utilização do DB em testes
+
+package.json
+```
+//...
+    "pretest": "cross-env NODE_ENV=test npx sequelize db:migrate",
+    "test": "cross-env NODE_ENV=test jest",
+    "posttest": "cross-env NODE_ENV=test npx sequelize db:migrate:undo:all"
+//...
+```
+
+Adicionar novo teste e configuração que desconecta a sessão do bando após os testes
+
 api.test.js
 ```
-const fetch = require('cross-fetch');
-
-const baseUrl = 'http://localhost:3000/';
+const request = require('supertest');
+const app = require('../../app');
+const connection = require('../../database');
 
 describe('API', () => {
-    test('API está de pé.', async() => {
-        const response = await fetch( baseUrl );
+    afterAll(() => {
+        connection.close();
+    })
 
-        const responseBody = await response.json();
+    test('A API está de pé.', async () => {
+        const response = await request(app).get('/');
 
-        expect( response.status ).toBe( 200 );
-        expect( responseBody.statusRes ).toBe( 'ok' )
+        expect(response.ok).toBeTruthy();
+        expect(response.body.statusRes).toBe('ok');
+        expect(response.body).toHaveProperty('message');
     });
 
-    test('É possível criar um usuário.', async() => {
+    test('É possível criar novo usuário.', async () => {
         const newUser = {
-            name : 'Johnny Test',
-            email : 'jtest@mail.com',
-            password : 's3cr3t!'
-        };
+            name: 'Johnny Test',
+            email: 'jtest@mail.com',
+            password: 's3cr3t!',
+        }
 
-        const response = await fetch( baseUrl + 'users', {
-            method: "post",
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newUser)
-        });
+        const response = await request(app).post('/users').send( newUser );
 
-        const responseBody = await response.json();
-
-        expect( response.status ).toBe( 201 );
-        expect( responseBody.name ).toBe( newUser.name );
+        expect(response.status).toBe(201);
+        expect(response.body).toMatchObject( newUser );
     });
 });
 ```
@@ -411,32 +436,32 @@ Exemplo na controller de Sessão:
 
 SessionController.js
 ```
-const User = require('../models/User');
+const Users = require('../models/Users');
 const jwt = require('jsonwebtoken');
-const authConfig = require('../config/auth.json')
+const authConfig = require('../config/auth.json');
 
 module.exports = {
-    async login(req, res){
+    async login(req, res) {
         const { email, password } = req.body;
 
-        const user = await User.findOne({
+        const user = await Users.findOne({
             where: {
                 email,
                 password
             }
         });
-    
-        if( !user ){
-            return res.status( 401 ).send({ erro : "E-mail e/ou senha incorretos." });
+
+        if(!user){
+            return res.status(401).json({ error: 'E-mail e/ou senha incorretos.'})
         }
 
-        const token = jwt.sign({ userId: user.id }, authConfig.secret, { expiresIn: authConfig.expires });
+        const token = jwt.sign({ userId: user.id }, authConfig.secret, { expiresIn: authConfig.expires })
 
-        res.status(201).send({
+        res.status(201).json({
             auth: true,
             user: {
-                userId: user.id,
-                name: user.nome,
+                id: user.id,
+                name: user.name,
                 email: user.email
             },
             token
@@ -445,50 +470,55 @@ module.exports = {
 };
 ```
 
+routes.js
+```
+const express = require('express');
+
+const UsersController = require('./controllers/UsersController');
+const SessionController = require('./controllers/SessionController');
+
+const routes = express.Router();
+
+routes.get('/', (req, res) => {
+    return res.json({
+        statusRes: 'ok',
+        message: 'Tudo ok.'
+    });
+});
+
+routes.post('/users', UsersController.store);
+
+routes.post('/login', SessionController.login);
+
+module.exports = routes;
+```
+
 Teste automatizado para verificar se está funcional o login:
 
 api.test.js
 ```
 //...
-    test('Login está funcionando.', async () => {
+    test('É possível realizar o login.', async () => {
         const userWithoutAccess = {
             email: 'user@example.com',
             password: 'password'
-        };
+        }
 
         const userWithAccess = {
-            email : 'jtest@mail.com',
-            password : 's3cr3t!'
-        };
+            email: 'jtest@mail.com',
+            password: 's3cr3t!',
+        }
 
-        const responseWithFail = await fetch( baseUrl + 'login', {
-            method: "post",
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userWithoutAccess)
-        });
+        const responseWithFail = await request(app).post('/login').send( userWithoutAccess );
+        const responseWithSuccess = await request(app).post('/login').send( userWithAccess );
 
-        const responseBodyWithFail = await responseWithFail.json();
+        expect(responseWithFail.status).toBe(401);
+        expect(responseWithFail.body).toHaveProperty('error');
 
-        expect( responseWithFail.status ).toBe( 401 );
-        expect( JSON.stringify(responseBodyWithFail) ).toContain( 'erro' );
-        
-        const responseWithSuccess = await fetch( baseUrl + 'login', {
-            method: "post",
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userWithAccess)
-        });
-
-        const responseBodyWithSucces = await responseWithSuccess.json();
-
-        expect( responseWithSuccess.status ).toBe( 201 );
-        expect( JSON.stringify(responseBodyWithSucces) ).toContain( 'token' );
-    })
+        expect(responseWithSuccess.ok).toBeTruthy();
+        expect(responseWithSuccess.body.auth).toBeTruthy();
+        expect(responseWithSuccess.body).toHaveProperty('token');
+    });
 //...
 ```
 
@@ -606,42 +636,28 @@ module.exports = routes;
 api.test.js
 ```
 //...
-    test('Apenas usuários logados estão podendo listar todos os usuários.', async () => {        
+    test('Apenas usuários logados podem listar todos os usuários.', async () => {        
         const userWithAccess = {
-            email : 'jtest@mail.com',
-            password : 's3cr3t!'
-        };
-        
-        const responseLogin = await fetch( baseUrl + 'login', {
-            method: "post",
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userWithAccess)
-        });
+            email: 'jtest@mail.com',
+            password: 's3cr3t!',
+        }
 
-        const responseBodyLogin = await responseLogin.json();
+        const responseLogin = await request(app).post('/login').send( userWithAccess );
 
-        expect( responseLogin.status ).toBe( 201 );
-        expect( responseBodyLogin ).toHaveProperty( 'token' );
+        expect(responseLogin.ok).toBeTruthy();
+        expect(responseLogin.body.auth).toBeTruthy();
+        expect(responseLogin.body).toHaveProperty('token');
 
-        const token = responseBodyLogin.token;
+        const token = responseLogin.body.token;
 
-        const responseWithoutToken = await fetch( baseUrl + 'users' );
-        const responseBodyWithoutToken = await responseWithoutToken.json();
+        const responseWithoutToken = await request(app).get('/users');
+        const responseWithToken = await request(app).get('/users').set(
+                'x-access-token', token );
 
-        expect( responseWithoutToken.status ).toBe( 401 );
-        expect( responseBodyWithoutToken ).toHaveProperty( 'erro' );
+        expect(responseWithoutToken.status).toBe(401);
+        expect(responseWithoutToken.body).toHaveProperty('error');
 
-        const responseWithToken = await fetch( baseUrl + 'users', {
-            headers: {
-              'x-access-token': token,
-            }
-        });
-
-        expect( responseWithToken.ok ).toBeTruthy();
-    })
+        expect(responseWithToken.ok).toBeTruthy()
+    });
 //...
 ```
-
