@@ -661,3 +661,215 @@ api.test.js
     });
 //...
 ```
+
+## Desenvolvimento de FRONTEND simples para consumo da API
+
++ Criamos a estrutura do projeto utilizando o comando:
+> npx create-react-app nome_projeto
+
+Obs: Esse processo demora
++ Para iniciar subir o front é só rodar ( ele subirá por padrão na porta 3000):
+> npm start
+
++ Removemos arquivos que vêm por padrão e não utilizamos
+./src/index.css
+./src/logo.svg
+./src/App.css
+./src/App.test.js
+
+E removemos suas imprementações dos arquivos restantes:
+./src/App.js
+```
+function App () {
+  return (
+    <>Site</>
+  );
+}
+
+export default App;
+```
+
+./src/index.js
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+reportWebVitals();
+```
+
++ Instalação de biblioteca de roteamento
+> npm i react-router-dom
+
++ Instalação de biblioteca de requisições para api
+> npm i axios
+
++ Criamos uma pasta pages dentro de src onde ficarão as páginas:
+
+Login.js
+```
+function Login () {
+    return (
+        <>Login</>
+    )
+}
+
+export default Login;
+```
+
+Home.js
+```
+function Home () {
+    return (
+        <>Home</>
+    )
+}
+
+export default Home;
+```
+
++ Criamos as configurações da API denmtro da pasta ./src/services
+
+api.js
+```
+import axios from 'axios';
+
+export const api = axios.create({
+    baseURL: 'http://localhost:3333',
+    headers: {
+        post: {
+            header1: "Content-Type application/json",
+            header2: "'Accept': 'application/json'",
+        }
+    }
+})
+```
+
++ Criamos um arquivo de segurança quem vai lidar com a sessão do usuário dentro de ./src/services
+
+security.js
+```
+import { api } from "./api";
+
+const USER_KEY = '@user';
+
+export const signIn = ( user ) => {
+
+    localStorage.setItem( USER_KEY, JSON.stringify( user ) );
+
+    api.defaults.headers.common['x-access-token'] = `${user.token}`;
+
+}
+
+export const signOut = () => {
+
+    localStorage.clear();
+
+    api.defaults.headers.common['x-access-token'] = undefined;
+
+}
+
+export const getUser = () => {
+
+    const { user } = JSON.parse( localStorage.getItem( USER_KEY ) );
+
+    return user;
+
+}
+
+export const isSignedIn = () => {
+
+    const user = JSON.parse( localStorage.getItem( USER_KEY ) );
+
+    if( user ){
+
+        api.defaults.headers.common['x-access-token'] = `${user.token}`;
+
+    }
+
+    // Futuramente implementar a verificação do token
+
+    return user ? true : false;
+
+}
+```
+
++ Criamos um arquivo routes.js dentro de src
+
+routes.js
+```
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login';
+import Home from './pages/Home';
+import { isSignedIn } from './services/security';
+
+const PrivateRoute = ({ children, ...rest }) => {
+
+    return (
+
+        <Route {...rest}
+            render={({ location }) => 
+                isSignedIn() ? (
+
+                    children
+                    
+                ) : (
+
+                    <Navigate
+                        replace
+                        to={{
+
+                            pathname: "/",
+                            state: { from: location }
+
+                        }}
+                    />
+
+                )
+
+            }
+        />
+
+    );
+
+}
+
+function PagesRoutes() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route exact path="/">
+                    <Login />
+                </Route>
+
+                <PrivateRoute path="/home">
+                    <Home />
+                </PrivateRoute>
+            </Routes>
+        </BrowserRouter>
+    );
+}
+
+export default PagesRoutes;
+```
+
+Adicionamos a routes para ser renderizada por padrão no App:
+
+App.tsx
+```
+import { Routes } from './routes';
+
+export const App = () => {
+  return (
+    <Routes />
+  );
+}
+```
